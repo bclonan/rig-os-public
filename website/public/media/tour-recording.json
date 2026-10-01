@@ -1,0 +1,79 @@
+{
+  "recordedAt": "2026-10-01T16:05:37.664Z",
+  "url": "http://127.0.0.1:4337",
+  "level": "Real static website and map interactions. No local runtime or native desktop execution.",
+  "errors": [],
+  "cues": [
+    {
+      "start": 0.834,
+      "end": 5.34,
+      "text": "Rig OS is a local computer-use runtime. This is a tour of its public architecture and documentation."
+    },
+    {
+      "start": 5.397,
+      "end": 9.602,
+      "text": "Models propose actions. You review them. The runtime checks permission and current state before input."
+    },
+    {
+      "start": 9.766,
+      "end": 13.781,
+      "text": "The system map connects 120 responsibilities. Each box leads to its explanation and source."
+    },
+    {
+      "start": 13.812,
+      "end": 17.115,
+      "text": "Choose a journey to follow one workflow through the system, in order."
+    },
+    {
+      "start": 17.164,
+      "end": 20.174,
+      "text": "Step through the handoffs. See which component owns each decision."
+    },
+    {
+      "start": 20.29,
+      "end": 23.097,
+      "text": "Descriptions include the boundaries and limits of each responsibility."
+    },
+    {
+      "start": 23.176,
+      "end": 27.376,
+      "text": "Open the exact source snapshot with the cited line highlighted."
+    },
+    {
+      "start": 27.507,
+      "end": 30.714,
+      "text": "Search source paths when you already know where you want to look."
+    },
+    {
+      "start": 30.856,
+      "end": 34.26,
+      "text": "The documentation library publishes all 51 Markdown documents from the repository."
+    },
+    {
+      "start": 35.307,
+      "end": 39.308,
+      "text": "Search the full text. Read setup, architecture, operating guides, and recorded evidence."
+    },
+    {
+      "start": 39.331,
+      "end": 42.832,
+      "text": "Read the document, copy commands, or go back to the original source."
+    },
+    {
+      "start": 43.363,
+      "end": 47.177,
+      "text": "Keep the limits visible. Recorded results have a scope, and failed gates stay in the documentation."
+    },
+    {
+      "start": 47.699,
+      "end": 52.212,
+      "text": "Explore at rig-os.netlify.app. Built by Brad Clonan, open to Software Architect, Staff / Principal Engineer, and applied AI roles."
+    }
+  ],
+  "viewport": {
+    "width": 1600,
+    "height": 1000
+  },
+  "video": "rig-os-tour.mp4",
+  "socialVideo": "rig-os-social.mp4"
+}

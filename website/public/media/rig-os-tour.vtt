@@ -1,0 +1,53 @@
+WEBVTT
+
+1
+00:00:00.834 --> 00:00:05.340
+Rig OS is a local computer-use runtime. This is a tour of its public architecture and documentation.
+
+2
+00:00:05.397 --> 00:00:09.602
+Models propose actions. You review them. The runtime checks permission and current state before input.
+
+3
+00:00:09.766 --> 00:00:13.781
+The system map connects 120 responsibilities. Each box leads to its explanation and source.
+
+4
+00:00:13.812 --> 00:00:17.115
+Choose a journey to follow one workflow through the system, in order.
+
+5
+00:00:17.164 --> 00:00:20.174
+Step through the handoffs. See which component owns each decision.
+
+6
+00:00:20.290 --> 00:00:23.097
+Descriptions include the boundaries and limits of each responsibility.
+
+7
+00:00:23.176 --> 00:00:27.376
+Open the exact source snapshot with the cited line highlighted.
+
+8
+00:00:27.507 --> 00:00:30.714
+Search source paths when you already know where you want to look.
+
+9
+00:00:30.856 --> 00:00:34.260
+The documentation library publishes all 51 Markdown documents from the repository.
+
+10
+00:00:35.307 --> 00:00:39.308
+Search the full text. Read setup, architecture, operating guides, and recorded evidence.
+
+11
+00:00:39.331 --> 00:00:42.832
+Read the document, copy commands, or go back to the original source.
+
+12
+00:00:43.363 --> 00:00:47.177
+Keep the limits visible. Recorded results have a scope, and failed gates stay in the documentation.
+
+13
+00:00:47.699 --> 00:00:52.212
+Explore at rig-os.netlify.app. Built by Brad Clonan, open to Software Architect, Staff / Principal Engineer, and applied AI roles.

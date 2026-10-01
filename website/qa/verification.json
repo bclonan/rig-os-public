@@ -1,0 +1,660 @@
+{
+  "at": "2026-10-01T16:08:11.971Z",
+  "base": "http://127.0.0.1:4337",
+  "checks": [
+    {
+      "name": "desktop: landing layout and six diagram source links",
+      "status": "PASS",
+      "bounds": {
+        "width": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "links": [
+        "/source/computer-use-runtime/console/App.vue/",
+        "/source/computer-use-runtime/src/providers/selection.ts/",
+        "/source/computer-use-runtime/src/service/index.ts/",
+        "/source/computer-use-runtime/src/runtime/index.ts/",
+        "/source/computer-use-runtime/src/storage/index.ts/",
+        "/source/computer-use-runtime/src/adapters/desktop.ts/"
+      ]
+    },
+    {
+      "name": "desktop: documentation search and keyboard escape",
+      "status": "PASS",
+      "bounds": {
+        "width": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "matches": 25
+    },
+    {
+      "name": "desktop: source filter and line anchors",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: architecture Mermaid diagrams",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: map journeys, source dialog, and index",
+      "status": "PASS",
+      "bounds": {
+        "width": 1440,
+        "document": 1440,
+        "body": 1440
+      }
+    },
+    {
+      "name": "desktop: video controls, caption tracks, and downloads",
+      "status": "PASS",
+      "assets": [
+        {
+          "key": "tour",
+          "asset": "/media/rig-os-tour.mp4",
+          "track": "/media/rig-os-tour.vtt",
+          "transcript": "/media/rig-os-tour-transcript.txt",
+          "controls": true,
+          "paused": false,
+          "duration": 52.12,
+          "width": 1600,
+          "height": 1000,
+          "startedAt": 0.00266,
+          "progressedTo": 0.271625,
+          "captionCues": 13
+        },
+        {
+          "key": "runtime",
+          "asset": "/media/runtime-demo.mp4",
+          "track": "/media/runtime-demo.vtt",
+          "transcript": "/media/runtime-demo-transcript.txt",
+          "controls": true,
+          "paused": false,
+          "duration": 19.48,
+          "width": 1600,
+          "height": 900,
+          "startedAt": 0.044992,
+          "progressedTo": 0.31623,
+          "captionCues": 5
+        }
+      ]
+    },
+    {
+      "name": "mobile: landing layout and six diagram source links",
+      "status": "PASS",
+      "bounds": {
+        "width": 390,
+        "document": 390,
+        "body": 390
+      },
+      "links": [
+        "/source/computer-use-runtime/console/App.vue/",
+        "/source/computer-use-runtime/src/providers/selection.ts/",
+        "/source/computer-use-runtime/src/service/index.ts/",
+        "/source/computer-use-runtime/src/runtime/index.ts/",
+        "/source/computer-use-runtime/src/storage/index.ts/",
+        "/source/computer-use-runtime/src/adapters/desktop.ts/"
+      ]
+    },
+    {
+      "name": "mobile: documentation search and keyboard escape",
+      "status": "PASS",
+      "bounds": {
+        "width": 390,
+        "document": 390,
+        "body": 390
+      },
+      "matches": 25
+    },
+    {
+      "name": "mobile: source filter and line anchors",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile: architecture Mermaid diagrams",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile: map journeys, source dialog, and index",
+      "status": "PASS",
+      "bounds": {
+        "width": 390,
+        "document": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "mobile: video controls, caption tracks, and downloads",
+      "status": "PASS",
+      "assets": [
+        {
+          "key": "tour",
+          "asset": "/media/rig-os-tour.mp4",
+          "track": "/media/rig-os-tour.vtt",
+          "transcript": "/media/rig-os-tour-transcript.txt",
+          "controls": true,
+          "paused": false,
+          "duration": 52.12,
+          "width": 1600,
+          "height": 1000,
+          "startedAt": 0.002004,
+          "progressedTo": 0.269853,
+          "captionCues": 13
+        },
+        {
+          "key": "runtime",
+          "asset": "/media/runtime-demo.mp4",
+          "track": "/media/runtime-demo.vtt",
+          "transcript": "/media/runtime-demo-transcript.txt",
+          "controls": true,
+          "paused": false,
+          "duration": 19.48,
+          "width": 1600,
+          "height": 900,
+          "startedAt": 0.044031,
+          "progressedTo": 0.315107,
+          "captionCues": 5
+        }
+      ]
+    },
+    {
+      "name": "all published document routes",
+      "status": "PASS",
+      "count": 51
+    },
+    {
+      "name": "published HTML local file and fragment links",
+      "status": "PASS",
+      "pages": 648,
+      "uniqueLinks": 267453,
+      "pending": 0
+    }
+  ],
+  "failures": [],
+  "accessibility": [
+    {
+      "label": "landing-desktop",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 2
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 4
+        }
+      ],
+      "passRules": 22
+    },
+    {
+      "label": "docs-desktop",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 10
+        }
+      ],
+      "passRules": 18
+    },
+    {
+      "label": "architecture-desktop",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 59
+        }
+      ],
+      "passRules": 24
+    },
+    {
+      "label": "map-desktop",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 38
+        }
+      ],
+      "passRules": 26
+    },
+    {
+      "label": "landing-mobile",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 2
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 4
+        }
+      ],
+      "passRules": 22
+    },
+    {
+      "label": "docs-mobile",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 10
+        }
+      ],
+      "passRules": 17
+    },
+    {
+      "label": "architecture-mobile",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 59
+        }
+      ],
+      "passRules": 23
+    },
+    {
+      "label": "map-mobile",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 54
+        }
+      ],
+      "passRules": 25
+    }
+  ],
+  "screenshots": [
+    "landing-desktop.png",
+    "docs-desktop.png",
+    "architecture-desktop.png",
+    "map-desktop.png",
+    "landing-mobile.png",
+    "docs-mobile.png",
+    "architecture-mobile.png",
+    "map-mobile.png",
+    "map-mobile-canvas.png"
+  ],
+  "pageErrors": [],
+  "pendingMedia": [],
+  "documentRoutes": [
+    {
+      "path": "AUTHOR.md",
+      "url": "/docs/AUTHOR/",
+      "status": 200,
+      "main": true,
+      "title": "Brad Clonan | rig-os"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "url": "/docs/CONTRIBUTING/",
+      "status": 200,
+      "main": true,
+      "title": "Contributing | rig-os"
+    },
+    {
+      "path": "README.md",
+      "url": "/docs/README/",
+      "status": 200,
+      "main": true,
+      "title": "rig-os | rig-os"
+    },
+    {
+      "path": "SECURITY.md",
+      "url": "/docs/SECURITY/",
+      "status": 200,
+      "main": true,
+      "title": "Reporting security issues | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/AGENTS.md",
+      "url": "/docs/computer-use-runtime/AGENTS/",
+      "status": 200,
+      "main": true,
+      "title": "Working in this package | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/ARCHITECTURE.md",
+      "url": "/docs/computer-use-runtime/ARCHITECTURE/",
+      "status": 200,
+      "main": true,
+      "title": "Architecture and portable execution semantics | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/BUILD_STATE.md",
+      "url": "/docs/computer-use-runtime/BUILD_STATE/",
+      "status": 200,
+      "main": true,
+      "title": "Build state | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/CAPABILITIES.md",
+      "url": "/docs/computer-use-runtime/CAPABILITIES/",
+      "status": 200,
+      "main": true,
+      "title": "Capabilities and measured limits | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/PLATFORMS.md",
+      "url": "/docs/computer-use-runtime/PLATFORMS/",
+      "status": 200,
+      "main": true,
+      "title": "Desktop setup on Windows, macOS and Linux | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/README.md",
+      "url": "/docs/computer-use-runtime/README/",
+      "status": 200,
+      "main": true,
+      "title": "Computer use runtime | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/REQUEST.md",
+      "url": "/docs/computer-use-runtime/REQUEST/",
+      "status": 200,
+      "main": true,
+      "title": "REQUEST | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/SECURITY.md",
+      "url": "/docs/computer-use-runtime/SECURITY/",
+      "status": 200,
+      "main": true,
+      "title": "Security and data handling | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/THIRD_PARTY.md",
+      "url": "/docs/computer-use-runtime/THIRD_PARTY/",
+      "status": 200,
+      "main": true,
+      "title": "Third-party components | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/CODE_STYLE.md",
+      "url": "/docs/computer-use-runtime/docs/CODE_STYLE/",
+      "status": 200,
+      "main": true,
+      "title": "Code standards | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/COMPLETION_CHECKLIST.md",
+      "url": "/docs/computer-use-runtime/docs/COMPLETION_CHECKLIST/",
+      "status": 200,
+      "main": true,
+      "title": "Completion checklist | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/COMPLETION_DECISIONS.md",
+      "url": "/docs/computer-use-runtime/docs/COMPLETION_DECISIONS/",
+      "status": 200,
+      "main": true,
+      "title": "Completion decisions | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/COMPLETION_PLAN.md",
+      "url": "/docs/computer-use-runtime/docs/COMPLETION_PLAN/",
+      "status": 200,
+      "main": true,
+      "title": "Completion plan | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/DEFINITION_OF_DONE.md",
+      "url": "/docs/computer-use-runtime/docs/DEFINITION_OF_DONE/",
+      "status": 200,
+      "main": true,
+      "title": "Definition of done | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/FEATURE_MATRIX.md",
+      "url": "/docs/computer-use-runtime/docs/FEATURE_MATRIX/",
+      "status": 200,
+      "main": true,
+      "title": "Feature and interaction matrix | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/HANDOFF.md",
+      "url": "/docs/computer-use-runtime/docs/HANDOFF/",
+      "status": 200,
+      "main": true,
+      "title": "Current repair handoff | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/PROVIDERS.md",
+      "url": "/docs/computer-use-runtime/docs/PROVIDERS/",
+      "status": 200,
+      "main": true,
+      "title": "Choose model providers | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/QUICK_REFERENCE.md",
+      "url": "/docs/computer-use-runtime/docs/QUICK_REFERENCE/",
+      "status": 200,
+      "main": true,
+      "title": "Quick reference | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/REPAIR_STATUS.md",
+      "url": "/docs/computer-use-runtime/docs/REPAIR_STATUS/",
+      "status": 200,
+      "main": true,
+      "title": "Repairs after the system review | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/REVIEW_LEDGER.md",
+      "url": "/docs/computer-use-runtime/docs/REVIEW_LEDGER/",
+      "status": 200,
+      "main": true,
+      "title": "Maintained-code review ledger | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/RUNNING.md",
+      "url": "/docs/computer-use-runtime/docs/RUNNING/",
+      "status": 200,
+      "main": true,
+      "title": "Setup, startup and operation | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/VERIFICATION.md",
+      "url": "/docs/computer-use-runtime/docs/VERIFICATION/",
+      "status": 200,
+      "main": true,
+      "title": "Verification | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/adr/0001-coordinator-ownership.md",
+      "url": "/docs/computer-use-runtime/docs/adr/0001-coordinator-ownership/",
+      "status": 200,
+      "main": true,
+      "title": "0001. Serialize coordinator ownership in SQLite | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/adr/0002-versioned-evidence.md",
+      "url": "/docs/computer-use-runtime/docs/adr/0002-versioned-evidence/",
+      "status": 200,
+      "main": true,
+      "title": "0002. Bind execution and publication to versioned evidence | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/adr/0003-template-checking.md",
+      "url": "/docs/computer-use-runtime/docs/adr/0003-template-checking/",
+      "status": 200,
+      "main": true,
+      "title": "0003. Check Vue templates with a compatible TypeScript version | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/adr/0004-portable-control-flow.md",
+      "url": "/docs/computer-use-runtime/docs/adr/0004-portable-control-flow/",
+      "status": 200,
+      "main": true,
+      "title": "0004. Execute portable branches and bounded recovery with XState | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/adr/0005-durable-ports-and-rejected-attempts.md",
+      "url": "/docs/computer-use-runtime/docs/adr/0005-durable-ports-and-rejected-attempts/",
+      "status": 200,
+      "main": true,
+      "title": "Durable ports and rejected attempts | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/adr/0006-training-origin-and-deployment-qualification.md",
+      "url": "/docs/computer-use-runtime/docs/adr/0006-training-origin-and-deployment-qualification/",
+      "status": 200,
+      "main": true,
+      "title": "Separate training origin and deployment qualification | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/adr/0007-selected-model-proposals.md",
+      "url": "/docs/computer-use-runtime/docs/adr/0007-selected-model-proposals/",
+      "status": 200,
+      "main": true,
+      "title": "ADR 0007: Selected model proposals | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/completion-contract-v1/PLATFORMS.md",
+      "url": "/docs/computer-use-runtime/docs/completion-contract-v1/PLATFORMS/",
+      "status": 200,
+      "main": true,
+      "title": "Desktop setup on Windows, macOS and Linux | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/completion-contract-v1/REQUEST.md",
+      "url": "/docs/computer-use-runtime/docs/completion-contract-v1/REQUEST/",
+      "status": 200,
+      "main": true,
+      "title": "REQUEST | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/completion-contract-v1/USER_COMPLETION_REQUEST.md",
+      "url": "/docs/computer-use-runtime/docs/completion-contract-v1/USER_COMPLETION_REQUEST/",
+      "status": 200,
+      "main": true,
+      "title": "USER_COMPLETION_REQUEST | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/docs/completion-contract-v1/docs__DEFINITION_OF_DONE.md",
+      "url": "/docs/computer-use-runtime/docs/completion-contract-v1/docs__DEFINITION_OF_DONE/",
+      "status": 200,
+      "main": true,
+      "title": "Definition of done | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/evaluation/linux-portal-profile.md",
+      "url": "/docs/computer-use-runtime/evaluation/linux-portal-profile/",
+      "status": 200,
+      "main": true,
+      "title": "Wayland portal profile | rig-os"
+    },
+    {
+      "path": "computer-use-runtime/examples/ports/README.md",
+      "url": "/docs/computer-use-runtime/examples/ports/README/",
+      "status": 200,
+      "main": true,
+      "title": "Independent persistence ports | rig-os"
+    },
+    {
+      "path": "docs/open-source/EVIDENCE.md",
+      "url": "/docs/docs/open-source/EVIDENCE/",
+      "status": 200,
+      "main": true,
+      "title": "Evidence in the public repository | rig-os"
+    },
+    {
+      "path": "docs/open-source/PORTABLE_EVIDENCE.md",
+      "url": "/docs/docs/open-source/PORTABLE_EVIDENCE/",
+      "status": 200,
+      "main": true,
+      "title": "Portable learning evidence | rig-os"
+    },
+    {
+      "path": "docs/open-source/README.md",
+      "url": "/docs/docs/open-source/README/",
+      "status": 200,
+      "main": true,
+      "title": "Public source release | rig-os"
+    },
+    {
+      "path": "docs/open-source/SECURITY_AUDIT.md",
+      "url": "/docs/docs/open-source/SECURITY_AUDIT/",
+      "status": 200,
+      "main": true,
+      "title": "Open-source security audit | rig-os"
+    },
+    {
+      "path": "docs/open-source/SYSTEM_OVERVIEW.md",
+      "url": "/docs/docs/open-source/SYSTEM_OVERVIEW/",
+      "status": 200,
+      "main": true,
+      "title": "How rig-os works | rig-os"
+    },
+    {
+      "path": "docs/open-source/USAGE.md",
+      "url": "/docs/docs/open-source/USAGE/",
+      "status": 200,
+      "main": true,
+      "title": "Use rig-os | rig-os"
+    },
+    {
+      "path": "docs/open-source/VERIFICATION.md",
+      "url": "/docs/docs/open-source/VERIFICATION/",
+      "status": 200,
+      "main": true,
+      "title": "Verification and release scope | rig-os"
+    },
+    {
+      "path": "docs/system-map/README.md",
+      "url": "/docs/docs/system-map/README/",
+      "status": 200,
+      "main": true,
+      "title": "Inside rig-os | rig-os"
+    },
+    {
+      "path": "docs/system-map/TRACE.md",
+      "url": "/docs/docs/system-map/TRACE/",
+      "status": 200,
+      "main": true,
+      "title": "How the system works | rig-os"
+    },
+    {
+      "path": "docs/system-map/VERIFICATION.md",
+      "url": "/docs/docs/system-map/VERIFICATION/",
+      "status": 200,
+      "main": true,
+      "title": "Public architecture map checks | rig-os"
+    },
+    {
+      "path": "docs/system-review/CHECKLIST.md",
+      "url": "/docs/docs/system-review/CHECKLIST/",
+      "status": 200,
+      "main": true,
+      "title": "System review checklist | rig-os"
+    },
+    {
+      "path": "docs/system-review/README.md",
+      "url": "/docs/docs/system-review/README/",
+      "status": 200,
+      "main": true,
+      "title": "System review and repairs | rig-os"
+    }
+  ],
+  "linkCrawl": {
+    "pages": 648,
+    "uniqueLinks": 267453,
+    "broken": [],
+    "pending": []
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,18 @@
+{
+  "provider": "Netlify",
+  "siteId": "fdf8baf5-8926-45dd-ac6b-c1ab4afcc5fd",
+  "siteName": "rig-os",
+  "deployId": "6abe8c8a781fd2343695e968",
+  "state": "ready",
+  "context": "production",
+  "url": "https://rig-os.netlify.app/",
+  "immutableUrl": "https://6abe8c8a781fd2343695e968--rig-os.netlify.app/",
+  "logs": "https://app.netlify.com/projects/rig-os/deploys/6abe8c8a781fd2343695e968",
+  "publishedAt": "2026-10-01T16:38:52.813Z",
+  "hostedVerification": "PASS_METADATA",
+  "change": "Page titles, descriptions, canonical URLs and complete Open Graph and X metadata",
+  "metadataPagesVerifiedLocally": 648,
+  "metadataPagesVerifiedHosted": 9,
+  "socialImagesVerifiedHosted": 2,
+  "gitAutoDeployConfigured": false
+}

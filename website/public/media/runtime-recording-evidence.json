@@ -1,0 +1,199 @@
+{
+  "status": "PASS",
+  "recordedAt": "2026-10-01T15:57:15.19Z",
+  "evidenceLevel": "Real Vue console, Fastify service, SQLite Store and Chromium browser fixture. No native desktop, model text generation or external provider.",
+  "capture": {
+    "width": 1600,
+    "height": 900,
+    "durationSeconds": 19.489,
+    "authenticationTrimmed": true,
+    "tokensInPublishedFiles": false
+  },
+  "run": {
+    "id": "9eacfed7-425a-40e2-8991-d16ec4c95cd9",
+    "status": "succeeded",
+    "skill": "form.seed",
+    "model": "fixed",
+    "goal": "Set the display name to Rig OS demo",
+    "observedCompletionMs": 509
+  },
+  "checks": {
+    "runsInFreshStore": 1,
+    "dispatchedActions": 2,
+    "acknowledgements": 2,
+    "completionEvidence": [
+      {
+        "kind": "completion",
+        "truth": "TRUE",
+        "predicate": "result"
+      }
+    ],
+    "completedEventStatus": "succeeded",
+    "pageErrors": []
+  },
+  "journal": [
+    {
+      "seq": 1,
+      "type": "submitted",
+      "elapsedMs": 30
+    },
+    {
+      "seq": 2,
+      "type": "skill_selected",
+      "elapsedMs": 96
+    },
+    {
+      "seq": 3,
+      "type": "started",
+      "elapsedMs": 100
+    },
+    {
+      "seq": 4,
+      "type": "preconditions",
+      "elapsedMs": 145
+    },
+    {
+      "seq": 5,
+      "type": "observation",
+      "elapsedMs": 193
+    },
+    {
+      "seq": 6,
+      "type": "observation",
+      "elapsedMs": 240
+    },
+    {
+      "seq": 7,
+      "type": "requested",
+      "elapsedMs": 241
+    },
+    {
+      "seq": 8,
+      "type": "authorized",
+      "elapsedMs": 243
+    },
+    {
+      "seq": 9,
+      "type": "dispatched",
+      "elapsedMs": 244
+    },
+    {
+      "seq": 10,
+      "type": "acknowledged",
+      "elapsedMs": 276
+    },
+    {
+      "seq": 11,
+      "type": "experience",
+      "elapsedMs": 306
+    },
+    {
+      "seq": 12,
+      "type": "step_observed",
+      "elapsedMs": 307
+    },
+    {
+      "seq": 13,
+      "type": "observation",
+      "elapsedMs": 337
+    },
+    {
+      "seq": 14,
+      "type": "observation",
+      "elapsedMs": 372
+    },
+    {
+      "seq": 15,
+      "type": "requested",
+      "elapsedMs": 373
+    },
+    {
+      "seq": 16,
+      "type": "authorized",
+      "elapsedMs": 374
+    },
+    {
+      "seq": 17,
+      "type": "dispatched",
+      "elapsedMs": 375
+    },
+    {
+      "seq": 18,
+      "type": "acknowledged",
+      "elapsedMs": 412
+    },
+    {
+      "seq": 19,
+      "type": "experience",
+      "elapsedMs": 453
+    },
+    {
+      "seq": 20,
+      "type": "step_observed",
+      "elapsedMs": 454
+    },
+    {
+      "seq": 21,
+      "type": "verification",
+      "elapsedMs": 488
+    },
+    {
+      "seq": 22,
+      "type": "completed",
+      "elapsedMs": 493
+    }
+  ],
+  "chapters": [
+    {
+      "seconds": 0,
+      "text": "The local console starts with a disposable browser fixture."
+    },
+    {
+      "seconds": 3.8,
+      "text": "Submit a structured task to the local runtime."
+    },
+    {
+      "seconds": 5.9,
+      "text": "The runtime reports success after independent completion verification."
+    },
+    {
+      "seconds": 9.7,
+      "text": "Open the completion event in the action and evidence timeline."
+    },
+    {
+      "seconds": 14.8,
+      "text": "The verification entry records the observation and completion predicates."
+    }
+  ],
+  "limits": [
+    "One deterministic disposable browser form task.",
+    "This clip does not demonstrate general desktop control, external model reasoning, training, or cross-platform support."
+  ],
+  "reproduction": "cd computer-use-runtime && node --import tsx ../website/scripts/record-runtime.mjs",
+  "files": [
+    {
+      "name": "runtime-demo.mp4",
+      "bytes": 871490,
+      "sha256": "c0fc10e939cd68a75ca490410cc0e824df2d0a99d5f954353f5f203bd4ad4391"
+    },
+    {
+      "name": "runtime-demo.webm",
+      "bytes": 514895,
+      "sha256": "67c243a40e88a4c277149588de06e0ecd8bcc498891c667c28447b14d986143c"
+    },
+    {
+      "name": "runtime-poster.png",
+      "bytes": 61324,
+      "sha256": "072fb3bbfb8acede7f035f1d13d205f023a71c046d2f74d46da58c49eced8408"
+    },
+    {
+      "name": "runtime-evidence.png",
+      "bytes": 57469,
+      "sha256": "0ab8327112cd037cb9dc86dbb1a51095a78f124eda6f341b179d96b0d8274a39"
+    }
+  ],
+  "validation": {
+    "webmDecodedWithoutErrors": true,
+    "mp4DecodedWithoutErrors": true
+  }
+}

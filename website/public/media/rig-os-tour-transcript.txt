@@ -1,0 +1,27 @@
+Inside Rig OS. Recorded walkthrough of the real static documentation website. No runtime or native desktop execution occurs in this clip. Silent video with explanatory captions.
+
+Rig OS is a local computer-use runtime. This is a tour of its public architecture and documentation.
+
+Models propose actions. You review them. The runtime checks permission and current state before input.
+
+The system map connects 120 responsibilities. Each box leads to its explanation and source.
+
+Choose a journey to follow one workflow through the system, in order.
+
+Step through the handoffs. See which component owns each decision.
+
+Descriptions include the boundaries and limits of each responsibility.
+
+Open the exact source snapshot with the cited line highlighted.
+
+Search source paths when you already know where you want to look.
+
+The documentation library publishes all 51 Markdown documents from the repository.
+
+Search the full text. Read setup, architecture, operating guides, and recorded evidence.
+
+Read the document, copy commands, or go back to the original source.
+
+Keep the limits visible. Recorded results have a scope, and failed gates stay in the documentation.
+
+Explore at rig-os.netlify.app. Built by Brad Clonan, open to Software Architect, Staff / Principal Engineer, and applied AI roles.

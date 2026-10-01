@@ -1,0 +1,7 @@
+0.0s  The local console starts with a disposable browser fixture.
+3.8s  Submit a structured task to the local runtime.
+5.9s  The runtime reports success after independent completion verification.
+9.7s  Open the completion event in the action and evidence timeline.
+14.8s  The verification entry records the observation and completion predicates.
+
+Real Vue console, Fastify service, SQLite Store and Chromium browser fixture. No native desktop, model text generation or external provider.

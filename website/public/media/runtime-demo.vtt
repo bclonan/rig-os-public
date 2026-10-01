@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.800
+The local console starts with a disposable browser fixture.
+
+2
+00:00:03.800 --> 00:00:05.900
+Submit a structured task to the local runtime.
+
+3
+00:00:05.900 --> 00:00:09.700
+The runtime reports success after independent completion verification.
+
+4
+00:00:09.700 --> 00:00:14.800
+Open the completion event in the action and evidence timeline.
+
+5
+00:00:14.800 --> 00:00:19.489
+The verification entry records the observation and completion predicates.

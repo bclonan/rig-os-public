@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "checkedAt": "2026-10-01T16:39:38.167Z",
+  "origin": "https://rig-os.netlify.app",
+  "pages": [
+    {
+      "route": "/",
+      "title": "Rig OS | Local computer-use runtime"
+    },
+    {
+      "route": "/map/",
+      "title": "Inside Rig OS | Interactive system map"
+    },
+    {
+      "route": "/docs/",
+      "title": "Rig OS documentation | Setup, architecture and evidence"
+    },
+    {
+      "route": "/source/",
+      "title": "Rig OS source code | Explore the implementation"
+    },
+    {
+      "route": "/docs/README/",
+      "title": "Rig OS overview | Rig OS docs"
+    },
+    {
+      "route": "/docs/AUTHOR/",
+      "title": "Brad Clonan | Rig OS docs"
+    },
+    {
+      "route": "/docs/computer-use-runtime/docs/PROVIDERS/",
+      "title": "Choose model providers | Rig OS docs"
+    },
+    {
+      "route": "/docs/computer-use-runtime/docs/completion-contract-v1/REQUEST/",
+      "title": "Original product request | Historical record | Rig OS docs"
+    },
+    {
+      "route": "/source/computer-use-runtime/src/runtime/index.ts/",
+      "title": "computer-use-runtime/src/runtime/index.ts | Rig OS source"
+    }
+  ],
+  "images": [
+    "https://rig-os.netlify.app/media/site-preview.png?v=a72b9a9266df",
+    "https://rig-os.netlify.app/media/map-poster.png?v=4122adfef7ac"
+  ]
+}

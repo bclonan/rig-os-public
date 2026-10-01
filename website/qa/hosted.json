@@ -1,0 +1,248 @@
+{
+  "at": "2026-10-01T16:11:55.666Z",
+  "base": "https://rig-os.netlify.app",
+  "checks": [
+    {
+      "path": "/docs/AUTHOR/",
+      "status": 200
+    },
+    {
+      "path": "/docs/CONTRIBUTING/",
+      "status": 200
+    },
+    {
+      "path": "/docs/README/",
+      "status": 200
+    },
+    {
+      "path": "/docs/SECURITY/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/AGENTS/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/ARCHITECTURE/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/BUILD_STATE/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/CAPABILITIES/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/PLATFORMS/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/README/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/REQUEST/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/SECURITY/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/THIRD_PARTY/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/CODE_STYLE/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/COMPLETION_CHECKLIST/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/COMPLETION_DECISIONS/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/COMPLETION_PLAN/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/DEFINITION_OF_DONE/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/FEATURE_MATRIX/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/HANDOFF/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/PROVIDERS/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/QUICK_REFERENCE/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/REPAIR_STATUS/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/REVIEW_LEDGER/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/RUNNING/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/VERIFICATION/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/adr/0001-coordinator-ownership/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/adr/0002-versioned-evidence/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/adr/0003-template-checking/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/adr/0004-portable-control-flow/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/adr/0005-durable-ports-and-rejected-attempts/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/adr/0006-training-origin-and-deployment-qualification/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/adr/0007-selected-model-proposals/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/completion-contract-v1/PLATFORMS/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/completion-contract-v1/REQUEST/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/completion-contract-v1/USER_COMPLETION_REQUEST/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/docs/completion-contract-v1/docs__DEFINITION_OF_DONE/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/evaluation/linux-portal-profile/",
+      "status": 200
+    },
+    {
+      "path": "/docs/computer-use-runtime/examples/ports/README/",
+      "status": 200
+    },
+    {
+      "path": "/docs/docs/open-source/EVIDENCE/",
+      "status": 200
+    },
+    {
+      "path": "/docs/docs/open-source/PORTABLE_EVIDENCE/",
+      "status": 200
+    },
+    {
+      "path": "/docs/docs/open-source/README/",
+      "status": 200
+    },
+    {
+      "path": "/docs/docs/open-source/SECURITY_AUDIT/",
+      "status": 200
+    },
+    {
+      "path": "/docs/docs/open-source/SYSTEM_OVERVIEW/",
+      "status": 200
+    },
+    {
+      "path": "/docs/docs/open-source/USAGE/",
+      "status": 200
+    },
+    {
+      "path": "/docs/docs/open-source/VERIFICATION/",
+      "status": 200
+    },
+    {
+      "path": "/docs/docs/system-map/README/",
+      "status": 200
+    },
+    {
+      "path": "/docs/docs/system-map/TRACE/",
+      "status": 200
+    },
+    {
+      "path": "/docs/docs/system-map/VERIFICATION/",
+      "status": 200
+    },
+    {
+      "path": "/docs/docs/system-review/CHECKLIST/",
+      "status": 200
+    },
+    {
+      "path": "/docs/docs/system-review/README/",
+      "status": 200
+    },
+    {
+      "media": "rig-os-tour",
+      "rangeStatus": 206,
+      "contentType": "video/mp4"
+    },
+    {
+      "media": "runtime-demo",
+      "rangeStatus": 206,
+      "contentType": "video/mp4"
+    },
+    {
+      "media": "rig-os-social",
+      "rangeStatus": 206,
+      "contentType": "video/mp4"
+    },
+    {
+      "playback": "tour",
+      "time": 0.653444,
+      "duration": 52.12,
+      "cues": 13
+    },
+    {
+      "playback": "runtime",
+      "time": 0.810762,
+      "duration": 19.48,
+      "cues": 5
+    },
+    {
+      "map": "journey steps, inspector and source dialog passed"
+    },
+    {
+      "searchResults": 18
+    },
+    {
+      "mermaidDiagrams": 2
+    }
+  ],
+  "errors": [],
+  "status": "PASS"
+}
