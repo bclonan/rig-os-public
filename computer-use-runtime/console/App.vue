@@ -484,8 +484,9 @@ onUnmounted(() => {
           <p class="eyebrow">{{ caps.host }} / {{ caps.session }}</p>
           <h1>Desktop assistant</h1>
           <p>
-            Work in your desktop apps with a local model. Review actions and
-            keep control of the task.
+            Choose models for your desktop task and review their proposed
+            actions. External providers require your permission to receive task
+            content.
           </p>
         </div>
         <div class="actions">

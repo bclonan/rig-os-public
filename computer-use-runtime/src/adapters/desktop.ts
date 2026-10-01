@@ -11,7 +11,8 @@ import { desktopApps, launchDesktopApp } from "./desktop-apps.js";
 import { arch, release } from "node:os";
 import { mkdirSync } from "node:fs";
 import { WorkspaceAdapter } from "./workspace.js";
-import { OllamaProvider } from "../providers/index.js";
+import { createSelectedProvider } from "../providers/selection.js";
+import { providerSettings } from "../providers/settings.js";
 import type { ModelProvider } from "../contracts/ports.js";
 import type { ArtifactConfiguration } from "../service/artifacts.js";
 import type { ToolRequest } from "../tools/index.js";
@@ -82,8 +83,7 @@ export class DesktopRouter implements EnvironmentAdapter {
   private workspaces = new Map<string, WorkspaceAdapter>();
   constructor(
     private store: Store,
-    private artifactProvider: (model: string) => ModelProvider = (model) =>
-      new OllamaProvider(model),
+    private artifactProvider?: (model: string) => ModelProvider,
   ) {
     this.browser = new BrowserAdapter(store);
     this.active = this.browser;
@@ -124,7 +124,12 @@ export class DesktopRouter implements EnvironmentAdapter {
         permissions: ["research_read", "workspace_read", "workspace_write"],
         maxBytes: 262144,
       },
-      this.artifactProvider(configuration.model),
+      this.artifactProvider
+        ? this.artifactProvider(configuration.model)
+        : createSelectedProvider(
+            providerSettings(configuration).providers,
+            configuration.strategy,
+          ),
       configuration.spec,
     );
     this.workspaces.set(id, adapter);

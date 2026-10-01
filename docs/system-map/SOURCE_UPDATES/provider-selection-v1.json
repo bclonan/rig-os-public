@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "kind": "maintained-source-update",
+  "scope": "Static architecture trace of the selected-provider repair. No runtime, model, native-platform or training qualification follows from this record.",
+  "edition": "public portable source",
+  "maintainedSourceBeforeSha256": "4519517387a35a5706f3024966ebbf2615ba3d25b6194cc9b9cec9210138fdeb",
+  "maintainedSourceAfterSha256": "f99ce9d585d2a6dd846bec58865232ba7f7ec22ded7189e450112b9e0c967333",
+  "sourceDiffReviewed": true,
+  "architectureTraceReviewed": true,
+  "changedMaintainedFiles": [
+    {
+      "path": "console/App.vue",
+      "beforeSha256": "1c06d5984003cba7e949d3af24074c0db773f7251436ef825dad639c77e13795",
+      "afterSha256": "117e85936093983e64af65f5a847ea81e3930283cdca617f3f13801cebab31be",
+      "reason": "Shared model picker, external consent and provider-result display",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "console/ArtifactWorkspace.vue",
+      "beforeSha256": "906b1e8e3d1dfd0711cff1e252872a5b9f301dcb204556d774273175b4fbf9e0",
+      "afterSha256": "d62a9322516c3b18d67052b02cf05c177589e2a3d4062bba756f1202187a445b",
+      "reason": "Shared model picker, external consent and provider-result display",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "console/DesktopWorkspace.vue",
+      "beforeSha256": "36b393d5bcbcd74f49fd49cd228116f918cb980728a34967b5b0c4e2780c55d0",
+      "afterSha256": "1e500a4c7e304eba16fb0b8f5636e55107974bd87a310c011f6d164a055c88dc",
+      "reason": "Shared model picker, external consent and provider-result display",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "console/ModelPicker.vue",
+      "beforeSha256": null,
+      "afterSha256": "6c72333858f4088f2b681185c7e6c8fd434d5890733505ebe8a2a8941f65de32",
+      "reason": "Shared model picker, external consent and provider-result display",
+      "readExtent": "New module reviewed by implementation and independent security peer; architecture reads affected provider and call-site code"
+    },
+    {
+      "path": "evaluation/desktop-console.ts",
+      "beforeSha256": "16cf2b0d889325ef1b5d1f4c004a856edea4b071ba4754ab6088de0f4c849cfb",
+      "afterSha256": "9301cc246969b5b0d49d0b2396373e5550f0a05a902dea1fc14b1a0db7d4bdb6",
+      "reason": "Provider, console, process, schema or owned-drawing regressions and execution checks",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "evaluation/native-drawing.ts",
+      "beforeSha256": "4ffdfa316d0b8b2e413dbdadc66724796c2a02c0233248b4267c0c7f9344e042",
+      "afterSha256": "9a50161a060cfafab7e06ccd9d507b5e880df649a5f7e4d46ad60fe9b3ad11b1",
+      "reason": "Provider, console, process, schema or owned-drawing regressions and execution checks",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "evaluation/provider-console.ts",
+      "beforeSha256": null,
+      "afterSha256": "da6039adde7b536711292f14881d18a2154016c898d766f682310a59aae6e482",
+      "reason": "Provider, console, process, schema or owned-drawing regressions and execution checks",
+      "readExtent": "New module reviewed by implementation and independent security peer; architecture reads affected provider and call-site code"
+    },
+    {
+      "path": "evaluation/provider-drawing.ts",
+      "beforeSha256": null,
+      "afterSha256": "e0e97667b6a15f12552745c8b9215582459b3ea8aed3c889ead1896c560fc6cf",
+      "reason": "Provider, console, process, schema or owned-drawing regressions and execution checks",
+      "readExtent": "New module reviewed by implementation and independent security peer; architecture reads affected provider and call-site code"
+    },
+    {
+      "path": "evaluation/review-console.ts",
+      "beforeSha256": "7d6e3689732f7e06bf473e88fa5fe995998706e10de64d8fbe68c29e57820790",
+      "afterSha256": "f30d4595b6f665c0fa6ea38281e251434a44f8aa9f8270949a761a627e5734da",
+      "reason": "Provider, console, process, schema or owned-drawing regressions and execution checks",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "scripts/verify.py",
+      "beforeSha256": "38211451a4979e344e7f2de7cb695ef2b50cfe08bd27caea77f4a2081e1039fc",
+      "afterSha256": "929d4f5500c749a4cfb163bf9fafef41e0ff84b54cd01e0812b27df73a7caedc",
+      "reason": "Include retained provider Python source in syntax validation",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "src/adapters/desktop.ts",
+      "beforeSha256": "695801e4e644e428730b96c37a8a445a7440afee284205b5e34a14b6baba22ed",
+      "afterSha256": "6c6b52ed133d86e101c1a849aa47ffd9d67e05b9964acf5178277805a1dae584",
+      "reason": "Freeze selected provider settings and retain outcomes in the existing task execution and artifact paths",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "src/assistant/local.ts",
+      "beforeSha256": "11eaacb50229371b6623f1785206ab0a337ca1f3381b5990de55c4b5ef742874",
+      "afterSha256": "4dee397d66a1c603e6a507651bc6510662cdd0500ae6885892f34da22f6c89fc",
+      "reason": "Freeze selected provider settings and retain outcomes in the existing task execution and artifact paths",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "src/assistant/planner.ts",
+      "beforeSha256": "a2e029828bb223fc6b43f41293c1aa126230b17d89f3242bd4c99039411b8f16",
+      "afterSha256": "f68baeb3278a99a37fd14a43f967dacceeccec017b31f3e85d06e19544afdea3",
+      "reason": "Freeze selected provider settings and retain outcomes in the existing task execution and artifact paths",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "src/assistant/runner.ts",
+      "beforeSha256": "8d26f3fc24733b3df56007427b2e7f0546f563528aa577f64ccba733ac8b0d68",
+      "afterSha256": "66b721640ccb54475b5e34698dce1ae09fee9291b3315f4acee625a4e235dff2",
+      "reason": "Freeze selected provider settings and retain outcomes in the existing task execution and artifact paths",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "src/contracts/ports.ts",
+      "beforeSha256": "833a47c796a79b747ad6c1421e6cf28f8fc36da55d25607d74259f238de61604",
+      "afterSha256": "c9f356dc741119acfb20362733cd19bbcf66736566bfc5b974eab926959b1e97",
+      "reason": "Freeze selected provider settings and retain outcomes in the existing task execution and artifact paths",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "src/providers/assessment.ts",
+      "beforeSha256": null,
+      "afterSha256": "1671040d564f2a54f15f816fcbf00a8935a3021eb01544c25cb2f8810edbba7f",
+      "reason": "Provider selection, bounded CLI or HTTP transport, capability checks and proposal selection",
+      "readExtent": "New module reviewed by implementation and independent security peer; architecture reads affected provider and call-site code"
+    },
+    {
+      "path": "src/providers/cli-windows.py",
+      "beforeSha256": null,
+      "afterSha256": "57a8d6f1c31540c6736b3904bb5a38ca105775c65c8f08dd2314f3f21110ece4",
+      "reason": "Provider selection, bounded CLI or HTTP transport, capability checks and proposal selection",
+      "readExtent": "New module reviewed by implementation and independent security peer; architecture reads affected provider and call-site code"
+    },
+    {
+      "path": "src/providers/cli.ts",
+      "beforeSha256": null,
+      "afterSha256": "fcd990f54fbf569884daaea1884496ae2cbfab0d0235b2a93dd28b7bdedb5453",
+      "reason": "Provider selection, bounded CLI or HTTP transport, capability checks and proposal selection",
+      "readExtent": "New module reviewed by implementation and independent security peer; architecture reads affected provider and call-site code"
+    },
+    {
+      "path": "src/providers/index.ts",
+      "beforeSha256": "9e26899eabbacac83ad6ad0cdf50b5693b22f69c1eec74d030f31cb6731bf32c",
+      "afterSha256": "94505aeae881e5cff2eb31fb94f8fb5598d693cb6a2bbcb8974bf4fd7b2865cc",
+      "reason": "Provider selection, bounded CLI or HTTP transport, capability checks and proposal selection",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "src/providers/selection.ts",
+      "beforeSha256": null,
+      "afterSha256": "d316c88dbc98f50dee7ccbed74b3e3e763adda9c36205b805a52ec06dff9ef78",
+      "reason": "Provider selection, bounded CLI or HTTP transport, capability checks and proposal selection",
+      "readExtent": "New module reviewed by implementation and independent security peer; architecture reads affected provider and call-site code"
+    },
+    {
+      "path": "src/providers/settings.ts",
+      "beforeSha256": null,
+      "afterSha256": "8bffeb8161298690a2c7579222aea501945eacefdd8418496cc24fa0046488c5",
+      "reason": "Provider selection, bounded CLI or HTTP transport, capability checks and proposal selection",
+      "readExtent": "New module reviewed by implementation and independent security peer; architecture reads affected provider and call-site code"
+    },
+    {
+      "path": "src/providers/team.ts",
+      "beforeSha256": null,
+      "afterSha256": "73b0d0add72ee36086ada593f5038c472c52f39a67a65b0ae204886bb1bf8e0b",
+      "reason": "Provider selection, bounded CLI or HTTP transport, capability checks and proposal selection",
+      "readExtent": "New module reviewed by implementation and independent security peer; architecture reads affected provider and call-site code"
+    },
+    {
+      "path": "src/providers/transport.ts",
+      "beforeSha256": "b87ad1e24d1ad71486b0cf08238bc8a8442fd1521126b0dc125aa766b50f3a60",
+      "afterSha256": "86c984b5aae881d24d3238493a8be2e7b5c2f292fef9b42e33123273d2619472",
+      "reason": "Provider selection, bounded CLI or HTTP transport, capability checks and proposal selection",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "src/providers/vision.ts",
+      "beforeSha256": "f698e55664aa89e1c5f3bfc038f91f8e5f2c03263ada99122c53d3a42c3dfdfd",
+      "afterSha256": "aee3e00b79d42aa7f46c2aa3f7f31bb87a33a4604a12522737d885176ee0a41c",
+      "reason": "Provider selection, bounded CLI or HTTP transport, capability checks and proposal selection",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "src/service/artifacts.ts",
+      "beforeSha256": "c2cd0634ff80eb68cc270a92a83c5743b023f6e45bf1c3a7d73e316e773a0f68",
+      "afterSha256": "3e32ef0addfe029c778f32b63bed993adea9083b04387e9eb10299d13ea6d990",
+      "reason": "Freeze selected provider settings and retain outcomes in the existing task execution and artifact paths",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "src/service/drawing.ts",
+      "beforeSha256": "148c0b1036fdb9fb916a8b795af44c9299b3fa386f2f003587059c456e7fe76d",
+      "afterSha256": "e907cd23e0441ed50291cb765c4f816a99cad5096c87d539bb9709542861fd07",
+      "reason": "Freeze selected provider settings and retain outcomes in the existing task execution and artifact paths",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "src/service/index.ts",
+      "beforeSha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+      "afterSha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
+      "reason": "Freeze selected provider settings and retain outcomes in the existing task execution and artifact paths",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "tests/console-requests.test.ts",
+      "beforeSha256": "057dec3abb0fe53fd0d426dbb337bdaf8074c5995039756739a189e2aec56968",
+      "afterSha256": "f89298f294b7d6aa46210ebb115de264be587dd3d6c119be995375bea44ac409",
+      "reason": "Provider, console, process, schema or owned-drawing regressions and execution checks",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "tests/drawing-service.test.ts",
+      "beforeSha256": "03525ef6f1064201eaf1d6319ccf0577166ae18622b548aaeb01124a5eaab667",
+      "afterSha256": "fc72c5bebc022cc73ef82c80da264f669872cd754223768521ae8f2c1d9fa1be",
+      "reason": "Provider, console, process, schema or owned-drawing regressions and execution checks",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "tests/provider-capabilities.test.ts",
+      "beforeSha256": null,
+      "afterSha256": "5fdb320b3de35568a99aee31ea354b4cc8825bd373ec0141696971e0ebbef46b",
+      "reason": "Provider, console, process, schema or owned-drawing regressions and execution checks; synthetic local path fixtures use neutral PrivateFixture names",
+      "readExtent": "New module reviewed by implementation and independent security peer; architecture reads affected provider and call-site code"
+    },
+    {
+      "path": "tests/provider-cli.test.ts",
+      "beforeSha256": null,
+      "afterSha256": "6a37db9e88455be31d6ae86ca28d84f465a3f7781759d07ec480d4bb5e292d41",
+      "reason": "Provider, console, process, schema or owned-drawing regressions and execution checks",
+      "readExtent": "New module reviewed by implementation and independent security peer; architecture reads affected provider and call-site code"
+    },
+    {
+      "path": "tests/provider-response.test.ts",
+      "beforeSha256": "64fcb22a12bf5814228d53bc4a1ea2894101ff643d9fdec2a97c88a836829dcb",
+      "afterSha256": "edef5df65d5f1d22a0d14673728ee7effc5c6f51343acae64acdcf9a9afc7751",
+      "reason": "Provider, console, process, schema or owned-drawing regressions and execution checks",
+      "readExtent": "Changed hunks and affected provider or call-site context reviewed; unchanged bytes inherit the earlier trace"
+    },
+    {
+      "path": "tests/provider-settings.test.ts",
+      "beforeSha256": null,
+      "afterSha256": "28ffe799c1804d190127dc07b14afa9c3b337e112f8c1f8a9fe1ceb1abf1c99e",
+      "reason": "Provider, console, process, schema or owned-drawing regressions and execution checks",
+      "readExtent": "New module reviewed by implementation and independent security peer; architecture reads affected provider and call-site code"
+    },
+    {
+      "path": "tests/provider-team.test.ts",
+      "beforeSha256": null,
+      "afterSha256": "9b5ab97eb9034d5e286611c1730a3e312e6847c897efa51db95e9c88ec36e22d",
+      "reason": "Provider, console, process, schema or owned-drawing regressions and execution checks; synthetic local path fixtures use neutral PrivateFixture names",
+      "readExtent": "New module reviewed by implementation and independent security peer; architecture reads affected provider and call-site code"
+    }
+  ],
+  "reanchoredReferences": [
+    {
+      "path": "src/providers/transport.ts",
+      "beforeLine": 18,
+      "beforeText": "export function localFetch(url: string, options: RequestInit = {}) {",
+      "afterLine": 77,
+      "afterSymbol": "localFetch",
+      "afterText": "export async function localFetch(url: string, options: RequestInit = {}) {",
+      "reason": "Actual provider repair read replaces the earlier call or discovery anchor"
+    },
+    {
+      "path": "src/providers/transport.ts",
+      "beforeLine": 20,
+      "beforeText": "  return fetch(url, { ...options, redirect: \"error\" });",
+      "afterLine": 80,
+      "afterSymbol": "Loopback fetch rejects redirects",
+      "afterText": "    return await fetch(url, { ...options, redirect: \"error\" });",
+      "reason": "Actual provider repair read replaces the earlier call or discovery anchor"
+    },
+    {
+      "path": "src/assistant/local.ts",
+      "beforeLine": 214,
+      "beforeText": "      const raw: any = await provider.generate(",
+      "afterLine": 199,
+      "afterSymbol": "Selected provider generation",
+      "afterText": "        raw = await provider.generate(",
+      "reason": "Actual provider repair read replaces the earlier call or discovery anchor"
+    },
+    {
+      "path": "src/assistant/local.ts",
+      "beforeLine": 1,
+      "beforeText": "import { localFetch } from \"../providers/transport.js\";",
+      "afterLine": 12,
+      "afterSymbol": "LocalDesktopPlanner",
+      "afterText": "export class LocalDesktopPlanner implements DesktopPlanner {",
+      "reason": "Actual provider repair read replaces the earlier call or discovery anchor"
+    },
+    {
+      "path": "src/service/index.ts",
+      "beforeLine": 204,
+      "beforeText": "    providers: await OllamaProvider.discover(),",
+      "afterLine": 206,
+      "afterSymbol": "Ollama and fixed CLI discovery",
+      "afterText": "    const [metadata, clis] = await Promise.all([",
+      "reason": "Actual provider repair read replaces the earlier call or discovery anchor"
+    },
+    {
+      "path": "src/assistant/runner.ts",
+      "beforeLine": 264,
+      "beforeText": "  const decision = await planner.next(",
+      "afterLine": 266,
+      "afterSymbol": "planner.next",
+      "afterText": "    decision = await planner.next(",
+      "reason": "Actual provider repair read replaces the earlier call or discovery anchor"
+    },
+    {
+      "path": "src/assistant/local.ts",
+      "beforeLine": 22,
+      "beforeText": "    const provider = new OllamaProvider(model);",
+      "afterLine": 24,
+      "afterSymbol": "createSelectedProvider",
+      "afterText": "    const provider = createSelectedProvider(",
+      "reason": "Actual provider repair read replaces the earlier call or discovery anchor"
+    }
+  ],
+  "reviewScope": {
+    "implementationAndSecurity": "Provider code and consent/CLI execution review. The independent focused provider suite passed32 tests. Compatible-client and untested-OS limits remain in PROVIDERS.md.",
+    "architecture": "Provider models, selection, CLI process boundaries, persisted settings, artifact generation and canvas opinions were traced into the active map. Historical frozen research and controlled metadata were not rewritten.",
+    "runtimeEvidence": "Actual provider/native results and fresh quality commands have separate source-bound receipts. This record cannot register or activate a trained model.",
+    "privacyFixtureUpdate": "The final test-only path edit replaces synthetic Users-directory markers with a neutral PrivateFixture directory. Implementation behavior is unchanged. The fresh quality receipt binds these final bytes."
+  }
+}

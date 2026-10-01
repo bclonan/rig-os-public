@@ -7,12 +7,17 @@ import { planShapes } from "../compiler/shapes.js";
 import { drawingSkill } from "../compiler/drawing.js";
 import { seal, checkSkill } from "../skills/index.js";
 import { canonical, hash } from "../storage/index.js";
+import {
+  providerSettings,
+  providerParameters,
+  type ProviderSettings,
+} from "../providers/settings.js";
 
 export async function createDrawingPlan(
   runtime: Runtime,
   value: unknown,
   requestKey: string,
-  provider: (model: string) => ModelProvider,
+  provider: (model: string, settings: ProviderSettings) => ModelProvider,
   signal: AbortSignal,
 ) {
   const body = value as {
@@ -26,13 +31,13 @@ export async function createDrawingPlan(
     typeof body.goal !== "string" ||
     !body.goal.trim() ||
     body.goal.length > 4000 ||
-    typeof body.model !== "string" ||
-    !body.model ||
-    body.model.length > 200 ||
     !Number.isSafeInteger(body.handle) ||
     !Number.isSafeInteger(body.pid)
   )
-    throw new Error("Choose a Paint window, local model and drawing request");
+    throw new Error(
+      "Choose a Paint window, model provider and drawing request",
+    );
+  const settings = providerSettings(body);
   if (!(runtime.adapter instanceof DesktopRouter))
     throw new Error("Desktop adapter is not configured");
   const router = runtime.adapter;
@@ -66,13 +71,14 @@ export async function createDrawingPlan(
       runtime.store.put("drawing-plans", id, {
         id,
         goal: body.goal.trim(),
-        model: body.model,
+        model: settings.model,
         phase: "constructing",
         ready: false,
       });
+      const selectedProvider = provider(settings.model, settings);
       const construction = await planShapes(
         body.goal.trim(),
-        provider(body.model),
+        selectedProvider,
         signal,
       );
       const task = structuredTask(
@@ -85,7 +91,7 @@ export async function createDrawingPlan(
         {
           windowPid: window.pid,
           desktopScope: "window",
-          plannerModel: body.model,
+          ...providerParameters(settings),
         },
         "desktop.assistant",
       );
@@ -111,8 +117,66 @@ export async function createDrawingPlan(
           width: Math.min(canvas[0].bounds.width, 1000),
           height: Math.min(canvas[0].bounds.height, 700),
         };
+        const pencil = observation.controls?.filter(
+          (entry) => entry.id === "PencilTool" && !entry.offscreen,
+        );
+        const black = observation.controls?.filter(
+          (entry) =>
+            entry.name === "Black" &&
+            entry.controlType === 50007 &&
+            !entry.offscreen,
+        );
+        if (pencil?.length !== 1 || black?.length !== 1)
+          throw new Error(
+            "Paint must expose the Pencil tool and black color before a drawing can be planned",
+          );
+        const compiled = drawingSkill(
+          construction.strokes,
+          observation.target,
+          area,
+        );
+        const setup: (typeof compiled.machine.states)[number]["steps"] = [
+          {
+            id: "selectPencil",
+            operation: "click",
+            scope: "edit",
+            args: { locator: "PencilTool" },
+          },
+          {
+            id: "settlePencil",
+            operation: "wait",
+            scope: "edit",
+            args: {},
+            waitMs: 100,
+          },
+          {
+            id: "selectBlack",
+            operation: "click",
+            scope: "edit",
+            args: { locator: "@name:50007:Black" },
+          },
+          {
+            id: "settleBlack",
+            operation: "wait",
+            scope: "edit",
+            args: {},
+            waitMs: 100,
+          },
+        ];
         const skill = seal({
-          ...drawingSkill(construction.strokes, observation.target, area),
+          ...compiled,
+          capabilities: ["click", "drag"],
+          machine: {
+            ...compiled.machine,
+            states: compiled.machine.states.map((state) => ({
+              ...state,
+              steps: [...setup, ...state.steps],
+            })),
+          },
+          budgets: {
+            ...compiled.budgets,
+            steps: compiled.budgets.steps + setup.length,
+          },
           id: "drawing." + id,
           description:
             "One-use generated drawing through the trusted bounded drag compiler. This is not a learned or published reusable skill.",
@@ -146,6 +210,10 @@ export async function createDrawingPlan(
           ready: true,
           phase: "awaiting_approval",
           construction,
+          providerResults:
+            "lastCall" in selectedProvider
+              ? selectedProvider.lastCall
+              : undefined,
           task,
           skill: checkSkill(skill),
           contractHash: hash(canonical(task)),
@@ -153,6 +221,7 @@ export async function createDrawingPlan(
           drawingArea: area,
           inputHash: digest,
           permittedEffects: ["edit"],
+          setupActions: ["Select Pencil", "Select black color"],
           segmentCount: construction.strokes.strokes.reduce(
             (count, stroke) => count + stroke.length - 1,
             0,

@@ -1,6 +1,6 @@
 # Setup, startup and operation
 
-Run all commands from the `computer-use-runtime` directory. This guide covers core installation, native desktop setup, local models, daily operation and recovery. The [repair status](REPAIR_STATUS.md) records the repaired source and new verification results from October 1 UTC.
+Run all commands from the `computer-use-runtime` directory. This guide covers core installation, native desktop setup, model providers, daily operation and recovery. [PROVIDERS.md](PROVIDERS.md) explains the shared chooser and explicit remote consent. The [repair status](REPAIR_STATUS.md) retains earlier source-bound verification results from October 1 UTC.
 
 The service runs on the computer whose desktop it controls. Use that user's unlocked desktop session. A browser on another computer would still operate the service's computer.
 
@@ -88,7 +88,7 @@ npm run setup:desktop
 npm run doctor:desktop
 ```
 
-`setup:desktop` builds the Rust bridge. This public source edition contains no precompiled Windows bridge, so run the build before native desktop use. Run target apps and the service as the same ordinary user. The bridge does not control UAC or elevated windows.
+`setup:desktop` always rebuilds the Rust bridge. This public source edition has no precompiled Windows bridge, so build it before native use. Run target apps and the service as the same ordinary user. The bridge does not control UAC or elevated windows.
 
 On macOS 14 or newer, install [Python](https://www.python.org/downloads/) 3.10 or newer as `python3`, then run:
 
@@ -117,7 +117,7 @@ ollama pull qwen3.6:latest
 
 These are [Ollama CLI commands](https://docs.ollama.com/cli). The [Qwen 3.6 model](https://ollama.com/library/qwen3.6) used in Windows development occupied about 22.6 GB on the tested host, which had 64 GB RAM. This is a tested configuration, not a minimum hardware specification. The first request can take longer while the model loads. Smaller models made planning errors in the recorded development checks.
 
-The console lists installed models from the default local Ollama endpoint. Select one before planning. Startup never downloads a model. Missing Ollama does not block the service or the structured browser fixture. Free-form desktop planning and model-backed artifact generation need a working local model.
+The console lists installed models from the default local Ollama endpoint and discovered CLI providers. Select one to four models before planning. Startup never downloads a model. Missing Ollama does not block the service or the structured browser fixture. Free-form desktop planning and model-backed artifacts need a working selected provider. Codex uses its CLI login; Claude requires API-key bare mode and remains unverified. See [provider setup and limits](PROVIDERS.md).
 
 There is no service environment variable that switches the console to an arbitrary OpenAI-compatible endpoint. `CUR_PLANNER` and `CUR_CREATIVE` are overrides in evaluation scripts. The generic local endpoint provider is a library implementation and requires explicit code configuration. It is not a console setup option.
 
@@ -177,11 +177,11 @@ Each store needs its own port, token and coordinator. Do not run offline CLI com
 
 ## Run the first task
 
-Connect the console. In Desktop, choose This computer for reviewed app navigation or One window for an explicitly selected open app. Start with a blank disposable app state. Enter a goal such as `In Calculator, calculate 37 times 14 using the buttons`, select the local model, and click Plan desktop task.
+Connect the console. In Desktop, choose This computer for reviewed app navigation or One window for an explicitly selected open app. Start with a blank disposable app state. Enter a goal such as `In Calculator, calculate 37 times 14 using the buttons`, select the models, and click Plan desktop task. Use ordered fallback to try them in order, or parallel evaluation for separate schema-checked proposals. CLI providers require explicit consent to receive task content.
 
 Review the proposed action and screenshot. Approve this action sends only that proposal. If the app changes, approval becomes invalid and the runtime asks for another review. Continue with this instruction can correct the plan. Pause task, Cancel task and Take over interrupt work. Return control releases manual takeover after cleanup.
 
-The launcher has a fixed list of apps per OS. Open other supported apps yourself and select their windows. The bridge excludes terminal and known credential or security app processes. For screenshots, enable Send screenshots to this local model only when the selected model supports vision. The normal service uses native capture; Oculix research setup is separate.
+The launcher has a fixed list of apps per OS. Open other supported apps yourself and select their windows. The bridge excludes terminal and known credential or security app processes. Enable screenshots only when the selected models support vision. The screenshot checkbox names the selected providers; external requests need remote consent. The normal service uses native capture; Oculix research setup is separate.
 
 Inspect the actual app result before clicking Confirm task complete. Your confirmation is recorded separately from objective verification. Free-form goals do not all have independent automatic verifiers. Saving, sending, deleting and clipboard operations still require action review.
 
@@ -276,7 +276,7 @@ Public hosting and direct remote desktop access are not configured by this proje
 | Browser refresh shows disconnected service | Run `npm start`, then Reconnect. Disconnect and enter the selected store's token if it changed. |
 | Desktop backend unavailable | Run `doctor:desktop`, install the platform dependencies and follow PLATFORMS.md permission steps. |
 | App cannot focus or accept input | Bring it forward, use an unlocked ordinary-user desktop, and check its supported controls. UAC and elevated windows are unsupported. |
-| No installed local model or planner timeout | Check `ollama ls`, its local server and model selection. Allow initial loading, then retry planning deliberately. There is no cloud fallback. |
+| Selected provider unavailable or planning timed out | For Ollama, check `ollama ls`, its local server and loading time. For Codex, check `codex login` and account/model access. Claude requires a compatible bare-mode CLI and API key. Read each provider's trace, correct the selection and retry. Remote fallback occurs only among providers you selected and explicitly allowed. |
 | Screenshot or Wayland coordinate input denied | Check native permissions and the tested portal geometry. Cached static frames cannot authorize fresh coordinate input. |
 | Training reports missing PyTorch or ONNX packages | Run the training setup script and check `CUR_TRAINING_PYTHON`. |
 | Candidate cannot activate | Preserve the failed report. Qualification and the exact audit key/model bindings are required; job completion alone is insufficient. |
@@ -290,7 +290,7 @@ For development checks use `npm run check`. `npm run verify:audit` validates sav
 
 Detailed repository evidence links refer to checkout-local records. The portable ZIP excludes raw completion and root review records. Those private records are not required to follow its setup and operating instructions.
 
-The focused provenance repair has 300 maintained files, SHA256 `31667d67fa52f874bc6cdcbdafc88b33a10865ef741217513a495bbfd4248700`. The source is frozen for qualification. The [current quality check](../../docs/open-source/EVIDENCE.md) passed all eight commands, including 327 TypeScript tests and 87 Python cases with 18 Windows platform skips. The earlier 300-file V4 qualification and explicit seed-17 activation passed. [The primary receipt](../../docs/open-source/EVIDENCE.md) records all three command exits as zero and settled cleanup. [Independent metric review](../../docs/open-source/EVIDENCE.md) and [whole-current review](../../docs/open-source/EVIDENCE.md) verify all 2,100 tasks, 300 head cases, exact selected weights, current source and signed finalization. [A separate public-operation supplement](../../docs/open-source/EVIDENCE.md) completed one browser task with two bound acknowledgments and an independently read result, then rolled back to `fixed`. These are exposed-case source requalification and disposable-Store checks. They do not train new weights, activate the user's Store or establish unseen-task or native learning. Source installation remains the earlier 299-file execution. The completed 299-file V4 replay passed browser metrics but failed activation on original trainer provenance. [REPAIR_STATUS.md](REPAIR_STATUS.md) retains both outcomes.
+The earlier focused provenance repair had 300 maintained files, SHA256 `31667d67fa52f874bc6cdcbdafc88b33a10865ef741217513a495bbfd4248700`. That source was frozen for qualification. Its [earlier quality check](../../docs/open-source/EVIDENCE.md) passed all eight commands, including 327 TypeScript tests and 87 Python cases with 18 Windows platform skips. The earlier 300-file V4 qualification and explicit seed-17 activation passed. [The primary receipt](../../docs/open-source/EVIDENCE.md) records all three command exits as zero and settled cleanup. [Independent metric review](../../docs/open-source/EVIDENCE.md) and [whole-current review](../../docs/open-source/EVIDENCE.md) verify all 2,100 tasks, 300 head cases, exact selected weights, that 300-file source and signed finalization. [A separate public-operation supplement](../../docs/open-source/EVIDENCE.md) completed one browser task with two bound acknowledgments and an independently read result, then rolled back to `fixed`. These are exposed-case source requalification and disposable-Store checks. They do not train new weights, activate the user's Store or establish unseen-task or native learning. Source installation remains the earlier 299-file execution. The completed 299-file V4 replay passed browser metrics but failed activation on original trainer provenance. [REPAIR_STATUS.md](REPAIR_STATUS.md) retains both outcomes.
 
 The last [saved read-only service check](../../docs/open-source/EVIDENCE.md) reported stopped at 04:09 UTC on October 1. Run `npm run status` to check it again. `npm start` loads the repaired code into the selected store.
 

@@ -2,12 +2,12 @@
   "meta": {
     "repository": "rig-os",
     "date": "2026-10-01",
-    "generatedAt": "2026-10-01T14:00:44.513238+00:00",
-    "head": "3b43f87ee753efc562b427a1d2c38523f423654d",
-    "implementationSha256": "4519517387a35a5706f3024966ebbf2615ba3d25b6194cc9b9cec9210138fdeb",
-    "maintainedFiles": 300,
+    "generatedAt": "2026-10-01T15:30:20.907252+00:00",
+    "head": "dbb4a95dd7b8b01dbaceac0aefecd14bfbe98897",
+    "implementationSha256": "f99ce9d585d2a6dd846bec58865232ba7f7ec22ded7189e450112b9e0c967333",
+    "maintainedFiles": 313,
     "sourceTraceOnly": true,
-    "scope": "Public source and documentation snapshot. Prior architecture roles are retained. Private research records are omitted. No runtime, model or platform qualification follows from this refresh.",
+    "scope": "Public source and documentation snapshot. Architecture descriptions retain their source review scope. Private research records are omitted. No runtime, model or platform qualification follows from this refresh.",
     "research": [],
     "publicationBinding": "docs/system-map/PUBLICATION_BINDING.json",
     "headIsInformational": true
@@ -33,8 +33,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "4464d7c1ea16d5c1e0fe5706c866c0e1a48e1424f9abdb6b613a14956411bb41",
-      "lines": 77,
+      "sha256": "884eca2aa647155e93c9e51ef0a5f7578e51042ac15ab6921d3e2d3ca1bfa1b4",
+      "lines": 80,
       "maintained": false
     },
     {
@@ -69,32 +69,32 @@
     },
     {
       "path": "computer-use-runtime/ARCHITECTURE.md",
-      "sha256": "5e68b787e25d34c9464b0b685d77a0b339d676695ea46372d37b6e688f0c098c",
-      "lines": 178,
+      "sha256": "9261cd8054eda63198950533c7361e1ebeefa57e665afb077af0bb45beb60b72",
+      "lines": 180,
       "maintained": false
     },
     {
       "path": "computer-use-runtime/BUILD_STATE.md",
-      "sha256": "2b9e110c683dff23c3190f87a29b9a171e50ad09f6974dacfd0a5fe7b41e8760",
-      "lines": 22,
+      "sha256": "d496e53d2077eb8376be840f849ca7162e5293bace487a42a39c5ace355ebb52",
+      "lines": 28,
       "maintained": false
     },
     {
       "path": "computer-use-runtime/CAPABILITIES.md",
-      "sha256": "9b98e37c440fcf5d57fdb4e5576a5cdf4063512a2bf063a0a21ef83c47d5b043",
-      "lines": 48,
+      "sha256": "fb9749bff306e5942d2eb43d0963a8c0f5807a6c8d0f01e6907a4c9ba1699cc8",
+      "lines": 54,
       "maintained": false
     },
     {
       "path": "computer-use-runtime/PLATFORMS.md",
-      "sha256": "afb37f194ebfb52e88361d980969c49678732664be63fb271106f480726b94b2",
-      "lines": 158,
+      "sha256": "6cc1bcf0b59b11251bcf04f66d7fcdf8c1171df17c185933241ca161d3b1d283",
+      "lines": 160,
       "maintained": false
     },
     {
       "path": "computer-use-runtime/README.md",
-      "sha256": "20af16d59b462674ad61bd250b5eb510fd6179eac8ed489f82b4e69da32bf191",
-      "lines": 342,
+      "sha256": "94bf917c2aaa8b4e9ac8a8282fb7eb70e37c25d9d8b220f5ed640566ce8114b1",
+      "lines": 340,
       "maintained": false
     },
     {
@@ -105,14 +105,14 @@
     },
     {
       "path": "computer-use-runtime/SECURITY.md",
-      "sha256": "fe686044994f733b46ea8e538aca2d054027560b1ccb8d140b212e66fcf29aa5",
-      "lines": 86,
+      "sha256": "4ea8fb48eac0773e8c590249bb8184f64ecf58c50aeb8fcb3336202e9318d072",
+      "lines": 88,
       "maintained": false
     },
     {
       "path": "computer-use-runtime/THIRD_PARTY.md",
-      "sha256": "cd41b7c5b2824a50d38f84097d8c2bf5c1fc8b303f715f8f0984ce0146a250b1",
-      "lines": 50,
+      "sha256": "62a834b821b27d8187f41cbcb90ce121d17eee92325f9d64f0c563523317e642",
+      "lines": 52,
       "maintained": false
     },
     {
@@ -123,20 +123,26 @@
     },
     {
       "path": "computer-use-runtime/console/App.vue",
-      "sha256": "1c06d5984003cba7e949d3af24074c0db773f7251436ef825dad639c77e13795",
-      "lines": 883,
+      "sha256": "117e85936093983e64af65f5a847ea81e3930283cdca617f3f13801cebab31be",
+      "lines": 884,
       "maintained": true
     },
     {
       "path": "computer-use-runtime/console/ArtifactWorkspace.vue",
-      "sha256": "906b1e8e3d1dfd0711cff1e252872a5b9f301dcb204556d774273175b4fbf9e0",
-      "lines": 405,
+      "sha256": "d62a9322516c3b18d67052b02cf05c177589e2a3d4062bba756f1202187a445b",
+      "lines": 410,
       "maintained": true
     },
     {
       "path": "computer-use-runtime/console/DesktopWorkspace.vue",
-      "sha256": "36b393d5bcbcd74f49fd49cd228116f918cb980728a34967b5b0c4e2780c55d0",
-      "lines": 924,
+      "sha256": "1e500a4c7e304eba16fb0b8f5636e55107974bd87a310c011f6d164a055c88dc",
+      "lines": 988,
+      "maintained": true
+    },
+    {
+      "path": "computer-use-runtime/console/ModelPicker.vue",
+      "sha256": "6c72333858f4088f2b681185c7e6c8fd434d5890733505ebe8a2a8941f65de32",
+      "lines": 450,
       "maintained": true
     },
     {
@@ -165,68 +171,74 @@
     },
     {
       "path": "computer-use-runtime/docs/COMPLETION_CHECKLIST.md",
-      "sha256": "fe95e95217dd576312186ba2dd11132b1537f4b1b549b1b8450c053423fc2898",
-      "lines": 73,
+      "sha256": "2f7f0178d3774d864c135ebc336421b36c3d88b3dda7f9dc6d0d26709a233711",
+      "lines": 79,
       "maintained": false
     },
     {
       "path": "computer-use-runtime/docs/COMPLETION_DECISIONS.md",
-      "sha256": "257915dd55be2c6fd6d3e3e5277813a953cd65e098446d9440d97743bb3a74c2",
-      "lines": 122,
+      "sha256": "7ba7c232be5773794160030774ae26768c7086e5a22d2601e00caba69aaaa682",
+      "lines": 128,
       "maintained": false
     },
     {
       "path": "computer-use-runtime/docs/COMPLETION_PLAN.md",
-      "sha256": "e7b7bd790a005396536017be55877c7b165fa7ba22c44fd315902cf12aa32cc3",
-      "lines": 17,
+      "sha256": "b7ee20aef933d9081c1bf49e5b8ed7a4c909af4e50e7ba2dbfec846eb775aa29",
+      "lines": 23,
       "maintained": false
     },
     {
       "path": "computer-use-runtime/docs/DEFINITION_OF_DONE.md",
-      "sha256": "b5fe357475cb956581ad0f515f628665f2018418f6618146f613e7d5deb6e8d7",
-      "lines": 29,
+      "sha256": "a3283d9a9b37529499fd68d09e90ecb5dc350b07f0da83df83a8714bd88298bd",
+      "lines": 35,
       "maintained": false
     },
     {
       "path": "computer-use-runtime/docs/FEATURE_MATRIX.md",
-      "sha256": "46470f53be8097333dcce221d7f72c7255210078f90d66226477d06d64f358c8",
-      "lines": 47,
+      "sha256": "75341ec17a57ebf2ca44dd82a2c51fd3e8e85dd01a2a72e9813409774f589ced",
+      "lines": 53,
       "maintained": false
     },
     {
       "path": "computer-use-runtime/docs/HANDOFF.md",
-      "sha256": "51bb1e0a4e4e6580f2bee9fd8e3cfc760912bd635147c91d24e5f64e56efffc1",
-      "lines": 42,
+      "sha256": "9102ac2460eb2e6920b835657ddefc0739442dfb57ac6fc731603cf0cf8ea724",
+      "lines": 52,
+      "maintained": false
+    },
+    {
+      "path": "computer-use-runtime/docs/PROVIDERS.md",
+      "sha256": "daa052a8a4dc141116c42b14fdc2fcc6635d28f9d4ecb19ef3085ec3d041b1af",
+      "lines": 92,
       "maintained": false
     },
     {
       "path": "computer-use-runtime/docs/QUICK_REFERENCE.md",
-      "sha256": "ac49e5a097a7bea670d79622d6e1646b2c44d8ee4bc3624e0afec5b6f613feef",
-      "lines": 84,
+      "sha256": "8be17377dca44dd61871f9e6795728d7569fceaa017210f053d4b730fd5615fe",
+      "lines": 90,
       "maintained": false
     },
     {
       "path": "computer-use-runtime/docs/REPAIR_STATUS.md",
-      "sha256": "8d6d93898b1ead9d3df88383055001fd6dd77e1abc0338acfe6853bf379f5545",
-      "lines": 40,
+      "sha256": "41571141d8f4e5e7220873a24d7fd718f7a73533083b8a15578ad2b2bf81b55b",
+      "lines": 46,
       "maintained": false
     },
     {
       "path": "computer-use-runtime/docs/REVIEW_LEDGER.md",
-      "sha256": "a3e385bceb32c517f9e76105401f6df2c7cfd6cc0f5256f7a3cb715e2fddbb6f",
-      "lines": 25,
+      "sha256": "f05364df3ce22004bfff7bba0f95771bfb2f2d9a744c3b78490975bdcff5b035",
+      "lines": 27,
       "maintained": false
     },
     {
       "path": "computer-use-runtime/docs/RUNNING.md",
-      "sha256": "a596eebe87b19f441bb77f756eb5324ef9c8bfc7026d8196bfd4bd0ab7b027fd",
+      "sha256": "8190fe5c465936a09407b8ec5c2c0ec381aba47a9302ad6f22d3a22e42066a90",
       "lines": 300,
       "maintained": false
     },
     {
       "path": "computer-use-runtime/docs/VERIFICATION.md",
-      "sha256": "0bad5344b6f338d13517a947cd598da978d3d08529e7a5383c6b1475ba38c94c",
-      "lines": 67,
+      "sha256": "640a1eb275d63d7b6c7002c034e93316ff5a99176f8ba4298f0f83da57643ad2",
+      "lines": 73,
       "maintained": false
     },
     {
@@ -261,8 +273,14 @@
     },
     {
       "path": "computer-use-runtime/docs/adr/0006-training-origin-and-deployment-qualification.md",
-      "sha256": "7ae936322283bb43b6a3c4db8bfac05a1e1e4fc29e8cd8bb9158d3b689d8b6c3",
-      "lines": 24,
+      "sha256": "425f0adcec11b81124cea0dbdadf77d5b05c0a9f0ca8b06abead0579f44997ba",
+      "lines": 30,
+      "maintained": false
+    },
+    {
+      "path": "computer-use-runtime/docs/adr/0007-selected-model-proposals.md",
+      "sha256": "bf9c4e68269aa4dad604cbab7aad4054929a56b3b7357f9f54f71c20d8dfc581",
+      "lines": 20,
       "maintained": false
     },
     {
@@ -387,8 +405,8 @@
     },
     {
       "path": "computer-use-runtime/evaluation/desktop-console.ts",
-      "sha256": "16cf2b0d889325ef1b5d1f4c004a856edea4b071ba4754ab6088de0f4c849cfb",
-      "lines": 186,
+      "sha256": "9301cc246969b5b0d49d0b2396373e5550f0a05a902dea1fc14b1a0db7d4bdb6",
+      "lines": 188,
       "maintained": true
     },
     {
@@ -609,8 +627,8 @@
     },
     {
       "path": "computer-use-runtime/evaluation/native-drawing.ts",
-      "sha256": "4ffdfa316d0b8b2e413dbdadc66724796c2a02c0233248b4267c0c7f9344e042",
-      "lines": 405,
+      "sha256": "9a50161a060cfafab7e06ccd9d507b5e880df649a5f7e4d46ad60fe9b3ad11b1",
+      "lines": 432,
       "maintained": true
     },
     {
@@ -680,6 +698,18 @@
       "maintained": true
     },
     {
+      "path": "computer-use-runtime/evaluation/provider-console.ts",
+      "sha256": "da6039adde7b536711292f14881d18a2154016c898d766f682310a59aae6e482",
+      "lines": 383,
+      "maintained": true
+    },
+    {
+      "path": "computer-use-runtime/evaluation/provider-drawing.ts",
+      "sha256": "e0e97667b6a15f12552745c8b9215582459b3ea8aed3c889ead1896c560fc6cf",
+      "lines": 187,
+      "maintained": true
+    },
+    {
       "path": "computer-use-runtime/evaluation/recorded-learning.ts",
       "sha256": "d54040e6126489145b5da25a745eb7c562637c4b2381a6fca37c25cde25f3564",
       "lines": 53,
@@ -699,8 +729,8 @@
     },
     {
       "path": "computer-use-runtime/evaluation/review-console.ts",
-      "sha256": "7d6e3689732f7e06bf473e88fa5fe995998706e10de64d8fbe68c29e57820790",
-      "lines": 379,
+      "sha256": "f30d4595b6f665c0fa6ea38281e251434a44f8aa9f8270949a761a627e5734da",
+      "lines": 384,
       "maintained": true
     },
     {
@@ -1155,7 +1185,7 @@
     },
     {
       "path": "computer-use-runtime/scripts/verify.py",
-      "sha256": "38211451a4979e344e7f2de7cb695ef2b50cfe08bd27caea77f4a2081e1039fc",
+      "sha256": "929d4f5500c749a4cfb163bf9fafef41e0ff84b54cd01e0812b27df73a7caedc",
       "lines": 73,
       "maintained": true
     },
@@ -1203,8 +1233,8 @@
     },
     {
       "path": "computer-use-runtime/src/adapters/desktop.ts",
-      "sha256": "695801e4e644e428730b96c37a8a445a7440afee284205b5e34a14b6baba22ed",
-      "lines": 366,
+      "sha256": "6c6b52ed133d86e101c1a849aa47ffd9d67e05b9964acf5178277805a1dae584",
+      "lines": 371,
       "maintained": true
     },
     {
@@ -1245,20 +1275,20 @@
     },
     {
       "path": "computer-use-runtime/src/assistant/local.ts",
-      "sha256": "11eaacb50229371b6623f1785206ab0a337ca1f3381b5990de55c4b5ef742874",
-      "lines": 275,
+      "sha256": "4dee397d66a1c603e6a507651bc6510662cdd0500ae6885892f34da22f6c89fc",
+      "lines": 270,
       "maintained": true
     },
     {
       "path": "computer-use-runtime/src/assistant/planner.ts",
-      "sha256": "a2e029828bb223fc6b43f41293c1aa126230b17d89f3242bd4c99039411b8f16",
-      "lines": 320,
+      "sha256": "f68baeb3278a99a37fd14a43f967dacceeccec017b31f3e85d06e19544afdea3",
+      "lines": 321,
       "maintained": true
     },
     {
       "path": "computer-use-runtime/src/assistant/runner.ts",
-      "sha256": "8d26f3fc24733b3df56007427b2e7f0546f563528aa577f64ccba733ac8b0d68",
-      "lines": 388,
+      "sha256": "66b721640ccb54475b5e34698dce1ae09fee9291b3315f4acee625a4e235dff2",
+      "lines": 398,
       "maintained": true
     },
     {
@@ -1323,8 +1353,8 @@
     },
     {
       "path": "computer-use-runtime/src/contracts/ports.ts",
-      "sha256": "833a47c796a79b747ad6c1421e6cf28f8fc36da55d25607d74259f238de61604",
-      "lines": 75,
+      "sha256": "c9f356dc741119acfb20362733cd19bbcf66736566bfc5b974eab926959b1e97",
+      "lines": 77,
       "maintained": true
     },
     {
@@ -1424,20 +1454,56 @@
       "maintained": true
     },
     {
+      "path": "computer-use-runtime/src/providers/assessment.ts",
+      "sha256": "1671040d564f2a54f15f816fcbf00a8935a3021eb01544c25cb2f8810edbba7f",
+      "lines": 55,
+      "maintained": true
+    },
+    {
+      "path": "computer-use-runtime/src/providers/cli-windows.py",
+      "sha256": "57a8d6f1c31540c6736b3904bb5a38ca105775c65c8f08dd2314f3f21110ece4",
+      "lines": 159,
+      "maintained": true
+    },
+    {
+      "path": "computer-use-runtime/src/providers/cli.ts",
+      "sha256": "fcd990f54fbf569884daaea1884496ae2cbfab0d0235b2a93dd28b7bdedb5453",
+      "lines": 918,
+      "maintained": true
+    },
+    {
       "path": "computer-use-runtime/src/providers/index.ts",
-      "sha256": "9e26899eabbacac83ad6ad0cdf50b5693b22f69c1eec74d030f31cb6731bf32c",
-      "lines": 148,
+      "sha256": "94505aeae881e5cff2eb31fb94f8fb5598d693cb6a2bbcb8974bf4fd7b2865cc",
+      "lines": 195,
+      "maintained": true
+    },
+    {
+      "path": "computer-use-runtime/src/providers/selection.ts",
+      "sha256": "d316c88dbc98f50dee7ccbed74b3e3e763adda9c36205b805a52ec06dff9ef78",
+      "lines": 57,
+      "maintained": true
+    },
+    {
+      "path": "computer-use-runtime/src/providers/settings.ts",
+      "sha256": "8bffeb8161298690a2c7579222aea501945eacefdd8418496cc24fa0046488c5",
+      "lines": 84,
+      "maintained": true
+    },
+    {
+      "path": "computer-use-runtime/src/providers/team.ts",
+      "sha256": "73b0d0add72ee36086ada593f5038c472c52f39a67a65b0ae204886bb1bf8e0b",
+      "lines": 264,
       "maintained": true
     },
     {
       "path": "computer-use-runtime/src/providers/transport.ts",
-      "sha256": "b87ad1e24d1ad71486b0cf08238bc8a8442fd1521126b0dc125aa766b50f3a60",
-      "lines": 141,
+      "sha256": "86c984b5aae881d24d3238493a8be2e7b5c2f292fef9b42e33123273d2619472",
+      "lines": 318,
       "maintained": true
     },
     {
       "path": "computer-use-runtime/src/providers/vision.ts",
-      "sha256": "f698e55664aa89e1c5f3bfc038f91f8e5f2c03263ada99122c53d3a42c3dfdfd",
+      "sha256": "aee3e00b79d42aa7f46c2aa3f7f31bb87a33a4604a12522737d885176ee0a41c",
       "lines": 120,
       "maintained": true
     },
@@ -1491,20 +1557,20 @@
     },
     {
       "path": "computer-use-runtime/src/service/artifacts.ts",
-      "sha256": "c2cd0634ff80eb68cc270a92a83c5743b023f6e45bf1c3a7d73e316e773a0f68",
-      "lines": 142,
+      "sha256": "3e32ef0addfe029c778f32b63bed993adea9083b04387e9eb10299d13ea6d990",
+      "lines": 154,
       "maintained": true
     },
     {
       "path": "computer-use-runtime/src/service/drawing.ts",
-      "sha256": "148c0b1036fdb9fb916a8b795af44c9299b3fa386f2f003587059c456e7fe76d",
-      "lines": 179,
+      "sha256": "e907cd23e0441ed50291cb765c4f816a99cad5096c87d539bb9709542861fd07",
+      "lines": 248,
       "maintained": true
     },
     {
       "path": "computer-use-runtime/src/service/index.ts",
-      "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
-      "lines": 836,
+      "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
+      "lines": 899,
       "maintained": true
     },
     {
@@ -1665,8 +1731,8 @@
     },
     {
       "path": "computer-use-runtime/tests/console-requests.test.ts",
-      "sha256": "057dec3abb0fe53fd0d426dbb337bdaf8074c5995039756739a189e2aec56968",
-      "lines": 264,
+      "sha256": "f89298f294b7d6aa46210ebb115de264be587dd3d6c119be995375bea44ac409",
+      "lines": 308,
       "maintained": true
     },
     {
@@ -1689,8 +1755,8 @@
     },
     {
       "path": "computer-use-runtime/tests/drawing-service.test.ts",
-      "sha256": "03525ef6f1064201eaf1d6319ccf0577166ae18622b548aaeb01124a5eaab667",
-      "lines": 240,
+      "sha256": "fc72c5bebc022cc73ef82c80da264f669872cd754223768521ae8f2c1d9fa1be",
+      "lines": 264,
       "maintained": true
     },
     {
@@ -1856,6 +1922,18 @@
       "maintained": true
     },
     {
+      "path": "computer-use-runtime/tests/provider-capabilities.test.ts",
+      "sha256": "5fdb320b3de35568a99aee31ea354b4cc8825bd373ec0141696971e0ebbef46b",
+      "lines": 267,
+      "maintained": true
+    },
+    {
+      "path": "computer-use-runtime/tests/provider-cli.test.ts",
+      "sha256": "6a37db9e88455be31d6ae86ca28d84f465a3f7781759d07ec480d4bb5e292d41",
+      "lines": 363,
+      "maintained": true
+    },
+    {
       "path": "computer-use-runtime/tests/provider-locality.test.ts",
       "sha256": "5f4f39a151845a394694e8435e33b739257c8cba118055a78f7b41594de361ba",
       "lines": 68,
@@ -1869,8 +1947,20 @@
     },
     {
       "path": "computer-use-runtime/tests/provider-response.test.ts",
-      "sha256": "64fcb22a12bf5814228d53bc4a1ea2894101ff643d9fdec2a97c88a836829dcb",
+      "sha256": "edef5df65d5f1d22a0d14673728ee7effc5c6f51343acae64acdcf9a9afc7751",
       "lines": 186,
+      "maintained": true
+    },
+    {
+      "path": "computer-use-runtime/tests/provider-settings.test.ts",
+      "sha256": "28ffe799c1804d190127dc07b14afa9c3b337e112f8c1f8a9fe1ceb1abf1c99e",
+      "lines": 110,
+      "maintained": true
+    },
+    {
+      "path": "computer-use-runtime/tests/provider-team.test.ts",
+      "sha256": "9b5ab97eb9034d5e286611c1730a3e312e6847c897efa51db95e9c88ec36e22d",
+      "lines": 281,
       "maintained": true
     },
     {
@@ -2025,37 +2115,37 @@
     },
     {
       "path": "docs/open-source/SYSTEM_OVERVIEW.md",
-      "sha256": "842b43ff9ca3065a5b27067ffbd43ec79a631377f0570589fe79bae232ad035e",
-      "lines": 121,
+      "sha256": "6f025d47421c23290b2d8d5ade72926a0b051dbcebc4f6230ebbb21ed7bfeee9",
+      "lines": 127,
       "maintained": false
     },
     {
       "path": "docs/open-source/USAGE.md",
-      "sha256": "6e5f109fe6fad54bf4c018b3a081c73da4ed6f949b6b556151a33ae5b9437aff",
-      "lines": 131,
+      "sha256": "8c44dc5ed286b1229f0cd12cef8138f43fab5f08ce0546e2661a6800c72b727a",
+      "lines": 147,
       "maintained": false
     },
     {
       "path": "docs/open-source/VERIFICATION.md",
-      "sha256": "85b66a0c8c806bc8b7360e767ee5d7a4c1d45a919d11283b1bed4b7c7d2dfa94",
-      "lines": 81,
+      "sha256": "fab41b55684a1fdae95dd0e7addfe5a3a15b61e5fae6ad7891794839233f49ce",
+      "lines": 91,
       "maintained": false
     },
     {
       "path": "docs/system-map/README.md",
-      "sha256": "f19dc363d920b85fa23f036f01e71bb7d841a6c17dcecda3cecfab6d58fa9b8d",
-      "lines": 46,
+      "sha256": "dc97ccfd2a5c83d8da6f6b270b6f08bbcd9ec087baaba8064fe678f756b8b8bc",
+      "lines": 54,
       "maintained": false
     },
     {
       "path": "docs/system-map/TRACE.md",
-      "sha256": "ac61bcbf21ffb75585534d5808d51036fb31ec1f7186b60d466bed79fc824dfc",
-      "lines": 117,
+      "sha256": "36dfabbbd3a14e2c5fd8be7a5190b1b72a5b548b313dda3b12a31fa57ffbe373",
+      "lines": 125,
       "maintained": false
     },
     {
       "path": "docs/system-map/VERIFICATION.md",
-      "sha256": "378649e9ad841398de56a065bbed6b6a2631dcf6d286e950c9f2db63a165e48d",
+      "sha256": "7f5e47a10e84d0ce906bfce1da3d880ea3080f9e7f417b0d0617862f5f4f3f13",
       "lines": 26,
       "maintained": false
     },
@@ -2081,19 +2171,19 @@
           "path": "computer-use-runtime/console/App.vue",
           "line": 1,
           "symbol": "console/App.vue",
-          "sha256": "1c06d5984003cba7e949d3af24074c0db773f7251436ef825dad639c77e13795"
+          "sha256": "117e85936093983e64af65f5a847ea81e3930283cdca617f3f13801cebab31be"
         },
         {
           "path": "computer-use-runtime/console/DesktopWorkspace.vue",
           "line": 1,
           "symbol": "console/DesktopWorkspace.vue",
-          "sha256": "36b393d5bcbcd74f49fd49cd228116f918cb980728a34967b5b0c4e2780c55d0"
+          "sha256": "1e500a4c7e304eba16fb0b8f5636e55107974bd87a310c011f6d164a055c88dc"
         },
         {
           "path": "computer-use-runtime/console/ArtifactWorkspace.vue",
           "line": 1,
           "symbol": "console/ArtifactWorkspace.vue",
-          "sha256": "906b1e8e3d1dfd0711cff1e252872a5b9f301dcb204556d774273175b4fbf9e0"
+          "sha256": "d62a9322516c3b18d67052b02cf05c177589e2a3d4062bba756f1202187a445b"
         }
       ]
     },
@@ -2103,9 +2193,9 @@
       "sources": [
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 42,
+          "line": 48,
           "symbol": "export async function service",
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff"
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952"
         },
         {
           "path": "computer-use-runtime/src/service/launcher.ts",
@@ -2129,7 +2219,7 @@
           "path": "computer-use-runtime/src/assistant/runner.ts",
           "line": 57,
           "symbol": "export async function driveDesktop",
-          "sha256": "8d26f3fc24733b3df56007427b2e7f0546f563528aa577f64ccba733ac8b0d68"
+          "sha256": "66b721640ccb54475b5e34698dce1ae09fee9291b3315f4acee625a4e235dff2"
         },
         {
           "path": "computer-use-runtime/src/contracts/run.ts",
@@ -2153,31 +2243,37 @@
     },
     {
       "id": "ov-ollama",
-      "title": "Ollama models",
+      "title": "Model providers",
       "sources": [
         {
+          "path": "computer-use-runtime/src/providers/settings.ts",
+          "line": 12,
+          "symbol": "export function providerSettings",
+          "sha256": "8bffeb8161298690a2c7579222aea501945eacefdd8418496cc24fa0046488c5"
+        },
+        {
+          "path": "computer-use-runtime/src/providers/selection.ts",
+          "line": 39,
+          "symbol": "export function createSelectedProvider",
+          "sha256": "d316c88dbc98f50dee7ccbed74b3e3e763adda9c36205b805a52ec06dff9ef78"
+        },
+        {
+          "path": "computer-use-runtime/src/providers/team.ts",
+          "line": 48,
+          "symbol": "export class TeamProvider",
+          "sha256": "73b0d0add72ee36086ada593f5038c472c52f39a67a65b0ae204886bb1bf8e0b"
+        },
+        {
+          "path": "computer-use-runtime/src/providers/cli.ts",
+          "line": 736,
+          "symbol": "export class CliModelProvider",
+          "sha256": "fcd990f54fbf569884daaea1884496ae2cbfab0d0235b2a93dd28b7bdedb5453"
+        },
+        {
           "path": "computer-use-runtime/src/providers/index.ts",
-          "line": 12,
+          "line": 15,
           "symbol": "export class OllamaProvider",
-          "sha256": "9e26899eabbacac83ad6ad0cdf50b5693b22f69c1eec74d030f31cb6731bf32c"
-        },
-        {
-          "path": "computer-use-runtime/src/providers/vision.ts",
-          "line": 1,
-          "symbol": "src/providers/vision.ts",
-          "sha256": "f698e55664aa89e1c5f3bfc038f91f8e5f2c03263ada99122c53d3a42c3dfdfd"
-        },
-        {
-          "path": "computer-use-runtime/src/providers/transport.ts",
-          "line": 35,
-          "symbol": "export async function providerJson",
-          "sha256": "b87ad1e24d1ad71486b0cf08238bc8a8442fd1521126b0dc125aa766b50f3a60"
-        },
-        {
-          "path": "computer-use-runtime/src/assistant/local.ts",
-          "line": 12,
-          "symbol": "export class LocalDesktopPlanner",
-          "sha256": "11eaacb50229371b6623f1785206ab0a337ca1f3381b5990de55c4b5ef742874"
+          "sha256": "94505aeae881e5cff2eb31fb94f8fb5598d693cb6a2bbcb8974bf4fd7b2865cc"
         }
       ]
     },
@@ -2187,9 +2283,9 @@
       "sources": [
         {
           "path": "computer-use-runtime/src/adapters/desktop.ts",
-          "line": 73,
+          "line": 74,
           "symbol": "export class DesktopRouter",
-          "sha256": "695801e4e644e428730b96c37a8a445a7440afee284205b5e34a14b6baba22ed"
+          "sha256": "6c6b52ed133d86e101c1a849aa47ffd9d67e05b9964acf5178277805a1dae584"
         },
         {
           "path": "computer-use-runtime/src/adapters/computer.ts",
@@ -2219,7 +2315,7 @@
           "path": "computer-use-runtime/src/contracts/ports.ts",
           "line": 1,
           "symbol": "src/contracts/ports.ts",
-          "sha256": "833a47c796a79b747ad6c1421e6cf28f8fc36da55d25607d74259f238de61604"
+          "sha256": "c9f356dc741119acfb20362733cd19bbcf66736566bfc5b974eab926959b1e97"
         }
       ]
     },
@@ -2351,19 +2447,19 @@
           "path": "computer-use-runtime/src/assistant/local.ts",
           "line": 12,
           "symbol": "export class LocalDesktopPlanner",
-          "sha256": "11eaacb50229371b6623f1785206ab0a337ca1f3381b5990de55c4b5ef742874"
+          "sha256": "4dee397d66a1c603e6a507651bc6510662cdd0500ae6885892f34da22f6c89fc"
         },
         {
           "path": "computer-use-runtime/src/assistant/planner.ts",
           "line": 1,
           "symbol": "src/assistant/planner.ts",
-          "sha256": "a2e029828bb223fc6b43f41293c1aa126230b17d89f3242bd4c99039411b8f16"
+          "sha256": "f68baeb3278a99a37fd14a43f967dacceeccec017b31f3e85d06e19544afdea3"
         },
         {
           "path": "computer-use-runtime/src/assistant/runner.ts",
           "line": 20,
           "symbol": "observationFingerprint",
-          "sha256": "8d26f3fc24733b3df56007427b2e7f0546f563528aa577f64ccba733ac8b0d68"
+          "sha256": "66b721640ccb54475b5e34698dce1ae09fee9291b3315f4acee625a4e235dff2"
         }
       ]
     },
@@ -2415,9 +2511,9 @@
       "sources": [
         {
           "path": "computer-use-runtime/src/service/artifacts.ts",
-          "line": 12,
+          "line": 16,
           "symbol": "export function artifactConfiguration",
-          "sha256": "c2cd0634ff80eb68cc270a92a83c5743b023f6e45bf1c3a7d73e316e773a0f68"
+          "sha256": "3e32ef0addfe029c778f32b63bed993adea9083b04387e9eb10299d13ea6d990"
         },
         {
           "path": "computer-use-runtime/src/assistant/artifact.ts",
@@ -2493,9 +2589,9 @@
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 690,
+          "line": 753,
           "symbol": "app.post(\"/api/jobs\"",
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff"
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952"
         }
       ]
     },
@@ -3203,7 +3299,7 @@
           "path": "computer-use-runtime/docs/RUNNING.md",
           "line": 235,
           "symbol": "Backup and restore",
-          "sha256": "a596eebe87b19f441bb77f756eb5324ef9c8bfc7026d8196bfd4bd0ab7b027fd"
+          "sha256": "8190fe5c465936a09407b8ec5c2c0ec381aba47a9302ad6f22d3a22e42066a90"
         },
         {
           "path": "computer-use-runtime/src/service/lifecycle.ts",
@@ -3267,39 +3363,39 @@
       "sources": [
         {
           "path": "computer-use-runtime/console/App.vue",
-          "line": 748,
+          "line": 749,
           "symbol": "Learning section",
-          "sha256": "1c06d5984003cba7e949d3af24074c0db773f7251436ef825dad639c77e13795"
+          "sha256": "117e85936093983e64af65f5a847ea81e3930283cdca617f3f13801cebab31be"
         },
         {
           "path": "computer-use-runtime/console/App.vue",
-          "line": 759,
+          "line": 760,
           "symbol": "Train three seeds",
-          "sha256": "1c06d5984003cba7e949d3af24074c0db773f7251436ef825dad639c77e13795"
+          "sha256": "117e85936093983e64af65f5a847ea81e3930283cdca617f3f13801cebab31be"
         },
         {
           "path": "computer-use-runtime/console/App.vue",
-          "line": 767,
+          "line": 768,
           "symbol": "Train from recorded experience",
-          "sha256": "1c06d5984003cba7e949d3af24074c0db773f7251436ef825dad639c77e13795"
+          "sha256": "117e85936093983e64af65f5a847ea81e3930283cdca617f3f13801cebab31be"
         },
         {
           "path": "computer-use-runtime/console/App.vue",
-          "line": 778,
+          "line": 779,
           "symbol": "Verify frozen audit",
-          "sha256": "1c06d5984003cba7e949d3af24074c0db773f7251436ef825dad639c77e13795"
+          "sha256": "117e85936093983e64af65f5a847ea81e3930283cdca617f3f13801cebab31be"
         },
         {
           "path": "computer-use-runtime/console/App.vue",
-          "line": 802,
+          "line": 803,
           "symbol": "Activate audited model",
-          "sha256": "1c06d5984003cba7e949d3af24074c0db773f7251436ef825dad639c77e13795"
+          "sha256": "117e85936093983e64af65f5a847ea81e3930283cdca617f3f13801cebab31be"
         },
         {
           "path": "computer-use-runtime/console/App.vue",
-          "line": 813,
+          "line": 814,
           "symbol": "Job details",
-          "sha256": "1c06d5984003cba7e949d3af24074c0db773f7251436ef825dad639c77e13795"
+          "sha256": "117e85936093983e64af65f5a847ea81e3930283cdca617f3f13801cebab31be"
         }
       ]
     },
@@ -3311,19 +3407,19 @@
           "path": "computer-use-runtime/console/App.vue",
           "line": 64,
           "symbol": "assessOwnedState",
-          "sha256": "1c06d5984003cba7e949d3af24074c0db773f7251436ef825dad639c77e13795"
+          "sha256": "117e85936093983e64af65f5a847ea81e3930283cdca617f3f13801cebab31be"
         },
         {
           "path": "computer-use-runtime/console/App.vue",
-          "line": 623,
+          "line": 624,
           "symbol": "Read owned model advice",
-          "sha256": "1c06d5984003cba7e949d3af24074c0db773f7251436ef825dad639c77e13795"
+          "sha256": "117e85936093983e64af65f5a847ea81e3930283cdca617f3f13801cebab31be"
         },
         {
           "path": "computer-use-runtime/console/App.vue",
-          "line": 638,
+          "line": 639,
           "symbol": "Prediction evidence",
-          "sha256": "1c06d5984003cba7e949d3af24074c0db773f7251436ef825dad639c77e13795"
+          "sha256": "117e85936093983e64af65f5a847ea81e3930283cdca617f3f13801cebab31be"
         }
       ]
     },
@@ -3333,39 +3429,21 @@
       "sources": [
         {
           "path": "computer-use-runtime/console/DesktopWorkspace.vue",
-          "line": 233,
-          "symbol": "submit",
-          "sha256": "36b393d5bcbcd74f49fd49cd228116f918cb980728a34967b5b0c4e2780c55d0"
+          "line": 252,
+          "symbol": "async function submit",
+          "sha256": "1e500a4c7e304eba16fb0b8f5636e55107974bd87a310c011f6d164a055c88dc"
         },
         {
-          "path": "computer-use-runtime/console/DesktopWorkspace.vue",
-          "line": 377,
-          "symbol": "onMounted model preference",
-          "sha256": "36b393d5bcbcd74f49fd49cd228116f918cb980728a34967b5b0c4e2780c55d0"
+          "path": "computer-use-runtime/console/ModelPicker.vue",
+          "line": 1,
+          "symbol": "console/ModelPicker.vue",
+          "sha256": "6c72333858f4088f2b681185c7e6c8fd434d5890733505ebe8a2a8941f65de32"
         },
         {
-          "path": "computer-use-runtime/console/DesktopWorkspace.vue",
-          "line": 452,
-          "symbol": "Scope picker",
-          "sha256": "36b393d5bcbcd74f49fd49cd228116f918cb980728a34967b5b0c4e2780c55d0"
-        },
-        {
-          "path": "computer-use-runtime/console/DesktopWorkspace.vue",
-          "line": 522,
-          "symbol": "Local model select",
-          "sha256": "36b393d5bcbcd74f49fd49cd228116f918cb980728a34967b5b0c4e2780c55d0"
-        },
-        {
-          "path": "computer-use-runtime/console/DesktopWorkspace.vue",
-          "line": 684,
-          "symbol": "Approve this action",
-          "sha256": "36b393d5bcbcd74f49fd49cd228116f918cb980728a34967b5b0c4e2780c55d0"
-        },
-        {
-          "path": "computer-use-runtime/console/DesktopWorkspace.vue",
-          "line": 729,
-          "symbol": "Confirm task complete",
-          "sha256": "36b393d5bcbcd74f49fd49cd228116f918cb980728a34967b5b0c4e2780c55d0"
+          "path": "computer-use-runtime/src/providers/settings.ts",
+          "line": 54,
+          "symbol": "export function providerParameters",
+          "sha256": "8bffeb8161298690a2c7579222aea501945eacefdd8418496cc24fa0046488c5"
         }
       ]
     },
@@ -3375,51 +3453,51 @@
       "sources": [
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 70,
+          "line": 76,
           "symbol": "ModelRegistry startup registration",
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff"
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952"
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 79,
+          "line": 85,
           "symbol": "onRequest authentication",
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff"
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952"
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 324,
+          "line": 386,
           "symbol": "POST /api/desktop/tasks",
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff"
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952"
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 414,
+          "line": 474,
           "symbol": "POST desktop review",
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff"
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952"
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 435,
+          "line": 495,
           "symbol": "GET task advice",
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff"
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952"
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 601,
+          "line": 664,
           "symbol": "POST /api/intent",
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff"
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952"
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 681,
+          "line": 744,
           "symbol": "Model routes",
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff"
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952"
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 690,
+          "line": 753,
           "symbol": "Job routes",
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff"
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952"
         }
       ]
     },
@@ -3549,9 +3627,9 @@
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 720,
+          "line": 783,
           "symbol": "train-recordings input/output paths",
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff"
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952"
         }
       ]
     },
@@ -3753,9 +3831,9 @@
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 435,
+          "line": 495,
           "symbol": "GET task advice",
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff"
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952"
         }
       ]
     },
@@ -3819,9 +3897,9 @@
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 707,
+          "line": 770,
           "symbol": "Sealed evaluate refusal",
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff"
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952"
         },
         {
           "path": "computer-use-runtime/src/learner/qualification.ts",
@@ -3933,81 +4011,81 @@
       "sources": [
         {
           "path": "computer-use-runtime/src/providers/index.ts",
-          "line": 12,
+          "line": 15,
           "symbol": "OllamaProvider",
-          "sha256": "9e26899eabbacac83ad6ad0cdf50b5693b22f69c1eec74d030f31cb6731bf32c"
+          "sha256": "94505aeae881e5cff2eb31fb94f8fb5598d693cb6a2bbcb8974bf4fd7b2865cc"
         },
         {
           "path": "computer-use-runtime/src/providers/index.ts",
-          "line": 32,
+          "line": 49,
           "symbol": "generate",
-          "sha256": "9e26899eabbacac83ad6ad0cdf50b5693b22f69c1eec74d030f31cb6731bf32c"
+          "sha256": "94505aeae881e5cff2eb31fb94f8fb5598d693cb6a2bbcb8974bf4fd7b2865cc"
         },
         {
           "path": "computer-use-runtime/src/providers/index.ts",
-          "line": 92,
+          "line": 96,
           "symbol": "discover",
-          "sha256": "9e26899eabbacac83ad6ad0cdf50b5693b22f69c1eec74d030f31cb6731bf32c"
+          "sha256": "94505aeae881e5cff2eb31fb94f8fb5598d693cb6a2bbcb8974bf4fd7b2865cc"
         },
         {
           "path": "computer-use-runtime/src/providers/index.ts",
-          "line": 106,
+          "line": 110,
           "symbol": "LocalEndpointProvider",
-          "sha256": "9e26899eabbacac83ad6ad0cdf50b5693b22f69c1eec74d030f31cb6731bf32c"
+          "sha256": "94505aeae881e5cff2eb31fb94f8fb5598d693cb6a2bbcb8974bf4fd7b2865cc"
         },
         {
           "path": "computer-use-runtime/src/providers/transport.ts",
-          "line": 2,
+          "line": 61,
           "symbol": "localEndpoint",
-          "sha256": "b87ad1e24d1ad71486b0cf08238bc8a8442fd1521126b0dc125aa766b50f3a60"
+          "sha256": "86c984b5aae881d24d3238493a8be2e7b5c2f292fef9b42e33123273d2619472"
         },
         {
           "path": "computer-use-runtime/src/providers/transport.ts",
-          "line": 18,
+          "line": 77,
           "symbol": "localFetch",
-          "sha256": "b87ad1e24d1ad71486b0cf08238bc8a8442fd1521126b0dc125aa766b50f3a60"
+          "sha256": "86c984b5aae881d24d3238493a8be2e7b5c2f292fef9b42e33123273d2619472"
         },
         {
           "path": "computer-use-runtime/src/providers/transport.ts",
-          "line": 88,
+          "line": 266,
           "symbol": "localOllamaReady",
-          "sha256": "b87ad1e24d1ad71486b0cf08238bc8a8442fd1521126b0dc125aa766b50f3a60"
+          "sha256": "86c984b5aae881d24d3238493a8be2e7b5c2f292fef9b42e33123273d2619472"
         }
       ]
     },
     {
       "id": "learning-desktop-planner",
-      "title": "Local desktop plan proposal",
+      "title": "Selected desktop plan proposal",
       "sources": [
         {
           "path": "computer-use-runtime/src/assistant/local.ts",
-          "line": 14,
+          "line": 15,
           "symbol": "LocalDesktopPlanner.next",
-          "sha256": "11eaacb50229371b6623f1785206ab0a337ca1f3381b5990de55c4b5ef742874"
+          "sha256": "4dee397d66a1c603e6a507651bc6510662cdd0500ae6885892f34da22f6c89fc"
         },
         {
           "path": "computer-use-runtime/src/assistant/local.ts",
-          "line": 146,
+          "line": 129,
           "symbol": "assistant-plans cache",
-          "sha256": "11eaacb50229371b6623f1785206ab0a337ca1f3381b5990de55c4b5ef742874"
+          "sha256": "4dee397d66a1c603e6a507651bc6510662cdd0500ae6885892f34da22f6c89fc"
         },
         {
           "path": "computer-use-runtime/src/assistant/local.ts",
-          "line": 214,
-          "symbol": "Provider plan and correction",
-          "sha256": "11eaacb50229371b6623f1785206ab0a337ca1f3381b5990de55c4b5ef742874"
+          "line": 199,
+          "symbol": "Selected provider generation",
+          "sha256": "4dee397d66a1c603e6a507651bc6510662cdd0500ae6885892f34da22f6c89fc"
         },
         {
           "path": "computer-use-runtime/src/assistant/local.ts",
-          "line": 254,
+          "line": 242,
           "symbol": "Persisted assistant plan",
-          "sha256": "11eaacb50229371b6623f1785206ab0a337ca1f3381b5990de55c4b5ef742874"
+          "sha256": "4dee397d66a1c603e6a507651bc6510662cdd0500ae6885892f34da22f6c89fc"
         },
         {
           "path": "computer-use-runtime/src/assistant/planner.ts",
-          "line": 138,
+          "line": 139,
           "symbol": "actionStep",
-          "sha256": "a2e029828bb223fc6b43f41293c1aa126230b17d89f3242bd4c99039411b8f16"
+          "sha256": "f68baeb3278a99a37fd14a43f967dacceeccec017b31f3e85d06e19544afdea3"
         }
       ]
     },
@@ -4017,9 +4095,9 @@
       "sources": [
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 385,
+          "line": 443,
           "symbol": "desktop.assistant contract",
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff"
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952"
         },
         {
           "path": "computer-use-runtime/src/runtime/index.ts",
@@ -4031,31 +4109,31 @@
           "path": "computer-use-runtime/src/assistant/runner.ts",
           "line": 57,
           "symbol": "driveDesktop",
-          "sha256": "8d26f3fc24733b3df56007427b2e7f0546f563528aa577f64ccba733ac8b0d68"
+          "sha256": "66b721640ccb54475b5e34698dce1ae09fee9291b3315f4acee625a4e235dff2"
         },
         {
           "path": "computer-use-runtime/src/assistant/runner.ts",
           "line": 93,
           "symbol": "Fresh proposal checks",
-          "sha256": "8d26f3fc24733b3df56007427b2e7f0546f563528aa577f64ccba733ac8b0d68"
+          "sha256": "66b721640ccb54475b5e34698dce1ae09fee9291b3315f4acee625a4e235dff2"
         },
         {
           "path": "computer-use-runtime/src/assistant/runner.ts",
           "line": 132,
           "symbol": "Bound Action and policy",
-          "sha256": "8d26f3fc24733b3df56007427b2e7f0546f563528aa577f64ccba733ac8b0d68"
+          "sha256": "66b721640ccb54475b5e34698dce1ae09fee9291b3315f4acee625a4e235dff2"
         },
         {
           "path": "computer-use-runtime/src/assistant/runner.ts",
-          "line": 280,
+          "line": 290,
           "symbol": "Proposal or question/done result",
-          "sha256": "8d26f3fc24733b3df56007427b2e7f0546f563528aa577f64ccba733ac8b0d68"
+          "sha256": "66b721640ccb54475b5e34698dce1ae09fee9291b3315f4acee625a4e235dff2"
         },
         {
           "path": "computer-use-runtime/src/assistant/runner.ts",
-          "line": 307,
+          "line": 317,
           "symbol": "reviewDesktop",
-          "sha256": "8d26f3fc24733b3df56007427b2e7f0546f563528aa577f64ccba733ac8b0d68"
+          "sha256": "66b721640ccb54475b5e34698dce1ae09fee9291b3315f4acee625a4e235dff2"
         }
       ]
     },
@@ -4065,33 +4143,39 @@
       "sources": [
         {
           "path": "computer-use-runtime/src/providers/vision.ts",
-          "line": 23,
+          "line": 25,
           "symbol": "LocalVisionAssessor",
-          "sha256": "f698e55664aa89e1c5f3bfc038f91f8e5f2c03263ada99122c53d3a42c3dfdfd"
+          "sha256": "aee3e00b79d42aa7f46c2aa3f7f31bb87a33a4604a12522737d885176ee0a41c"
         },
         {
           "path": "computer-use-runtime/src/providers/vision.ts",
-          "line": 30,
+          "line": 32,
           "symbol": "assess",
-          "sha256": "f698e55664aa89e1c5f3bfc038f91f8e5f2c03263ada99122c53d3a42c3dfdfd"
+          "sha256": "aee3e00b79d42aa7f46c2aa3f7f31bb87a33a4604a12522737d885176ee0a41c"
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 451,
+          "line": 511,
           "symbol": "POST canvas assessment",
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff"
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952"
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 503,
+          "line": 566,
           "symbol": "semantic-assessments persistence",
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff"
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952"
         },
         {
           "path": "computer-use-runtime/console/DesktopWorkspace.vue",
-          "line": 106,
+          "line": 124,
           "symbol": "assessCanvas",
-          "sha256": "36b393d5bcbcd74f49fd49cd228116f918cb980728a34967b5b0c4e2780c55d0"
+          "sha256": "1e500a4c7e304eba16fb0b8f5636e55107974bd87a310c011f6d164a055c88dc"
+        },
+        {
+          "path": "computer-use-runtime/src/providers/assessment.ts",
+          "line": 17,
+          "symbol": "export class SelectedVisionAssessor",
+          "sha256": "1671040d564f2a54f15f816fcbf00a8935a3021eb01544c25cb2f8810edbba7f"
         }
       ]
     },
@@ -4138,25 +4222,25 @@
         {
           "path": "computer-use-runtime/console/App.vue",
           "line": 8,
-          "sha256": "1c06d5984003cba7e949d3af24074c0db773f7251436ef825dad639c77e13795",
+          "sha256": "117e85936093983e64af65f5a847ea81e3930283cdca617f3f13801cebab31be",
           "anchor": "sessionStorage.getItem"
         },
         {
           "path": "computer-use-runtime/console/App.vue",
-          "line": 548,
-          "sha256": "1c06d5984003cba7e949d3af24074c0db773f7251436ef825dad639c77e13795",
+          "line": 549,
+          "sha256": "117e85936093983e64af65f5a847ea81e3930283cdca617f3f13801cebab31be",
           "anchor": "id=\"provider\""
         },
         {
           "path": "computer-use-runtime/console/App.vue",
-          "line": 528,
-          "sha256": "1c06d5984003cba7e949d3af24074c0db773f7251436ef825dad639c77e13795",
+          "line": 529,
+          "sha256": "117e85936093983e64af65f5a847ea81e3930283cdca617f3f13801cebab31be",
           "anchor": "<DesktopWorkspace"
         },
         {
           "path": "computer-use-runtime/console/App.vue",
-          "line": 536,
-          "sha256": "1c06d5984003cba7e949d3af24074c0db773f7251436ef825dad639c77e13795",
+          "line": 537,
+          "sha256": "117e85936093983e64af65f5a847ea81e3930283cdca617f3f13801cebab31be",
           "anchor": "<ArtifactWorkspace"
         }
       ]
@@ -4239,26 +4323,26 @@
       "sources": [
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 42,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 48,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "export async function service"
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 418,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 478,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.post(\"/api/tasks\""
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 771,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 834,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.get(\"/api/events\""
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 806,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 869,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "await app.register(staticPlugin"
         }
       ]
@@ -4275,20 +4359,20 @@
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 106,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 112,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "Local token required"
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 119,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 125,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "Correlation and idempotency headers required"
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 148,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 154,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "Idempotency key reused with different payload"
         }
       ]
@@ -4312,13 +4396,13 @@
         {
           "path": "computer-use-runtime/src/contracts/ports.ts",
           "line": 12,
-          "sha256": "833a47c796a79b747ad6c1421e6cf28f8fc36da55d25607d74259f238de61604",
+          "sha256": "c9f356dc741119acfb20362733cd19bbcf66736566bfc5b974eab926959b1e97",
           "anchor": "export interface EnvironmentAdapter"
         },
         {
           "path": "computer-use-runtime/src/contracts/ports.ts",
-          "line": 53,
-          "sha256": "833a47c796a79b747ad6c1421e6cf28f8fc36da55d25607d74259f238de61604",
+          "line": 55,
+          "sha256": "c9f356dc741119acfb20362733cd19bbcf66736566bfc5b974eab926959b1e97",
           "anchor": "export interface ExperienceStore"
         },
         {
@@ -4545,14 +4629,14 @@
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 531,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 594,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.post(\"/api/skills/import\""
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 538,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 601,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.post(\"/api/skills/migrate\""
         }
       ]
@@ -4575,8 +4659,8 @@
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 601,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 664,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.post(\"/api/intent\""
         }
       ]
@@ -4588,25 +4672,25 @@
         {
           "path": "computer-use-runtime/src/assistant/local.ts",
           "line": 12,
-          "sha256": "11eaacb50229371b6623f1785206ab0a337ca1f3381b5990de55c4b5ef742874",
+          "sha256": "4dee397d66a1c603e6a507651bc6510662cdd0500ae6885892f34da22f6c89fc",
           "anchor": "export class LocalDesktopPlanner"
         },
         {
           "path": "computer-use-runtime/src/assistant/runner.ts",
           "line": 57,
-          "sha256": "8d26f3fc24733b3df56007427b2e7f0546f563528aa577f64ccba733ac8b0d68",
+          "sha256": "66b721640ccb54475b5e34698dce1ae09fee9291b3315f4acee625a4e235dff2",
           "anchor": "export async function driveDesktop"
         },
         {
           "path": "computer-use-runtime/src/assistant/runner.ts",
-          "line": 307,
-          "sha256": "8d26f3fc24733b3df56007427b2e7f0546f563528aa577f64ccba733ac8b0d68",
+          "line": 317,
+          "sha256": "66b721640ccb54475b5e34698dce1ae09fee9291b3315f4acee625a4e235dff2",
           "anchor": "export async function reviewDesktop"
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 414,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 474,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.post(\"/api/desktop/tasks/:id/review\""
         }
       ]
@@ -4629,14 +4713,14 @@
         },
         {
           "path": "computer-use-runtime/src/service/drawing.ts",
-          "line": 11,
-          "sha256": "148c0b1036fdb9fb916a8b795af44c9299b3fa386f2f003587059c456e7fe76d",
+          "line": 16,
+          "sha256": "e907cd23e0441ed50291cb765c4f816a99cad5096c87d539bb9709542861fd07",
           "anchor": "export async function createDrawingPlan"
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 396,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 454,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.post(\"/api/drawing-plans\""
         }
       ]
@@ -4665,14 +4749,14 @@
         },
         {
           "path": "computer-use-runtime/src/service/artifacts.ts",
-          "line": 12,
-          "sha256": "c2cd0634ff80eb68cc270a92a83c5743b023f6e45bf1c3a7d73e316e773a0f68",
+          "line": 16,
+          "sha256": "3e32ef0addfe029c778f32b63bed993adea9083b04387e9eb10299d13ea6d990",
           "anchor": "export function artifactConfiguration"
         },
         {
           "path": "computer-use-runtime/console/ArtifactWorkspace.vue",
-          "line": 8,
-          "sha256": "906b1e8e3d1dfd0711cff1e252872a5b9f301dcb204556d774273175b4fbf9e0",
+          "line": 9,
+          "sha256": "d62a9322516c3b18d67052b02cf05c177589e2a3d4062bba756f1202187a445b",
           "anchor": "sourceMode = ref"
         }
       ]
@@ -4702,7 +4786,7 @@
         {
           "path": "computer-use-runtime/src/adapters/desktop.ts",
           "line": 124,
-          "sha256": "695801e4e644e428730b96c37a8a445a7440afee284205b5e34a14b6baba22ed",
+          "sha256": "6c6b52ed133d86e101c1a849aa47ffd9d67e05b9964acf5178277805a1dae584",
           "anchor": "permissions: [\"research_read\", \"workspace_read\", \"workspace_write\"]"
         },
         {
@@ -4719,26 +4803,26 @@
       "sources": [
         {
           "path": "computer-use-runtime/src/adapters/desktop.ts",
-          "line": 73,
-          "sha256": "695801e4e644e428730b96c37a8a445a7440afee284205b5e34a14b6baba22ed",
+          "line": 74,
+          "sha256": "6c6b52ed133d86e101c1a849aa47ffd9d67e05b9964acf5178277805a1dae584",
           "anchor": "export class DesktopRouter"
         },
         {
           "path": "computer-use-runtime/src/adapters/desktop.ts",
-          "line": 154,
-          "sha256": "695801e4e644e428730b96c37a8a445a7440afee284205b5e34a14b6baba22ed",
+          "line": 159,
+          "sha256": "6c6b52ed133d86e101c1a849aa47ffd9d67e05b9964acf5178277805a1dae584",
           "anchor": "new WindowsAdapter(this.store, false)"
         },
         {
           "path": "computer-use-runtime/src/adapters/desktop.ts",
-          "line": 155,
-          "sha256": "695801e4e644e428730b96c37a8a445a7440afee284205b5e34a14b6baba22ed",
+          "line": 160,
+          "sha256": "6c6b52ed133d86e101c1a849aa47ffd9d67e05b9964acf5178277805a1dae584",
           "anchor": "new UnixAdapter(this.store)"
         },
         {
           "path": "computer-use-runtime/src/adapters/desktop.ts",
-          "line": 220,
-          "sha256": "695801e4e644e428730b96c37a8a445a7440afee284205b5e34a14b6baba22ed",
+          "line": 225,
+          "sha256": "6c6b52ed133d86e101c1a849aa47ffd9d67e05b9964acf5178277805a1dae584",
           "anchor": "async prepare("
         }
       ]
@@ -4804,13 +4888,13 @@
         {
           "path": "computer-use-runtime/src/adapters/desktop.ts",
           "line": 103,
-          "sha256": "695801e4e644e428730b96c37a8a445a7440afee284205b5e34a14b6baba22ed",
+          "sha256": "6c6b52ed133d86e101c1a849aa47ffd9d67e05b9964acf5178277805a1dae584",
           "anchor": "private workspace("
         },
         {
           "path": "computer-use-runtime/src/adapters/desktop.ts",
           "line": 112,
-          "sha256": "695801e4e644e428730b96c37a8a445a7440afee284205b5e34a14b6baba22ed",
+          "sha256": "6c6b52ed133d86e101c1a849aa47ffd9d67e05b9964acf5178277805a1dae584",
           "anchor": "\"workspaces\", id"
         }
       ]
@@ -4923,8 +5007,8 @@
         },
         {
           "path": "computer-use-runtime/PLATFORMS.md",
-          "line": 81,
-          "sha256": "afb37f194ebfb52e88361d980969c49678732664be63fb271106f480726b94b2",
+          "line": 83,
+          "sha256": "6cc1bcf0b59b11251bcf04f66d7fcdf8c1171df17c185933241ca161d3b1d283",
           "anchor": "That check has not run"
         }
       ]
@@ -4947,8 +5031,8 @@
         },
         {
           "path": "computer-use-runtime/PLATFORMS.md",
-          "line": 139,
-          "sha256": "afb37f194ebfb52e88361d980969c49678732664be63fb271106f480726b94b2",
+          "line": 141,
+          "sha256": "6cc1bcf0b59b11251bcf04f66d7fcdf8c1171df17c185933241ca161d3b1d283",
           "anchor": "These were real Linux GUI processes"
         },
         {
@@ -4983,14 +5067,14 @@
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 221,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 283,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.post(\"/api/desktop/consent\""
         },
         {
           "path": "computer-use-runtime/PLATFORMS.md",
-          "line": 127,
-          "sha256": "afb37f194ebfb52e88361d980969c49678732664be63fb271106f480726b94b2",
+          "line": 129,
+          "sha256": "6cc1bcf0b59b11251bcf04f66d7fcdf8c1171df17c185933241ca161d3b1d283",
           "anchor": "Static PipeWire streams"
         },
         {
@@ -5043,8 +5127,8 @@
         },
         {
           "path": "computer-use-runtime/src/adapters/desktop.ts",
-          "line": 154,
-          "sha256": "695801e4e644e428730b96c37a8a445a7440afee284205b5e34a14b6baba22ed",
+          "line": 159,
+          "sha256": "6c6b52ed133d86e101c1a849aa47ffd9d67e05b9964acf5178277805a1dae584",
           "anchor": "new WindowsAdapter(this.store, false)"
         }
       ]
@@ -5055,26 +5139,26 @@
       "sources": [
         {
           "path": "computer-use-runtime/src/providers/index.ts",
-          "line": 12,
-          "sha256": "9e26899eabbacac83ad6ad0cdf50b5693b22f69c1eec74d030f31cb6731bf32c",
+          "line": 15,
+          "sha256": "94505aeae881e5cff2eb31fb94f8fb5598d693cb6a2bbcb8974bf4fd7b2865cc",
           "anchor": "export class OllamaProvider"
         },
         {
           "path": "computer-use-runtime/src/providers/index.ts",
-          "line": 52,
-          "sha256": "9e26899eabbacac83ad6ad0cdf50b5693b22f69c1eec74d030f31cb6731bf32c",
+          "line": 63,
+          "sha256": "94505aeae881e5cff2eb31fb94f8fb5598d693cb6a2bbcb8974bf4fd7b2865cc",
           "anchor": "\"/api/chat\""
         },
         {
           "path": "computer-use-runtime/src/providers/transport.ts",
-          "line": 88,
-          "sha256": "b87ad1e24d1ad71486b0cf08238bc8a8442fd1521126b0dc125aa766b50f3a60",
+          "line": 266,
+          "sha256": "86c984b5aae881d24d3238493a8be2e7b5c2f292fef9b42e33123273d2619472",
           "anchor": "export async function localOllamaReady"
         },
         {
           "path": "computer-use-runtime/src/providers/vision.ts",
-          "line": 23,
-          "sha256": "f698e55664aa89e1c5f3bfc038f91f8e5f2c03263ada99122c53d3a42c3dfdfd",
+          "line": 25,
+          "sha256": "aee3e00b79d42aa7f46c2aa3f7f31bb87a33a4604a12522737d885176ee0a41c",
           "anchor": "export class LocalVisionAssessor"
         }
       ]
@@ -5085,27 +5169,28 @@
       "sources": [
         {
           "path": "computer-use-runtime/src/providers/index.ts",
-          "line": 106,
-          "sha256": "9e26899eabbacac83ad6ad0cdf50b5693b22f69c1eec74d030f31cb6731bf32c",
+          "line": 110,
+          "sha256": "94505aeae881e5cff2eb31fb94f8fb5598d693cb6a2bbcb8974bf4fd7b2865cc",
           "anchor": "export class LocalEndpointProvider"
         },
         {
           "path": "computer-use-runtime/src/providers/index.ts",
-          "line": 128,
-          "sha256": "9e26899eabbacac83ad6ad0cdf50b5693b22f69c1eec74d030f31cb6731bf32c",
+          "line": 162,
+          "sha256": "94505aeae881e5cff2eb31fb94f8fb5598d693cb6a2bbcb8974bf4fd7b2865cc",
           "anchor": "\"/chat/completions\""
         },
         {
           "path": "computer-use-runtime/src/providers/transport.ts",
-          "line": 2,
-          "sha256": "b87ad1e24d1ad71486b0cf08238bc8a8442fd1521126b0dc125aa766b50f3a60",
+          "line": 61,
+          "sha256": "86c984b5aae881d24d3238493a8be2e7b5c2f292fef9b42e33123273d2619472",
           "anchor": "export function localEndpoint"
         },
         {
           "path": "computer-use-runtime/src/providers/transport.ts",
-          "line": 20,
-          "sha256": "b87ad1e24d1ad71486b0cf08238bc8a8442fd1521126b0dc125aa766b50f3a60",
-          "anchor": "redirect: \"error\""
+          "line": 80,
+          "sha256": "86c984b5aae881d24d3238493a8be2e7b5c2f292fef9b42e33123273d2619472",
+          "anchor": "redirect: \"error\"",
+          "symbol": "Loopback fetch rejects redirects"
         }
       ]
     },
@@ -5187,14 +5272,14 @@
       "sources": [
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 690,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 753,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.post(\"/api/jobs\""
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 705,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 768,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "train-recordings"
         },
         {
@@ -5223,14 +5308,14 @@
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 618,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 681,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.post(\"/api/record\""
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 624,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 687,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.post(\"/api/correct\""
         }
       ]
@@ -5253,14 +5338,14 @@
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 620,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 683,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.get(\"/api/datasets/export\""
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 621,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 684,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.post(\"/api/datasets/import\""
         }
       ]
@@ -5283,14 +5368,14 @@
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 632,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 695,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.post(\"/api/compile\""
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 665,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 728,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.post(\"/api/libraries/import\""
         }
       ]
@@ -5427,8 +5512,8 @@
         },
         {
           "path": "computer-use-runtime/THIRD_PARTY.md",
-          "line": 34,
-          "sha256": "cd41b7c5b2824a50d38f84097d8c2bf5c1fc8b303f715f8f0984ce0146a250b1",
+          "line": 36,
+          "sha256": "62a834b821b27d8187f41cbcb90ce121d17eee92325f9d64f0c563523317e642",
           "anchor": "no benchmark VM score"
         }
       ]
@@ -5577,14 +5662,14 @@
         },
         {
           "path": "computer-use-runtime/PLATFORMS.md",
-          "line": 81,
-          "sha256": "afb37f194ebfb52e88361d980969c49678732664be63fb271106f480726b94b2",
+          "line": 83,
+          "sha256": "6cc1bcf0b59b11251bcf04f66d7fcdf8c1171df17c185933241ca161d3b1d283",
           "anchor": "live Mac validation"
         },
         {
           "path": "computer-use-runtime/docs/FEATURE_MATRIX.md",
           "line": 1,
-          "sha256": "46470f53be8097333dcce221d7f72c7255210078f90d66226477d06d64f358c8",
+          "sha256": "75341ec17a57ebf2ca44dd82a2c51fd3e8e85dd01a2a72e9813409774f589ced",
           "anchor": "61"
         }
       ]
@@ -5649,20 +5734,20 @@
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 106,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 112,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "Local token required"
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 119,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 125,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "Correlation and idempotency headers required"
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 148,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 154,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "Idempotency key reused with different payload"
         },
         {
@@ -5697,20 +5782,20 @@
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 106,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 112,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "Local token required"
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 119,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 125,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "Correlation and idempotency headers required"
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 148,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 154,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "Idempotency key reused with different payload"
         },
         {
@@ -5769,14 +5854,14 @@
         },
         {
           "path": "computer-use-runtime/src/service/artifacts.ts",
-          "line": 12,
-          "sha256": "c2cd0634ff80eb68cc270a92a83c5743b023f6e45bf1c3a7d73e316e773a0f68",
+          "line": 16,
+          "sha256": "3e32ef0addfe029c778f32b63bed993adea9083b04387e9eb10299d13ea6d990",
           "anchor": "export function artifactConfiguration"
         },
         {
           "path": "computer-use-runtime/console/ArtifactWorkspace.vue",
-          "line": 8,
-          "sha256": "906b1e8e3d1dfd0711cff1e252872a5b9f301dcb204556d774273175b4fbf9e0",
+          "line": 9,
+          "sha256": "d62a9322516c3b18d67052b02cf05c177589e2a3d4062bba756f1202187a445b",
           "anchor": "sourceMode = ref"
         },
         {
@@ -5793,14 +5878,14 @@
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 620,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 683,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.get(\"/api/datasets/export\""
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 621,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 684,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.post(\"/api/datasets/import\""
         },
         {
@@ -5817,14 +5902,14 @@
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 531,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 594,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.post(\"/api/skills/import\""
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 538,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 601,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.post(\"/api/skills/migrate\""
         },
         {
@@ -5841,74 +5926,75 @@
       "sources": [
         {
           "path": "computer-use-runtime/src/providers/index.ts",
-          "line": 12,
-          "sha256": "9e26899eabbacac83ad6ad0cdf50b5693b22f69c1eec74d030f31cb6731bf32c",
+          "line": 15,
+          "sha256": "94505aeae881e5cff2eb31fb94f8fb5598d693cb6a2bbcb8974bf4fd7b2865cc",
           "anchor": "export class OllamaProvider"
         },
         {
           "path": "computer-use-runtime/src/providers/index.ts",
-          "line": 52,
-          "sha256": "9e26899eabbacac83ad6ad0cdf50b5693b22f69c1eec74d030f31cb6731bf32c",
+          "line": 63,
+          "sha256": "94505aeae881e5cff2eb31fb94f8fb5598d693cb6a2bbcb8974bf4fd7b2865cc",
           "anchor": "\"/api/chat\""
         },
         {
           "path": "computer-use-runtime/src/providers/transport.ts",
-          "line": 88,
-          "sha256": "b87ad1e24d1ad71486b0cf08238bc8a8442fd1521126b0dc125aa766b50f3a60",
+          "line": 266,
+          "sha256": "86c984b5aae881d24d3238493a8be2e7b5c2f292fef9b42e33123273d2619472",
           "anchor": "export async function localOllamaReady"
         },
         {
           "path": "computer-use-runtime/src/providers/vision.ts",
-          "line": 23,
-          "sha256": "f698e55664aa89e1c5f3bfc038f91f8e5f2c03263ada99122c53d3a42c3dfdfd",
+          "line": 25,
+          "sha256": "aee3e00b79d42aa7f46c2aa3f7f31bb87a33a4604a12522737d885176ee0a41c",
           "anchor": "export class LocalVisionAssessor"
         },
         {
           "path": "computer-use-runtime/src/providers/index.ts",
-          "line": 106,
-          "sha256": "9e26899eabbacac83ad6ad0cdf50b5693b22f69c1eec74d030f31cb6731bf32c",
+          "line": 110,
+          "sha256": "94505aeae881e5cff2eb31fb94f8fb5598d693cb6a2bbcb8974bf4fd7b2865cc",
           "anchor": "export class LocalEndpointProvider"
         },
         {
           "path": "computer-use-runtime/src/providers/index.ts",
-          "line": 128,
-          "sha256": "9e26899eabbacac83ad6ad0cdf50b5693b22f69c1eec74d030f31cb6731bf32c",
+          "line": 162,
+          "sha256": "94505aeae881e5cff2eb31fb94f8fb5598d693cb6a2bbcb8974bf4fd7b2865cc",
           "anchor": "\"/chat/completions\""
         },
         {
           "path": "computer-use-runtime/src/providers/transport.ts",
-          "line": 2,
-          "sha256": "b87ad1e24d1ad71486b0cf08238bc8a8442fd1521126b0dc125aa766b50f3a60",
+          "line": 61,
+          "sha256": "86c984b5aae881d24d3238493a8be2e7b5c2f292fef9b42e33123273d2619472",
           "anchor": "export function localEndpoint"
         },
         {
           "path": "computer-use-runtime/src/providers/transport.ts",
-          "line": 20,
-          "sha256": "b87ad1e24d1ad71486b0cf08238bc8a8442fd1521126b0dc125aa766b50f3a60",
-          "anchor": "redirect: \"error\""
+          "line": 80,
+          "sha256": "86c984b5aae881d24d3238493a8be2e7b5c2f292fef9b42e33123273d2619472",
+          "anchor": "redirect: \"error\"",
+          "symbol": "Loopback fetch rejects redirects"
         },
         {
           "path": "computer-use-runtime/src/assistant/local.ts",
           "line": 12,
-          "sha256": "11eaacb50229371b6623f1785206ab0a337ca1f3381b5990de55c4b5ef742874",
+          "sha256": "4dee397d66a1c603e6a507651bc6510662cdd0500ae6885892f34da22f6c89fc",
           "anchor": "export class LocalDesktopPlanner"
         },
         {
           "path": "computer-use-runtime/src/assistant/runner.ts",
           "line": 57,
-          "sha256": "8d26f3fc24733b3df56007427b2e7f0546f563528aa577f64ccba733ac8b0d68",
+          "sha256": "66b721640ccb54475b5e34698dce1ae09fee9291b3315f4acee625a4e235dff2",
           "anchor": "export async function driveDesktop"
         },
         {
           "path": "computer-use-runtime/src/assistant/runner.ts",
-          "line": 307,
-          "sha256": "8d26f3fc24733b3df56007427b2e7f0546f563528aa577f64ccba733ac8b0d68",
+          "line": 317,
+          "sha256": "66b721640ccb54475b5e34698dce1ae09fee9291b3315f4acee625a4e235dff2",
           "anchor": "export async function reviewDesktop"
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 414,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 474,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.post(\"/api/desktop/tasks/:id/review\""
         },
         {
@@ -5932,13 +6018,13 @@
         {
           "path": "computer-use-runtime/src/adapters/desktop.ts",
           "line": 103,
-          "sha256": "695801e4e644e428730b96c37a8a445a7440afee284205b5e34a14b6baba22ed",
+          "sha256": "6c6b52ed133d86e101c1a849aa47ffd9d67e05b9964acf5178277805a1dae584",
           "anchor": "private workspace("
         },
         {
           "path": "computer-use-runtime/src/adapters/desktop.ts",
           "line": 112,
-          "sha256": "695801e4e644e428730b96c37a8a445a7440afee284205b5e34a14b6baba22ed",
+          "sha256": "6c6b52ed133d86e101c1a849aa47ffd9d67e05b9964acf5178277805a1dae584",
           "anchor": "\"workspaces\", id"
         },
         {
@@ -6009,26 +6095,26 @@
       "sources": [
         {
           "path": "computer-use-runtime/src/providers/index.ts",
-          "line": 12,
-          "sha256": "9e26899eabbacac83ad6ad0cdf50b5693b22f69c1eec74d030f31cb6731bf32c",
+          "line": 15,
+          "sha256": "94505aeae881e5cff2eb31fb94f8fb5598d693cb6a2bbcb8974bf4fd7b2865cc",
           "anchor": "export class OllamaProvider"
         },
         {
           "path": "computer-use-runtime/src/providers/index.ts",
-          "line": 52,
-          "sha256": "9e26899eabbacac83ad6ad0cdf50b5693b22f69c1eec74d030f31cb6731bf32c",
+          "line": 63,
+          "sha256": "94505aeae881e5cff2eb31fb94f8fb5598d693cb6a2bbcb8974bf4fd7b2865cc",
           "anchor": "\"/api/chat\""
         },
         {
           "path": "computer-use-runtime/src/providers/transport.ts",
-          "line": 88,
-          "sha256": "b87ad1e24d1ad71486b0cf08238bc8a8442fd1521126b0dc125aa766b50f3a60",
+          "line": 266,
+          "sha256": "86c984b5aae881d24d3238493a8be2e7b5c2f292fef9b42e33123273d2619472",
           "anchor": "export async function localOllamaReady"
         },
         {
           "path": "computer-use-runtime/src/providers/vision.ts",
-          "line": 23,
-          "sha256": "f698e55664aa89e1c5f3bfc038f91f8e5f2c03263ada99122c53d3a42c3dfdfd",
+          "line": 25,
+          "sha256": "aee3e00b79d42aa7f46c2aa3f7f31bb87a33a4604a12522737d885176ee0a41c",
           "anchor": "export class LocalVisionAssessor"
         },
         {
@@ -6081,14 +6167,14 @@
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 690,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 753,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.post(\"/api/jobs\""
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 705,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 768,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "train-recordings"
         },
         {
@@ -6171,26 +6257,26 @@
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 42,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 48,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "export async function service"
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 418,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 478,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.post(\"/api/tasks\""
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 771,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 834,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "app.get(\"/api/events\""
         },
         {
           "path": "computer-use-runtime/src/service/index.ts",
-          "line": 806,
-          "sha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
+          "line": 869,
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
           "anchor": "await app.register(staticPlugin"
         },
         {
@@ -6200,7 +6286,97 @@
           "sha256": "47566c59dd4a7dcef434aadcc2684abd6f6b6b10a1fd717842e824c9a2b2fd55"
         }
       ]
+    },
+    {
+      "id": "provider-picker",
+      "title": "Model selection and consent",
+      "sources": [
+        {
+          "path": "computer-use-runtime/console/ModelPicker.vue",
+          "line": 1,
+          "symbol": "console/ModelPicker.vue",
+          "sha256": "6c72333858f4088f2b681185c7e6c8fd434d5890733505ebe8a2a8941f65de32"
+        },
+        {
+          "path": "computer-use-runtime/src/providers/settings.ts",
+          "line": 12,
+          "symbol": "export function providerSettings",
+          "sha256": "8bffeb8161298690a2c7579222aea501945eacefdd8418496cc24fa0046488c5"
+        },
+        {
+          "path": "computer-use-runtime/src/providers/settings.ts",
+          "line": 63,
+          "symbol": "export function taskProviderSettings",
+          "sha256": "8bffeb8161298690a2c7579222aea501945eacefdd8418496cc24fa0046488c5"
+        }
+      ]
+    },
+    {
+      "id": "provider-team",
+      "title": "Fallback and ensemble",
+      "sources": [
+        {
+          "path": "computer-use-runtime/src/providers/team.ts",
+          "line": 48,
+          "symbol": "export class TeamProvider",
+          "sha256": "73b0d0add72ee36086ada593f5038c472c52f39a67a65b0ae204886bb1bf8e0b"
+        },
+        {
+          "path": "computer-use-runtime/src/providers/selection.ts",
+          "line": 39,
+          "symbol": "export function createSelectedProvider",
+          "sha256": "d316c88dbc98f50dee7ccbed74b3e3e763adda9c36205b805a52ec06dff9ef78"
+        }
+      ]
+    },
+    {
+      "id": "provider-cli",
+      "title": "Installed CLI adapters",
+      "sources": [
+        {
+          "path": "computer-use-runtime/src/providers/cli.ts",
+          "line": 736,
+          "symbol": "export class CliModelProvider",
+          "sha256": "fcd990f54fbf569884daaea1884496ae2cbfab0d0235b2a93dd28b7bdedb5453"
+        },
+        {
+          "path": "computer-use-runtime/src/providers/cli.ts",
+          "line": 419,
+          "symbol": "export function cliArguments",
+          "sha256": "fcd990f54fbf569884daaea1884496ae2cbfab0d0235b2a93dd28b7bdedb5453"
+        },
+        {
+          "path": "computer-use-runtime/src/providers/cli.ts",
+          "line": 525,
+          "symbol": "export function codexProposalCatalog",
+          "sha256": "fcd990f54fbf569884daaea1884496ae2cbfab0d0235b2a93dd28b7bdedb5453"
+        },
+        {
+          "path": "computer-use-runtime/src/providers/cli-windows.py",
+          "line": 1,
+          "symbol": "src/providers/cli-windows.py",
+          "sha256": "57a8d6f1c31540c6736b3904bb5a38ca105775c65c8f08dd2314f3f21110ece4"
+        }
+      ]
+    },
+    {
+      "id": "provider-assessment",
+      "title": "Canvas model opinion",
+      "sources": [
+        {
+          "path": "computer-use-runtime/src/providers/assessment.ts",
+          "line": 17,
+          "symbol": "export class SelectedVisionAssessor",
+          "sha256": "1671040d564f2a54f15f816fcbf00a8935a3021eb01544c25cb2f8810edbba7f"
+        },
+        {
+          "path": "computer-use-runtime/src/service/index.ts",
+          "line": 16,
+          "symbol": "SelectedVisionAssessor",
+          "sha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952"
+        }
+      ]
     }
   ],
-  "sourceReferencesChecked": 1449
+  "sourceReferencesChecked": 1479
 }

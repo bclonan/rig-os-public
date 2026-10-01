@@ -32,6 +32,8 @@ export interface ModelProvider {
     prompt: string,
     schema: object,
     signal?: AbortSignal,
+    images?: string[],
+    think?: boolean,
   ): Promise<unknown>;
 }
 export interface EvidenceVerifier {

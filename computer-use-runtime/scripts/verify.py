@@ -32,7 +32,7 @@ commands = [
     ['cargo', 'fmt', '--manifest-path', 'native/Cargo.toml', '--', '--check'],
     ['cargo', 'clippy', '--manifest-path', 'native/Cargo.toml', '--all-targets', '--', '-D', 'warnings'],
     ['git', 'diff', '--check', '--', '.'],
-    [sys.executable, '-c', "import pathlib,py_compile; files=[p for d in ['learner','native/unix','sdk','examples','scripts','evaluation','tests'] for p in pathlib.Path(d).rglob('*.py') if '__pycache__' not in p.parts]; [py_compile.compile(str(p),doraise=True) for p in files]; print(str(len(files))+' Python files compiled')"],
+    [sys.executable, '-c', "import pathlib,py_compile; files=[p for d in ['learner','native/unix','src/providers','sdk','examples','scripts','evaluation','tests'] for p in pathlib.Path(d).rglob('*.py') if '__pycache__' not in p.parts]; [py_compile.compile(str(p),doraise=True) for p in files]; print(str(len(files))+' Python files compiled')"],
     [sys.executable, '-m', 'unittest', 'discover', '-s', 'tests', '-p', '*_test.py'],
 ]
 report = {'status': 'RUNNING', 'at': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'platform': os.name, 'checks': []}

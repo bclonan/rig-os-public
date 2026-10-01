@@ -1,5 +1,5 @@
-import { localFetch } from "../providers/transport.js";
-import { OllamaProvider } from "../providers/index.js";
+import { createSelectedProvider } from "../providers/selection.js";
+import { taskProviderSettings } from "../providers/settings.js";
 import type { Store } from "../storage/index.js";
 import type { Observation, TaskContract } from "../contracts/index.js";
 import {
@@ -10,6 +10,7 @@ import {
 } from "./planner.js";
 import { Ajv } from "ajv";
 export class LocalDesktopPlanner implements DesktopPlanner {
+  lastCall?: unknown;
   constructor(private store: Store) {}
   async next(
     task: TaskContract,
@@ -17,33 +18,15 @@ export class LocalDesktopPlanner implements DesktopPlanner {
     history: unknown[],
     signal: AbortSignal,
   ) {
-    const model = String(task.parameters.plannerModel || "");
-    if (!model) throw new Error("Choose an installed local model.");
-    const provider = new OllamaProvider(model);
+    this.lastCall = undefined;
+    const settings = taskProviderSettings(task.parameters);
+    const model = settings.model;
+    const provider = createSelectedProvider(
+      settings.providers,
+      settings.strategy,
+    );
     let images: string[] | undefined;
     {
-      const response = await localFetch(provider.endpoint + "/api/show", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ model }),
-        signal: AbortSignal.any([signal, AbortSignal.timeout(5000)]),
-      });
-      const info: any = await response.json();
-      if (!response.ok)
-        throw new Error(
-          "The selected local model is unavailable. Check Ollama and refresh the model list.",
-        );
-      if (info.remote_host || info.remote_model || /:cloud\b/i.test(model))
-        throw new Error(
-          "Desktop observations require a local model. Cloud-backed Ollama models are not enabled.",
-        );
-      if (
-        task.parameters.vision === true &&
-        !info.capabilities?.includes("vision")
-      )
-        throw new Error(
-          "This model does not accept screenshots. Turn off screenshot input or choose a vision model.",
-        );
       if (
         task.parameters.vision === true &&
         observation.facts.pixelFrameCached === true
@@ -211,12 +194,17 @@ USER FEEDBACK: ${JSON.stringify(task.parameters.feedback || "")}
 Plan ALL steps needed on the current screen, in the order they must be performed. Do not include done in an action sequence. Completion will be assessed from a fresh observation AFTER executing the sequence. Return JSON matching this schema: ${JSON.stringify(planSchema)}`;
     let correction = "";
     for (let attempt = 0; attempt < 3; attempt++) {
-      const raw: any = await provider.generate(
-        prompt + correction,
-        planSchema,
-        signal,
-        images,
-      );
+      let raw: any;
+      try {
+        raw = await provider.generate(
+          prompt + correction,
+          planSchema,
+          signal,
+          images,
+        );
+      } finally {
+        this.lastCall = provider.lastCall;
+      }
       try {
         if (!planCheck(raw)) throw new Error("Invalid desktop plan");
         if (raw.kind !== "plan")
@@ -260,7 +248,14 @@ Plan ALL steps needed on the current screen, in the order they must be performed
         this.store.append(
           task.id,
           "assistant_plan",
-          { summary: raw.summary, actions: raw.actions, model },
+          {
+            summary: raw.summary,
+            actions: raw.actions,
+            model,
+            providers: settings.providers,
+            strategy: settings.strategy,
+            providerResults: this.lastCall,
+          },
           task.correlationId,
         );
         return decision;

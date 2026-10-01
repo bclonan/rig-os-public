@@ -5,7 +5,7 @@ from pathlib import Path
 import re
 from urllib.parse import unquote
 
-from refresh_publication import maintained_identity, repository_path, sources
+from refresh_publication import maintained_identity, repository_path, sources, validate_trace_lineage
 
 folder = Path(__file__).resolve().parent
 root = folder.parents[1]
@@ -15,6 +15,7 @@ assert raw.startswith(prefix) and raw.endswith(";\n"), "Invalid snapshot wrapper
 data = json.loads(raw[len(prefix):-2])
 binding = json.loads((folder / "PUBLICATION_BINDING.json").read_text(encoding="utf-8-sig"))
 assert binding["schemaVersion"] == 1 and binding["scope"] == "Static public documentation refresh only"
+validate_trace_lineage(binding)
 identity = maintained_identity()
 assert identity["sha256"] == data["meta"]["implementationSha256"] == binding["sourceSha256"], "Maintained source changed"
 assert identity["files"] == binding["maintainedFiles"], "Maintained inventory changed"

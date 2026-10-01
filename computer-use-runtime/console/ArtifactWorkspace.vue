@@ -1,13 +1,20 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted, watch } from "vue";
+import { ref, onMounted, onUnmounted, watch } from "vue";
 import type { RuntimeClient } from "../src/sdk/index";
+import ModelPicker, { type ModelSelection } from "./ModelPicker.vue";
 const props = defineProps<{ client: RuntimeClient; caps: any }>();
 const goal = ref(
   "Create the requested rows from this source and verify every value",
 );
 const sourceMode = ref("paste"),
-  kind = ref("json_projection"),
-  model = ref("");
+  kind = ref("json_projection");
+const modelPicker = ref<InstanceType<typeof ModelPicker>>();
+const modelSelection = ref<ModelSelection>({
+  providers: [],
+  strategy: "fallback",
+  allowRemote: false,
+  model: "",
+});
 const input = ref(
   '[{"name":"Alder","quantity":3},{"name":"Birch","quantity":7}]',
 );
@@ -21,7 +28,6 @@ const runs = ref<any[]>([]),
 const busy = ref(false),
   error = ref(""),
   preview = ref("");
-const models = computed(() => props.caps.providers?.models || []);
 let timer: ReturnType<typeof setInterval>;
 let closed = false;
 let refreshVersion = 0,
@@ -65,6 +71,7 @@ async function refresh() {
 }
 async function submit() {
   if (busy.value) return;
+  if (modelPicker.value?.validate() === false) return;
   busy.value = true;
   error.value = "";
   preview.value = "";
@@ -83,7 +90,7 @@ async function submit() {
         : { operation: "research_read", location: sourceUrl.value };
     const result = await client.request("/api/artifact-tasks", "POST", {
       goal: goal.value,
-      model: model.value,
+      ...modelSelection.value,
       spec: {
         schemaVersion: 1,
         kind: kind.value,
@@ -153,7 +160,6 @@ async function output(download: boolean) {
   }
 }
 onMounted(async () => {
-  model.value = models.value[0]?.name || "";
   await refresh();
   if (closed) return;
   timer = setInterval(refresh, 2000);
@@ -171,9 +177,9 @@ onUnmounted(() => {
     <section class="panel">
       <h2>Construct a verified artifact</h2>
       <p>
-        The runtime reads your source, creates JSON or CSV with a local model,
-        then checks every row and value against the criteria below. Failed
-        checks can trigger up to two repairs.
+        The runtime reads your source, creates JSON or CSV with the selected
+        providers, then checks every row and value against the criteria below.
+        Failed checks can trigger up to two repairs.
       </p>
       <form action="/api/artifact-tasks" method="post" @submit.prevent="submit">
         <label for="artifact-goal">Request</label>
@@ -184,13 +190,12 @@ onUnmounted(() => {
           required
           maxlength="4000"
         />
-        <label for="artifact-model">Local model</label>
-        <select id="artifact-model" name="model" v-model="model" required>
-          <option value="">Choose a model</option>
-          <option v-for="item in models" :key="item.name" :value="item.name">
-            {{ item.name }}
-          </option>
-        </select>
+        <ModelPicker
+          ref="modelPicker"
+          id-prefix="artifact"
+          :providers="caps.providers"
+          v-model="modelSelection"
+        />
         <fieldset>
           <legend>Source</legend>
           <label

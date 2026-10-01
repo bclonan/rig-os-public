@@ -261,18 +261,28 @@ export async function driveDesktop<
       ].includes(e.type),
     )
     .map((e) => ({ type: e.type, data: e.data }));
-  const decision = await planner.next(
-    {
-      ...run.contract,
-      parameters: {
-        ...run.contract.parameters,
-        feedback: String(run.bindings.feedback || ""),
+  let decision: Decision;
+  try {
+    decision = await planner.next(
+      {
+        ...run.contract,
+        parameters: {
+          ...run.contract.parameters,
+          feedback: String(run.bindings.feedback || ""),
+        },
       },
-    },
-    observation!,
-    history,
-    boundedSignal,
-  );
+      observation!,
+      history,
+      boundedSignal,
+    );
+  } finally {
+    if (planner.lastCall) {
+      const planningRun = runtime.store.run(id);
+      planningRun.bindings.providerResults = planner.lastCall;
+      runtime.store.putRun(planningRun);
+      runtime.event(planningRun, "provider_proposals", planner.lastCall);
+    }
+  }
   boundedSignal.throwIfAborted();
   run = runtime.store.run(id);
   run.bindings.assistantMessage = decision.summary;

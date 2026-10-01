@@ -61,8 +61,8 @@
     {
       "path": "README.md",
       "sourceSha256": "164539ecf4c2206a494094a23d356ee6ff46bf7049d0d63c3926e81265887bf9",
-      "publicSha256": "4464d7c1ea16d5c1e0fe5706c866c0e1a48e1424f9abdb6b613a14956411bb41",
-      "bytes": 5238,
+      "publicSha256": "884eca2aa647155e93c9e51ef0a5f7578e51042ac15ab6921d3e2d3ca1bfa1b4",
+      "bytes": 5945,
       "changedForPublication": true
     },
     {
@@ -110,36 +110,36 @@
     {
       "path": "computer-use-runtime/ARCHITECTURE.md",
       "sourceSha256": "2ef7fd5ecdb13a3a1abaad173ab104a0e4769bffaf59b13747324953fdf0a68a",
-      "publicSha256": "5e68b787e25d34c9464b0b685d77a0b339d676695ea46372d37b6e688f0c098c",
-      "bytes": 23326,
+      "publicSha256": "9261cd8054eda63198950533c7361e1ebeefa57e665afb077af0bb45beb60b72",
+      "bytes": 23774,
       "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/BUILD_STATE.md",
       "sourceSha256": "3ab0b670f6ec085173b42008f1dfc53dbe999f9f9527a37e11d661ae71f1f3da",
-      "publicSha256": "2b9e110c683dff23c3190f87a29b9a171e50ad09f6974dacfd0a5fe7b41e8760",
-      "bytes": 4250,
+      "publicSha256": "d496e53d2077eb8376be840f849ca7162e5293bace487a42a39c5ace355ebb52",
+      "bytes": 5467,
       "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/CAPABILITIES.md",
       "sourceSha256": "0e804abd058b647add8da751f1389b09fe2b730992f0252b33b110b1b07cdeb3",
-      "publicSha256": "9b98e37c440fcf5d57fdb4e5576a5cdf4063512a2bf063a0a21ef83c47d5b043",
-      "bytes": 10124,
+      "publicSha256": "fb9749bff306e5942d2eb43d0963a8c0f5807a6c8d0f01e6907a4c9ba1699cc8",
+      "bytes": 11505,
       "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/PLATFORMS.md",
       "sourceSha256": "fd9e77cb569c1bcf1a752d5659a47422cfd2aa1a7ef9696955b0707cc873c52e",
-      "publicSha256": "afb37f194ebfb52e88361d980969c49678732664be63fb271106f480726b94b2",
-      "bytes": 19162,
+      "publicSha256": "6cc1bcf0b59b11251bcf04f66d7fcdf8c1171df17c185933241ca161d3b1d283",
+      "bytes": 19583,
       "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/README.md",
       "sourceSha256": "e179890ba01f486bffb2cc36a0049aeda8a163fa535fc154857f57886006f750",
-      "publicSha256": "20af16d59b462674ad61bd250b5eb510fd6179eac8ed489f82b4e69da32bf191",
-      "bytes": 40363,
+      "publicSha256": "94bf917c2aaa8b4e9ac8a8282fb7eb70e37c25d9d8b220f5ed640566ce8114b1",
+      "bytes": 41656,
       "changedForPublication": true
     },
     {
@@ -152,15 +152,15 @@
     {
       "path": "computer-use-runtime/SECURITY.md",
       "sourceSha256": "8e9e73da34e94c9fb7a582ffd14ea0709a3ea64798885e9ee1aff075d4504422",
-      "publicSha256": "fe686044994f733b46ea8e538aca2d054027560b1ccb8d140b212e66fcf29aa5",
-      "bytes": 17787,
+      "publicSha256": "4ea8fb48eac0773e8c590249bb8184f64ecf58c50aeb8fcb3336202e9318d072",
+      "bytes": 18208,
       "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/THIRD_PARTY.md",
       "sourceSha256": "4440f1d75ff7e8580788c9a6b3b579f9a28864e7e56d39beea340b41a55e0f17",
-      "publicSha256": "cd41b7c5b2824a50d38f84097d8c2bf5c1fc8b303f715f8f0984ce0146a250b1",
-      "bytes": 9116,
+      "publicSha256": "62a834b821b27d8187f41cbcb90ce121d17eee92325f9d64f0c563523317e642",
+      "bytes": 9537,
       "changedForPublication": true
     },
     {
@@ -173,23 +173,31 @@
     {
       "path": "computer-use-runtime/console/App.vue",
       "sourceSha256": "1c06d5984003cba7e949d3af24074c0db773f7251436ef825dad639c77e13795",
-      "publicSha256": "1c06d5984003cba7e949d3af24074c0db773f7251436ef825dad639c77e13795",
-      "bytes": 26600,
-      "changedForPublication": false
+      "publicSha256": "117e85936093983e64af65f5a847ea81e3930283cdca617f3f13801cebab31be",
+      "bytes": 26660,
+      "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/console/ArtifactWorkspace.vue",
       "sourceSha256": "906b1e8e3d1dfd0711cff1e252872a5b9f301dcb204556d774273175b4fbf9e0",
-      "publicSha256": "906b1e8e3d1dfd0711cff1e252872a5b9f301dcb204556d774273175b4fbf9e0",
-      "bytes": 11374,
-      "changedForPublication": false
+      "publicSha256": "d62a9322516c3b18d67052b02cf05c177589e2a3d4062bba756f1202187a445b",
+      "bytes": 11396,
+      "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/console/DesktopWorkspace.vue",
       "sourceSha256": "36b393d5bcbcd74f49fd49cd228116f918cb980728a34967b5b0c4e2780c55d0",
-      "publicSha256": "36b393d5bcbcd74f49fd49cd228116f918cb980728a34967b5b0c4e2780c55d0",
-      "bytes": 28105,
-      "changedForPublication": false
+      "publicSha256": "1e500a4c7e304eba16fb0b8f5636e55107974bd87a310c011f6d164a055c88dc",
+      "bytes": 30051,
+      "changedForPublication": true
+    },
+    {
+      "path": "computer-use-runtime/console/ModelPicker.vue",
+      "sourceSha256": null,
+      "publicSha256": "6c72333858f4088f2b681185c7e6c8fd434d5890733505ebe8a2a8941f65de32",
+      "bytes": 13236,
+      "changedForPublication": true,
+      "reason": "Public release documentation or verification report added after the initial export"
     },
     {
       "path": "computer-use-runtime/console/index.html",
@@ -222,16 +230,16 @@
     {
       "path": "computer-use-runtime/docs/COMPLETION_CHECKLIST.md",
       "sourceSha256": "fe95e95217dd576312186ba2dd11132b1537f4b1b549b1b8450c053423fc2898",
-      "publicSha256": "fe95e95217dd576312186ba2dd11132b1537f4b1b549b1b8450c053423fc2898",
-      "bytes": 14965,
-      "changedForPublication": false
+      "publicSha256": "2f7f0178d3774d864c135ebc336421b36c3d88b3dda7f9dc6d0d26709a233711",
+      "bytes": 16113,
+      "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/docs/COMPLETION_DECISIONS.md",
       "sourceSha256": "257915dd55be2c6fd6d3e3e5277813a953cd65e098446d9440d97743bb3a74c2",
-      "publicSha256": "257915dd55be2c6fd6d3e3e5277813a953cd65e098446d9440d97743bb3a74c2",
-      "bytes": 21857,
-      "changedForPublication": false
+      "publicSha256": "7ba7c232be5773794160030774ae26768c7086e5a22d2601e00caba69aaaa682",
+      "bytes": 23074,
+      "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/docs/COMPLETION_EVIDENCE.json",
@@ -243,64 +251,72 @@
     {
       "path": "computer-use-runtime/docs/COMPLETION_PLAN.md",
       "sourceSha256": "c76a6c85d6bbff9d7f357b0e7fe516196aefbed24f0e184201119cd4024165d6",
-      "publicSha256": "e7b7bd790a005396536017be55877c7b165fa7ba22c44fd315902cf12aa32cc3",
-      "bytes": 3059,
+      "publicSha256": "b7ee20aef933d9081c1bf49e5b8ed7a4c909af4e50e7ba2dbfec846eb775aa29",
+      "bytes": 4288,
       "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/docs/DEFINITION_OF_DONE.md",
       "sourceSha256": "9e90c4c2624273e393997a752e02a423e9a0c550d19e3657954c1e44b3560cc2",
-      "publicSha256": "b5fe357475cb956581ad0f515f628665f2018418f6618146f613e7d5deb6e8d7",
-      "bytes": 5706,
+      "publicSha256": "a3283d9a9b37529499fd68d09e90ecb5dc350b07f0da83df83a8714bd88298bd",
+      "bytes": 6945,
       "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/docs/FEATURE_MATRIX.md",
       "sourceSha256": "5c4ad382cc4ff31087e93db63a0b4a1b4c110bd15f710d7a06770b7d05541ff5",
-      "publicSha256": "46470f53be8097333dcce221d7f72c7255210078f90d66226477d06d64f358c8",
-      "bytes": 11966,
+      "publicSha256": "75341ec17a57ebf2ca44dd82a2c51fd3e8e85dd01a2a72e9813409774f589ced",
+      "bytes": 12999,
       "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/docs/HANDOFF.md",
       "sourceSha256": "b4cc51fff340fb5bd74a4b1858adfad277877af0440f3ce447ef22ed5b696753",
-      "publicSha256": "51bb1e0a4e4e6580f2bee9fd8e3cfc760912bd635147c91d24e5f64e56efffc1",
-      "bytes": 8727,
+      "publicSha256": "9102ac2460eb2e6920b835657ddefc0739442dfb57ac6fc731603cf0cf8ea724",
+      "bytes": 10913,
       "changedForPublication": true
+    },
+    {
+      "path": "computer-use-runtime/docs/PROVIDERS.md",
+      "sourceSha256": null,
+      "publicSha256": "daa052a8a4dc141116c42b14fdc2fcc6635d28f9d4ecb19ef3085ec3d041b1af",
+      "bytes": 9152,
+      "changedForPublication": true,
+      "reason": "Public release documentation or verification report added after the initial export"
     },
     {
       "path": "computer-use-runtime/docs/QUICK_REFERENCE.md",
       "sourceSha256": "8bedfb9a28ab38212261ba792de55a987e30fbaf22d7e6da2900569082c73882",
-      "publicSha256": "ac49e5a097a7bea670d79622d6e1646b2c44d8ee4bc3624e0afec5b6f613feef",
-      "bytes": 10149,
+      "publicSha256": "8be17377dca44dd61871f9e6795728d7569fceaa017210f053d4b730fd5615fe",
+      "bytes": 11375,
       "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/docs/REPAIR_STATUS.md",
       "sourceSha256": "d48ec97db2ded83e067567271f7eb0cd7bdc0d63aca26cc07ec9b5454d0b0505",
-      "publicSha256": "8d6d93898b1ead9d3df88383055001fd6dd77e1abc0338acfe6853bf379f5545",
-      "bytes": 10020,
+      "publicSha256": "41571141d8f4e5e7220873a24d7fd718f7a73533083b8a15578ad2b2bf81b55b",
+      "bytes": 11245,
       "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/docs/REVIEW_LEDGER.md",
       "sourceSha256": "2994c9aa1becedcaf7d0f38b8c32b61ea314c1223e1d3f304eb8d7407966dbc8",
-      "publicSha256": "a3e385bceb32c517f9e76105401f6df2c7cfd6cc0f5256f7a3cb715e2fddbb6f",
-      "bytes": 4659,
+      "publicSha256": "f05364df3ce22004bfff7bba0f95771bfb2f2d9a744c3b78490975bdcff5b035",
+      "bytes": 5086,
       "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/docs/RUNNING.md",
       "sourceSha256": "e2db1128df98898fade0722b7e18e8fd129315611fd428c1c0ddc6abe89a607b",
-      "publicSha256": "a596eebe87b19f441bb77f756eb5324ef9c8bfc7026d8196bfd4bd0ab7b027fd",
-      "bytes": 25659,
+      "publicSha256": "8190fe5c465936a09407b8ec5c2c0ec381aba47a9302ad6f22d3a22e42066a90",
+      "bytes": 26321,
       "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/docs/VERIFICATION.md",
       "sourceSha256": "dff7a220fb883831224fbefa5dede1b0c61ce5d79896fb5c313d29f87cc72b46",
-      "publicSha256": "0bad5344b6f338d13517a947cd598da978d3d08529e7a5383c6b1475ba38c94c",
-      "bytes": 14950,
+      "publicSha256": "640a1eb275d63d7b6c7002c034e93316ff5a99176f8ba4298f0f83da57643ad2",
+      "bytes": 16224,
       "changedForPublication": true
     },
     {
@@ -341,9 +357,17 @@
     {
       "path": "computer-use-runtime/docs/adr/0006-training-origin-and-deployment-qualification.md",
       "sourceSha256": "c875df67f2ccda43f4509784af47f64cde689b858290baf3e0b99028d287da59",
-      "publicSha256": "7ae936322283bb43b6a3c4db8bfac05a1e1e4fc29e8cd8bb9158d3b689d8b6c3",
-      "bytes": 5091,
+      "publicSha256": "425f0adcec11b81124cea0dbdadf77d5b05c0a9f0ca8b06abead0579f44997ba",
+      "bytes": 6326,
       "changedForPublication": true
+    },
+    {
+      "path": "computer-use-runtime/docs/adr/0007-selected-model-proposals.md",
+      "sourceSha256": null,
+      "publicSha256": "bf9c4e68269aa4dad604cbab7aad4054929a56b3b7357f9f54f71c20d8dfc581",
+      "bytes": 1931,
+      "changedForPublication": true,
+      "reason": "Public release documentation or verification report added after the initial export"
     },
     {
       "path": "computer-use-runtime/docs/completion-contract-v1/PLATFORMS.md",
@@ -488,9 +512,9 @@
     {
       "path": "computer-use-runtime/evaluation/desktop-console.ts",
       "sourceSha256": "16cf2b0d889325ef1b5d1f4c004a856edea4b071ba4754ab6088de0f4c849cfb",
-      "publicSha256": "16cf2b0d889325ef1b5d1f4c004a856edea4b071ba4754ab6088de0f4c849cfb",
-      "bytes": 6328,
-      "changedForPublication": false
+      "publicSha256": "9301cc246969b5b0d49d0b2396373e5550f0a05a902dea1fc14b1a0db7d4bdb6",
+      "bytes": 6450,
+      "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/evaluation/desktop-vision.ts",
@@ -754,9 +778,9 @@
     {
       "path": "computer-use-runtime/evaluation/native-drawing.ts",
       "sourceSha256": "4ffdfa316d0b8b2e413dbdadc66724796c2a02c0233248b4267c0c7f9344e042",
-      "publicSha256": "4ffdfa316d0b8b2e413dbdadc66724796c2a02c0233248b4267c0c7f9344e042",
-      "bytes": 14246,
-      "changedForPublication": false
+      "publicSha256": "9a50161a060cfafab7e06ccd9d507b5e880df649a5f7e4d46ad60fe9b3ad11b1",
+      "bytes": 15099,
+      "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/evaluation/native-effects-review.ts",
@@ -836,6 +860,22 @@
       "changedForPublication": false
     },
     {
+      "path": "computer-use-runtime/evaluation/provider-console.ts",
+      "sourceSha256": null,
+      "publicSha256": "da6039adde7b536711292f14881d18a2154016c898d766f682310a59aae6e482",
+      "bytes": 12347,
+      "changedForPublication": true,
+      "reason": "Public release documentation or verification report added after the initial export"
+    },
+    {
+      "path": "computer-use-runtime/evaluation/provider-drawing.ts",
+      "sourceSha256": null,
+      "publicSha256": "e0e97667b6a15f12552745c8b9215582459b3ea8aed3c889ead1896c560fc6cf",
+      "bytes": 6716,
+      "changedForPublication": true,
+      "reason": "Public release documentation or verification report added after the initial export"
+    },
+    {
       "path": "computer-use-runtime/evaluation/recorded-learning.ts",
       "sourceSha256": "d54040e6126489145b5da25a745eb7c562637c4b2381a6fca37c25cde25f3564",
       "publicSha256": "d54040e6126489145b5da25a745eb7c562637c4b2381a6fca37c25cde25f3564",
@@ -859,9 +899,9 @@
     {
       "path": "computer-use-runtime/evaluation/review-console.ts",
       "sourceSha256": "7d6e3689732f7e06bf473e88fa5fe995998706e10de64d8fbe68c29e57820790",
-      "publicSha256": "7d6e3689732f7e06bf473e88fa5fe995998706e10de64d8fbe68c29e57820790",
-      "bytes": 12537,
-      "changedForPublication": false
+      "publicSha256": "f30d4595b6f665c0fa6ea38281e251434a44f8aa9f8270949a761a627e5734da",
+      "bytes": 12728,
+      "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/evaluation/review-native-completion.ts",
@@ -17730,9 +17770,9 @@
     {
       "path": "computer-use-runtime/scripts/verify.py",
       "sourceSha256": "38211451a4979e344e7f2de7cb695ef2b50cfe08bd27caea77f4a2081e1039fc",
-      "publicSha256": "38211451a4979e344e7f2de7cb695ef2b50cfe08bd27caea77f4a2081e1039fc",
-      "bytes": 3933,
-      "changedForPublication": false
+      "publicSha256": "929d4f5500c749a4cfb163bf9fafef41e0ff84b54cd01e0812b27df73a7caedc",
+      "bytes": 3949,
+      "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/sdk/python/benchmark_adapter.py",
@@ -17814,9 +17854,9 @@
     {
       "path": "computer-use-runtime/src/adapters/desktop.ts",
       "sourceSha256": "695801e4e644e428730b96c37a8a445a7440afee284205b5e34a14b6baba22ed",
-      "publicSha256": "695801e4e644e428730b96c37a8a445a7440afee284205b5e34a14b6baba22ed",
-      "bytes": 11491,
-      "changedForPublication": false
+      "publicSha256": "6c6b52ed133d86e101c1a849aa47ffd9d67e05b9964acf5178277805a1dae584",
+      "bytes": 11689,
+      "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/src/adapters/native.ts",
@@ -17863,23 +17903,23 @@
     {
       "path": "computer-use-runtime/src/assistant/local.ts",
       "sourceSha256": "11eaacb50229371b6623f1785206ab0a337ca1f3381b5990de55c4b5ef742874",
-      "publicSha256": "11eaacb50229371b6623f1785206ab0a337ca1f3381b5990de55c4b5ef742874",
-      "bytes": 13481,
-      "changedForPublication": false
+      "publicSha256": "4dee397d66a1c603e6a507651bc6510662cdd0500ae6885892f34da22f6c89fc",
+      "bytes": 12908,
+      "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/src/assistant/planner.ts",
       "sourceSha256": "a2e029828bb223fc6b43f41293c1aa126230b17d89f3242bd4c99039411b8f16",
-      "publicSha256": "a2e029828bb223fc6b43f41293c1aa126230b17d89f3242bd4c99039411b8f16",
-      "bytes": 9022,
-      "changedForPublication": false
+      "publicSha256": "f68baeb3278a99a37fd14a43f967dacceeccec017b31f3e85d06e19544afdea3",
+      "bytes": 9053,
+      "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/src/assistant/runner.ts",
       "sourceSha256": "8d26f3fc24733b3df56007427b2e7f0546f563528aa577f64ccba733ac8b0d68",
-      "publicSha256": "8d26f3fc24733b3df56007427b2e7f0546f563528aa577f64ccba733ac8b0d68",
-      "bytes": 13096,
-      "changedForPublication": false
+      "publicSha256": "66b721640ccb54475b5e34698dce1ae09fee9291b3315f4acee625a4e235dff2",
+      "bytes": 13427,
+      "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/src/cli.ts",
@@ -17954,9 +17994,9 @@
     {
       "path": "computer-use-runtime/src/contracts/ports.ts",
       "sourceSha256": "833a47c796a79b747ad6c1421e6cf28f8fc36da55d25607d74259f238de61604",
-      "publicSha256": "833a47c796a79b747ad6c1421e6cf28f8fc36da55d25607d74259f238de61604",
-      "bytes": 2327,
-      "changedForPublication": false
+      "publicSha256": "c9f356dc741119acfb20362733cd19bbcf66736566bfc5b974eab926959b1e97",
+      "bytes": 2371,
+      "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/src/contracts/run.ts",
@@ -18071,25 +18111,73 @@
       "changedForPublication": false
     },
     {
+      "path": "computer-use-runtime/src/providers/assessment.ts",
+      "sourceSha256": null,
+      "publicSha256": "1671040d564f2a54f15f816fcbf00a8935a3021eb01544c25cb2f8810edbba7f",
+      "bytes": 1924,
+      "changedForPublication": true,
+      "reason": "Public release documentation or verification report added after the initial export"
+    },
+    {
+      "path": "computer-use-runtime/src/providers/cli-windows.py",
+      "sourceSha256": null,
+      "publicSha256": "57a8d6f1c31540c6736b3904bb5a38ca105775c65c8f08dd2314f3f21110ece4",
+      "bytes": 8314,
+      "changedForPublication": true,
+      "reason": "Public release documentation or verification report added after the initial export"
+    },
+    {
+      "path": "computer-use-runtime/src/providers/cli.ts",
+      "sourceSha256": null,
+      "publicSha256": "fcd990f54fbf569884daaea1884496ae2cbfab0d0235b2a93dd28b7bdedb5453",
+      "bytes": 30054,
+      "changedForPublication": true,
+      "reason": "Public release documentation or verification report added after the initial export"
+    },
+    {
       "path": "computer-use-runtime/src/providers/index.ts",
       "sourceSha256": "9e26899eabbacac83ad6ad0cdf50b5693b22f69c1eec74d030f31cb6731bf32c",
-      "publicSha256": "9e26899eabbacac83ad6ad0cdf50b5693b22f69c1eec74d030f31cb6731bf32c",
-      "bytes": 4469,
-      "changedForPublication": false
+      "publicSha256": "94505aeae881e5cff2eb31fb94f8fb5598d693cb6a2bbcb8974bf4fd7b2865cc",
+      "bytes": 5974,
+      "changedForPublication": true
+    },
+    {
+      "path": "computer-use-runtime/src/providers/selection.ts",
+      "sourceSha256": null,
+      "publicSha256": "d316c88dbc98f50dee7ccbed74b3e3e763adda9c36205b805a52ec06dff9ef78",
+      "bytes": 1785,
+      "changedForPublication": true,
+      "reason": "Public release documentation or verification report added after the initial export"
+    },
+    {
+      "path": "computer-use-runtime/src/providers/settings.ts",
+      "sourceSha256": null,
+      "publicSha256": "8bffeb8161298690a2c7579222aea501945eacefdd8418496cc24fa0046488c5",
+      "bytes": 3241,
+      "changedForPublication": true,
+      "reason": "Public release documentation or verification report added after the initial export"
+    },
+    {
+      "path": "computer-use-runtime/src/providers/team.ts",
+      "sourceSha256": null,
+      "publicSha256": "73b0d0add72ee36086ada593f5038c472c52f39a67a65b0ae204886bb1bf8e0b",
+      "bytes": 9473,
+      "changedForPublication": true,
+      "reason": "Public release documentation or verification report added after the initial export"
     },
     {
       "path": "computer-use-runtime/src/providers/transport.ts",
       "sourceSha256": "b87ad1e24d1ad71486b0cf08238bc8a8442fd1521126b0dc125aa766b50f3a60",
-      "publicSha256": "b87ad1e24d1ad71486b0cf08238bc8a8442fd1521126b0dc125aa766b50f3a60",
-      "bytes": 4532,
-      "changedForPublication": false
+      "publicSha256": "86c984b5aae881d24d3238493a8be2e7b5c2f292fef9b42e33123273d2619472",
+      "bytes": 12115,
+      "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/src/providers/vision.ts",
       "sourceSha256": "f698e55664aa89e1c5f3bfc038f91f8e5f2c03263ada99122c53d3a42c3dfdfd",
-      "publicSha256": "f698e55664aa89e1c5f3bfc038f91f8e5f2c03263ada99122c53d3a42c3dfdfd",
-      "bytes": 3614,
-      "changedForPublication": false
+      "publicSha256": "aee3e00b79d42aa7f46c2aa3f7f31bb87a33a4604a12522737d885176ee0a41c",
+      "bytes": 3696,
+      "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/src/recorder/bundle.ts",
@@ -18150,23 +18238,23 @@
     {
       "path": "computer-use-runtime/src/service/artifacts.ts",
       "sourceSha256": "c2cd0634ff80eb68cc270a92a83c5743b023f6e45bf1c3a7d73e316e773a0f68",
-      "publicSha256": "c2cd0634ff80eb68cc270a92a83c5743b023f6e45bf1c3a7d73e316e773a0f68",
-      "bytes": 4114,
-      "changedForPublication": false
+      "publicSha256": "3e32ef0addfe029c778f32b63bed993adea9083b04387e9eb10299d13ea6d990",
+      "bytes": 4312,
+      "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/src/service/drawing.ts",
       "sourceSha256": "148c0b1036fdb9fb916a8b795af44c9299b3fa386f2f003587059c456e7fe76d",
-      "publicSha256": "148c0b1036fdb9fb916a8b795af44c9299b3fa386f2f003587059c456e7fe76d",
-      "bytes": 6177,
-      "changedForPublication": false
+      "publicSha256": "e907cd23e0441ed50291cb765c4f816a99cad5096c87d539bb9709542861fd07",
+      "bytes": 8286,
+      "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/src/service/index.ts",
       "sourceSha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
-      "publicSha256": "c3f91c6656b9ec6717693e641b5296a368c29f87a7cd2ad58d732915c1bfa7ff",
-      "bytes": 29893,
-      "changedForPublication": false
+      "publicSha256": "291bfee82dfba24a49d1504774a01074f8153e8c4c33a074e3661197920c4952",
+      "bytes": 32185,
+      "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/src/service/launcher.ts",
@@ -18353,9 +18441,9 @@
     {
       "path": "computer-use-runtime/tests/console-requests.test.ts",
       "sourceSha256": "057dec3abb0fe53fd0d426dbb337bdaf8074c5995039756739a189e2aec56968",
-      "publicSha256": "057dec3abb0fe53fd0d426dbb337bdaf8074c5995039756739a189e2aec56968",
-      "bytes": 7447,
-      "changedForPublication": false
+      "publicSha256": "f89298f294b7d6aa46210ebb115de264be587dd3d6c119be995375bea44ac409",
+      "bytes": 8700,
+      "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/tests/delivery.test.ts",
@@ -18381,9 +18469,9 @@
     {
       "path": "computer-use-runtime/tests/drawing-service.test.ts",
       "sourceSha256": "03525ef6f1064201eaf1d6319ccf0577166ae18622b548aaeb01124a5eaab667",
-      "publicSha256": "03525ef6f1064201eaf1d6319ccf0577166ae18622b548aaeb01124a5eaab667",
-      "bytes": 6943,
-      "changedForPublication": false
+      "publicSha256": "fc72c5bebc022cc73ef82c80da264f669872cd754223768521ae8f2c1d9fa1be",
+      "bytes": 7523,
+      "changedForPublication": true
     },
     {
       "path": "computer-use-runtime/tests/evidence-cache.test.ts",
@@ -18575,6 +18663,22 @@
       "changedForPublication": false
     },
     {
+      "path": "computer-use-runtime/tests/provider-capabilities.test.ts",
+      "sourceSha256": null,
+      "publicSha256": "5fdb320b3de35568a99aee31ea354b4cc8825bd373ec0141696971e0ebbef46b",
+      "bytes": 8492,
+      "changedForPublication": true,
+      "reason": "Public release documentation or verification report added after the initial export"
+    },
+    {
+      "path": "computer-use-runtime/tests/provider-cli.test.ts",
+      "sourceSha256": null,
+      "publicSha256": "6a37db9e88455be31d6ae86ca28d84f465a3f7781759d07ec480d4bb5e292d41",
+      "bytes": 11260,
+      "changedForPublication": true,
+      "reason": "Public release documentation or verification report added after the initial export"
+    },
+    {
       "path": "computer-use-runtime/tests/provider-locality.test.ts",
       "sourceSha256": "5f4f39a151845a394694e8435e33b739257c8cba118055a78f7b41594de361ba",
       "publicSha256": "5f4f39a151845a394694e8435e33b739257c8cba118055a78f7b41594de361ba",
@@ -18591,9 +18695,25 @@
     {
       "path": "computer-use-runtime/tests/provider-response.test.ts",
       "sourceSha256": "64fcb22a12bf5814228d53bc4a1ea2894101ff643d9fdec2a97c88a836829dcb",
-      "publicSha256": "64fcb22a12bf5814228d53bc4a1ea2894101ff643d9fdec2a97c88a836829dcb",
-      "bytes": 5790,
-      "changedForPublication": false
+      "publicSha256": "edef5df65d5f1d22a0d14673728ee7effc5c6f51343acae64acdcf9a9afc7751",
+      "bytes": 5795,
+      "changedForPublication": true
+    },
+    {
+      "path": "computer-use-runtime/tests/provider-settings.test.ts",
+      "sourceSha256": null,
+      "publicSha256": "28ffe799c1804d190127dc07b14afa9c3b337e112f8c1f8a9fe1ceb1abf1c99e",
+      "bytes": 3060,
+      "changedForPublication": true,
+      "reason": "Public release documentation or verification report added after the initial export"
+    },
+    {
+      "path": "computer-use-runtime/tests/provider-team.test.ts",
+      "sourceSha256": null,
+      "publicSha256": "9b5ab97eb9034d5e286611c1730a3e312e6847c897efa51db95e9c88ec36e22d",
+      "bytes": 9125,
+      "changedForPublication": true,
+      "reason": "Public release documentation or verification report added after the initial export"
     },
     {
       "path": "computer-use-runtime/tests/reconnect.test.ts",
@@ -18752,8 +18872,8 @@
     {
       "path": "docs/open-source/MAP_BROWSER.json",
       "sourceSha256": null,
-      "publicSha256": "6d47dee361fef4a73e5e75cda9595c1c79eed71b87c42778b1e4fd5607055ce3",
-      "bytes": 4224,
+      "publicSha256": "dd66ec384cbdbb4a7f68958e8f6022f9f5f65d4c58f85b07b3c3a4fb066b3aea",
+      "bytes": 4545,
       "changedForPublication": true,
       "reason": "Public release documentation or verification report added after the initial export"
     },
@@ -18773,6 +18893,14 @@
       "changedForPublication": true
     },
     {
+      "path": "docs/open-source/PROVIDER_REPAIR_CHECKS.json",
+      "sourceSha256": null,
+      "publicSha256": "7d417f9431e35ac826f7734603191786aed0bf8dce4cc059cb16b9d20da21620",
+      "bytes": 3330,
+      "changedForPublication": true,
+      "reason": "Public release documentation or verification report added after the initial export"
+    },
+    {
       "path": "docs/open-source/README.md",
       "sourceSha256": "6fab48114ec82acd0de246c1bc37c5feb97384cc5b2589b08afb64ba245ef4de",
       "publicSha256": "d9c6f516a812ece1700ef08ddbdf0d300e3a7fac00305e1946dca885260125ea",
@@ -18789,22 +18917,22 @@
     {
       "path": "docs/open-source/SYSTEM_OVERVIEW.md",
       "sourceSha256": "842b43ff9ca3065a5b27067ffbd43ec79a631377f0570589fe79bae232ad035e",
-      "publicSha256": "842b43ff9ca3065a5b27067ffbd43ec79a631377f0570589fe79bae232ad035e",
-      "bytes": 11165,
-      "changedForPublication": false
+      "publicSha256": "6f025d47421c23290b2d8d5ade72926a0b051dbcebc4f6230ebbb21ed7bfeee9",
+      "bytes": 13110,
+      "changedForPublication": true
     },
     {
       "path": "docs/open-source/USAGE.md",
       "sourceSha256": "4953191d2b5a4dadc84b2f387cb7331c795aad825274c09993b9ae7336fc7f07",
-      "publicSha256": "6e5f109fe6fad54bf4c018b3a081c73da4ed6f949b6b556151a33ae5b9437aff",
-      "bytes": 8787,
+      "publicSha256": "8c44dc5ed286b1229f0cd12cef8138f43fab5f08ce0546e2661a6800c72b727a",
+      "bytes": 11489,
       "changedForPublication": true
     },
     {
       "path": "docs/open-source/VERIFICATION.md",
       "sourceSha256": "1a32f913dabd6da66a09d584bac4f94be61b2fbd3c7f5a2b816a2839941c2f74",
-      "publicSha256": "85b66a0c8c806bc8b7360e767ee5d7a4c1d45a919d11283b1bed4b7c7d2dfa94",
-      "bytes": 9511,
+      "publicSha256": "fab41b55684a1fdae95dd0e7addfe5a3a15b61e5fae6ad7891794839233f49ce",
+      "bytes": 11323,
       "changedForPublication": true
     },
     {
@@ -18844,6 +18972,14 @@
       "changedForPublication": true
     },
     {
+      "path": "docs/open-source/images/provider-dog.png",
+      "sourceSha256": null,
+      "publicSha256": "722c7419c94d5900fdbb05ef7bee44278da2c468df8633ffd858cf96369275f0",
+      "bytes": 7025,
+      "changedForPublication": true,
+      "reason": "Public release documentation or verification report added after the initial export"
+    },
+    {
       "path": "docs/open-source/normalize_public_evidence.py",
       "sourceSha256": "21ecc86a46aad472e457dec71cd4e0c00200641b202feaba04fb5937eb689f60",
       "publicSha256": "7bfc6b0c25663223f8be67f0f3827101c31707d3e3908567ece61eafa836cb0c",
@@ -18860,9 +18996,9 @@
     {
       "path": "docs/open-source/run-verification.py",
       "sourceSha256": "bdef510d751d452d70764548b69a22a1e87910790753355c9bfcab08f965a1b9",
-      "publicSha256": "bdef510d751d452d70764548b69a22a1e87910790753355c9bfcab08f965a1b9",
-      "bytes": 4757,
-      "changedForPublication": false
+      "publicSha256": "32f2b1fa6add87a1f2cead562acb123ad8846d478a21de16f979967f1726dce1",
+      "bytes": 4773,
+      "changedForPublication": true
     },
     {
       "path": "docs/open-source/scan_public.py",
@@ -18896,50 +19032,58 @@
     {
       "path": "docs/open-source/verification.json",
       "sourceSha256": "716772883e7b292f9517ece1b4b69c9d5c5a9cc4fdb3e157f1622e08126aa38d",
-      "publicSha256": "beb284c33ea3527c828e3049c22b8873a0fbb052a78ebb54fe1f0b654b028a4c",
-      "bytes": 93460,
+      "publicSha256": "ffe792ac14cf8ec378334ce43a5fd9b8e09367bb671ae963e2fefd428ea1685d",
+      "bytes": 97347,
       "changedForPublication": true
     },
     {
       "path": "docs/system-map/PUBLICATION_BINDING.json",
       "sourceSha256": "3e9692d9af77088dd51c133654b4edf9658952b51ae50ab98a09bb00ac33ee9d",
-      "publicSha256": "9beba0bfa63049d45e93f9eb4c3a87a8a929bc4fb7abfa6afc1f951c9386e318",
-      "bytes": 50013,
+      "publicSha256": "08a6d5b308241c3d5e7a66ec15fb9b5f417616783809144cc2fc302261bc4160",
+      "bytes": 45668,
       "changedForPublication": true
     },
     {
       "path": "docs/system-map/README.md",
       "sourceSha256": "f19dc363d920b85fa23f036f01e71bb7d841a6c17dcecda3cecfab6d58fa9b8d",
-      "publicSha256": "f19dc363d920b85fa23f036f01e71bb7d841a6c17dcecda3cecfab6d58fa9b8d",
-      "bytes": 4381,
-      "changedForPublication": false
+      "publicSha256": "dc97ccfd2a5c83d8da6f6b270b6f08bbcd9ec087baaba8064fe678f756b8b8bc",
+      "bytes": 5171,
+      "changedForPublication": true
     },
     {
       "path": "docs/system-map/SOURCE_INDEX.json",
       "sourceSha256": "390df418305c2530323021fad45cc473710fb9af44a2f55eb23ec0b0c5039ea4",
-      "publicSha256": "6786c19afcf509e20ada9dff3f625f2ff154b4c62e18c7c17db804c952364e0a",
-      "bytes": 223590,
+      "publicSha256": "74e8b3d16b2a4b70850cb5fa6316d19994b9d4feea91f30712afb1701a32b600",
+      "bytes": 229855,
       "changedForPublication": true
+    },
+    {
+      "path": "docs/system-map/SOURCE_UPDATES/provider-selection-v1.json",
+      "sourceSha256": null,
+      "publicSha256": "36a0d1081399c9f9d6618862a7312971ced7d51b4f3f297cd3e05573cf412ae9",
+      "bytes": 19852,
+      "changedForPublication": true,
+      "reason": "Public release documentation or verification report added after the initial export"
     },
     {
       "path": "docs/system-map/TRACE.md",
       "sourceSha256": "b9d92314102fd13a10d503a5ec0ba8499b1b61af26163d15712f6bec3c06c8cd",
-      "publicSha256": "ac61bcbf21ffb75585534d5808d51036fb31ec1f7186b60d466bed79fc824dfc",
-      "bytes": 19729,
+      "publicSha256": "36dfabbbd3a14e2c5fd8be7a5190b1b72a5b548b313dda3b12a31fa57ffbe373",
+      "bytes": 21556,
       "changedForPublication": true
     },
     {
       "path": "docs/system-map/VERIFICATION.md",
       "sourceSha256": "ef79f79c82fdd9860bb721b532c0d441120fb48a050e484ea352f6c966e037d6",
-      "publicSha256": "378649e9ad841398de56a065bbed6b6a2631dcf6d286e950c9f2db63a165e48d",
-      "bytes": 2212,
+      "publicSha256": "7f5e47a10e84d0ce906bfce1da3d880ea3080f9e7f417b0d0617862f5f4f3f13",
+      "bytes": 2541,
       "changedForPublication": true
     },
     {
       "path": "docs/system-map/architecture-data.js",
       "sourceSha256": "eb84ab7f72455e1095119d56e7e2dc3cd08466ec9737635f5b7266a294c40a93",
-      "publicSha256": "3fbf060fa7bbbb9f39408046fdd8a4634207228218b6670c5988092316aaafee",
-      "bytes": 3516173,
+      "publicSha256": "869e39e13717a31b1b0f241d24ca4b449cc502731d10bba4937031e9d2d42cc4",
+      "bytes": 3719986,
       "changedForPublication": true
     },
     {
@@ -18959,8 +19103,8 @@
     {
       "path": "docs/system-map/index.html",
       "sourceSha256": "64d4a6a6654646397224089595bfd3c7389f9c81501412d5be274f59a354dcf4",
-      "publicSha256": "3ed3419963737df98b02988dc3e0b24c1dd84a932f5e3fa3d5b16109c9ff3b55",
-      "bytes": 7874,
+      "publicSha256": "36685edd63682527cdd8fb9223dfa3848a6f76bd4f5f494def74901a95c09a05",
+      "bytes": 7981,
       "changedForPublication": true
     },
     {
@@ -18973,15 +19117,23 @@
     {
       "path": "docs/system-map/refresh_publication.py",
       "sourceSha256": "43e2ac1d85ead27a66c1e2322baa842480e8fde45601aad1f8d6252573406910",
-      "publicSha256": "af202650e7e9302270a40b37c1354ed9e724844f946bd8797d8beae605630c9b",
-      "bytes": 12822,
+      "publicSha256": "62a92f31dd5d0596d8f72aef0b25cf18a8701c745c026ef3b96d4f6651052f4b",
+      "bytes": 20367,
       "changedForPublication": true
+    },
+    {
+      "path": "docs/system-map/update_provider_map.py",
+      "sourceSha256": null,
+      "publicSha256": "490765d4867827bcdf451760a0cd7461184451f0acf16b2f2ef526b5cb11b3df",
+      "bytes": 18274,
+      "changedForPublication": true,
+      "reason": "Public release documentation or verification report added after the initial export"
     },
     {
       "path": "docs/system-map/verify_publication.py",
       "sourceSha256": "a69c81ec92aada79a4b96e13860eaf5bbb8f66c533adb691732d413011bf7e14",
-      "publicSha256": "2ab552e57b0db187edf2e07512b4e8cad6d08a1954ca44f6c721d47678c79b01",
-      "bytes": 5713,
+      "publicSha256": "22cf6489f1892f1df7ea6132be005b3352b6e4f2db97e07ad37021ea2e9f3658",
+      "bytes": 5769,
       "changedForPublication": true
     },
     {
@@ -19054,8 +19206,8 @@
     "docs/open-source/HISTORY_SCAN.json",
     "docs/open-source/public-scan.json"
   ],
-  "inventoriedFiles": 2713,
-  "inventoriedBytes": 132093569,
+  "inventoriedFiles": 2732,
+  "inventoriedBytes": 132538488,
   "portableSourceFingerprint": "4519517387a35a5706f3024966ebbf2615ba3d25b6194cc9b9cec9210138fdeb",
   "privacy": {
     "authorContactOnly": "AUTHOR.md",
@@ -19063,5 +19215,8 @@
     "privateHostnameMetadataRemoved": true,
     "originalGitHistoryIncluded": false,
     "privateCaptureKeysStoresLogsIncluded": false
-  }
+  },
+  "currentSourceFingerprint": "f99ce9d585d2a6dd846bec58865232ba7f7ec22ded7189e450112b9e0c967333",
+  "currentMaintainedFiles": 313,
+  "maintenanceNotice": "The portable source fingerprint records the initial public derivative. Current implementation changes have a separate reviewed source update chain and local verification. Frozen learning reports do not qualify the new implementation."
 }

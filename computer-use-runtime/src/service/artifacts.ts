@@ -3,22 +3,34 @@ import type { ArtifactSpec } from "../assistant/artifact.js";
 import { freezeArtifactSpec } from "../assistant/artifact.js";
 import type { WorkspaceAdapter } from "../adapters/workspace.js";
 import { seal } from "../skills/index.js";
+import {
+  providerSettings,
+  type ProviderSettings,
+} from "../providers/settings.js";
 
 export type ArtifactConfiguration = {
   spec: ArtifactSpec;
   model: string;
   input?: string;
-};
+} & Partial<ProviderSettings>;
 export function artifactConfiguration(value: unknown): ArtifactConfiguration {
   const input = value as ArtifactConfiguration;
   if (
     !input ||
-    typeof input.model !== "string" ||
-    !input.model ||
-    input.model.length > 200 ||
-    Object.keys(input).some((key) => !["spec", "model", "input"].includes(key))
+    Object.keys(input).some(
+      (key) =>
+        ![
+          "spec",
+          "model",
+          "input",
+          "providers",
+          "strategy",
+          "allowRemote",
+        ].includes(key),
+    )
   )
-    throw new Error("Choose a local model and frozen artifact criteria");
+    throw new Error("Choose a model provider and frozen artifact criteria");
+  const settings = providerSettings(input);
   const spec = freezeArtifactSpec(input.spec);
   if (
     spec.source.operation === "workspace_read" &&
@@ -31,7 +43,7 @@ export function artifactConfiguration(value: unknown): ArtifactConfiguration {
     );
   return structuredClone({
     spec,
-    model: input.model,
+    ...settings,
     ...(input.input === undefined ? {} : { input: input.input }),
   });
 }

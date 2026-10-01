@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { mkdtempSync, writeFileSync, readFileSync } from "node:fs";
+import { mkdtempSync, mkdirSync, writeFileSync, readFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { setTimeout as delay } from "node:timers/promises";
@@ -30,6 +30,8 @@ const page = await browser.newPage({
   acceptDownloads: true,
 });
 const errors: string[] = [];
+const screenshotRoot = process.env.CUR_REVIEW_SCREENSHOT_DIR || "evidence";
+mkdirSync(screenshotRoot, { recursive: true });
 page.on("pageerror", (e) => errors.push(String(e)));
 const report: any = {
   status: "NOT RUN",
@@ -337,7 +339,7 @@ try {
     true,
   );
   await page.screenshot({
-    path: "evidence/review-console.png",
+    path: join(screenshotRoot, "review-console.png"),
     fullPage: true,
   });
   await page.setViewportSize({ width: 390, height: 844 });
@@ -347,7 +349,7 @@ try {
     ),
   );
   await page.screenshot({
-    path: "evidence/review-console-mobile.png",
+    path: join(screenshotRoot, "review-console-mobile.png"),
     fullPage: true,
   });
   report.checks.push(
@@ -360,7 +362,10 @@ try {
   report.reason = String(error);
   process.exitCode = 1;
   await page
-    .screenshot({ path: "evidence/review-console-failure.png", fullPage: true })
+    .screenshot({
+      path: join(screenshotRoot, "review-console-failure.png"),
+      fullPage: true,
+    })
     .catch(() => {});
 } finally {
   report.pageErrors = errors;

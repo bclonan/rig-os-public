@@ -68,9 +68,11 @@ try {
     .fill(
       `Write exactly "${content}" in this empty Notepad document. Do not save it. Stop when that exact text is visible.`,
     );
-  await page
-    .getByLabel("Local model", { exact: true })
-    .selectOption("qwen3.6:latest");
+  const models = page.locator("#desktop-model");
+  await models.getByRole("checkbox", { checked: true }).uncheck();
+  await models
+    .getByRole("checkbox", { name: "Ollama qwen3.6:latest", exact: true })
+    .check();
   await page
     .getByRole("button", { name: "Plan desktop task", exact: true })
     .click();

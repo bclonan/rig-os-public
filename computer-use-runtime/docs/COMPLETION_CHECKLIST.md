@@ -1,5 +1,11 @@
 # Completion checklist
 
+## Provider repair, October 1, 2026
+
+The later provider repair adds one to four selected models, ordered fallback, parallel proposals and explicit remote consent. Read [provider instructions](../docs/PROVIDERS.md) for setup and limits. The [current public verification record](../../docs/open-source/VERIFICATION.md) reports the source-bound quality checks. Its Node check passed 360 tests. The independent provider review passed 32 focused tests. The [curated development check](../../docs/open-source/PROVIDER_REPAIR_CHECKS.json) records an owned Windows Paint run with two setup clicks and 88 drawing segments, all 90 acknowledged, followed by a changed canvas and human inspection. The task remains `needs_review`; the separate model opinion is uncalibrated. Claude has no live execution evidence, and Unix CLI cleanup has no crash guardian.
+
+The 273-, 299- and 300-file reports below describe their original source. The `31667d67` checkpoint and its selected-case V4 qualification do not qualify the later provider or public source. No historical report, model, acceptance row or frozen contract changed. Native Mac, physical mixed-DPI, real external benchmark integration and general native learning remain open.
+
 This is the frozen September 30 acceptance checklist. Source repairs followed its 61/63 result. Use [REPAIR_STATUS.md](REPAIR_STATUS.md) and the [separate review checklist](../../docs/system-review/CHECKLIST.md) for current repair closure. The original task decisions and failed platform checks below remain unchanged.
 
 Generated from `progress.json` by `python scripts/completion.py`. PASS requires current implementation evidence and a separate reviewer. The frozen contract is `completion-contract-v1/manifest.json`.

@@ -72,7 +72,7 @@ test(
       disconnected = new Promise<void>((r) => (closed = r));
       await assert.rejects(
         new LocalEndpointProvider(endpoint, "fixture").generate("public", {}),
-        /Provider 503/,
+        /Provider HTTP 503/,
       );
       await disconnected;
       assert.equal(chats, 4);

@@ -2,7 +2,7 @@
 
 rig-os runs on one local computer. The Vue console, HTTP clients, and MCP tools reach the same authenticated service. One coordinator owns a private SQLite store and serializes input. The model suggests work; the runtime and adapter decide whether input can run.
 
-The [architecture canvas](../system-map/index.html) has 116 responsibilities, 180 relationships, 21 journeys, and 32 record explanations. It supports zoom, pan, search, and source inspection. The [written trace](../system-map/TRACE.md) follows execution checks in detail. The file index covers all 300 maintained files. Index coverage does not claim every line received a new manual review.
+The [architecture canvas](../system-map/index.html) shows component responsibilities, relationships, ordered journeys, and record explanations. It supports zoom, pan, search, and source inspection. The [written trace](../system-map/TRACE.md) follows execution checks in detail. The file index covers every maintained file in the bound source inventory. Index coverage does not claim every line received a new manual review.
 
 ## The requested account and file flow
 
@@ -30,7 +30,7 @@ See [service routes](../../computer-use-runtime/src/service/index.ts), [store sc
 | Runtime | Execute, cancel, pin versions, journal, recover | [runtime/index.ts](../../computer-use-runtime/src/runtime/index.ts), [program.ts](../../computer-use-runtime/src/runtime/program.ts) |
 | Policy and leases | Check permissions, target, ownership, freshness | [policy.ts](../../computer-use-runtime/src/runtime/policy.ts) |
 | Planner | Request one bounded action and save it for review | [local.ts](../../computer-use-runtime/src/assistant/local.ts), [runner.ts](../../computer-use-runtime/src/assistant/runner.ts) |
-| Providers | Call loopback models, deny redirects, cap output, validate | [providers/index.ts](../../computer-use-runtime/src/providers/index.ts), [transport.ts](../../computer-use-runtime/src/providers/transport.ts) |
+| Providers | Select Ollama or fixed CLI clients, freeze external consent, cap output, compare proposals | [settings.ts](../../computer-use-runtime/src/providers/settings.ts), [selection.ts](../../computer-use-runtime/src/providers/selection.ts), [team.ts](../../computer-use-runtime/src/providers/team.ts), [cli.ts](../../computer-use-runtime/src/providers/cli.ts), [transport.ts](../../computer-use-runtime/src/providers/transport.ts) |
 | Router | Choose browser, native target, or granted workspace | [desktop.ts](../../computer-use-runtime/src/adapters/desktop.ts), [computer.ts](../../computer-use-runtime/src/adapters/computer.ts) |
 | Native workers | Observe controls and perform capture/input | [Windows](../../computer-use-runtime/native/src/main.rs), [Unix](../../computer-use-runtime/native/unix/worker.py) |
 | Browser fixture | Use isolated Playwright and check saved values | [browser.ts](../../computer-use-runtime/src/adapters/browser.ts) |
@@ -49,16 +49,16 @@ These boxes are responsibilities. Several share one process.
 2. Launcher acquires coordinator ownership, reads/creates the token, initializes adapters, and recovers saved runs.
 3. Fastify serves the built console and API on loopback.
 4. User pastes the token. The console keeps it in that tab's session storage.
-5. Console discovers capabilities, windows, and local models.
+5. Console discovers capabilities, windows, local models, and installed Codex or Claude CLI clients.
 
 A duplicate start checks the existing owner's identity. Custom stores have separate tokens. Shutdown pauses work and releases workers/ownership. Interrupted tasks need deliberate reconciliation.
 
 ## A reviewed desktop action
 
-1. User submits a goal and computer or one-window scope.
+1. User submits a goal, computer or one-window scope, model selection and strategy, and required external-provider consent.
 2. API validates and saves a contract, run, and request-key mapping.
 3. Runtime binds the target, captures an observation, and asks for a proposal.
-4. Ollama receives controls and, only when opted in, a screenshot. Output passes schema checks.
+4. Selected providers receive controls and, only when enabled, a screenshot. External clients also require frozen consent. Output passes schema checks, then ordered fallback or ensemble returns one existing proposal.
 5. Runner saves the proposal and waits for approval of its ID.
 6. Runtime captures again. Target changes or expired evidence invalidate approval.
 7. Policy/native checks verify permissions, target, frame, lease generation, and deadline.
@@ -88,10 +88,16 @@ Publication requires successful journaled tests of the exact candidate and resol
 
 | System | Input and output | Authority |
 |---|---|---|
-| Ollama model | Controls, optional screenshots, or source data. Proposes actions/plans/content. | Cannot approve itself, widen permissions, publish skills, or prove completion. |
+| Selected Ollama or CLI models | Controls, enabled screenshots, or source data. Propose actions/plans/content. CLI input goes through installed Codex or Claude clients after explicit consent. | Cannot approve themselves, widen runtime permissions, publish skills, or prove completion. |
 | Owned PyTorch/ONNX controller | Bounded experience, pixels, production context. Ranks skills and exposes qualified predictions. | Deterministic masks restrict eligibility. Training, qualification, registration, activation are separate. |
 
-`Run.model` pins the owned controller or fixed policy. The Qwen planner is separate. Qualification checks exact source/model/input bytes, metrics, and a signed terminal written after cleanup. Historical training origin stays separate from current executable source.
+`Run.model` pins the owned controller or fixed policy. Planner provider selections are separate frozen task parameters. Qualification checks exact source/model/input bytes, metrics, and a signed terminal written after cleanup. Historical training origin stays separate from current executable source.
+
+Ordered fallback chooses the first valid provider response in selection order. Ensemble calls selected providers in parallel and groups exact matching JSON proposals. Agreement can choose a proposal. If valid proposals disagree, a selected provider can choose an existing candidate. A failed or invalid selection falls back to declared priority. Neither agreement nor selection proves that an action is correct.
+
+The CLI adapter passes prompts through stdin, uses a disposable directory, disables the client's tools and integrations, checks output shape and budgets, and cleans up owned processes and temporary files. Codex accepts PNG images in this adapter; Claude accepts text only. A discovered executable is not proof of authentication or model access. [Provider setup](../../computer-use-runtime/docs/PROVIDERS.md) records the tested and untested client paths.
+
+The [provider repair checks](PROVIDER_REPAIR_CHECKS.json) include actual Qwen and Codex proposal results and a Windows drawing check. The dog drawing acknowledged two setup clicks and 88 segments in an owned blank Paint window. Changed pixels, human inspection, and a separate positive but uncalibrated canvas opinion remain separate evidence. The task stayed `needs_review`. [Usage](USAGE.md#draw-in-paint) shows the cropped canvas and the review flow.
 
 Browser studies establish measured behavior in their specified profile. The transfer study's trained controller lost to the authored controller. Native desktop learning remains open.
 

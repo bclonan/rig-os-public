@@ -27,7 +27,7 @@ commands = [
     ("rust-format", ["cargo", "fmt", "--manifest-path", "native/Cargo.toml", "--", "--check"], 180),
     ("rust-clippy", ["cargo", "clippy", "--manifest-path", "native/Cargo.toml", "--all-targets", "--", "-D", "warnings"], 300),
     ("git-whitespace", ["git", "diff", "--check", "--", "."], 180),
-    ("python-syntax", [sys.executable, "-c", "import pathlib,py_compile; files=[p for d in ['learner','native/unix','sdk','examples','scripts','evaluation','tests'] for p in pathlib.Path(d).rglob('*.py') if '__pycache__' not in p.parts]; [py_compile.compile(str(p),doraise=True) for p in files]; print(str(len(files))+' Python files compiled')"], 180),
+    ("python-syntax", [sys.executable, "-c", "import pathlib,py_compile; files=[p for d in ['learner','native/unix','sdk','examples','scripts','evaluation','tests','src/providers'] for p in pathlib.Path(d).rglob('*.py') if '__pycache__' not in p.parts]; [py_compile.compile(str(p),doraise=True) for p in files]; print(str(len(files))+' Python files compiled')"], 180),
     ("python-tests", [sys.executable, "-m", "unittest", "discover", "-s", "tests", "-p", "*_test.py"], 300),
 ]
 logs = folder / "verification-logs"

@@ -2,30 +2,38 @@
 
 The October 1, 2026 public-source development checks pass. The reviewed application is suitable for an experimental local automation release. Several platform and research requirements remain open, so it should not be described as a fully qualified autonomous desktop agent.
 
-The [fresh quality receipt](verification.json) records the exact maintained file hashes before and after execution. Its source fingerprint is `4519517387a35a5706f3024966ebbf2615ba3d25b6194cc9b9cec9210138fdeb`, across 300 maintained files. The files stayed unchanged during these checks. This receipt belongs to the portable public copy. Setup succeeded twice with fresh npm installs and the existing Chromium cache. The full quality check ran after setup finished.
+The [fresh quality receipt](verification.json) records the exact maintained file hashes before and after execution. Its source fingerprint is `f99ce9d585d2a6dd846bec58865232ba7f7ec22ded7189e450112b9e0c967333`, across 313 maintained files. The files stayed unchanged during all eight commands. This receipt belongs to the public copy after the provider and drawing repair. The earlier 300-file release passed setup twice with fresh npm installs and the existing Chromium cache. Those setup receipts remain historical.
 
 ## Fresh results
 
 | Check | Result | What ran |
 |---|---|---|
-| `npm run check` | Pass | TypeScript and Vue type checks, Prettier, 327 passing TypeScript tests, TypeScript build and production console build |
+| `npm run check` | Pass | TypeScript and Vue type checks, Prettier, 360 passing TypeScript tests, TypeScript build and production console build |
 | `npm run verify:audit` | Pass | Saved-byte consistency of the explicitly documented public audit derivative |
 | `npm audit --audit-level=high` | Pass | npm reported zero vulnerabilities in the locked dependency tree at review time |
 | Rust formatting | Pass | `cargo fmt --manifest-path native/Cargo.toml -- --check` |
 | Rust linting | Pass | `cargo clippy --manifest-path native/Cargo.toml --all-targets -- -D warnings` on Windows |
 | Git whitespace | Pass | `git diff --check -- .` in the runtime package |
-| Python syntax | Pass | 61 Python files compiled |
+| Python syntax | Pass | 62 Python files compiled, including the Windows CLI supervisor |
 | Python tests | Pass with platform skips | 87 cases ran, 69 passed and 18 skipped on Windows |
-| Console workflows | Pass | 11 checks using real Vue, Fastify, SQLite, Chromium and the existing ONNX models |
+| Console workflows | Development pass | 8 provider chooser checks and 11 workflow checks using real Vue, Fastify, SQLite and Chromium in disposable stores. The stored console receipt below belongs to the earlier release. |
 | Public exporter and normalization | Pass with host limits | 19 disposable cases ran, 17 passed and two real symlink-creation cases skipped because Windows denied creation |
 
-The console [workflow report](console-verification.json) and [command receipt](console-command.json) are separate from the quality receipt. The check submitted and recorded three browser tasks, compiled the recordings, ran three candidate variations, published the skill, exported its exact hash and restored a previous skill version. It also exercised incorrect-token recovery, takeover and return, model activation and rollback, recording corrections, evidence replay and a 390-pixel layout. All six browser tasks succeeded. The browser reported no page errors.
+The earlier console [workflow report](console-verification.json) and [command receipt](console-command.json) are separate from the current quality receipt. That check submitted and recorded three browser tasks, compiled the recordings, ran three candidate variations, published the skill, exported its exact hash and restored a previous skill version. It also exercised incorrect-token recovery, takeover and return, model activation and rollback, recording corrections, evidence replay and a 390-pixel layout. All six browser tasks succeeded. The browser reported no page errors.
 
 The console run used a temporary store. It did not activate a model in the user's store. It did not run a local text or vision model, train new weights, send native desktop input or test another operating system. The word `native` in its required-field check refers to HTML form validation.
 
 Quality checks used Node 24.17.0, Python 3.14.6 and Cargo 1.96.0 on Windows. `CUR_DATA` and `CUR_TOKEN_FILE` pointed to a disposable directory. The user's `.data/service` store was not used. The runner retained command exits, timeouts and cleanup errors. No command timed out or reported a cleanup error.
 
 The [exporter receipt](export-verification.json) covers excluded secrets and database sidecars, unchanged copied source, existing-destination protection, source containment and refusal of private documentation metadata. Deterministic protocol checks exercise junction and symlink rejection. Actual symlink creation could not run on this host. The preparation flag produces private unreviewed staging. That staging still needs portable metadata conversion and a fresh scan before publication.
+
+## Provider and dog drawing repair
+
+The [development receipt](PROVIDER_REPAIR_CHECKS.json) records a real Qwen Paint drawing with 88 segments and two setup clicks. The native adapter acknowledged all 90 inputs. The cropped canvas matches the inspected preview. A separate local Qwen 3.5 4B call recognized a dog, but that assessment is uncalibrated and the task still requires human review. The [actual canvas](images/provider-dog.png) contains only a drawing in a newly owned document.
+
+Real Codex calls passed the full desktop decision schema. A real Qwen and Codex ensemble returned two valid proposals and selected their exact consensus. The final Codex canary returned structured JSON, reported no tool events and did not write its owned test file. Claude CLI is absent and has no live qualification. Its adapter requires bare API-key mode. [PROVIDERS.md](../../computer-use-runtime/docs/PROVIDERS.md) explains selection, remote consent, process cleanup and the trusted-client limits. This application-level ensemble does not implement a neural mixture of experts.
+
+The reported Ollama HTTP 400 did not reproduce. Current text, image and owned Paint requests succeeded. The repair gives bounded failure categories and recovery steps rather than claiming a confirmed cause for the earlier error.
 
 ## What this review establishes
 
@@ -36,6 +44,8 @@ The project has working behavior beyond a static demonstration. The execution co
 [The service](../../computer-use-runtime/src/service/index.ts) checks Host, Origin, bearer credentials, correlation headers and idempotency keys. The reviewed console and SDK tests exercise the same public handlers. This is a single-user loopback service. It has no account registration, subscriptions, payment system, guest passes or Convex backend.
 
 [Provider transport](../../computer-use-runtime/src/providers/transport.ts) rejects non-loopback addresses, credentials in endpoints, redirects, oversized responses and advertised cloud-backed Ollama models. A trusted generic compatible daemon can still forward requests elsewhere. Its loopback address alone cannot prove privacy.
+
+[Selected CLI providers](../../computer-use-runtime/src/providers/selection.ts) may send explicitly consented content to their remote services. They produce schema-checked proposals. Ordinary runtime policy and human review still control native input.
 
 [Model registration and activation](../../computer-use-runtime/src/learner/index.ts) preserve model hashes and require matching qualification. Training produces candidates. It does not automatically activate them. Existing tasks keep their selected model. Human confirmation of a general desktop task remains distinct from independent skill verification.
 
@@ -59,7 +69,7 @@ Windows and controlled Linux native evidence exists from earlier executions. Its
 
 The core is useful for developers who need bounded, reviewable automation, execution records and reusable demonstrated workflows. The browser fixture is the easiest way to learn and verify that machinery without changing desktop documents. The owned controller is an inspectable research example with measured limits. General desktop planning is experimental and needs action review.
 
-The main maintenance debt is file size and uneven Python style. At the reviewed source, the HTTP service has 835 lines, the coordinator has 1,266 lines, and the two main console files have 882 and 923 lines. Some training scripts compress several operations onto one line. Those choices make later changes harder to inspect. The tests cover real failures and state changes, which is a stronger basis for an alpha release than the size of the documentation alone.
+The main maintenance debt is file size and uneven Python style. At the reviewed source, the HTTP service has 898 lines, the coordinator has 1,266 lines, and the two main console files have 883 and 987 lines. The CLI provider module has 917 lines. Some training scripts compress several operations onto one line. Those choices make later changes harder to inspect. The tests cover real failures and state changes, which is a stronger basis for an alpha release than the size of the documentation alone.
 
 Public instructions should lead with setup and one working journey. Put source fingerprints and historical acceptance details in verification records. Repeating long repair receipts in every introductory paragraph makes the project harder to understand.
 

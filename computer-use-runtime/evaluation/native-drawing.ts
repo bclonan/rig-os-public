@@ -106,9 +106,17 @@ try {
     .getByLabel("Open app", { exact: true })
     .selectOption(String(window.handle));
   await page.getByLabel("What should the assistant do?").fill(report.goal);
-  await page
-    .getByLabel("Local model", { exact: true })
-    .selectOption(report.generatingModel);
+  const modelPicker = page.locator("#desktop-model");
+  async function selectModel(model: string) {
+    const checked = modelPicker.locator(
+      'input[name="desktop-providers"]:checked',
+    );
+    while (await checked.count()) await checked.first().uncheck();
+    await modelPicker
+      .getByRole("checkbox", { name: "Ollama " + model, exact: true })
+      .check();
+  }
+  await selectModel(report.generatingModel);
   const planResponse = page.waitForResponse(
     (response) =>
       response.url().endsWith("/api/drawing-plans") &&
@@ -156,12 +164,16 @@ try {
     (entry: any) => entry.type === "requested",
   );
   assert.ok(plan.segmentCount > 0 && plan.segmentCount <= 120);
-  assert.equal(delivered.length, plan.segmentCount);
+  assert.equal(plan.setupActions.length, 2);
+  assert.equal(delivered.length, plan.segmentCount + plan.setupActions.length);
   const rejected = report.events.filter(
     (entry: any) => entry.type === "rejected",
   );
   assert.ok(rejected.length <= plan.skill.budgets.retries);
-  assert.equal(requested.length, plan.segmentCount + rejected.length);
+  assert.equal(
+    requested.length,
+    plan.segmentCount + plan.setupActions.length + rejected.length,
+  );
   assert.equal(
     new Set(requested.map((entry: any) => entry.data.id)).size,
     requested.length,
@@ -187,8 +199,25 @@ try {
   assert.ok(
     requested.every(
       (entry: any) =>
-        entry.data.operation === "drag" && entry.data.scope === "edit",
+        ["click", "drag"].includes(entry.data.operation) &&
+        entry.data.scope === "edit",
     ),
+  );
+  const acknowledgedIds = new Set(
+    delivered.map((entry: any) => entry.data.actionId),
+  );
+  const deliveredRequests = requested.filter((entry: any) =>
+    acknowledgedIds.has(entry.data.id),
+  );
+  assert.equal(
+    deliveredRequests.filter((entry: any) => entry.data.operation === "click")
+      .length,
+    2,
+  );
+  assert.equal(
+    deliveredRequests.filter((entry: any) => entry.data.operation === "drag")
+      .length,
+    plan.segmentCount,
   );
   const after = await runtime.configureEnvironment(async () => {
     await router.prepare(plan.task);
@@ -199,9 +228,7 @@ try {
   const bytes = store.artifactRead(String(after.facts.canvasImage));
   writeFileSync(join(directory, "canvas.png"), bytes);
   report.canvasHash = hash(bytes);
-  await page
-    .getByLabel("Local model", { exact: true })
-    .selectOption(report.assessorModel);
+  await selectModel(report.assessorModel);
   await page
     .getByLabel("Subject to check on the canvas", { exact: true })
     .fill("dog");
@@ -212,7 +239,7 @@ try {
   );
   await page
     .getByRole("button", {
-      name: "Assess canvas with selected local vision model",
+      name: "Assess canvas with selected vision providers",
       exact: true,
     })
     .click();
@@ -232,7 +259,7 @@ try {
   );
   await page
     .getByRole("button", {
-      name: "Assess canvas with selected local vision model",
+      name: "Assess canvas with selected vision providers",
       exact: true,
     })
     .click();

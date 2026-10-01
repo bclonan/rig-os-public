@@ -1,12 +1,10 @@
 # Architecture and portable execution semantics
 
-This document retains pre-publication execution results. The public edition changes portable training-origin admission and two regression tests. Bundled models need a fresh local qualification against the published source. Read [portable evidence](../docs/open-source/PORTABLE_EVIDENCE.md) for the exact derivative scope.
-
 The separate [interactive system map](../docs/system-map/index.html) traces user journeys, source files, record relationships and the two model systems. See its [opening instructions](../docs/system-map/README.md) and [written trace](../docs/system-map/TRACE.md).
 
 One TypeScript coordinator owns its experience store. The service uses SQLite. The headless library runs without HTTP, Vue, Ollama or either future host application. Fastify and MCP wrap that library. The console uses the public authenticated API.
 
-This describes the repaired working tree over commit `25690943`, fingerprint `31667d67` across 300 maintained files. The source checkpoint preceded publication. [docs/REPAIR_STATUS.md](docs/REPAIR_STATUS.md) records fresh checks and limits. The historical 273-file A-F qualifications and models stay sealed. They do not certify these repairs. Native Mac execution and physical mixed-DPI qualification remain unresolved.
+This architecture includes the later provider repair. The earlier repaired checkpoint was fingerprint `31667d67` across 300 maintained files over commit `25690943`. Its qualification does not cover the provider changes. [docs/REPAIR_STATUS.md](docs/REPAIR_STATUS.md) records fresh checks and limits. The historical 273-file A-F qualifications and models stay sealed. They do not certify these repairs. Native Mac execution and physical mixed-DPI qualification remain unresolved.
 
 ```mermaid
 flowchart LR
@@ -23,6 +21,7 @@ flowchart LR
     Files[(Content-hashed images and candidate files)]
     Policy[Deterministic policy and evidence verifier]
     Planner[Desktop planner\nOne reviewed proposal at a time]
+    Providers[Selected provider team\nOrdered fallback or parallel proposals]
     Ollama[Local Ollama\nUntrusted model output]
     Router[DesktopRouter]
     Browser[Playwright owned fixture]
@@ -41,7 +40,10 @@ flowchart LR
   RT <--> DB
   RT --> Policy
   RT <--> Planner
-  Planner <--> Ollama
+  Planner <--> Providers
+  Providers <--> Ollama
+  Remote[Installed CLI providers\nExplicit remote consent]
+  Providers <--> Remote
   RT --> Router
   Router --> Browser
   Router --> Native
@@ -146,7 +148,7 @@ The original audit fixes counts, seeds, observations, baselines and budgets befo
 
 Training provenance is a separate record. The public origin must match one of three existing reviewed audit tuples and the unchanged selection, protocol, all 22 selected artifacts and six original source files. The fresh audit binds those local evidence bytes without substituting them for current executable source. It still requires the full current source, metrics, seal and cleanup checks. Historical Python files are never executed. [ADR 0006](docs/adr/0006-training-origin-and-deployment-qualification.md) records the decision.
 
-The earlier 300-file V4 qualification and explicit seed-17 activation passed. [The primary receipt](../docs/open-source/EVIDENCE.md) records all three command exits as zero and settled cleanup. [Independent metric review](../docs/open-source/EVIDENCE.md) and [whole-current review](../docs/open-source/EVIDENCE.md) verify all 2,100 tasks, 300 head cases, exact selected weights, current source and signed finalization. [A separate public-operation supplement](../docs/open-source/EVIDENCE.md) completed one browser task with two bound acknowledgments and an independently read result, then rolled back to `fixed`. These are exposed-case source requalification and disposable-Store checks. They do not train new weights, activate the user's Store or establish unseen-task or native learning.
+The earlier 300-file V4 qualification and explicit seed-17 activation passed. [The primary receipt](../docs/open-source/EVIDENCE.md) records all three command exits as zero and settled cleanup. [Independent metric review](../docs/open-source/EVIDENCE.md) and [whole-current review](../docs/open-source/EVIDENCE.md) verify all 2,100 tasks, 300 head cases, exact selected weights, that 300-file source and signed finalization. [A separate public-operation supplement](../docs/open-source/EVIDENCE.md) completed one browser task with two bound acknowledgments and an independently read result, then rolled back to `fixed`. These are exposed-case source requalification and disposable-Store checks. They do not train new weights, activate the user's Store or establish unseen-task or native learning.
 
 ## Native ownership
 
@@ -170,7 +172,7 @@ Windows uses the Rust bridge. macOS and Linux use a private Python JSONL worker 
 
 Computer tasks retain an immutable `computer:<session>` target and a separate `activeWindow` binding. Observations include a current app catalog with handle/PID identities. Reviewed `switch_window` and `launch_app` operations use the `navigate` permission. Launching accepts one fixed app ID and no arguments or executable path. The computer adapter checks its own lease and standard policy, then binds ordinary input to the selected native window and native lease generation. The Windows named mutex still excludes other runtime processes. Closing a selected window returns the task to its app catalog. A stale switch proposal expires before input.
 
-`LocalDesktopPlanner` obtains short plans from local Ollama using named current UIA controls, supported control actions and optional PNG screenshots. It retains bounded plan steps in the task store. Each next step binds control names to a fresh observation. Feedback, pause, a changed proposal and new owned dialogs invalidate pending plan context; coordinate actions always require fresh planning. Model suggestions do not enter the published skill registry or training labels.
+`LocalDesktopPlanner` obtains short plans through a selected provider team using named current UIA controls, supported control actions and optional PNG screenshots. One to four Ollama or installed CLI models use ordered fallback or parallel proposals. Every candidate passes the requested schema. Exact agreement wins a consensus; disagreements permit one bounded call that selects an existing candidate. The API freezes selection and explicit remote consent in primitive task parameters. Provider results record each member's failure or validity and the selection method. See [PROVIDERS.md](docs/PROVIDERS.md) for process restrictions and unverified limits. The planner retains bounded plan steps in the task store. Each next step binds control names to a fresh observation. Feedback, pause, a changed proposal and new owned dialogs invalidate pending plan context; coordinate actions always require fresh planning. Model suggestions do not enter the published skill registry or training labels.
 
 `driveDesktop` runs under Runtime cancellation and serialization. It persists a proposal, releases the input lease and waits for explicit action review. Approval names one proposal ID. The next drive captures current state, invalidates changed or expired proposals, then uses the standard policy, native lease and action journal. Ambiguous delivery requires reconciliation and cannot retry automatically. Text selections are part of UIA observations. Native cleanup releases only keys and buttons this worker actually holds.
 

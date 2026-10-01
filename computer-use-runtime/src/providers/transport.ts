@@ -1,3 +1,62 @@
+const providerRecovery = {
+  "request-rejected":
+    "Check the local provider's version and model configuration, or choose another provider. No desktop action was sent.",
+  "not-installed":
+    "The selected model is not installed. Refresh the model list and choose an installed model. No desktop action was sent.",
+  "vision-unavailable":
+    "This model cannot read screenshots. Choose a vision model for drawing or pointer tasks. No desktop action was sent.",
+  "context-too-large":
+    "The observation exceeds this model's context window. Choose a model with a larger context window or narrow the task to one window. No desktop action was sent.",
+  "thinking-rejected":
+    "This model rejected the thinking setting. Choose another model or update the local provider. No desktop action was sent.",
+  "schema-rejected":
+    "The local provider rejected the response schema. Update the local provider or choose another model. No desktop action was sent.",
+  "resource-unavailable":
+    "The local provider could not load this model. Free memory or choose a smaller model. No desktop action was sent.",
+  "service-failed":
+    "The local model service failed. Restart that service or choose another provider. No desktop action was sent.",
+  "service-unavailable":
+    "The local model service is not running. Start Ollama or the configured local provider, then refresh the model list.",
+  "transport-failed":
+    "The local model request failed. Check the configured loopback service. Redirects are not allowed.",
+} as const;
+export type ProviderDiagnosticCategory = keyof typeof providerRecovery;
+
+/** Only fixed internal categories and validated status codes can cross this boundary. */
+export class ProviderDiagnosticError extends Error {
+  readonly category: ProviderDiagnosticCategory;
+  readonly httpStatus?: number;
+  constructor(
+    category: ProviderDiagnosticCategory,
+    status?: number,
+    operation = "Local provider",
+  ) {
+    const safeCategory = Object.hasOwn(providerRecovery, category)
+      ? category
+      : "request-rejected";
+    const safeOperation = [
+      "Ollama generation",
+      "Provider",
+      "Vision provider",
+      "Local model readiness",
+    ].includes(operation)
+      ? operation
+      : "Local provider";
+    const safeStatus =
+      Number.isInteger(status) && Number(status) >= 100 && Number(status) <= 599
+        ? status
+        : undefined;
+    super(
+      (safeStatus === undefined
+        ? ""
+        : `${safeOperation} HTTP ${safeStatus}. `) +
+        providerRecovery[safeCategory],
+    );
+    this.category = safeCategory;
+    this.httpStatus = safeStatus;
+  }
+}
+
 /** Local observations must never leave the configured loopback service. */
 export function localEndpoint(endpoint: string): string {
   const url = new URL(endpoint);
@@ -15,13 +74,67 @@ export function localEndpoint(endpoint: string): string {
   return url.href.replace(/\/$/, "");
 }
 
-export function localFetch(url: string, options: RequestInit = {}) {
+export async function localFetch(url: string, options: RequestInit = {}) {
   localEndpoint(url);
-  return fetch(url, { ...options, redirect: "error" });
+  try {
+    return await fetch(url, { ...options, redirect: "error" });
+  } catch (error) {
+    options.signal?.throwIfAborted();
+    const cause = (error as { cause?: { code?: string } }).cause;
+    if (cause?.code === "ECONNREFUSED")
+      throw new ProviderDiagnosticError("service-unavailable");
+    throw new ProviderDiagnosticError("transport-failed");
+  }
 }
 
 export const PROVIDER_METADATA_BYTES = 1024 * 1024;
 export const PROVIDER_OUTPUT_BYTES = 4 * 1024 * 1024;
+
+/** Newer Ollama models can require named thinking levels rather than booleans. */
+export function ollamaThinking(
+  metadata: Record<string, unknown>,
+  requested = false,
+): boolean | string | undefined {
+  const info = metadata.thinking;
+  if (info && typeof info === "object" && !Array.isArray(info)) {
+    const thinking = info as Record<string, unknown>;
+    if (Array.isArray(thinking.values)) {
+      if (thinking.values.includes(requested)) return requested;
+      if (!requested) return undefined;
+      if (
+        typeof thinking.default === "string" &&
+        thinking.values.includes(thinking.default)
+      )
+        return thinking.default;
+      throw new Error(
+        "This local model does not advertise the requested thinking capability. Disable thinking or choose another model.",
+      );
+    }
+  }
+  const supported =
+    Array.isArray(metadata.capabilities) &&
+    metadata.capabilities.includes("thinking");
+  if (supported) return requested;
+  if (requested)
+    throw new Error(
+      "This local model does not advertise thinking capability. Disable thinking or choose another model.",
+    );
+  return undefined;
+}
+
+export function modelJson(content: unknown): unknown {
+  if (typeof content !== "string" || !content.trim())
+    throw new Error(
+      "The model returned no final answer within its token budget. Choose another model or shorten the task.",
+    );
+  try {
+    return JSON.parse(content);
+  } catch {
+    throw new Error(
+      "The model returned invalid JSON. Choose another model or retry this planning step. No desktop action was sent.",
+    );
+  }
+}
 
 export function rejectProviderResponse(
   response: Response,
@@ -29,6 +142,62 @@ export function rejectProviderResponse(
 ): never {
   void response.body?.cancel().catch(() => {});
   throw new Error(message);
+}
+
+/** Classify bounded server errors without returning private prompts or paths. */
+export async function rejectModelResponse(
+  response: Response,
+  operation: string,
+  signal?: AbortSignal,
+): Promise<never> {
+  const combined = signal
+    ? AbortSignal.any([signal, AbortSignal.timeout(500)])
+    : AbortSignal.timeout(500);
+  let detail = "";
+  try {
+    const body = await providerJson(response, 8192, combined);
+    if (body && typeof body === "object" && !Array.isArray(body)) {
+      const error = (body as Record<string, unknown>).error;
+      if (typeof error === "string") detail = error.toLowerCase();
+    }
+  } catch {
+    // A malformed, oversized or stalled error body has no diagnostic authority.
+  }
+  signal?.throwIfAborted();
+  let recovery =
+    "Check the local provider's version and model configuration, or choose another provider. No desktop action was sent.";
+  if (response.status === 404 || /model.+not found|pull.+model/.test(detail))
+    recovery =
+      "The selected model is not installed. Refresh the model list and choose an installed model. No desktop action was sent.";
+  else if (
+    /image|vision|multimodal/.test(detail) &&
+    /support|capab/.test(detail)
+  )
+    recovery =
+      "This model cannot read screenshots. Choose a vision model for drawing or pointer tasks. No desktop action was sent.";
+  else if (/context|input.+long|prompt.+long/.test(detail))
+    recovery =
+      "The observation exceeds this model's context window. Choose a model with a larger context window or narrow the task to one window. No desktop action was sent.";
+  else if (
+    /thinking|think/.test(detail) &&
+    /support|invalid|require/.test(detail)
+  )
+    recovery =
+      "This model rejected the thinking setting. Choose another model or update the local provider. No desktop action was sent.";
+  else if (/grammar|json schema|schema|format/.test(detail))
+    recovery =
+      "The local provider rejected the response schema. Update the local provider or choose another model. No desktop action was sent.";
+  else if (/memory|alloc|resource|load.+model/.test(detail))
+    recovery =
+      "The local provider could not load this model. Free memory or choose a smaller model. No desktop action was sent.";
+  else if (response.status >= 500)
+    recovery =
+      "The local model service failed. Restart that service or choose another provider. No desktop action was sent.";
+  const category =
+    (Object.keys(providerRecovery) as ProviderDiagnosticCategory[]).find(
+      (key) => providerRecovery[key] === recovery,
+    ) ?? "request-rejected";
+  throw new ProviderDiagnosticError(category, response.status, operation);
 }
 
 /** Limit bytes before decoding, including servers that ignore token limits. */
@@ -70,9 +239,18 @@ export async function providerJson(
       offset += chunk.length;
     }
     signal?.throwIfAborted();
-    const result: unknown = JSON.parse(
-      new TextDecoder("utf-8", { fatal: true }).decode(value),
-    );
+    let decoded: string;
+    try {
+      decoded = new TextDecoder("utf-8", { fatal: true }).decode(value);
+    } catch {
+      throw new Error("Provider returned invalid encoded data");
+    }
+    let result: unknown;
+    try {
+      result = JSON.parse(decoded);
+    } catch {
+      throw new Error("Provider returned invalid JSON");
+    }
     signal?.throwIfAborted();
     return result;
   } finally {
@@ -103,10 +281,7 @@ export async function localOllamaReady(
     signal: combined,
   });
   if (!response.ok)
-    rejectProviderResponse(
-      response,
-      "Local model readiness HTTP " + response.status,
-    );
+    await rejectModelResponse(response, "Local model readiness", combined);
   const metadata = await providerJson(
     response,
     PROVIDER_METADATA_BYTES,
@@ -134,7 +309,9 @@ export async function localOllamaReady(
     !data.capabilities.includes(required)
   )
     throw new Error(
-      "Local model does not advertise " + required + " capability",
+      required === "vision"
+        ? "This local model does not advertise vision capability. Choose a vision model for drawing or pointer tasks."
+        : "This local model does not advertise completion capability. Choose another installed model.",
     );
   return data;
 }

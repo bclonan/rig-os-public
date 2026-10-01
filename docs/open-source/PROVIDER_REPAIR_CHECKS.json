@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-01",
+  "scope": "Development checks of the provider and bounded drawing repair. Fresh whole-source static verification has its own receipt. These checks do not qualify trained models or general desktop competence.",
+  "nativeDrawing": {
+    "status": "PASS",
+    "provider": "ollama",
+    "model": "qwen3.6:latest",
+    "planningMilliseconds": 64617,
+    "planningNativeInputs": 0,
+    "segments": 88,
+    "setupClicks": 2,
+    "acknowledgedInputs": 90,
+    "uncertainInputs": 0,
+    "finalTaskStatus": "needs_review",
+    "canvasSha256": "722c7419c94d5900fdbb05ef7bee44278da2c468df8633ffd858cf96369275f0",
+    "separateLocalAssessment": {
+      "model": "qwen3.5:4b",
+      "visibleSubject": "dog",
+      "recognizable": true,
+      "latencyMilliseconds": 7714.5273,
+      "input": "Only the actual cropped Paint canvas",
+      "calibrated": false,
+      "independentlyVerifiedCompletion": false
+    },
+    "image": "images/provider-dog.png",
+    "review": "The observed canvas matches the inspected geometric preview. It is a crude dog line drawing. Human observation is not calibrated model assessment or objective subject ground truth.",
+    "ownership": "One newly created Paint document. No input to earlier windows. Private stores and window receipts remain outside the repository.",
+    "effects": "Select Pencil and black color, then bounded canvas drags. No save, overwrite, import or upload."
+  },
+  "liveCli": {
+    "finalCodexContainment": {
+      "status": "PASS",
+      "durationMilliseconds": 4292,
+      "toolEvents": 0,
+      "ownedCanaryFileWritten": false,
+      "limit": "One trusted installed CLI and owned temporary canary. This does not sandbox a malicious executable."
+    },
+    "codex": "PASS for installed gpt-5.5 and default models, including the full desktop decision schema after strict wire-schema conversion. No desktop input.",
+    "claude": "UNRUN because Claude CLI is not installed. Safe proposal mode requires an API key and bare execution. Subscription OAuth mode is unsupported."
+  },
+  "consoleDevelopmentChecks": {
+    "providerChooserGroups": 8,
+    "workflowGroups": 11,
+    "status": "PASS",
+    "scope": "Real Chromium, Vue, Fastify and SQLite with disposable stores and explicit provider fixtures. No native input or remote provider call."
+  },
+  "liveEnsemble": {
+    "status": "PASS",
+    "providers": [
+      { "provider": "ollama", "model": "qwen3.6:latest", "status": "valid" },
+      { "provider": "codex-cli", "model": "default", "status": "valid" }
+    ],
+    "durationMilliseconds": 5630,
+    "selectionMethod": "consensus",
+    "selectedMember": 0,
+    "promptScope": "Public synthetic structured proposal. No screenshots or desktop input.",
+    "meaning": "Application-level proposal selection. This does not change model weights or implement a neural mixture of experts."
+  },
+  "reportedOllama400": {
+    "reproduced": false,
+    "diagnosis": "The screenshot alone does not establish the cause. Current text, image and actual Paint planning calls succeeded. HTTP failures now return bounded recovery messages without copying raw model output."
+  },
+  "historicalEvidence": "Earlier learning, OS profile and release evidence retain their original source bindings. Requalify experimental models on current source and machine."
+}

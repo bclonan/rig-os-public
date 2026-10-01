@@ -1,12 +1,13 @@
 # rig-os
 
-rig-os is a local computer-use runtime. It runs a browser console and an authenticated service on your computer. A local model proposes desktop actions, you review them, and the runtime checks the target and permissions before sending input. It also records demonstrations, compiles bounded skills, and creates verified JSON or CSV artifacts.
+rig-os is a local computer-use runtime. It runs a browser console and an authenticated service on your computer. Your selected models propose desktop actions, you review them, and the runtime checks the target and permissions before sending input. It also records demonstrations, compiles bounded skills, and creates verified JSON or CSV artifacts.
 
 This is an experimental developer tool. Windows and a controlled Linux desktop profile have live execution evidence. macOS has an implementation but still needs live testing. General desktop learning and physical mixed-DPI support remain unqualified.
 
 ## What it is useful for
 
-- Review a local assistant's proposed actions in Calculator, an editor, or another supported desktop app.
+- Review an assistant's proposed actions in Calculator, an editor, or another supported desktop app.
+- Choose Ollama, Codex CLI, or Claude CLI models. Use ordered fallback or compare proposals in a parallel ensemble.
 - Run repeatable workflows with explicit permissions, deadlines, version pins, pause, takeover, and recovery.
 - Turn successful recordings into parameterized skills, then test them before publication.
 - Generate JSON or CSV from source data and check every requested value before download.
@@ -41,6 +42,8 @@ Keep the service terminal open. Enter `open` to open the console and `copy` to c
 
 Use [the usage guide](docs/open-source/USAGE.md) for desktop tasks, artifact creation, recording, SDKs, and MCP. The [operating guide](computer-use-runtime/docs/RUNNING.md) covers installation, native permissions, models, backup, and recovery. [Platform support](computer-use-runtime/PLATFORMS.md) lists actual OS coverage.
 
+Model selection accepts one to four providers. Ollama uses your local daemon. Codex CLI uses your installed client and login. Claude CLI requires a compatible installed client and API key. The console requires consent before external providers receive task text, controls, source data, or enabled screenshots. Claude CLI currently accepts text only. Read [provider setup and limits](computer-use-runtime/docs/PROVIDERS.md) before choosing an external provider.
+
 ## Explore the architecture
 
 Open [the interactive system map](docs/system-map/index.html). It has zoom, pan, search, ordered journeys, record explanations, and source links for every traced responsibility. It uses no external services.
@@ -61,7 +64,7 @@ Run the development gate from `computer-use-runtime`:
 npm run check
 ```
 
-Fresh checks on the portable public source pass 327 TypeScript tests, type checks, formatting, production build, dependency audit, and Windows Rust checks. The Python suite reported 87 cases with 18 platform skips on Windows. An earlier private-source qualification completed 2,100 browser task cases and 300 prediction cases, then activated a model in a disposable store. Public metadata has been normalized for portability. V4 activation requires a fresh local qualification. These receipts identify their exact source bytes. They do not qualify every desktop app or OS.
+The provider repair's public source passed all eight quality commands, including 360 TypeScript tests, 62 Python syntax checks, type checks, formatting, production build, dependency audit, and Windows Rust checks. Its Python suite reported 87 cases with 18 platform skips on Windows. The first portable publication's 327-test receipt remains historical. An earlier private-source qualification completed 2,100 browser task cases and 300 prediction cases, then activated a model in a disposable store. Public metadata has been normalized for portability. V4 activation requires a fresh local qualification. These receipts identify their exact source bytes. They do not qualify every desktop app or OS.
 
 The family-transfer study failed its learned-controller gate. Trained weights produced 185 correct effects out of 300, initialized weights 75, and the authored controller 300. Native Mac execution, physical mixed-DPI qualification, external host integration, and general native learning remain open. The historical acceptance ledger records 61 of 63 applicable requirements and an overall failure.
 

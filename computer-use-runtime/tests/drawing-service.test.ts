@@ -25,7 +25,7 @@ test("frozen drawing approval uses one bounded edit program, preserves semantic 
     host: "host",
     session: "session",
     identity: "1",
-    capabilities: ["drag"],
+    capabilities: ["click", "drag"],
     platform: "Windows",
     notes: "scripted unit double",
     client: {
@@ -67,6 +67,26 @@ test("frozen drawing approval uses one bounded edit program, preserves semantic 
           canvasBounds: JSON.stringify(bounds),
         },
         controls: [
+          {
+            index: 1,
+            id: "PencilTool",
+            name: "Pencil",
+            value: "",
+            focused: false,
+            offscreen: false,
+            controlType: 50000,
+            bounds,
+          },
+          {
+            index: 2,
+            id: "black",
+            name: "Black",
+            value: "",
+            focused: false,
+            offscreen: false,
+            controlType: 50007,
+            bounds,
+          },
           {
             index: 0,
             id: "image",
@@ -158,6 +178,10 @@ test("frozen drawing approval uses one bounded edit program, preserves semantic 
     const plan = created.json();
     assert.equal(dispatched, 0, "Planning must not draw");
     assert.equal(plan.segmentCount, 4);
+    assert.deepEqual(plan.setupActions, [
+      "Select Pencil",
+      "Select black color",
+    ]);
     assert.deepEqual(plan.task.effects, ["edit"]);
     store.db.prepare("DELETE FROM kv WHERE namespace='api-dedup'").run();
     const retry = await app.inject({
@@ -181,7 +205,7 @@ test("frozen drawing approval uses one bounded edit program, preserves semantic 
       "needs_review",
       JSON.stringify(store.run(plan.id)),
     );
-    assert.equal(dispatched, 4);
+    assert.equal(dispatched, 6);
     assert.equal(store.run(plan.id).status, "needs_review");
     assert.ok(store.run(plan.id).bindings.verifiedApplicationResult);
     assert.equal(

@@ -2,9 +2,12 @@ import {
   localEndpoint,
   localFetch,
   localOllamaReady,
+  modelJson,
+  ollamaThinking,
   providerJson,
   PROVIDER_METADATA_BYTES,
   PROVIDER_OUTPUT_BYTES,
+  rejectModelResponse,
   rejectProviderResponse,
 } from "./transport.js";
 import type { ModelProvider } from "../contracts/ports.js";
@@ -28,17 +31,11 @@ export class OllamaProvider implements ModelProvider {
       available: true,
     };
   }
-  async generate(
-    prompt: string,
-    schema: object,
-    signal?: AbortSignal,
-    images?: string[],
-    think = false,
-  ) {
+  async ready(modality: "text" | "vision" = "text", signal?: AbortSignal) {
     const metadata = await localOllamaReady(
       this.endpoint,
       this.model,
-      images?.length ? "vision" : "text",
+      modality,
       signal,
     );
     this.capabilities.modalities =
@@ -46,6 +43,20 @@ export class OllamaProvider implements ModelProvider {
       metadata.capabilities.includes("vision")
         ? ["text", "image"]
         : ["text"];
+    return metadata;
+  }
+  async generate(
+    prompt: string,
+    schema: object,
+    signal?: AbortSignal,
+    images?: string[],
+    think = false,
+  ) {
+    const metadata = await this.ready(
+      images?.length ? "vision" : "text",
+      signal,
+    );
+    const thinking = ollamaThinking(metadata, think);
     const combined = signal
       ? AbortSignal.any([signal, AbortSignal.timeout(120000)])
       : AbortSignal.timeout(120000);
@@ -55,7 +66,7 @@ export class OllamaProvider implements ModelProvider {
       body: JSON.stringify({
         model: this.model,
         stream: false,
-        think,
+        ...(thinking !== undefined ? { think: thinking } : {}),
         format: schema,
         options: { temperature: 0, num_predict: 4096, num_ctx: 8192 },
         messages: [
@@ -74,20 +85,13 @@ export class OllamaProvider implements ModelProvider {
       signal: combined,
     });
     if (!response.ok)
-      rejectProviderResponse(
-        response,
-        `Ollama unavailable: ${response.status}`,
-      );
+      await rejectModelResponse(response, "Ollama generation", combined);
     const data: any = await providerJson(
       response,
       PROVIDER_OUTPUT_BYTES,
       combined,
     );
-    if (!data.message?.content?.trim())
-      throw new Error(
-        "The local model returned no final answer within its token budget. Choose another model or shorten the task.",
-      );
-    return JSON.parse(data.message.content);
+    return modelJson(data?.message?.content);
   }
   static async discover(endpoint = "http://127.0.0.1:11434") {
     try {
@@ -118,10 +122,40 @@ export class LocalEndpointProvider implements ModelProvider {
   constructor(
     readonly endpoint: string,
     readonly model: string,
+    options: { vision?: boolean; maxTokens?: number } = {},
   ) {
     this.endpoint = localEndpoint(endpoint);
+    if (options.vision) this.capabilities.modalities = ["text", "image"];
+    if (options.maxTokens !== undefined) {
+      if (
+        !Number.isSafeInteger(options.maxTokens) ||
+        options.maxTokens < 1 ||
+        options.maxTokens > 16384
+      )
+        throw new Error(
+          "Local provider token limit must be between 1 and 16384",
+        );
+      this.capabilities.maxTokens = options.maxTokens;
+    }
   }
-  async generate(prompt: string, schema: object, signal?: AbortSignal) {
+  async ready(modality: "text" | "vision" = "text", signal?: AbortSignal) {
+    signal?.throwIfAborted();
+    if (
+      modality === "vision" &&
+      !this.capabilities.modalities.includes("image")
+    )
+      throw new Error(
+        "This local provider is configured for text only. Enable its vision capability or choose a vision provider for drawing or pointer tasks.",
+      );
+    return { capabilities: this.capabilities.modalities };
+  }
+  async generate(
+    prompt: string,
+    schema: object,
+    signal?: AbortSignal,
+    images?: string[],
+  ) {
+    await this.ready(images?.length ? "vision" : "text", signal);
     const combined = signal
       ? AbortSignal.any([signal, AbortSignal.timeout(120000)])
       : AbortSignal.timeout(120000);
@@ -133,15 +167,28 @@ export class LocalEndpointProvider implements ModelProvider {
         model: this.model,
         temperature: 0,
         max_tokens: this.capabilities.maxTokens,
-        messages: [{ role: "user", content: prompt }],
+        messages: [
+          {
+            role: "user",
+            content: images?.length
+              ? [
+                  { type: "text", text: prompt },
+                  ...images.map((image) => ({
+                    type: "image_url",
+                    image_url: { url: "data:image/png;base64," + image },
+                  })),
+                ]
+              : prompt,
+          },
+        ],
         response_format: {
           type: "json_schema",
           json_schema: { name: "contract", schema, strict: true },
         },
       }),
     });
-    if (!r.ok) rejectProviderResponse(r, `Provider ${r.status}`);
+    if (!r.ok) await rejectModelResponse(r, "Provider", combined);
     const d: any = await providerJson(r, PROVIDER_OUTPUT_BYTES, combined);
-    return JSON.parse(d.choices[0].message.content);
+    return modelJson(d?.choices?.[0]?.message?.content);
   }
 }

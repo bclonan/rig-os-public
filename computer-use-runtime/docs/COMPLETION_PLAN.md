@@ -1,8 +1,14 @@
 # Completion plan
 
+## Provider repair, October 1, 2026
+
+The later provider repair adds one to four selected models, ordered fallback, parallel proposals and explicit remote consent. Read [provider instructions](../docs/PROVIDERS.md) for setup and limits. The [current public verification record](../../docs/open-source/VERIFICATION.md) reports the source-bound quality checks. Its Node check passed 360 tests. The independent provider review passed 32 focused tests. The [curated development check](../../docs/open-source/PROVIDER_REPAIR_CHECKS.json) records an owned Windows Paint run with two setup clicks and 88 drawing segments, all 90 acknowledged, followed by a changed canvas and human inspection. The task remains `needs_review`; the separate model opinion is uncalibrated. Claude has no live execution evidence, and Unix CLI cleanup has no crash guardian.
+
+The 273-, 299- and 300-file reports below describe their original source. The `31667d67` checkpoint and its selected-case V4 qualification do not qualify the later provider or public source. No historical report, model, acceptance row or frozen contract changed. Native Mac, physical mixed-DPI, real external benchmark integration and general native learning remain open.
+
 This document retains pre-publication execution results. The public edition changes portable training-origin admission and two regression tests. Bundled models need a fresh local qualification against the published source. Read [portable evidence](../../docs/open-source/PORTABLE_EVIDENCE.md) for the exact derivative scope.
 
-The frozen `completion-contract-v1` and its 61/63 historical result remain unchanged. Current repairs use a separate [system review checklist](../../docs/system-review/CHECKLIST.md) and [repair status](REPAIR_STATUS.md). The maintained source is 300 files with SHA256 `31667d67fa52f874bc6cdcbdafc88b33a10865ef741217513a495bbfd4248700`.
+The frozen `completion-contract-v1` and its 61/63 historical result remain unchanged. Current repairs use a separate [system review checklist](../../docs/system-review/CHECKLIST.md) and [repair status](REPAIR_STATUS.md). The earlier maintained source was 300 files with SHA256 `31667d67fa52f874bc6cdcbdafc88b33a10865ef741217513a495bbfd4248700`.
 
 1. Earlier-source V4 qualification, explicit seed-17 activation and the separate browser task/fixed rollback passed. Independent metric and whole-current reviews agree. [REPAIR_STATUS.md](REPAIR_STATUS.md) records their exact receipts. Preserve the completed 299-file activation failure and the independently confirmed negative 900-episode transfer result. These results do not qualify unseen families or general native learning.
 2. Refresh the operating guides and architecture map against completed evidence. Keep implementation, focused tests, private Linux, physical Windows, external environments and scientific results separately scoped.
@@ -11,6 +17,6 @@ The frozen `completion-contract-v1` and its 61/63 historical result remain uncha
 5. Physical mixed-DPI remains FAIL. The earlier pre-publication 300-file preparation has independent whole-method review and 12 filesystem checks, but is UNRUN. Keep all 24 effect/profile assertions and 90-second effects/120-second restoration limits. Live execution requires its ownership preconditions and explicit foreground release. Do not close or control the last saved unowned Settings window.
 6. Test Mac behavior when hardware becomes available. Test actual external host protocols when their repositories or environments are provided. General native learning needs an independent native task-family study; browser scores cannot close it.
 
-The live Linux 20-check profile passed at the earlier 299-file checkpoint. Earlier readiness, state-transition and fixture failures remain intact. The current physical preparation, independent review and preserved predecessors are linked in [VERIFICATION.md](VERIFICATION.md). The [previous plan](../../docs/open-source/EVIDENCE.md) preserves all earlier execution and package references.
+The live Linux 20-check profile passed at the earlier 299-file checkpoint. Earlier readiness, state-transition and fixture failures remain intact. The earlier physical preparation, independent review and preserved predecessors are linked in [VERIFICATION.md](VERIFICATION.md). The [previous plan](../../docs/open-source/EVIDENCE.md) preserves all earlier execution and package references.
 
 Leave the user's coordinator and Store untouched during validation. The last saved read-only preflight reported the service stopped. [RUNNING.md](RUNNING.md) explains how to check its status, start the repaired code and reconcile an uncertain interrupted task.

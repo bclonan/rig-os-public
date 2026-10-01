@@ -261,3 +261,47 @@ test("Desktop canvas assessment remains bound to task, subject and client", asyn
     h.dispose();
   }
 });
+
+test("Desktop canvas assessment cannot survive a provider-team change", async () => {
+  const held = deferred<any>();
+  let payload: any;
+  const h = setup("DesktopWorkspace", {
+    client: {
+      request: async (path: string, _method: string, body: unknown) => {
+        if (path.endsWith("/assess")) {
+          payload = body;
+          return held.promise;
+        }
+        return {};
+      },
+    },
+    runs: [],
+    providers: {},
+    token: "public-test",
+  });
+  try {
+    h.api.selected.value = "owned-canvas";
+    h.api.subject.value = "circle";
+    h.api.modelSelection.value = {
+      providers: [{ provider: "ollama", model: "vision-one" }],
+      strategy: "fallback",
+      allowRemote: false,
+      model: "vision-one",
+    };
+    const pending = h.api.assessCanvas();
+    assert.deepEqual(payload.providers, [
+      { provider: "ollama", model: "vision-one" },
+    ]);
+    h.api.modelSelection.value = {
+      providers: [{ provider: "codex-cli", model: "default" }],
+      strategy: "ensemble",
+      allowRemote: true,
+      model: "",
+    };
+    held.resolve({ assessment: { subject: "circle", model: "vision-one" } });
+    await pending;
+    assert.equal(h.api.semantic.value, undefined);
+  } finally {
+    h.dispose();
+  }
+});

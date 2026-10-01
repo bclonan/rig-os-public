@@ -2,9 +2,11 @@ import {
   localEndpoint,
   localFetch,
   localOllamaReady,
+  modelJson,
+  ollamaThinking,
   providerJson,
   PROVIDER_OUTPUT_BYTES,
-  rejectProviderResponse,
+  rejectModelResponse,
 } from "./transport.js";
 import { Ajv } from "ajv";
 import { hash, canonical } from "../storage/index.js";
@@ -62,6 +64,7 @@ export class LocalVisionAssessor {
         providerCalls: 0,
       };
     const start = performance.now();
+    const thinking = ollamaThinking(metadata);
     const response = await localFetch(this.endpoint + "/api/chat", {
       method: "POST",
       headers: { "content-type": "application/json" },
@@ -69,7 +72,7 @@ export class LocalVisionAssessor {
       body: JSON.stringify({
         model: this.model,
         stream: false,
-        think: false,
+        ...(thinking !== undefined ? { think: thinking } : {}),
         format: schema,
         options: { temperature: 0, num_predict: 500, num_ctx: 4096 },
         messages: [
@@ -82,16 +85,13 @@ export class LocalVisionAssessor {
       }),
     });
     if (!response.ok)
-      rejectProviderResponse(
-        response,
-        "Vision provider HTTP " + response.status,
-      );
+      await rejectModelResponse(response, "Vision provider", combined);
     const body: any = await providerJson(
       response,
       PROVIDER_OUTPUT_BYTES,
       combined,
     );
-    const assessment = JSON.parse(body.message.content);
+    const assessment = modelJson(body?.message?.content);
     if (!new Ajv({ strict: false }).validate(schema, assessment))
       throw new Error("Vision assessment schema rejected");
     const result = {

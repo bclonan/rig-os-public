@@ -126,6 +126,7 @@ export function validateDecision(value: unknown): Decision {
   ) as Decision;
 }
 export interface DesktopPlanner {
+  readonly lastCall?: unknown;
   next(
     task: TaskContract,
     observation: Observation,

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, onMounted, watch, onUnmounted } from "vue";
 import type { RuntimeClient } from "../src/sdk/index";
+import ModelPicker, { type ModelSelection } from "./ModelPicker.vue";
 const props = defineProps<{
   client: RuntimeClient;
   runs: any[];
@@ -25,15 +26,33 @@ const windows = ref<any[]>([]),
 const consent = ref<any>();
 const consentBusy = ref(false);
 const drawingPlan = ref<any>();
+const modelPicker = ref<InstanceType<typeof ModelPicker>>();
+const modelSelection = ref<ModelSelection>({
+  providers: [],
+  strategy: "fallback",
+  allowRemote: false,
+  model: "",
+});
+const paintWindow = computed(() =>
+  windows.value.find((entry) =>
+    String(entry.executable || "")
+      .toLowerCase()
+      .endsWith("mspaint.exe"),
+  ),
+);
 async function planDrawing() {
+  if (modelPicker.value?.validate() === false) return;
   await act(async () => {
     const client = props.client,
       version = ++drawingVersion;
-    const window = windows.value.find((entry) => entry.handle === chosen.value);
+    const window =
+      scope.value === "computer"
+        ? paintWindow.value
+        : windows.value.find((entry) => entry.handle === chosen.value);
     if (!window) throw new Error("Choose a Paint window first.");
     const result = await client.request("/api/drawing-plans", "POST", {
       goal: goal.value,
-      model: model.value,
+      ...modelSelection.value,
       handle: window.handle,
       pid: window.pid,
     });
@@ -64,7 +83,6 @@ async function approveDrawing() {
   });
 }
 const goal = ref(""),
-  model = ref(""),
   vision = ref(false),
   selected = ref(""),
   feedback = ref("");
@@ -96,14 +114,15 @@ watch(
   { flush: "sync" },
 );
 watch(
-  [chosen, goal, model, () => props.client],
+  [chosen, goal, modelSelection, () => props.client],
   () => {
     drawingVersion++;
     drawingPlan.value = undefined;
   },
-  { flush: "sync" },
+  { flush: "sync", deep: true },
 );
 async function assessCanvas() {
+  if (modelPicker.value?.validate(true) === false) return;
   await act(async () => {
     const id = selected.value,
       client = props.client,
@@ -112,7 +131,7 @@ async function assessCanvas() {
       const result = await client.request(
         `/api/desktop/tasks/${encodeURIComponent(id)}/assess`,
         "POST",
-        { subject: subject.value, model: model.value },
+        { subject: subject.value, ...modelSelection.value },
       );
       if (
         !closed &&
@@ -133,12 +152,12 @@ async function assessCanvas() {
   });
 }
 watch(
-  [selected, subject, model, () => props.client],
+  [selected, subject, modelSelection, () => props.client],
   () => {
     semanticVersion++;
     semantic.value = undefined;
   },
-  { flush: "sync" },
+  { flush: "sync", deep: true },
 );
 watch([selected, () => props.client], async ([id, client]) => {
   const version = ++semanticVersion;
@@ -231,6 +250,21 @@ async function cancelConsent() {
   }
 }
 async function submit() {
+  if (modelPicker.value?.validate() === false) return;
+  const target =
+    scope.value === "computer"
+      ? paintWindow.value
+      : windows.value.find((entry) => entry.handle === chosen.value);
+  if (
+    /\b(?:draw|sketch|paint)\b/i.test(goal.value) &&
+    target &&
+    String(target.executable || "")
+      .toLowerCase()
+      .endsWith("mspaint.exe")
+  ) {
+    await planDrawing();
+    return;
+  }
   await act(async () => {
     const client = props.client,
       selection = selectionVersion;
@@ -239,7 +273,7 @@ async function submit() {
       throw new Error("Choose an open app first.");
     const run = await client.request("/api/desktop/tasks", "POST", {
       goal: goal.value,
-      model: model.value,
+      ...modelSelection.value,
       vision: vision.value,
       scope: scope.value,
       ...(scope.value === "window"
@@ -375,11 +409,6 @@ const navigationTarget = computed(() => {
     ?.name;
 });
 onMounted(() => {
-  model.value =
-    props.providers.models?.find((m: any) => m.name === "qwen3.6:latest")
-      ?.name ||
-    props.providers.models?.[0]?.name ||
-    "";
   selected.value = tasks.value[0]?.id || "";
   void act(refreshWindows);
 });
@@ -448,7 +477,11 @@ onUnmounted(() => {
     <div class="grid">
       <section class="panel">
         <h2>New desktop task</h2>
-        <form @submit.prevent="submit">
+        <form
+          action="/api/desktop/tasks"
+          method="post"
+          @submit.prevent="submit"
+        >
           <fieldset class="scope-picker" aria-describedby="scope-hint">
             <legend>Work in</legend>
             <label class="desktop-check" for="scope-computer">
@@ -519,24 +552,13 @@ onUnmounted(() => {
                 : 'For example, write a short meeting agenda in this blank document.'
             "
           ></textarea>
-          <label for="desktop-model">Local model</label>
-          <select id="desktop-model" name="model" v-model="model" required>
-            <option v-if="!providers.models?.length" value="">
-              No local models found
-            </option>
-            <option v-for="m in providers.models" :key="m.name" :value="m.name">
-              {{ m.name }}
-            </option>
-          </select>
-          <p v-if="!providers.models?.length" class="hint">
-            Start Ollama and install a model, then reconnect. See the setup
-            instructions in README.md.
-          </p>
-          <p class="hint">
-            Qwen 3.6 passed the Windows desktop tests. The smaller 0.8B, 1.7B
-            and 4B models made planning errors. The first request can take
-            longer while Ollama loads the model.
-          </p>
+          <ModelPicker
+            ref="modelPicker"
+            id-prefix="desktop"
+            :providers="providers"
+            v-model="modelSelection"
+            :screenshots="vision"
+          />
           <label class="desktop-check" for="desktop-vision"
             ><input
               id="desktop-vision"
@@ -544,25 +566,29 @@ onUnmounted(() => {
               type="checkbox"
               v-model="vision"
             />
-            Send screenshots to this local model</label
+            Send screenshots to the selected providers</label
           >
           <p class="hint">
             Requires a vision model and screenshot access on this OS. Otherwise
-            the assistant reads accessibility controls. Screenshots and action
-            history stay in the local task store.
+            the assistant reads accessibility controls. Task history stays in
+            the local store. Remote providers also receive the enabled inputs
+            after you consent above.
           </p>
           <button :disabled="busy || !available">Plan desktop task</button>
           <button
             v-if="
-              scope === 'window' &&
-              windows
-                .find((entry) => entry.handle === chosen)
-                ?.executable.toLowerCase()
-                .endsWith('mspaint.exe')
+              (scope === 'computer' && paintWindow) ||
+              (scope === 'window' &&
+                String(
+                  windows.find((entry) => entry.handle === chosen)
+                    ?.executable || '',
+                )
+                  .toLowerCase()
+                  .endsWith('mspaint.exe'))
             "
             type="button"
             class="secondary"
-            :disabled="busy || !model || !goal.trim()"
+            :disabled="busy || !goal.trim()"
             @click="planDrawing"
           >
             Plan a bounded Paint drawing
@@ -576,10 +602,31 @@ onUnmounted(() => {
         <div v-if="drawingPlan" class="desktop-review">
           <h3>Review the drawing program</h3>
           <p>{{ drawingPlan.task.goal }}</p>
+          <details v-if="drawingPlan.providerResults">
+            <summary>Drawing proposal sources and failures</summary>
+            <ul>
+              <li
+                v-for="(member, index) in drawingPlan.providerResults.members"
+                :key="index"
+              >
+                {{ member.provider }} {{ member.model }} , {{ member.status
+                }}<template v-if="member.reason"
+                  >. {{ member.reason }}</template
+                >
+              </li>
+            </ul>
+            <p>
+              Selection method:
+              {{ drawingPlan.providerResults.selectionMethod }}
+            </p>
+          </details>
           <p>
-            {{ drawingPlan.segmentCount }} brush segments inside the selected
+            {{ drawingPlan.segmentCount }} Pencil segments inside the selected
             canvas. Approval runs this bounded program. It cannot save,
             overwrite, import or upload an image. Review the subject afterward.
+          </p>
+          <p v-if="drawingPlan.setupActions?.length">
+            The program first selects Pencil and black color in Paint.
           </p>
           <details>
             <summary>Geometric parts and frozen task</summary>
@@ -769,8 +816,8 @@ onUnmounted(() => {
             maxlength="100"
             placeholder="dog"
           />
-          <button class="secondary" :disabled="busy || !model">
-            Assess canvas with selected local vision model
+          <button class="secondary" :disabled="busy">
+            Assess canvas with selected vision providers
           </button>
           <p class="hint">
             The assessor reads the recorded target canvas. Its judgment stays
@@ -819,6 +866,23 @@ onUnmounted(() => {
             Continue with this instruction
           </button>
         </form>
+        <details v-if="current.bindings.providerResults">
+          <summary>Model proposal sources and failures</summary>
+          <ul>
+            <li
+              v-for="(member, index) in current.bindings.providerResults
+                .members"
+              :key="index"
+            >
+              {{ member.provider }} {{ member.model }} , {{ member.status
+              }}<template v-if="member.reason">. {{ member.reason }}</template>
+            </li>
+          </ul>
+          <p>
+            Selection method:
+            {{ current.bindings.providerResults.selectionMethod }}
+          </p>
+        </details>
         <details>
           <summary>Action history and evidence</summary>
           <ol>
@@ -847,11 +911,11 @@ onUnmounted(() => {
           interacting with an app while an approved action is running.
         </p>
         <p>
-          The assistant uses your installed local model. Small models can make
-          mistakes. Windows, macOS and Linux have native adapters. The available
-          actions depend on OS permissions and the app's accessibility support.
-          Terminals, password managers and security settings remain outside the
-          supported app list.
+          The assistant asks your selected providers for proposals. Models can
+          make mistakes. Windows, macOS and Linux have native adapters. The
+          available actions depend on OS permissions and the app's accessibility
+          support. Terminals, password managers and security settings remain
+          outside the supported app list.
         </p>
       </section>
     </div>

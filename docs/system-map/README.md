@@ -40,6 +40,14 @@ node --check docs/system-map/canvas.js
 
 Refresh replaces embedded ordinary documents and reanchors their citations. It rejects maintained source changes unless an explicitly reviewed publication diff and exact before/after hashes accompany them. Use `--accept-public-source` only with the reviewed `docs/open-source/PORTABLE_EVIDENCE.json` record. That path records portable provenance derivatives. It does not authorize unrelated code changes or qualify a model.
 
-After behavioral code changes, read the affected code and update the component and journey descriptions. Review those changes before refreshing. Hash acceptance alone cannot show that a description still matches new behavior.
+After behavioral code changes, read the affected code and update the component and journey descriptions. Create a new reviewed record under `SOURCE_UPDATES` with exact before/after fingerprints, every changed file hash, actual read scope, and explicit replacements for removed source anchors. Then accept that record:
 
-The checker verifies all maintained hashes, embedded text, source-line bounds, graph endpoints, journey/view references, source index, canvas controls, and current local Markdown links. It makes no runtime calls. [The older verification notes](VERIFICATION.md) describe historical checks and their original bytes. Private historical builders and research stay preserved in the author's working repository.
+```sh
+python docs/system-map/update_provider_map.py
+python docs/system-map/refresh_publication.py --accept-source-update docs/system-map/SOURCE_UPDATES/provider-selection-v1.json
+python docs/system-map/verify_publication.py
+```
+
+The [provider repair trace](SOURCE_UPDATES/provider-selection-v1.json) records its reviewed source changes. Refresh preserves the frozen portable-origin record and appends a separate maintenance chain. The checker reconstructs each prior source inventory from the recorded file changes and checks every fingerprint. A missing change, broken chain, altered review record, or modified frozen portability record fails. Hash acceptance alone cannot show that a description still matches new behavior.
+
+The checker verifies all maintained hashes, embedded text, source-line bounds, graph endpoints, journey/view references, source index, canvas controls, and current local Markdown links. It makes no runtime calls. [The map verification notes](VERIFICATION.md) describe the check scope. Private historical builders and research stay preserved in the author's working repository.

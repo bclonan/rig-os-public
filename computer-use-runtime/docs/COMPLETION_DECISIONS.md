@@ -1,8 +1,14 @@
 # Completion decisions
 
+## Provider repair, October 1, 2026
+
+The later provider repair adds one to four selected models, ordered fallback, parallel proposals and explicit remote consent. Read [provider instructions](../docs/PROVIDERS.md) for setup and limits. The [current public verification record](../../docs/open-source/VERIFICATION.md) reports the source-bound quality checks. Its Node check passed 360 tests. The independent provider review passed 32 focused tests. The [curated development check](../../docs/open-source/PROVIDER_REPAIR_CHECKS.json) records an owned Windows Paint run with two setup clicks and 88 drawing segments, all 90 acknowledged, followed by a changed canvas and human inspection. The task remains `needs_review`; the separate model opinion is uncalibrated. Claude has no live execution evidence, and Unix CLI cleanup has no crash guardian.
+
+The 273-, 299- and 300-file reports below describe their original source. The `31667d67` checkpoint and its selected-case V4 qualification do not qualify the later provider or public source. No historical report, model, acceptance row or frozen contract changed. Native Mac, physical mixed-DPI, real external benchmark integration and general native learning remain open.
+
 The frozen contract is in completion-contract-v1. This record explains implementation choices. It does not change acceptance criteria.
 
-This is a chronological decision record. References to pending checks describe the state when each decision was written. Later current-source qualification and release results are in [VERIFICATION.md](VERIFICATION.md); earlier failures and limits below remain unchanged.
+This is a chronological decision record. References to pending checks describe the state when each decision was written. Later source-bound qualification and release results are in [VERIFICATION.md](VERIFICATION.md); earlier failures and limits below remain unchanged.
 
 ## Repository identity
 

@@ -8,6 +8,12 @@ import { resolve } from "node:path";
 import { spawn } from "node:child_process";
 import type { Runtime } from "../runtime/index.js";
 import { OllamaProvider } from "../providers/index.js";
+import {
+  createSelectedProvider,
+  discoverCliProviders,
+} from "../providers/selection.js";
+import { providerSettings, providerParameters } from "../providers/settings.js";
+import { SelectedVisionAssessor } from "../providers/assessment.js";
 import { compileIntent } from "../compiler/intent.js";
 import { compileDemonstrations } from "../compiler/experience.js";
 import { Recorder, type Demonstration } from "../recorder/index.js";
@@ -196,19 +202,75 @@ export async function service(
     );
     return { status: "stopping" };
   });
-  app.get("/api/capabilities", async () => ({
-    host: fixture.host,
-    session: fixture.session,
-    identity: fixture.identity,
-    operations: fixture.capabilities,
-    providers: await OllamaProvider.discover(),
-    activeModel: runtime.store.get("model", "active") || "fixed",
-    hostIntegration: "UNVERIFIED",
-    native:
-      runtime.adapter instanceof DesktopRouter && runtime.adapter.native
-        ? "desktop assistant available"
-        : "desktop assistant unavailable",
-  }));
+  app.get("/api/capabilities", async () => {
+    const [metadata, clis] = await Promise.all([
+      OllamaProvider.discover(),
+      discoverCliProviders(),
+    ]);
+    const ollama =
+      metadata && typeof metadata === "object" && !Array.isArray(metadata)
+        ? (metadata as Record<string, unknown>)
+        : { models: [] };
+    const localModels = Array.isArray(ollama.models)
+      ? ollama.models.filter(
+          (item): item is { name: string; capabilities?: string[] } =>
+            !!item &&
+            typeof item === "object" &&
+            typeof item.name === "string" &&
+            (item.capabilities === undefined ||
+              (Array.isArray(item.capabilities) &&
+                item.capabilities.every(
+                  (capability: unknown) => typeof capability === "string",
+                ))),
+        )
+      : [];
+    const choices = [
+      ...localModels.map((item) => ({
+        provider: "ollama",
+        model: item.name,
+        name: item.name,
+        available: !/(?:[-:]cloud)(?:$|:)/i.test(item.name),
+        local: true,
+        ...(/(?:[-:]cloud)(?:$|:)/i.test(item.name)
+          ? {
+              reason:
+                "Ollama cloud models are unavailable in the local adapter. Choose a local model or explicitly consent to a CLI provider.",
+            }
+          : {}),
+        ...(item.capabilities
+          ? {
+              modalities: item.capabilities.includes("vision")
+                ? ["text", "image"]
+                : ["text"],
+            }
+          : {}),
+      })),
+      ...clis.flatMap((cli) =>
+        (cli.models.length ? cli.models : ["default"]).map((model) => ({
+          provider: cli.provider,
+          model,
+          name: `${cli.provider === "codex-cli" ? "Codex" : "Claude"} CLI / ${model}`,
+          available: cli.available,
+          local: false,
+          reason: cli.reason,
+          modalities: cli.modalities,
+        })),
+      ),
+    ];
+    return {
+      host: fixture.host,
+      session: fixture.session,
+      identity: fixture.identity,
+      operations: fixture.capabilities,
+      providers: { ...ollama, choices, clis },
+      activeModel: runtime.store.get("model", "active") || "fixed",
+      hostIntegration: "UNVERIFIED",
+      native:
+        runtime.adapter instanceof DesktopRouter && runtime.adapter.native
+          ? "desktop assistant available"
+          : "desktop assistant unavailable",
+    };
+  });
   app.get("/api/desktop/windows", async () =>
     runtime.adapter instanceof DesktopRouter
       ? runtime.adapter.windows()
@@ -328,14 +390,10 @@ export async function service(
     if (
       typeof body?.goal !== "string" ||
       !body.goal.trim() ||
-      body.goal.length > 4000 ||
-      typeof body.model !== "string" ||
-      !body.model ||
-      body.model.length > 200
+      body.goal.length > 4000
     )
-      throw new Error(
-        "Choose a local model and enter a task of at most 4000 characters",
-      );
+      throw new Error("Enter a task of at most 4000 characters");
+    const settings = providerSettings(body);
     if (body.vision !== undefined && typeof body.vision !== "boolean")
       throw new Error("Invalid screenshot setting");
     if (
@@ -370,7 +428,7 @@ export async function service(
         ...(computer
           ? {}
           : { windowPid: window!.pid, windowTitle: window!.title }),
-        plannerModel: body.model,
+        ...providerParameters(settings),
         vision: body.vision === true,
       },
       effects: computer ? ["edit", "save", "navigate"] : ["edit", "save"],
@@ -398,7 +456,9 @@ export async function service(
       runtime,
       req.body,
       String(req.headers["idempotency-key"]),
-      options.drawingProvider || ((model) => new OllamaProvider(model)),
+      options.drawingProvider ||
+        ((_model, settings) =>
+          createSelectedProvider(settings.providers, settings.strategy)),
       serviceAbort.signal,
     ),
   );
@@ -462,14 +522,12 @@ export async function service(
     if (
       typeof body?.subject !== "string" ||
       !body.subject.trim() ||
-      body.subject.length > 100 ||
-      typeof body.model !== "string" ||
-      !body.model ||
-      body.model.length > 200
+      body.subject.length > 100
     )
       throw new Error(
-        "Choose a local vision model and enter the subject to inspect",
+        "Choose a vision provider and enter the subject to inspect",
       );
+    const settings = providerSettings(body);
     const observation = await runtime.configureEnvironment(async () => {
       await runtime.adapter.prepare?.(run.contract);
       return runtime.observe(run.contract);
@@ -482,7 +540,12 @@ export async function service(
     const image = runtime.store.artifactRead(observation.facts.canvasImage);
     if (hash(image) !== observation.facts.canvasImage)
       throw new Error("Scoped canvas bytes changed");
-    const assessment = await new LocalVisionAssessor(body.model).assess(
+    const assessor =
+      settings.providers.length === 1 &&
+      settings.providers[0].provider === "ollama"
+        ? new LocalVisionAssessor(settings.model)
+        : new SelectedVisionAssessor(settings);
+    const assessment = await assessor.assess(
       body.subject.trim(),
       image,
       serviceAbort.signal,
