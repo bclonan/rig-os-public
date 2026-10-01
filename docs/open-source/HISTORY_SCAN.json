@@ -1,11 +1,10 @@
 {
+  "schemaVersion": 1,
   "status": "PASS",
-  "scope": "All reachable commits on the fresh public main branch, using default detectors and narrow reviewed source-digest exceptions. The original private history is absent.",
-  "gitleaksVersion": "8.30.1",
-  "gitleaksExitCode": 0,
-  "commits": 1,
-  "scannedHead": "cd2897e3026962c4db1c2e4b987b036bbd405990",
-  "findings": [],
+  "scope": "Every local public commit and ref scanned by Gitleaks. This repository has a new public-only history. Runtime stores, credentials and original private Git history are absent.",
+  "checkedCommit": "37e516ea6f73fe9bb193bbbc2ac52c5db63b58f8",
+  "publicCommits": 2,
+  "exitCode": 0,
   "redaction": "100 percent",
-  "maxFileMegabytes": 100
+  "findings": []
 }
