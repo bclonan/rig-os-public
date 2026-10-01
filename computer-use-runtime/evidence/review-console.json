@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "at": "2026-09-29T20:11:19.701Z",
+  "level": "real Vue console, Fastify, SQLite, Chromium fixture and ONNX; no native desktop or model text generation",
+  "checks": [
+    "incorrect-token error and successful retry; Runs deep link",
+    "native required-field validation sends no task",
+    "three visible task submissions, independent completion, recordings and cross-view persistence",
+    "selected recording compilation; real variation tests; evidence-gated publication; downloaded capsule hash",
+    "audited model activation, rollback reflected in UI and read-only frozen audit verification",
+    "negative correction updates the recording and removes it from compilation selection",
+    "Train three seeds completed real CPU training through the console",
+    "Train from recorded experience completed real CPU training through the console",
+    "evaluation load and refresh restore the selected workspace",
+    "historical run evidence, terminal-state controls and 390px layout"
+  ],
+  "training": [
+    {
+      "seed": 17,
+      "recordedRows": 9,
+      "onnxMaxError": 0.000003814697265625,
+      "trainingSeconds": 3.0857980999862775
+    },
+    {
+      "seed": 41,
+      "recordedRows": 9,
+      "onnxMaxError": 0.000005245208740234375,
+      "trainingSeconds": 3.0761427000397816
+    },
+    {
+      "seed": 73,
+      "recordedRows": 9,
+      "onnxMaxError": 0.000003814697265625,
+      "trainingSeconds": 3.2111048999940977
+    }
+  ],
+  "pageErrors": [],
+  "runs": [
+    {
+      "id": "dbf535e0-079d-475e-ae20-ee19eff87eb8",
+      "status": "succeeded",
+      "skill": "plan.f80699c8a856"
+    },
+    {
+      "id": "2d70c938-f753-4139-a21e-ec81c56626b9",
+      "status": "succeeded",
+      "skill": "plan.f80699c8a856"
+    },
+    {
+      "id": "fb1df84d-3579-4277-9d27-eea9eed217e9",
+      "status": "succeeded",
+      "skill": "plan.f80699c8a856"
+    },
+    {
+      "id": "9772d752-1fbf-4990-b7e2-ce54d86281dc",
+      "status": "succeeded",
+      "skill": "form.compiled"
+    },
+    {
+      "id": "147eed28-438d-43f8-97c7-238afb8de874",
+      "status": "succeeded",
+      "skill": "form.compiled"
+    },
+    {
+      "id": "f016acb4-66a2-4a9f-a327-43a71df5aa7c",
+      "status": "succeeded",
+      "skill": "form.compiled"
+    }
+  ]
+}

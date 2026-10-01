@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "docs.compiled",
+  "version": "1.0.0",
+  "hash": "d27067cf30a18b1523bd927e1ecf7fa6559e8fd912ade9d48ffec46093503f63",
+  "description": "Parameterized form workflow extracted from aligned independent demonstrations",
+  "status": "published",
+  "inputs": {
+    "name": "string"
+  },
+  "outputs": [
+    "result",
+    "status"
+  ],
+  "capabilities": [
+    "click",
+    "fill"
+  ],
+  "preconditions": [],
+  "effects": [
+    "edit"
+  ],
+  "machine": {
+    "initial": "segment0",
+    "states": [
+      {
+        "id": "segment0",
+        "steps": [
+          {
+            "id": "op0",
+            "operation": "click",
+            "args": {
+              "locator": "reveal"
+            },
+            "scope": "edit",
+            "alternatives": [
+              "reveal"
+            ]
+          }
+        ],
+        "next": "segment1",
+        "monitor": [
+          "focused"
+        ]
+      },
+      {
+        "id": "segment1",
+        "steps": [
+          {
+            "id": "op1",
+            "operation": "fill",
+            "args": {
+              "locator": "entry",
+              "value": "$name"
+            },
+            "scope": "edit",
+            "alternatives": [
+              "entry"
+            ]
+          }
+        ],
+        "next": "segment2",
+        "monitor": [
+          "focused"
+        ]
+      },
+      {
+        "id": "segment2",
+        "steps": [
+          {
+            "id": "op2",
+            "operation": "click",
+            "args": {
+              "locator": "stamp"
+            },
+            "scope": "edit",
+            "alternatives": [
+              "stamp"
+            ]
+          }
+        ],
+        "monitor": [
+          "focused"
+        ]
+      }
+    ]
+  },
+  "recovery": [
+    "fresh_observation",
+    "probe_ready",
+    "repair_local",
+    "escalate"
+  ],
+  "budgets": {
+    "retries": 1,
+    "steps": 7
+  },
+  "dependencies": [],
+  "compatibility": [
+    "documentation-fixture-v1"
+  ],
+  "descriptor": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "provenance": {
+    "kind": "compiled",
+    "demonstrations": [
+      "04849829-2f17-45ff-9d19-cc3e4becbe1c",
+      "bce5f7ab-67da-4877-9653-c996b0cd6a74",
+      "3d61f55b-bf32-4469-bbc9-4986429f3c8c"
+    ],
+    "tests": [
+      "595fef49-f76e-4446-818e-53bba99cac27",
+      "c72bef9f-704c-4ea6-ab05-6b0bbe8cf588",
+      "94c9c72f-46ad-425a-89a7-bacf572bd009",
+      "03c05fba-ba4e-483a-a81e-a65ec2d5c315"
+    ],
+    "uncertain": []
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:computer-use-runtime:Receipt:1",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "actionId",
+    "runId",
+    "backend",
+    "at",
+    "phase",
+    "detail",
+    "timings"
+  ],
+  "properties": {
+    "dispatched": {
+      "type": "boolean"
+    },
+    "schemaVersion": {
+      "const": 1,
+      "type": "number"
+    },
+    "actionId": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "runId": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "backend": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "at": {
+      "type": "number"
+    },
+    "phase": {
+      "anyOf": [
+        {
+          "const": "requested",
+          "type": "string"
+        },
+        {
+          "const": "authorized",
+          "type": "string"
+        },
+        {
+          "const": "dispatched",
+          "type": "string"
+        },
+        {
+          "const": "acknowledged",
+          "type": "string"
+        },
+        {
+          "const": "effect_verified",
+          "type": "string"
+        },
+        {
+          "const": "uncertain",
+          "type": "string"
+        },
+        {
+          "const": "rejected",
+          "type": "string"
+        }
+      ]
+    },
+    "detail": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "timings": {
+      "type": "object",
+      "patternProperties": {
+        "^(.*)$": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

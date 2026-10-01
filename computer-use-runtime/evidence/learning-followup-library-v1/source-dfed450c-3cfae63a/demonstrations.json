@@ -1,0 +1,1874 @@
+[
+  {
+    "id": "d6e49539-58b8-45d8-9fa5-a19177524b44",
+    "session": "f7fb8b41-d7d3-45b0-ad69-ed63ff5dfed2",
+    "contract": {
+      "schemaVersion": 1,
+      "id": "f7fb8b41-d7d3-45b0-ad69-ed63ff5dfed2",
+      "correlationId": "3d842424-5557-45da-92ba-2d7fc57b8986",
+      "requester": "local-user",
+      "goal": "Update the authorized form",
+      "target": {
+        "host": "public-fixture-host",
+        "session": "library-collect",
+        "identity": "browser-fixture-v1"
+      },
+      "parameters": {
+        "name": "Development library 0 0"
+      },
+      "effects": [
+        "edit"
+      ],
+      "requirements": [
+        {
+          "name": "outcome",
+          "value": "Update the authorized form",
+          "origin": "user_explicit"
+        }
+      ],
+      "unresolved": [],
+      "method": "library.teacher.0",
+      "expected": {
+        "result": "Development library 0 0"
+      },
+      "budgets": {
+        "steps": 8,
+        "deadlineMs": 15000
+      }
+    },
+    "steps": [
+      {
+        "before": {
+          "schemaVersion": 1,
+          "id": "09be4c73-e373-40d5-bb4b-ad701f9bcc92",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735166512,
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "30fc8da2b4af0ae5f0132a2fb101a779410c97c68f9688ae5ea8b20df50be1dd",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "action": {
+          "schemaVersion": 1,
+          "id": "94cd9c9d-5236-44de-bb46-35ff6796c1e0",
+          "runId": "f7fb8b41-d7d3-45b0-ad69-ed63ff5dfed2",
+          "requester": "local-user",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "observationId": "09be4c73-e373-40d5-bb4b-ad701f9bcc92",
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "operation": "fill",
+          "args": {
+            "locator": "name",
+            "value": "Development library 0 0"
+          },
+          "deadline": 1790735176514,
+          "scope": "edit",
+          "generation": 1
+        },
+        "receipt": {
+          "schemaVersion": 1,
+          "actionId": "94cd9c9d-5236-44de-bb46-35ff6796c1e0",
+          "runId": "f7fb8b41-d7d3-45b0-ad69-ed63ff5dfed2",
+          "backend": "playwright",
+          "at": 1790735166544,
+          "phase": "acknowledged",
+          "detail": "Browser operation acknowledged; effect requires a separate observation",
+          "timings": {
+            "dispatchMs": 24.651399999999967
+          }
+        },
+        "after": {
+          "schemaVersion": 1,
+          "id": "243a6e1e-262f-4b7d-a00c-2d9abcf79069",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735166582,
+          "revision": "0b0f04b5102f6dc90001c7aa97ac1627e51814dabaf8067237101072624ade5d",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "Development library 0 0",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "0d8a5dec45690ea67d5fcdf4e9820d80342bb4a323da6934b1246234989c99f4",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "skillHash": "af12dfc0e5fb75b41622566e4f68949d1a5eba78971f1be139704e0901f3e8d6",
+        "model": "fixed",
+        "label": "verified"
+      },
+      {
+        "before": {
+          "schemaVersion": 1,
+          "id": "f5650c41-c573-49eb-8a5c-a3e353afc567",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735166615,
+          "revision": "0b0f04b5102f6dc90001c7aa97ac1627e51814dabaf8067237101072624ade5d",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "Development library 0 0",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "0d8a5dec45690ea67d5fcdf4e9820d80342bb4a323da6934b1246234989c99f4",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "action": {
+          "schemaVersion": 1,
+          "id": "0c26cc83-a88d-4d67-a735-81386b7b8538",
+          "runId": "f7fb8b41-d7d3-45b0-ad69-ed63ff5dfed2",
+          "requester": "local-user",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "observationId": "f5650c41-c573-49eb-8a5c-a3e353afc567",
+          "revision": "0b0f04b5102f6dc90001c7aa97ac1627e51814dabaf8067237101072624ade5d",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "operation": "click",
+          "args": {
+            "locator": "apply"
+          },
+          "deadline": 1790735176616,
+          "scope": "edit",
+          "generation": 1
+        },
+        "receipt": {
+          "schemaVersion": 1,
+          "actionId": "0c26cc83-a88d-4d67-a735-81386b7b8538",
+          "runId": "f7fb8b41-d7d3-45b0-ad69-ed63ff5dfed2",
+          "backend": "playwright",
+          "at": 1790735166656,
+          "phase": "acknowledged",
+          "detail": "Browser operation acknowledged; effect requires a separate observation",
+          "timings": {
+            "dispatchMs": 34.70069999999987
+          }
+        },
+        "after": {
+          "schemaVersion": 1,
+          "id": "fea9fca4-1723-459e-af32-bab84ab78665",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735166679,
+          "revision": "d42094d6707ca8103aa0a85f0c8e20eb8d1613a46e3c3a4dadc76c65a3192227",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "Development library 0 0",
+            "result": "Development library 0 0",
+            "focused": true
+          },
+          "image": "188dc3faf3f1e696e5f566fd062d24cc3e837218489103db683b2de2d803e026",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "skillHash": "af12dfc0e5fb75b41622566e4f68949d1a5eba78971f1be139704e0901f3e8d6",
+        "model": "fixed",
+        "label": "verified"
+      }
+    ],
+    "verified": true,
+    "corrections": []
+  },
+  {
+    "id": "0dae1c97-dfa9-4502-934f-6f7124ce1a5c",
+    "session": "27f042ec-2a7e-4b82-862d-c00addab0c99",
+    "contract": {
+      "schemaVersion": 1,
+      "id": "27f042ec-2a7e-4b82-862d-c00addab0c99",
+      "correlationId": "56b6dc4a-1621-49d4-9f03-53911804a067",
+      "requester": "local-user",
+      "goal": "Update the authorized form",
+      "target": {
+        "host": "public-fixture-host",
+        "session": "library-collect",
+        "identity": "browser-fixture-v1"
+      },
+      "parameters": {
+        "name": "Development library 0 1"
+      },
+      "effects": [
+        "edit"
+      ],
+      "requirements": [
+        {
+          "name": "outcome",
+          "value": "Update the authorized form",
+          "origin": "user_explicit"
+        }
+      ],
+      "unresolved": [],
+      "method": "library.teacher.0",
+      "expected": {
+        "result": "Development library 0 1"
+      },
+      "budgets": {
+        "steps": 8,
+        "deadlineMs": 15000
+      }
+    },
+    "steps": [
+      {
+        "before": {
+          "schemaVersion": 1,
+          "id": "0a49f453-722a-4acc-89cd-e8f3efaebb0f",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735166848,
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "30fc8da2b4af0ae5f0132a2fb101a779410c97c68f9688ae5ea8b20df50be1dd",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "action": {
+          "schemaVersion": 1,
+          "id": "aa057983-ba62-44ae-80a6-368f99b8a6f5",
+          "runId": "27f042ec-2a7e-4b82-862d-c00addab0c99",
+          "requester": "local-user",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "observationId": "0a49f453-722a-4acc-89cd-e8f3efaebb0f",
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "operation": "fill",
+          "args": {
+            "locator": "name",
+            "value": "Development library 0 1"
+          },
+          "deadline": 1790735176849,
+          "scope": "edit",
+          "generation": 3
+        },
+        "receipt": {
+          "schemaVersion": 1,
+          "actionId": "aa057983-ba62-44ae-80a6-368f99b8a6f5",
+          "runId": "27f042ec-2a7e-4b82-862d-c00addab0c99",
+          "backend": "playwright",
+          "at": 1790735166874,
+          "phase": "acknowledged",
+          "detail": "Browser operation acknowledged; effect requires a separate observation",
+          "timings": {
+            "dispatchMs": 19.954200000000128
+          }
+        },
+        "after": {
+          "schemaVersion": 1,
+          "id": "22caf4b6-e871-4557-88d1-821459015f38",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735166898,
+          "revision": "fa1b14e7b36919b4a90724a2bbcc9a313d2cee5023405ad3e93d6367e1491488",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "Development library 0 1",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "ce907cf4cbb9eff0a2bf5e0eb547c4bda9997a766b46e5e9e0e58b46b6151a88",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "skillHash": "af12dfc0e5fb75b41622566e4f68949d1a5eba78971f1be139704e0901f3e8d6",
+        "model": "fixed",
+        "label": "verified"
+      },
+      {
+        "before": {
+          "schemaVersion": 1,
+          "id": "988f82e0-4521-4021-95e9-a39296545270",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735166936,
+          "revision": "fa1b14e7b36919b4a90724a2bbcc9a313d2cee5023405ad3e93d6367e1491488",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "Development library 0 1",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "ce907cf4cbb9eff0a2bf5e0eb547c4bda9997a766b46e5e9e0e58b46b6151a88",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "action": {
+          "schemaVersion": 1,
+          "id": "0b0abbe2-e4cc-497f-a53c-dea12539ccaa",
+          "runId": "27f042ec-2a7e-4b82-862d-c00addab0c99",
+          "requester": "local-user",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "observationId": "988f82e0-4521-4021-95e9-a39296545270",
+          "revision": "fa1b14e7b36919b4a90724a2bbcc9a313d2cee5023405ad3e93d6367e1491488",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "operation": "click",
+          "args": {
+            "locator": "apply"
+          },
+          "deadline": 1790735176939,
+          "scope": "edit",
+          "generation": 3
+        },
+        "receipt": {
+          "schemaVersion": 1,
+          "actionId": "0b0abbe2-e4cc-497f-a53c-dea12539ccaa",
+          "runId": "27f042ec-2a7e-4b82-862d-c00addab0c99",
+          "backend": "playwright",
+          "at": 1790735166976,
+          "phase": "acknowledged",
+          "detail": "Browser operation acknowledged; effect requires a separate observation",
+          "timings": {
+            "dispatchMs": 26.99250000000029
+          }
+        },
+        "after": {
+          "schemaVersion": 1,
+          "id": "46d3c9ac-717d-4609-aa3b-7b39ae6df188",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735167015,
+          "revision": "bafdcfba67c2fdd0fe8243c630f64e1a7213e6d8a95b9d33e1fac98f40f84a38",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "Development library 0 1",
+            "result": "Development library 0 1",
+            "focused": true
+          },
+          "image": "33f72407acb4217a3c6638d4dac4b54d2cd2a61830a82b550789391622b46256",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "skillHash": "af12dfc0e5fb75b41622566e4f68949d1a5eba78971f1be139704e0901f3e8d6",
+        "model": "fixed",
+        "label": "verified"
+      }
+    ],
+    "verified": true,
+    "corrections": []
+  },
+  {
+    "id": "dab2dace-26f4-4e34-8b58-a01444c6a313",
+    "session": "f56098fc-0d38-4c69-afa3-f20885b61de9",
+    "contract": {
+      "schemaVersion": 1,
+      "id": "f56098fc-0d38-4c69-afa3-f20885b61de9",
+      "correlationId": "85b10ba5-1744-4583-8422-fb3247a389db",
+      "requester": "local-user",
+      "goal": "Update the authorized form",
+      "target": {
+        "host": "public-fixture-host",
+        "session": "library-collect",
+        "identity": "browser-fixture-v1"
+      },
+      "parameters": {
+        "name": "Development library 0 2"
+      },
+      "effects": [
+        "edit"
+      ],
+      "requirements": [
+        {
+          "name": "outcome",
+          "value": "Update the authorized form",
+          "origin": "user_explicit"
+        }
+      ],
+      "unresolved": [],
+      "method": "library.teacher.0",
+      "expected": {
+        "result": "Development library 0 2"
+      },
+      "budgets": {
+        "steps": 8,
+        "deadlineMs": 15000
+      }
+    },
+    "steps": [
+      {
+        "before": {
+          "schemaVersion": 1,
+          "id": "53bfd46d-c7f3-4885-95f3-c8cb90e8d613",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735167179,
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "30fc8da2b4af0ae5f0132a2fb101a779410c97c68f9688ae5ea8b20df50be1dd",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "action": {
+          "schemaVersion": 1,
+          "id": "1cfb91f6-b155-4cca-82c7-d25d5d1cb101",
+          "runId": "f56098fc-0d38-4c69-afa3-f20885b61de9",
+          "requester": "local-user",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "observationId": "53bfd46d-c7f3-4885-95f3-c8cb90e8d613",
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "operation": "fill",
+          "args": {
+            "locator": "name",
+            "value": "Development library 0 2"
+          },
+          "deadline": 1790735177181,
+          "scope": "edit",
+          "generation": 5
+        },
+        "receipt": {
+          "schemaVersion": 1,
+          "actionId": "1cfb91f6-b155-4cca-82c7-d25d5d1cb101",
+          "runId": "f56098fc-0d38-4c69-afa3-f20885b61de9",
+          "backend": "playwright",
+          "at": 1790735167205,
+          "phase": "acknowledged",
+          "detail": "Browser operation acknowledged; effect requires a separate observation",
+          "timings": {
+            "dispatchMs": 19.160499999999956
+          }
+        },
+        "after": {
+          "schemaVersion": 1,
+          "id": "5d312c4b-6651-423b-a6a6-7b5a685668f5",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735167232,
+          "revision": "ea23bce0d3cb887192ae7ecee639b526f8017157b864518d027fcde40a86e7db",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "Development library 0 2",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "26396bab38794d196f3eb9f2547b4a73e567d7a0d4c88a6a084655d729c3b52b",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "skillHash": "af12dfc0e5fb75b41622566e4f68949d1a5eba78971f1be139704e0901f3e8d6",
+        "model": "fixed",
+        "label": "verified"
+      },
+      {
+        "before": {
+          "schemaVersion": 1,
+          "id": "fc9f778a-2d6d-473d-952a-06d1ac9d51d1",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735167263,
+          "revision": "ea23bce0d3cb887192ae7ecee639b526f8017157b864518d027fcde40a86e7db",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "Development library 0 2",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "26396bab38794d196f3eb9f2547b4a73e567d7a0d4c88a6a084655d729c3b52b",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "action": {
+          "schemaVersion": 1,
+          "id": "a755c833-cd5f-4e1a-89eb-782b9579e1f2",
+          "runId": "f56098fc-0d38-4c69-afa3-f20885b61de9",
+          "requester": "local-user",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "observationId": "fc9f778a-2d6d-473d-952a-06d1ac9d51d1",
+          "revision": "ea23bce0d3cb887192ae7ecee639b526f8017157b864518d027fcde40a86e7db",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "operation": "click",
+          "args": {
+            "locator": "apply"
+          },
+          "deadline": 1790735177264,
+          "scope": "edit",
+          "generation": 5
+        },
+        "receipt": {
+          "schemaVersion": 1,
+          "actionId": "a755c833-cd5f-4e1a-89eb-782b9579e1f2",
+          "runId": "f56098fc-0d38-4c69-afa3-f20885b61de9",
+          "backend": "playwright",
+          "at": 1790735167303,
+          "phase": "acknowledged",
+          "detail": "Browser operation acknowledged; effect requires a separate observation",
+          "timings": {
+            "dispatchMs": 34.06530000000021
+          }
+        },
+        "after": {
+          "schemaVersion": 1,
+          "id": "1ce3365d-2552-4424-a397-d1b9421ef9cb",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735167333,
+          "revision": "faad0bebf18c3579f46f18f855c9beb9d7e39ecb04ba9dc13373080c68587be8",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "Development library 0 2",
+            "result": "Development library 0 2",
+            "focused": true
+          },
+          "image": "a71e1c6f5a72707a89c40f4552476bbfb86b1f348648c29f9bc9778796ddf1d0",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "skillHash": "af12dfc0e5fb75b41622566e4f68949d1a5eba78971f1be139704e0901f3e8d6",
+        "model": "fixed",
+        "label": "verified"
+      }
+    ],
+    "verified": true,
+    "corrections": []
+  },
+  {
+    "id": "9404b5e7-f180-44e6-8dda-b007ee7c6ed6",
+    "session": "a30fd426-d810-4dfb-8e64-c34256d296f3",
+    "contract": {
+      "schemaVersion": 1,
+      "id": "a30fd426-d810-4dfb-8e64-c34256d296f3",
+      "correlationId": "6eb5c65e-6031-4d13-875d-b7fc37f51176",
+      "requester": "local-user",
+      "goal": "Inspect and update the authorized form",
+      "target": {
+        "host": "public-fixture-host",
+        "session": "library-collect",
+        "identity": "browser-fixture-v1"
+      },
+      "parameters": {
+        "name": "Development library 1 0"
+      },
+      "effects": [
+        "edit"
+      ],
+      "requirements": [
+        {
+          "name": "outcome",
+          "value": "Inspect and update the authorized form",
+          "origin": "user_explicit"
+        }
+      ],
+      "unresolved": [],
+      "method": "library.teacher.1",
+      "expected": {
+        "result": "Development library 1 0"
+      },
+      "budgets": {
+        "steps": 8,
+        "deadlineMs": 15000
+      }
+    },
+    "steps": [
+      {
+        "before": {
+          "schemaVersion": 1,
+          "id": "da4fae4d-6f1a-49c5-b5f4-3323e02fed3a",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735167516,
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "30fc8da2b4af0ae5f0132a2fb101a779410c97c68f9688ae5ea8b20df50be1dd",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "action": {
+          "schemaVersion": 1,
+          "id": "2ec26a3f-669a-48fe-a646-82abb2bee722",
+          "runId": "a30fd426-d810-4dfb-8e64-c34256d296f3",
+          "requester": "local-user",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "observationId": "da4fae4d-6f1a-49c5-b5f4-3323e02fed3a",
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "operation": "observe",
+          "args": {},
+          "deadline": 1790735177517,
+          "scope": "edit",
+          "generation": 7
+        },
+        "receipt": {
+          "schemaVersion": 1,
+          "actionId": "2ec26a3f-669a-48fe-a646-82abb2bee722",
+          "runId": "a30fd426-d810-4dfb-8e64-c34256d296f3",
+          "backend": "playwright",
+          "at": 1790735167522,
+          "phase": "acknowledged",
+          "detail": "Browser operation acknowledged; effect requires a separate observation",
+          "timings": {
+            "dispatchMs": 0.0239000000001397
+          }
+        },
+        "after": {
+          "schemaVersion": 1,
+          "id": "d3a52132-0483-413c-9765-f6576c666d6e",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735167547,
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "30fc8da2b4af0ae5f0132a2fb101a779410c97c68f9688ae5ea8b20df50be1dd",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "skillHash": "bae5f901e214b1c24663517ebbffc1e6cf3b89ca94dfe011ea6807b5071d4ec5",
+        "model": "fixed",
+        "label": "verified"
+      },
+      {
+        "before": {
+          "schemaVersion": 1,
+          "id": "83db28c8-608a-40d1-9719-4223609fb2a3",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735167582,
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "30fc8da2b4af0ae5f0132a2fb101a779410c97c68f9688ae5ea8b20df50be1dd",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "action": {
+          "schemaVersion": 1,
+          "id": "f30e326c-c3eb-445e-a9f7-5f2cb96a2fab",
+          "runId": "a30fd426-d810-4dfb-8e64-c34256d296f3",
+          "requester": "local-user",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "observationId": "83db28c8-608a-40d1-9719-4223609fb2a3",
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "operation": "fill",
+          "args": {
+            "locator": "name",
+            "value": "Development library 1 0"
+          },
+          "deadline": 1790735177583,
+          "scope": "edit",
+          "generation": 7
+        },
+        "receipt": {
+          "schemaVersion": 1,
+          "actionId": "f30e326c-c3eb-445e-a9f7-5f2cb96a2fab",
+          "runId": "a30fd426-d810-4dfb-8e64-c34256d296f3",
+          "backend": "playwright",
+          "at": 1790735167610,
+          "phase": "acknowledged",
+          "detail": "Browser operation acknowledged; effect requires a separate observation",
+          "timings": {
+            "dispatchMs": 21.97440000000006
+          }
+        },
+        "after": {
+          "schemaVersion": 1,
+          "id": "dc7b107d-1ee1-4c3b-9692-1f3db42f3cb3",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735167652,
+          "revision": "4e7fcaff361538b170ff729a79f34037d5e1bd2a691ec557ff9ab8d82aa08232",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "Development library 1 0",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "a3e3f171fb70e37004ba7e7127114ffa032a3c54aebd0c1f697bce0ccb3eb2b2",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "skillHash": "bae5f901e214b1c24663517ebbffc1e6cf3b89ca94dfe011ea6807b5071d4ec5",
+        "model": "fixed",
+        "label": "verified"
+      },
+      {
+        "before": {
+          "schemaVersion": 1,
+          "id": "a87f24e5-5d9a-4069-aa76-4dbfdc79f4fa",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735167698,
+          "revision": "4e7fcaff361538b170ff729a79f34037d5e1bd2a691ec557ff9ab8d82aa08232",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "Development library 1 0",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "a3e3f171fb70e37004ba7e7127114ffa032a3c54aebd0c1f697bce0ccb3eb2b2",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "action": {
+          "schemaVersion": 1,
+          "id": "2356d522-e35d-452d-985a-7e488a54d961",
+          "runId": "a30fd426-d810-4dfb-8e64-c34256d296f3",
+          "requester": "local-user",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "observationId": "a87f24e5-5d9a-4069-aa76-4dbfdc79f4fa",
+          "revision": "4e7fcaff361538b170ff729a79f34037d5e1bd2a691ec557ff9ab8d82aa08232",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "operation": "click",
+          "args": {
+            "locator": "apply"
+          },
+          "deadline": 1790735177700,
+          "scope": "edit",
+          "generation": 7
+        },
+        "receipt": {
+          "schemaVersion": 1,
+          "actionId": "2356d522-e35d-452d-985a-7e488a54d961",
+          "runId": "a30fd426-d810-4dfb-8e64-c34256d296f3",
+          "backend": "playwright",
+          "at": 1790735167739,
+          "phase": "acknowledged",
+          "detail": "Browser operation acknowledged; effect requires a separate observation",
+          "timings": {
+            "dispatchMs": 33.23770000000013
+          }
+        },
+        "after": {
+          "schemaVersion": 1,
+          "id": "f704c7ab-cbb1-47e8-a7bb-ed4837d55cd9",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735167780,
+          "revision": "b2c1fe9cf6fe2a6c5f1b764cf21d159100e8c0e862dc448d6850ac6e71f8c7d9",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "Development library 1 0",
+            "result": "Development library 1 0",
+            "focused": true
+          },
+          "image": "3e27281609c64b6e50d42af3df89c49c49b83ae151b267254fc5344919f768e8",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "skillHash": "bae5f901e214b1c24663517ebbffc1e6cf3b89ca94dfe011ea6807b5071d4ec5",
+        "model": "fixed",
+        "label": "verified"
+      }
+    ],
+    "verified": true,
+    "corrections": []
+  },
+  {
+    "id": "c16df0fa-0c4c-49ac-a5e8-2771ea489911",
+    "session": "e24282da-8d7a-490d-9d6d-965222556294",
+    "contract": {
+      "schemaVersion": 1,
+      "id": "e24282da-8d7a-490d-9d6d-965222556294",
+      "correlationId": "4f48f1ad-a38d-44e1-8a69-017c90918b2c",
+      "requester": "local-user",
+      "goal": "Inspect and update the authorized form",
+      "target": {
+        "host": "public-fixture-host",
+        "session": "library-collect",
+        "identity": "browser-fixture-v1"
+      },
+      "parameters": {
+        "name": "Development library 1 1"
+      },
+      "effects": [
+        "edit"
+      ],
+      "requirements": [
+        {
+          "name": "outcome",
+          "value": "Inspect and update the authorized form",
+          "origin": "user_explicit"
+        }
+      ],
+      "unresolved": [],
+      "method": "library.teacher.1",
+      "expected": {
+        "result": "Development library 1 1"
+      },
+      "budgets": {
+        "steps": 8,
+        "deadlineMs": 15000
+      }
+    },
+    "steps": [
+      {
+        "before": {
+          "schemaVersion": 1,
+          "id": "1a583893-b2b6-464c-a8c9-287a7b1da206",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735167945,
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "30fc8da2b4af0ae5f0132a2fb101a779410c97c68f9688ae5ea8b20df50be1dd",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "action": {
+          "schemaVersion": 1,
+          "id": "99ca77ae-65e2-45ff-b288-5c4390cd7407",
+          "runId": "e24282da-8d7a-490d-9d6d-965222556294",
+          "requester": "local-user",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "observationId": "1a583893-b2b6-464c-a8c9-287a7b1da206",
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "operation": "observe",
+          "args": {},
+          "deadline": 1790735177947,
+          "scope": "edit",
+          "generation": 9
+        },
+        "receipt": {
+          "schemaVersion": 1,
+          "actionId": "99ca77ae-65e2-45ff-b288-5c4390cd7407",
+          "runId": "e24282da-8d7a-490d-9d6d-965222556294",
+          "backend": "playwright",
+          "at": 1790735167954,
+          "phase": "acknowledged",
+          "detail": "Browser operation acknowledged; effect requires a separate observation",
+          "timings": {
+            "dispatchMs": 0.04500000000007276
+          }
+        },
+        "after": {
+          "schemaVersion": 1,
+          "id": "4b6d89f5-c6e2-4143-b385-8721c16973d9",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735167982,
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "30fc8da2b4af0ae5f0132a2fb101a779410c97c68f9688ae5ea8b20df50be1dd",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "skillHash": "bae5f901e214b1c24663517ebbffc1e6cf3b89ca94dfe011ea6807b5071d4ec5",
+        "model": "fixed",
+        "label": "verified"
+      },
+      {
+        "before": {
+          "schemaVersion": 1,
+          "id": "f5640183-3c1d-4250-8401-062133cf6d29",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735168017,
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "30fc8da2b4af0ae5f0132a2fb101a779410c97c68f9688ae5ea8b20df50be1dd",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "action": {
+          "schemaVersion": 1,
+          "id": "113e55b6-2cc6-4c29-a243-55a214acd864",
+          "runId": "e24282da-8d7a-490d-9d6d-965222556294",
+          "requester": "local-user",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "observationId": "f5640183-3c1d-4250-8401-062133cf6d29",
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "operation": "fill",
+          "args": {
+            "locator": "name",
+            "value": "Development library 1 1"
+          },
+          "deadline": 1790735178019,
+          "scope": "edit",
+          "generation": 9
+        },
+        "receipt": {
+          "schemaVersion": 1,
+          "actionId": "113e55b6-2cc6-4c29-a243-55a214acd864",
+          "runId": "e24282da-8d7a-490d-9d6d-965222556294",
+          "backend": "playwright",
+          "at": 1790735168056,
+          "phase": "acknowledged",
+          "detail": "Browser operation acknowledged; effect requires a separate observation",
+          "timings": {
+            "dispatchMs": 25.195200000000114
+          }
+        },
+        "after": {
+          "schemaVersion": 1,
+          "id": "5b773848-94f0-43bd-a7be-f0e954d2eb44",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735168086,
+          "revision": "99f31effcd6614738eec48fac50ef3abf25f7ab7a7761f10d17fb8950c11a250",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "Development library 1 1",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "fbc856c02b154ab0ed8024eeaf63d3c40d75bcc275c8eeb0e9168c219c191067",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "skillHash": "bae5f901e214b1c24663517ebbffc1e6cf3b89ca94dfe011ea6807b5071d4ec5",
+        "model": "fixed",
+        "label": "verified"
+      },
+      {
+        "before": {
+          "schemaVersion": 1,
+          "id": "fff38b31-4c02-4760-a689-edd1185ab18c",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735168133,
+          "revision": "99f31effcd6614738eec48fac50ef3abf25f7ab7a7761f10d17fb8950c11a250",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "Development library 1 1",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "fbc856c02b154ab0ed8024eeaf63d3c40d75bcc275c8eeb0e9168c219c191067",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "action": {
+          "schemaVersion": 1,
+          "id": "665f399f-f8ae-45ae-ae6e-ef807f234fff",
+          "runId": "e24282da-8d7a-490d-9d6d-965222556294",
+          "requester": "local-user",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "observationId": "fff38b31-4c02-4760-a689-edd1185ab18c",
+          "revision": "99f31effcd6614738eec48fac50ef3abf25f7ab7a7761f10d17fb8950c11a250",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "operation": "click",
+          "args": {
+            "locator": "apply"
+          },
+          "deadline": 1790735178135,
+          "scope": "edit",
+          "generation": 9
+        },
+        "receipt": {
+          "schemaVersion": 1,
+          "actionId": "665f399f-f8ae-45ae-ae6e-ef807f234fff",
+          "runId": "e24282da-8d7a-490d-9d6d-965222556294",
+          "backend": "playwright",
+          "at": 1790735168171,
+          "phase": "acknowledged",
+          "detail": "Browser operation acknowledged; effect requires a separate observation",
+          "timings": {
+            "dispatchMs": 30.814700000000357
+          }
+        },
+        "after": {
+          "schemaVersion": 1,
+          "id": "8042590e-03f3-4076-96c4-8160b30793a3",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735168201,
+          "revision": "a2acc22355838186ad015b9c16ab524964ab2a950c530248b84b8743bf8dc653",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "Development library 1 1",
+            "result": "Development library 1 1",
+            "focused": true
+          },
+          "image": "a746f406d4f608767b1b58aa79db6a761f1adcbf8469a17641e88f4fb7ae6f0a",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "skillHash": "bae5f901e214b1c24663517ebbffc1e6cf3b89ca94dfe011ea6807b5071d4ec5",
+        "model": "fixed",
+        "label": "verified"
+      }
+    ],
+    "verified": true,
+    "corrections": []
+  },
+  {
+    "id": "4ec9a541-8a75-4140-b957-54498e89348e",
+    "session": "b0406ab3-1fa3-483f-91eb-bda2b790bb27",
+    "contract": {
+      "schemaVersion": 1,
+      "id": "b0406ab3-1fa3-483f-91eb-bda2b790bb27",
+      "correlationId": "07971e20-22c6-40e2-ab49-9a791b7d4833",
+      "requester": "local-user",
+      "goal": "Inspect and update the authorized form",
+      "target": {
+        "host": "public-fixture-host",
+        "session": "library-collect",
+        "identity": "browser-fixture-v1"
+      },
+      "parameters": {
+        "name": "Development library 1 2"
+      },
+      "effects": [
+        "edit"
+      ],
+      "requirements": [
+        {
+          "name": "outcome",
+          "value": "Inspect and update the authorized form",
+          "origin": "user_explicit"
+        }
+      ],
+      "unresolved": [],
+      "method": "library.teacher.1",
+      "expected": {
+        "result": "Development library 1 2"
+      },
+      "budgets": {
+        "steps": 8,
+        "deadlineMs": 15000
+      }
+    },
+    "steps": [
+      {
+        "before": {
+          "schemaVersion": 1,
+          "id": "e322b54c-d00e-47b2-98f2-c9946928da17",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735168363,
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "30fc8da2b4af0ae5f0132a2fb101a779410c97c68f9688ae5ea8b20df50be1dd",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "action": {
+          "schemaVersion": 1,
+          "id": "516cac4f-07d7-494a-939a-0afed39fc6aa",
+          "runId": "b0406ab3-1fa3-483f-91eb-bda2b790bb27",
+          "requester": "local-user",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "observationId": "e322b54c-d00e-47b2-98f2-c9946928da17",
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "operation": "observe",
+          "args": {},
+          "deadline": 1790735178365,
+          "scope": "edit",
+          "generation": 11
+        },
+        "receipt": {
+          "schemaVersion": 1,
+          "actionId": "516cac4f-07d7-494a-939a-0afed39fc6aa",
+          "runId": "b0406ab3-1fa3-483f-91eb-bda2b790bb27",
+          "backend": "playwright",
+          "at": 1790735168371,
+          "phase": "acknowledged",
+          "detail": "Browser operation acknowledged; effect requires a separate observation",
+          "timings": {
+            "dispatchMs": 0.011300000000119326
+          }
+        },
+        "after": {
+          "schemaVersion": 1,
+          "id": "ef82fe32-dd49-4b35-8a33-b2cf1e31fcb0",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735168401,
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "30fc8da2b4af0ae5f0132a2fb101a779410c97c68f9688ae5ea8b20df50be1dd",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "skillHash": "bae5f901e214b1c24663517ebbffc1e6cf3b89ca94dfe011ea6807b5071d4ec5",
+        "model": "fixed",
+        "label": "verified"
+      },
+      {
+        "before": {
+          "schemaVersion": 1,
+          "id": "78a80364-eb86-4a53-9940-6dbfabe4a6fc",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735168450,
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "30fc8da2b4af0ae5f0132a2fb101a779410c97c68f9688ae5ea8b20df50be1dd",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "action": {
+          "schemaVersion": 1,
+          "id": "6f9ff7cc-9ff0-489d-9f99-1d68e512e709",
+          "runId": "b0406ab3-1fa3-483f-91eb-bda2b790bb27",
+          "requester": "local-user",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "observationId": "78a80364-eb86-4a53-9940-6dbfabe4a6fc",
+          "revision": "2eaf121d7e436d65d25d4d65a08eef6cd1bb46953071be162d7b08fd0f181876",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "operation": "fill",
+          "args": {
+            "locator": "name",
+            "value": "Development library 1 2"
+          },
+          "deadline": 1790735178451,
+          "scope": "edit",
+          "generation": 11
+        },
+        "receipt": {
+          "schemaVersion": 1,
+          "actionId": "6f9ff7cc-9ff0-489d-9f99-1d68e512e709",
+          "runId": "b0406ab3-1fa3-483f-91eb-bda2b790bb27",
+          "backend": "playwright",
+          "at": 1790735168484,
+          "phase": "acknowledged",
+          "detail": "Browser operation acknowledged; effect requires a separate observation",
+          "timings": {
+            "dispatchMs": 23.294600000000173
+          }
+        },
+        "after": {
+          "schemaVersion": 1,
+          "id": "75d44a6b-04ad-41f0-a3d8-51176e019f27",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735168516,
+          "revision": "f697cf88e389b18ed7fbc9faed16fa34aec3eb97b9e97810d7ea3cd4e3bcaeca",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "Development library 1 2",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "abf3e288ab6b525ecd8aad7e21e6beaf5538ed19ee94608673410a2eba21e9ab",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "skillHash": "bae5f901e214b1c24663517ebbffc1e6cf3b89ca94dfe011ea6807b5071d4ec5",
+        "model": "fixed",
+        "label": "verified"
+      },
+      {
+        "before": {
+          "schemaVersion": 1,
+          "id": "b3bdfe8c-0e23-4ced-a149-14aae6e0f319",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735168548,
+          "revision": "f697cf88e389b18ed7fbc9faed16fa34aec3eb97b9e97810d7ea3cd4e3bcaeca",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "Development library 1 2",
+            "result": "No change yet",
+            "focused": true
+          },
+          "image": "abf3e288ab6b525ecd8aad7e21e6beaf5538ed19ee94608673410a2eba21e9ab",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "action": {
+          "schemaVersion": 1,
+          "id": "1d56eb77-53a1-49e2-9631-8e90f70d2fa6",
+          "runId": "b0406ab3-1fa3-483f-91eb-bda2b790bb27",
+          "requester": "local-user",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "observationId": "b3bdfe8c-0e23-4ced-a149-14aae6e0f319",
+          "revision": "f697cf88e389b18ed7fbc9faed16fa34aec3eb97b9e97810d7ea3cd4e3bcaeca",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "operation": "click",
+          "args": {
+            "locator": "apply"
+          },
+          "deadline": 1790735178549,
+          "scope": "edit",
+          "generation": 11
+        },
+        "receipt": {
+          "schemaVersion": 1,
+          "actionId": "1d56eb77-53a1-49e2-9631-8e90f70d2fa6",
+          "runId": "b0406ab3-1fa3-483f-91eb-bda2b790bb27",
+          "backend": "playwright",
+          "at": 1790735168593,
+          "phase": "acknowledged",
+          "detail": "Browser operation acknowledged; effect requires a separate observation",
+          "timings": {
+            "dispatchMs": 35.87940000000026
+          }
+        },
+        "after": {
+          "schemaVersion": 1,
+          "id": "35711861-4cde-4509-802e-ee574fb5773d",
+          "host": "public-fixture-host",
+          "session": "library-collect",
+          "target": "browser-fixture-v1",
+          "at": 1790735168633,
+          "revision": "1eeb94db6ab3f80705fc0c654236968823cb24e55284e5ae9f2de14210c37ff4",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1000,
+            "height": 800,
+            "scale": 1
+          },
+          "focused": true,
+          "facts": {
+            "docsOpen": false,
+            "ready": true,
+            "dialog": false,
+            "closed": false,
+            "name": "Development library 1 2",
+            "result": "Development library 1 2",
+            "focused": true
+          },
+          "image": "e8a60aa1a8b49cf1735bafabfa7e17d4e416a260fe78ecf506eebd18cbbc5496",
+          "features": [
+            0.20784313725490197,
+            0.6588235294117647,
+            0.4
+          ],
+          "backend": "playwright"
+        },
+        "skillHash": "bae5f901e214b1c24663517ebbffc1e6cf3b89ca94dfe011ea6807b5071d4ec5",
+        "model": "fixed",
+        "label": "verified"
+      }
+    ],
+    "verified": true,
+    "corrections": []
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "scope": "Exact staged files copied to a separate scanner directory. Dependencies, runtime stores and Git metadata are excluded from the directory scan. Git history requires its own scan.",
+  "files": 2717,
+  "bytes": 133171574,
+  "sourceTreeSha256": "6a4c938a3255c8dcda82661e8e70697a800e04d7c1ad90b1e4c39c10bf25ff0f",
+  "gitleaksExitCode": 0,
+  "gitleaksFindings": [],
+  "privateOwnerPathOrHostnameFiles": [],
+  "redaction": "100 percent",
+  "maxFileMegabytes": 100
+}

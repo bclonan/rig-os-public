@@ -1,0 +1,511 @@
+{
+  "schemaVersion": 1,
+  "scope": "Portable publication derivative of reviewed training metadata. Model and controlled image bytes are unchanged. This derivative is training provenance only, never successful terminal evidence or a new qualification.",
+  "maintainedSourceBeforeSha256": "31667d67fa52f874bc6cdcbdafc88b33a10865ef741217513a495bbfd4248700",
+  "maintainedSourceAfterSha256": "4519517387a35a5706f3024966ebbf2615ba3d25b6194cc9b9cec9210138fdeb",
+  "changedMaintainedFiles": [
+    {
+      "path": "src/learner/portable-inputs.ts",
+      "beforeSha256": "f92fc755c55e506952643ee72dc17bdd3c31022c45b19e64ccb142b8a6d46f24",
+      "afterSha256": "c080404791e6409193d2cd2588abf3c76ed5f913159c222bcb16111a59216874",
+      "reason": "Exact portable training provenance admission and a regression proving it cannot substitute for signed terminal qualification"
+    },
+    {
+      "path": "tests/learning-finalization.test.ts",
+      "beforeSha256": "5a8417ce440e7c456c3469edff2dbf350017fafd0a9960e3207be8f42150d0de",
+      "afterSha256": "61e4f92981202817e0902781106d2057013474732ef3782ebb9761e0aa7b42b0",
+      "reason": "Exact portable training provenance admission and a regression proving it cannot substitute for signed terminal qualification"
+    },
+    {
+      "path": "tests/learning-training-origin.test.ts",
+      "beforeSha256": "73af3e2b0b28ed1c3c41880e1d0f9b8aea28b8eea641505216223f592180fd51",
+      "afterSha256": "1d2a1522153275d5917dccf3403ac9ee453c9c42b91a8b64d7542c86fba685f2",
+      "reason": "Exact portable training provenance admission and a regression proving it cannot substitute for signed terminal qualification"
+    }
+  ],
+  "sourceDiffReviewed": true,
+  "changedMetadata": [
+    {
+      "path": "computer-use-runtime/evidence/audit-sealed.json",
+      "beforeSha256": "74b3777bcb3f259dbcb66246e30f3a33139a5a1b34040da67c4aa9fe98c53cd2",
+      "afterSha256": "4eb73ac1c8f367b83bb365164348330da0286d152f96cefc02939964a5a3a805",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/corrected-dataset-bundle.json",
+      "beforeSha256": "60993d3c51c86550397f036528ecac3a422383b1eb3eb6038703b64c6e219549",
+      "afterSha256": "e48f7bbc676b900147ed42ffe2258ec2f6b8630fd6aeed6dabfac5482b2f68c1",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/dataset-bundle.json",
+      "beforeSha256": "2f125f6a70e9aaa29ffa925a103cb94d7533c44af9c491acd4cd60bd71975782",
+      "afterSha256": "913a2e57b2931023fe85c0cc5d9c324e9c139fd5b0b17b0e05f545748141d7d6",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-library-v1/audit-sealed.json",
+      "beforeSha256": "364938a8be96d3d299ca129b3fb0ad94052337a8c092cb94634dc6e7cf22d378",
+      "afterSha256": "0c85b01f3f8d75f230683276b1473beb26e795a8a3865b8b3f143b5ef8a9e147",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-library-v1/demonstrations.json",
+      "beforeSha256": "ee12a64889af1e09cfad504637de01b300666f1ecaf7d077470dfbe794a4b9b7",
+      "afterSha256": "c34849d97925af840a1127cc86980416b556dd0f2b1e03722a03c570dba10866",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-library-v1/results.json",
+      "beforeSha256": "4fd55178bf7056e831fe731bb853998b66e20b42892419a5dae347f8b226b6f8",
+      "afterSha256": "553ec9aec5e2c5b17f36cdb0d06e0254862490a7a03bd3330b474abf50fc74f6",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-library-v1/source-0f5db89a-4f061e4e/demonstrations.json",
+      "beforeSha256": "7ee035900b158b1ca5f2fc82063140fc82f3e7656ca0310398168ef39f14bdde",
+      "afterSha256": "ac51d344df99f185f5ad4e58cda4baae021de1c3308dc6ea33d748ba013ea098",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-library-v1/source-596109c1-024232e2/demonstrations.json",
+      "beforeSha256": "7ee035900b158b1ca5f2fc82063140fc82f3e7656ca0310398168ef39f14bdde",
+      "afterSha256": "ac51d344df99f185f5ad4e58cda4baae021de1c3308dc6ea33d748ba013ea098",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-library-v1/source-596109c1-024232e2/selected-byte-copy-provenance.json",
+      "beforeSha256": "281c49143bbba82f6fbf87c85877e56ad5b104f3525e41e8c0867642ffd7957b",
+      "afterSha256": "9561103b0e7a9da6ecded79e8b9de94789c4cb8f00f9789b8798a189e5ac09be",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-library-v1/source-870b4b48-a067b4af/audit-sealed.json",
+      "beforeSha256": "5b382a308441a61ad5356ff22bb1f3250a9a7760caa86d90781d4153367136cc",
+      "afterSha256": "52efde59ad195c04d993e154978ede369360a6ae411fab7b66614841b8390d87",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-library-v1/source-870b4b48-a067b4af/demonstrations.json",
+      "beforeSha256": "7ee035900b158b1ca5f2fc82063140fc82f3e7656ca0310398168ef39f14bdde",
+      "afterSha256": "ac51d344df99f185f5ad4e58cda4baae021de1c3308dc6ea33d748ba013ea098",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-library-v1/source-870b4b48-a067b4af/results.json",
+      "beforeSha256": "f3bc48c0fb7e06f3f93518be733a0eeda06c5e490a0ba44555ba620b47fba94c",
+      "afterSha256": "171118bff4514eb823e5e7b888f80df3553c8f5c383b3437205073578291aadd",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-library-v1/source-870b4b48-a067b4af/selected-byte-copy-provenance.json",
+      "beforeSha256": "21d7b9ae37922274d75cc35b044fbe02a03a99f269f13449c6c362812005d826",
+      "afterSha256": "e08de72407053f9111039898da38c538d574b7b9f6a9d313774a8c7dd7159022",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-library-v1/source-b57a6553-71313adb/demonstrations.json",
+      "beforeSha256": "7ee035900b158b1ca5f2fc82063140fc82f3e7656ca0310398168ef39f14bdde",
+      "afterSha256": "ac51d344df99f185f5ad4e58cda4baae021de1c3308dc6ea33d748ba013ea098",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-library-v1/source-b57a6553-71313adb/selected-byte-copy-provenance.json",
+      "beforeSha256": "2997131d7da69dca2c95808681b6fcd71d6929c2ce487c1c9b1ebfd1d2d15a64",
+      "afterSha256": "541b129ef92a5b584b44ba6e2c556b358f327bcc8ab0aac1ab11ca8126d492c9",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-library-v1/source-dfed450c-3cfae63a/demonstrations.json",
+      "beforeSha256": "7ee035900b158b1ca5f2fc82063140fc82f3e7656ca0310398168ef39f14bdde",
+      "afterSha256": "ac51d344df99f185f5ad4e58cda4baae021de1c3308dc6ea33d748ba013ea098",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-library-v1/source-dfed450c-3cfae63a/selected-byte-copy-provenance.json",
+      "beforeSha256": "e64d33fd105f997624d102f7a482060dad60b12066097f34014e40a8ea644abb",
+      "afterSha256": "18861315e572552234941d9228dd2872eaa925a9d6b44aab2263aabbfacca30c",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v1/browser/models/17/report.json",
+      "beforeSha256": "7a0224aed2b5ebb69c19302a0011d584a24bc94e2c26f2029fb6e554e104393b",
+      "afterSha256": "75c617b0e4f629b5729a8feeebca6d97198baf1d528052db84d0f493e1a1c646",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v1/browser/models/41/report.json",
+      "beforeSha256": "1f5fcf5dac912ce70c58c42d14f3fd413c6839d8971dec21afd45d98298c0e1c",
+      "afterSha256": "e9c0cadc0dffb504052049ea4620d86e62f177ebad75adbd83e533118947713c",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v1/browser/models/73/report.json",
+      "beforeSha256": "873fd8e9cf8788e27fc077cd517cb7401abe01eebbef9dd25341d46ad4d76590",
+      "afterSha256": "c0418e89bfa8330403d95de120e655ac42ddfb42e9b4161c708ba458a5aa1034",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v1/browser/train-bundle.json",
+      "beforeSha256": "de8c413cdc0849028113ec695b1c9a60bd58a27a155d2ef0eddb40c81625259e",
+      "afterSha256": "f4de9f6a2e139c7487ded4b948251a86b4d311719eea58662c2588a1ac7963d8",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v1/browser/train-collection.json",
+      "beforeSha256": "ac62d18e3c9c7bab88f918d30ee104dde929e98d1e410de9984962f800f0ae38",
+      "afterSha256": "767028bbae18829d8f47e34a5a668bd4a569c9453b142bd9db43b5f658bea2a6",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v1/browser/train-converted/recorded-manifest.json",
+      "beforeSha256": "c40669967308441fc63ece57cf072ef61554c0f045cea20289587995af0cea9d",
+      "afterSha256": "a9aedc5c4850289d88a0a3e048797e2b373efe1b355974eddb9532e349fb91e1",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v1/browser/train-manifest.json",
+      "beforeSha256": "1a98e7f91f5f062e2bb0e94c56be40b2900b4ccb9fd585e24b15158d18e1d6f4",
+      "afterSha256": "a993eb366c8ac903234cd631b7b2dd2acd6b7aa503c78d72a4287a4d5a816911",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v1/browser/training.json",
+      "beforeSha256": "5e5298079c99c8081236dc71db960d98db632c632b9ea803232cea6461f0ad1f",
+      "afterSha256": "2121f771163b451febe4792d0038cc9fa7964d55d9d88ecb40cd22759c0d3108",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v1/browser/validation-bundle.json",
+      "beforeSha256": "9353eb28206e0527d94cd596f788618bf46ae96a213bb74a602f9aae4c306cf1",
+      "afterSha256": "2c8365ceabd2bcb8fd51855cf7063724c9e7bf4e0a4876299c1d082991db53af",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v1/browser/validation-collection.json",
+      "beforeSha256": "01025870cab449cd04e1a3a5a83f4de18f0ee9880c9ce9558b962cabb3c8b04b",
+      "afterSha256": "3dc54ad44c5798d81eed7464b9ee1f9a724f20d54a79e5985d75d6782ebba8e6",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v1/browser/validation-converted/recorded-manifest.json",
+      "beforeSha256": "855cd721aa7bd57cb681a3d598c0b2e933ee3bf26e49c2d36638959d0b7023d6",
+      "afterSha256": "988d395b6badc50844a4f5060836c1531db9ef75104ad497c7f2a77d1a66d49d",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v1/browser/validation-manifest.json",
+      "beforeSha256": "3f14421d26f838e14104eecbaea3ad149cee3fef408fffe389bfe1635f068357",
+      "afterSha256": "ada90e669a6077ec7bf0dcc70bc913e342be734bd6cfd6d0b363af42fcc14632",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v2/browser/models/17/report.json",
+      "beforeSha256": "dbc6873616438205e14cab69b7b74208d7cf6ce4512f6b608ee884c4682f4462",
+      "afterSha256": "f9415409d44b945b0dc9dd907646f0a2a0a14002cbf78431d272ae162ea1b0b7",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v2/browser/models/41/report.json",
+      "beforeSha256": "c60457f0fc75988460b857a35e50e43731788863d5227ad782763eed134f08f6",
+      "afterSha256": "554095f55eac671027c6ae5d351a84725481bdb579ed04e563bbd860a9372c67",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v2/browser/models/73/report.json",
+      "beforeSha256": "1a197642b517fc3e0b62cf2ec662352f59f51563b8314f0c59738e809c1fcdf9",
+      "afterSha256": "4ee51d8856601f3a1ca047b4cb526dc537ce5b68c2cb75c15abab47ee8e32fdf",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v2/browser/train-manifest.json",
+      "beforeSha256": "e8aed92a524b9ab3da22c454502afa93f9237876ab745d85011fbe196d86cf34",
+      "afterSha256": "ff4768468ef5c7aa2322ebd056df8f9044bf2ccea277993be5effc04624bce38",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v2/browser/training.json",
+      "beforeSha256": "14d25d4d387b743143dfcf3ff298e8b99738dada23f692fd3410a5e49f8c99b2",
+      "afterSha256": "d93157544bfc13acf61efc61471f7d5a56e7cf53f2a9b77654a1808904b642dc",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v2/browser/validation-manifest.json",
+      "beforeSha256": "37dbd69fb0694c52423d9d09982a85f8fba1f0ffd65963cad5ae19d394cebe8f",
+      "afterSha256": "87693dc3698af5e22f0ffff8b8e811af6e065075e0c26010ebb80bd66ba9feb3",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v3/browser/audit-sealed.json",
+      "beforeSha256": "c23c209e73055f6769a1cdcc9d40b16db95b899f22c6929593799fe84595a78d",
+      "afterSha256": "a0f82cbb70f7a8705e891445cb67b09b1f82244776d039cbb4d45481212d3a6a",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v3/browser/conditional-parity.json",
+      "beforeSha256": "9f3586c2f9651905b96341265d29b291239a45605356f814a56d48fec1b8e657",
+      "afterSha256": "5c9568e76ee4f6ccd979818d7091fa5eea6f5c13313998d209e7bbce95c3b23e",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v3/browser/development-visual-ablation.json",
+      "beforeSha256": "ae8f36b0762a89f842df541f24ef37acde95fe9f801021fbbe6574a31b0270d4",
+      "afterSha256": "b0303e9230a5d90c3d9a1e81fedbf463af629cf1f5c853de267978fa192788d1",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v3/browser/heads.jsonl",
+      "beforeSha256": "fdc42285652724fe9f4c8418c927b61de29990b85fafa4b805fad119e872ec75",
+      "afterSha256": "9552e4a615be529fa3a71672a29eb828b7e1c7e720e932ffc3ef8dac5f2e034d",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v3/browser/models/17/report.json",
+      "beforeSha256": "d0169c47950b881928c21ebc96e7f9f7f93b7a7f65937db30d35ce6b584cac71",
+      "afterSha256": "258af52b2c3aa8f36851e9dd18ea9a23effb6f7507a241484a73675919eae2ae",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v3/browser/models/41/report.json",
+      "beforeSha256": "6032d6302b8fae00431e8d1376e7c5e5bae10a380b5c0a012122bf496335de54",
+      "afterSha256": "12f9e7d2db81d600909a6d853809a555d03f0b8a8ac300379679dedb3a87c24c",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v3/browser/models/73/report.json",
+      "beforeSha256": "c3d61f6622758e28432c2c630ec735d03874c55040bbdd85cb1e578b40026ba7",
+      "afterSha256": "179a0c02735cbcd2ba7f816ee1ec8a43bf1410a18dc4199c5cd5cdfc68cb9ffd",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v3/browser/operational.json",
+      "beforeSha256": "5735cd3f7b893ff193feb448acea0aae7ade4ce218e9ad5f62bc7a08dd41b5c2",
+      "afterSha256": "a1d7624ec9d558a85adc9be1eb667c22d3f422521100d753246b817a64d3447d",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v3/browser/reaching-policy.json",
+      "beforeSha256": "4c83d24ac0256c89dc6845d083afd5ef596fcf5467d8e4a507de3bc6148f42b9",
+      "afterSha256": "c08e6d1e374da626f2f541a2b2c582d6f347999d7f2389f73cd0e58520bd92a3",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v3/browser/results.json",
+      "beforeSha256": "b1753c3d02d13b476d280885625ffe4bdf3ee06d96be86aaaaeaa3a1c9cd8de6",
+      "afterSha256": "d236680f08b5beb72d38caa86cbf17f9953d8b28976e90eb47f56818cb80c90b",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v3/browser/selection.json",
+      "beforeSha256": "6430318283ff671451e35c6be3bce6f4339596d5f85cbe2c1ecd6d375120894f",
+      "afterSha256": "9a94ead69f25d001b356e94c56c31a5f1dfba5298473289e07a9e962b513bb9c",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v3/browser/train-manifest.json",
+      "beforeSha256": "d9ab85c2b2bb13cb41738bc3b100cbe1a4ceddf7254da85d6d727f640efc8633",
+      "afterSha256": "70b62b74be3e157d43993193256781415b3fe3be5654feb4a1287a589f468c1c",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v3/browser/training.json",
+      "beforeSha256": "68459934c58d61998a6674fb6f3997402154bc838711476f755ed36a08568e39",
+      "afterSha256": "e28b4086e561b55b7295e82b8f6a57fc80f4b98538de73ea3a16d2b2904ed350",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v3/browser/validation-manifest.json",
+      "beforeSha256": "98321a415cdfdcd09675b478d96c66479ccdebf3e21c84c9acd8b863aeb16fd0",
+      "afterSha256": "005279d7d651f6935c01fa28df0b6ec6b5188564dd5cafa1b8890777db61dea0",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v4-training-origin-v1/audit-sealed.json",
+      "beforeSha256": "5a8b77c6d2631232df167f749830212d9b5d79e870e1fdcfd1bd5acd464128a3",
+      "afterSha256": "93e36a6dae077e20ec5975d9c9b92ad18e2ea4760827e3fba5f9c3b1c22652e9",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v4-training-origin-v1/manifest.json",
+      "beforeSha256": "08f37e35a7e2cd79a1a33692f3dc5f606f7ec0410b612c898b985b3f9003bd46",
+      "afterSha256": "e10c07d2de3a7b0d0d8fed1f98d32639dfb91ef5e52c69da3562f70828dd8986",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v4-training-origin-v1/results.json",
+      "beforeSha256": "37f8c47c7df9678a5184145dce37e929317b6c65b2ebbe594d35dcf0feb15867",
+      "afterSha256": "19c4ba510328b3aeaa958235107c8fe342e99fb74723d9cd778a6cf01baf6610",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v4-training-origin-v1/selection.json",
+      "beforeSha256": "10953d3b95097286d43f330e771615414c28349d3e62004f210a56e04c4ff60c",
+      "afterSha256": "0c64f3206cde16b4425ed64205b0f4418b88442526c13952417daef0d2cd035d",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v4/browser/audit-sealed.json",
+      "beforeSha256": "5a8b77c6d2631232df167f749830212d9b5d79e870e1fdcfd1bd5acd464128a3",
+      "afterSha256": "93e36a6dae077e20ec5975d9c9b92ad18e2ea4760827e3fba5f9c3b1c22652e9",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v4/browser/conditional-parity.json",
+      "beforeSha256": "9d31c807fe3f4be821b8275e46b90a2658ddfa79419ca24fe3726c22913eb54b",
+      "afterSha256": "b24674eccff9939c268f558c246eb8a63e9cdb92ea7b890890d71923de9a44bc",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v4/browser/development-visual-ablation.json",
+      "beforeSha256": "6da65613adb28ba59ab74f1637ae1550e4d568b15bcbb537d59313c59e0ec844",
+      "afterSha256": "59140d5172e8e49892a22550a99105d3768327cc16b9c33a54f059624bd842fc",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v4/browser/heads.jsonl",
+      "beforeSha256": "2daa5c30e5f27582321e75874b51e8ca4c6202bd7804b1162ea6240fff872175",
+      "afterSha256": "759f5156ad9b20eb68c944c3a3642cd66b4f1b7eddf2913fd9216be84a7445c6",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v4/browser/models/17/report.json",
+      "beforeSha256": "78ad5d122c8e703905e9ca4f555a4717c993c740f46595cdf940a3a498d42205",
+      "afterSha256": "1e554f85783ac5bc10a6435e9a959825e1a0b581f5547eda9b1cc1cd9bb799c7",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v4/browser/models/41/report.json",
+      "beforeSha256": "3621791f1d631183b916e1aa49378bde574c4cbd2d5d1f6ac1e2441015d98aa0",
+      "afterSha256": "75e70427ce005dd05c904f5b05773782160d8f4a8f9509f0fac31626659c3f50",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v4/browser/models/73/report.json",
+      "beforeSha256": "d06ab506e8c760b166d29a1caefa19f6247abda5bf275cfa4cb7890e43710210",
+      "afterSha256": "c46bf45420fc74520466e0355b70063a9cf761b6fd1f2be87fbead0cabd741e8",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v4/browser/operational.json",
+      "beforeSha256": "2249ae3e28ec1c8e1c576e1913e43aa8590430c71fc4d449a185f78a81ea0664",
+      "afterSha256": "aa244790ae5797920e8c3e98f4499a703ac88f698a440fb7c72b4b2dc297a89f",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v4/browser/results.json",
+      "beforeSha256": "37f8c47c7df9678a5184145dce37e929317b6c65b2ebbe594d35dcf0feb15867",
+      "afterSha256": "19c4ba510328b3aeaa958235107c8fe342e99fb74723d9cd778a6cf01baf6610",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v4/browser/selection.json",
+      "beforeSha256": "10953d3b95097286d43f330e771615414c28349d3e62004f210a56e04c4ff60c",
+      "afterSha256": "0c64f3206cde16b4425ed64205b0f4418b88442526c13952417daef0d2cd035d",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v4/browser/train-manifest.json",
+      "beforeSha256": "470f0381255e8e8cf4a01abb07e5989d016ae26ce2e925d706682fe62d0b7d09",
+      "afterSha256": "dea349d712255377819451744aae5fd0bf953065c70d2d89fd67a93e146ce037",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v4/browser/training.json",
+      "beforeSha256": "0dd16afb794884de6ed88da0d7ad58a7a811f61ccccdb05ea524fd9a7927468d",
+      "afterSha256": "8d5f506254c396ce03bd35985a96d84708ec46602e5313afb2be3329b660b367",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/learning-followup-v4/browser/validation-manifest.json",
+      "beforeSha256": "6d629a086522e95cfd13e519ae83b80f3ac5fc85d5571c3437b42d57402d5aca",
+      "afterSha256": "53e4790589b40c5de93b5cd9ea719f1b62761e5c0473fca1f27700a3417b200b",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/portable-audit/events.jsonl",
+      "beforeSha256": "552200cf1cd188837a2e85b5732fa862b09f2091f810b1e8aefa06eee1505e2d",
+      "afterSha256": "0df83bec858accca698e0c5c3c2f1f7e1a24bd9f1cc07597e0e4507984da43ab",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/portable-audit/manifest.json",
+      "beforeSha256": "d9c590b1082808c9e9cf696e6f86ea5ce529be73f987fb3f847a0476d6934b3a",
+      "afterSha256": "e754d53f7e6394956b6cbbe3f84be0caf02d03d25b30d35f60554cc90b54b211",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/portable-audit/runs.json",
+      "beforeSha256": "67fa5ac64327020136286a15fcb9ff75e8c47d71aa8fa41a7dde24d5a6a9f796",
+      "afterSha256": "28193af6bc834ced1fb9272a9ddc69d495dc40a413cf342d84dc506ffa80b3de",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    },
+    {
+      "path": "computer-use-runtime/evidence/results.json",
+      "beforeSha256": "e414aa0f5858d96a5ba56c5cb5f3f2c2150173acc6eb82aaec994a20433c561e",
+      "afterSha256": "88bab6f01684d0d29626e8e0bc964d262528e0adb38916056b66e061d17dcb51",
+      "reason": "Source-workspace path and machine identity normalization with transitive metadata hashes"
+    }
+  ],
+  "unchangedModelsAndImages": 2125,
+  "originalTerminalVerifierUnchanged": true,
+  "freshLocalQualificationRequired": true,
+  "neutralReferenceRoot": "/PUBLIC_WORKSPACE/computer-use-runtime",
+  "publicationOriginTuple": {
+    "protocol": "55229c2fbeb5b0c218e875ef74228f8c7849cc3b99e3e01967491feb1dc7ce3c",
+    "results": "19c4ba510328b3aeaa958235107c8fe342e99fb74723d9cd778a6cf01baf6610",
+    "seal": "93e36a6dae077e20ec5975d9c9b92ad18e2ea4760827e3fba5f9c3b1c22652e9"
+  },
+  "peerReview": {
+    "reviewedAtUtc": "2026-10-01T13:34:28.272216+00:00",
+    "status": "PASS_SOURCE_AND_BYTE_AND_SEMANTIC_REVIEW",
+    "scope": "Independent original-to-staging review of three maintained-source deltas, all 70 metadata derivative hashes, exact path/host/hash semantic normalization, unchanged models/images, and unchanged original terminal verifier.",
+    "maintainedSourceSha256": "4519517387a35a5706f3024966ebbf2615ba3d25b6194cc9b9cec9210138fdeb",
+    "changedMetadataFilesVerified": 70,
+    "changedMaintainedFilesVerified": 3,
+    "unchangedModelAndImageFilesVerified": 2125,
+    "unchangedEvidenceJsonlFilesVerified": 10,
+    "metadataOnlyJsonlDerivativesVerified": 3,
+    "structuredPrivateHostFieldsNeutralized": 37658,
+    "remainingStructuredPrivateHostFields": 0,
+    "allMetadataNumericAndBooleanValuesUnchanged": true,
+    "allOtherMetadataSemanticChangesRestrictedTo": [
+      "Private workspace references replaced by neutral portable root",
+      "Exact structured hardware hostname values replaced by public-fixture-host",
+      "Transitive content-digest replacements",
+      "Explicit publication-origin scope label"
+    ],
+    "originOnlyTrustConfirmed": true,
+    "historicalTerminalExemptionExpanded": false,
+    "focusedTests": {
+      "passed": 27,
+      "failed": 0,
+      "skipped": 0,
+      "files": [
+        "tests/learning-training-origin.test.ts",
+        "tests/learning-finalization.test.ts"
+      ]
+    },
+    "limits": [
+      "This review did not run a new learning qualification or production activation.",
+      "Synthetic finalization tests exercise trust and cleanup gates; they do not measure a new model or native platform.",
+      "Final map/document refresh, byte-preserving clone check and whole-export scans remain separate."
+    ],
+    "initialReviewedModelAndImageFiles": 2127,
+    "unchangedFileTypes": {
+      "onnx": 36,
+      "pt": 36,
+      "png": 2053
+    },
+    "publicationOmittedImages": [
+      "computer-use-runtime/evidence/review-console.png",
+      "computer-use-runtime/evidence/review-console-mobile.png"
+    ],
+    "finalImageExclusionReview": "Two full-console screenshots contained a machine label and were omitted. Every remaining package PNG, PT and ONNX file matched the unchanged private original SHA-256.",
+    "finalByteReviewAtUtc": "2026-10-01T14:00:10.708979+00:00"
+  },
+  "publicationOmittedImages": [
+    "computer-use-runtime/evidence/review-console.png",
+    "computer-use-runtime/evidence/review-console-mobile.png"
+  ],
+  "imageExclusionReview": "Historical full-console captures contain a machine label. Both were visually reviewed and excluded. Controlled fixture images and model bytes remain unchanged."
+}

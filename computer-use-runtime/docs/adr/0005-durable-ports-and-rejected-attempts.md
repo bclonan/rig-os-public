@@ -1,0 +1,9 @@
+# Durable ports and rejected attempts
+
+Status: implemented, with final native qualification pending.
+
+Runtime previously accepted concrete SQLite Store and constructed Registry. The six-port contract requires independent experience and skill implementations. Runtime now accepts structural ExperienceStore and SkillRepository dependencies, with the existing Store and Registry defaults. Version lookup uses the exact sealed hash so a paused run cannot switch to a newer root or child. Shared canonical encoding and hashing live outside storage. Independent JSON examples run through the actual BrowserAdapter and persist journals, artifacts, request identities and pinned versions across reopen. Both stores reject asynchronous transactions.
+
+Native preflight may reject an action before input delivery. A capsule may request fresh_observation recovery only when a valid receipt binds its exact run and action and explicitly says dispatched=false. Runtime charges and journals the rejected attempt in one synchronous transaction before honoring pause or cancel. It observes again, checks ordinary policy and uses a new action ID without changing approved arguments. Delivered or uncertain input cannot enter this recovery. An explicit error handler consumes its own later actions without charging the rejected attempt twice. Persistence failure prevents handler input.
+
+Four independent-port tests and nine preflight tests pass. They include actual browser effects, pinned pause and reopen, conflicting idempotency, transaction rollback, a real process exit after a persisted recovery checkpoint, one-step pause budgets and failed receipt persistence. Drawing opts into three rejected attempts before approval and still delivers at most120 drags. The schema permits other capsules to declare up tofive retries. These limits do not authorize replay of an unknown effect.

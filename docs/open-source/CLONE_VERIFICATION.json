@@ -1,0 +1,26 @@
+{
+  "status": "PASS_LOCAL_CLONE_SOURCE_AND_MAP",
+  "scope": "Actual materialized local Git clone. Raw maintained bytes and map documentation only. No dependency install, runtime or model qualification.",
+  "testedCommit": "cd2897e3026962c4db1c2e4b987b036bbd405990",
+  "sourceSha256": "4519517387a35a5706f3024966ebbf2615ba3d25b6194cc9b9cec9210138fdeb",
+  "expectedSourceSha256": "4519517387a35a5706f3024966ebbf2615ba3d25b6194cc9b9cec9210138fdeb",
+  "maintainedFiles": 300,
+  "maintainedDifferences": [],
+  "mapCheckExitCode": 0,
+  "mapCheck": {
+    "status": "PASS_STATIC_PUBLIC_DOCUMENTATION",
+    "scope": "Current source, embedded documents, graph, anchors and local links only. No runtime or browser execution.",
+    "sourceSha256": "4519517387a35a5706f3024966ebbf2615ba3d25b6194cc9b9cec9210138fdeb",
+    "headIsInformational": true,
+    "maintainedFiles": 300,
+    "ordinaryDocuments": 43,
+    "components": 116,
+    "relationships": 180,
+    "journeys": 21,
+    "entities": 32,
+    "sourceReferencesChecked": 1449,
+    "markdownLinksChecked": 536
+  },
+  "commandErrors": "",
+  "cloneLocation": "Private temporary directory outside the public repository"
+}

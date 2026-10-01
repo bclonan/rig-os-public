@@ -1,0 +1,22 @@
+{
+  "startedAt": {
+    "current_time": "2026-09-30 02:26:12 UTC"
+  },
+  "chunks": [
+    {
+      "chunk_id": "2a3aed",
+      "wall_time_seconds": 10.0107572,
+      "session_id": 18566,
+      "original_token_count": 44,
+      "output": "npm notice run computer-use-runtime@0.1.0 npx\nnpm notice run tsx evaluation/learning-followup-library.ts collect evidence/learning-followup-library-v1/source-0f5db89a-4f061e4e\n"
+    },
+    {
+      "chunk_id": "cfa235",
+      "wall_time_seconds": 0.0000141,
+      "exit_code": 0,
+      "original_token_count": 113,
+      "output": "{\"status\":\"PASS\",\"demonstrations\":6,\"validation\":18,\"extraction\":[{\"dependency\":\"followup.library.shared.c965a144db66\",\"methods\":[\"followup.library.method0\",\"followup.library.method1\"],\"operations\":2,\"evidence\":[\"d6e49539-58b8-45d8-9fa5-a19177524b44\",\"0dae1c97-dfa9-4502-934f-6f7124ce1a5c\",\"dab2dace-26f4-4e34-8b58-a01444c6a313\",\"9404b5e7-f180-44e6-8dda-b007ee7c6ed6\",\"c16df0fa-0c4c-49ac-a5e8-2771ea489911\",\"4ec9a541-8a75-4140-b957-54498e89348e\"]}]}\n"
+    }
+  ],
+  "session": 18566
+}

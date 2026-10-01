@@ -1,0 +1,1427 @@
+{
+  "sourceBundleSha256": "60993d3c51c86550397f036528ecac3a422383b1eb3eb6038703b64c6e219549",
+  "counts": {
+    "positive": 4,
+    "failureOrUnknown": 8,
+    "corrected": 4,
+    "skipped": 0
+  },
+  "rows": [
+    {
+      "session": "3f604458-2044-418c-bec5-1c2ccad5064d",
+      "family": "recorded-controlled-form",
+      "image": "models\\recorded-candidate\\recorded-images\\3f604458-2044-418c-bec5-1c2ccad5064d-0.png",
+      "history": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "candidates": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "teacher_choice": -100,
+      "predicate_labels": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "recovery": 3,
+      "success_cost": [
+        0.0,
+        0.125
+      ],
+      "outcome_mask": [
+        0.0,
+        1.0
+      ],
+      "source": "actual pre-action screenshot crop from controlled browser",
+      "sourceImage": "30fc8da2b4af0ae5f0132a2fb101a779410c97c68f9688ae5ea8b20df50be1dd",
+      "crop": [
+        59,
+        605,
+        123,
+        669
+      ],
+      "corrections": [
+        {
+          "step": 0,
+          "label": "imported-unverified",
+          "source": "75728524bb280f95681d57260b95a37cef6f33ce5d53b565b4f48ba5f34bbad8"
+        }
+      ],
+      "policyUsesPostActionData": false
+    },
+    {
+      "session": "3f604458-2044-418c-bec5-1c2ccad5064d",
+      "family": "recorded-controlled-form",
+      "image": "models\\recorded-candidate\\recorded-images\\3f604458-2044-418c-bec5-1c2ccad5064d-1.png",
+      "history": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.875,
+          1.0,
+          1.0
+        ]
+      ],
+      "candidates": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "teacher_choice": -100,
+      "predicate_labels": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "recovery": 3,
+      "success_cost": [
+        0.0,
+        0.25
+      ],
+      "outcome_mask": [
+        0.0,
+        1.0
+      ],
+      "source": "actual pre-action screenshot crop from controlled browser",
+      "sourceImage": "b1c0f3550e855105940f80ce12d3422d0268668c72f888da482f57354114daa6",
+      "crop": [
+        59,
+        605,
+        123,
+        669
+      ],
+      "corrections": [],
+      "policyUsesPostActionData": false
+    },
+    {
+      "session": "ee678de8-ab1d-478f-b553-29d0360a46a2",
+      "family": "recorded-controlled-form",
+      "image": "models\\recorded-candidate\\recorded-images\\ee678de8-ab1d-478f-b553-29d0360a46a2-0.png",
+      "history": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "candidates": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "teacher_choice": -100,
+      "predicate_labels": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "recovery": 3,
+      "success_cost": [
+        0.0,
+        0.125
+      ],
+      "outcome_mask": [
+        0.0,
+        1.0
+      ],
+      "source": "actual pre-action screenshot crop from controlled browser",
+      "sourceImage": "30fc8da2b4af0ae5f0132a2fb101a779410c97c68f9688ae5ea8b20df50be1dd",
+      "crop": [
+        59,
+        605,
+        123,
+        669
+      ],
+      "corrections": [
+        {
+          "step": 0,
+          "label": "unknown",
+          "source": "controlled negative-label test; not a claim that the successful action failed"
+        }
+      ],
+      "policyUsesPostActionData": false
+    },
+    {
+      "session": "ee678de8-ab1d-478f-b553-29d0360a46a2",
+      "family": "recorded-controlled-form",
+      "image": "models\\recorded-candidate\\recorded-images\\ee678de8-ab1d-478f-b553-29d0360a46a2-1.png",
+      "history": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.875,
+          1.0,
+          1.0
+        ]
+      ],
+      "candidates": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "teacher_choice": -100,
+      "predicate_labels": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "recovery": 3,
+      "success_cost": [
+        0.0,
+        0.25
+      ],
+      "outcome_mask": [
+        0.0,
+        1.0
+      ],
+      "source": "actual pre-action screenshot crop from controlled browser",
+      "sourceImage": "586fd2601f7da4b0d92ad2d7608bc363409ac1269632d129b2f0e3ff5df157d1",
+      "crop": [
+        59,
+        605,
+        123,
+        669
+      ],
+      "corrections": [],
+      "policyUsesPostActionData": false
+    },
+    {
+      "session": "ee678de8-ab1d-478f-b553-29d0360a46a2",
+      "family": "recorded-controlled-form",
+      "image": "models\\recorded-candidate\\recorded-images\\ee678de8-ab1d-478f-b553-29d0360a46a2-0.png",
+      "history": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "candidates": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "teacher_choice": -100,
+      "predicate_labels": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "recovery": 3,
+      "success_cost": [
+        0.0,
+        0.125
+      ],
+      "outcome_mask": [
+        0.0,
+        1.0
+      ],
+      "source": "actual pre-action screenshot crop from controlled browser",
+      "sourceImage": "30fc8da2b4af0ae5f0132a2fb101a779410c97c68f9688ae5ea8b20df50be1dd",
+      "crop": [
+        59,
+        605,
+        123,
+        669
+      ],
+      "corrections": [
+        {
+          "step": 0,
+          "label": "imported-unverified",
+          "source": "75728524bb280f95681d57260b95a37cef6f33ce5d53b565b4f48ba5f34bbad8"
+        }
+      ],
+      "policyUsesPostActionData": false
+    },
+    {
+      "session": "ee678de8-ab1d-478f-b553-29d0360a46a2",
+      "family": "recorded-controlled-form",
+      "image": "models\\recorded-candidate\\recorded-images\\ee678de8-ab1d-478f-b553-29d0360a46a2-1.png",
+      "history": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.875,
+          1.0,
+          1.0
+        ]
+      ],
+      "candidates": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "teacher_choice": -100,
+      "predicate_labels": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "recovery": 3,
+      "success_cost": [
+        0.0,
+        0.25
+      ],
+      "outcome_mask": [
+        0.0,
+        1.0
+      ],
+      "source": "actual pre-action screenshot crop from controlled browser",
+      "sourceImage": "586fd2601f7da4b0d92ad2d7608bc363409ac1269632d129b2f0e3ff5df157d1",
+      "crop": [
+        59,
+        605,
+        123,
+        669
+      ],
+      "corrections": [],
+      "policyUsesPostActionData": false
+    },
+    {
+      "session": "c43d551d-abb1-4f5c-af35-d8dcc79858d6",
+      "family": "recorded-controlled-form",
+      "image": "models\\recorded-candidate\\recorded-images\\c43d551d-abb1-4f5c-af35-d8dcc79858d6-0.png",
+      "history": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "candidates": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "teacher_choice": 0,
+      "predicate_labels": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "recovery": 0,
+      "success_cost": [
+        1.0,
+        0.125
+      ],
+      "outcome_mask": [
+        1.0,
+        1.0
+      ],
+      "source": "actual pre-action screenshot crop from controlled browser",
+      "sourceImage": "30fc8da2b4af0ae5f0132a2fb101a779410c97c68f9688ae5ea8b20df50be1dd",
+      "crop": [
+        59,
+        605,
+        123,
+        669
+      ],
+      "corrections": [],
+      "policyUsesPostActionData": false
+    },
+    {
+      "session": "c43d551d-abb1-4f5c-af35-d8dcc79858d6",
+      "family": "recorded-controlled-form",
+      "image": "models\\recorded-candidate\\recorded-images\\c43d551d-abb1-4f5c-af35-d8dcc79858d6-1.png",
+      "history": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.875,
+          1.0,
+          1.0
+        ]
+      ],
+      "candidates": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "teacher_choice": 0,
+      "predicate_labels": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "recovery": 0,
+      "success_cost": [
+        1.0,
+        0.25
+      ],
+      "outcome_mask": [
+        1.0,
+        1.0
+      ],
+      "source": "actual pre-action screenshot crop from controlled browser",
+      "sourceImage": "d254aba100e8e6c4d62dcafa666bb1ad696857abf6a04adc3fad212ff8bcb759",
+      "crop": [
+        59,
+        605,
+        123,
+        669
+      ],
+      "corrections": [],
+      "policyUsesPostActionData": false
+    },
+    {
+      "session": "c43d551d-abb1-4f5c-af35-d8dcc79858d6",
+      "family": "recorded-controlled-form",
+      "image": "models\\recorded-candidate\\recorded-images\\c43d551d-abb1-4f5c-af35-d8dcc79858d6-0.png",
+      "history": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "candidates": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "teacher_choice": -100,
+      "predicate_labels": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "recovery": 3,
+      "success_cost": [
+        0.0,
+        0.125
+      ],
+      "outcome_mask": [
+        0.0,
+        1.0
+      ],
+      "source": "actual pre-action screenshot crop from controlled browser",
+      "sourceImage": "30fc8da2b4af0ae5f0132a2fb101a779410c97c68f9688ae5ea8b20df50be1dd",
+      "crop": [
+        59,
+        605,
+        123,
+        669
+      ],
+      "corrections": [
+        {
+          "step": 0,
+          "label": "imported-unverified",
+          "source": "75728524bb280f95681d57260b95a37cef6f33ce5d53b565b4f48ba5f34bbad8"
+        }
+      ],
+      "policyUsesPostActionData": false
+    },
+    {
+      "session": "c43d551d-abb1-4f5c-af35-d8dcc79858d6",
+      "family": "recorded-controlled-form",
+      "image": "models\\recorded-candidate\\recorded-images\\c43d551d-abb1-4f5c-af35-d8dcc79858d6-1.png",
+      "history": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.875,
+          1.0,
+          1.0
+        ]
+      ],
+      "candidates": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "teacher_choice": -100,
+      "predicate_labels": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "recovery": 3,
+      "success_cost": [
+        0.0,
+        0.25
+      ],
+      "outcome_mask": [
+        0.0,
+        1.0
+      ],
+      "source": "actual pre-action screenshot crop from controlled browser",
+      "sourceImage": "d254aba100e8e6c4d62dcafa666bb1ad696857abf6a04adc3fad212ff8bcb759",
+      "crop": [
+        59,
+        605,
+        123,
+        669
+      ],
+      "corrections": [],
+      "policyUsesPostActionData": false
+    },
+    {
+      "session": "3f604458-2044-418c-bec5-1c2ccad5064d",
+      "family": "recorded-controlled-form",
+      "image": "models\\recorded-candidate\\recorded-images\\3f604458-2044-418c-bec5-1c2ccad5064d-0.png",
+      "history": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "candidates": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "teacher_choice": 0,
+      "predicate_labels": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "recovery": 0,
+      "success_cost": [
+        1.0,
+        0.125
+      ],
+      "outcome_mask": [
+        1.0,
+        1.0
+      ],
+      "source": "actual pre-action screenshot crop from controlled browser",
+      "sourceImage": "30fc8da2b4af0ae5f0132a2fb101a779410c97c68f9688ae5ea8b20df50be1dd",
+      "crop": [
+        59,
+        605,
+        123,
+        669
+      ],
+      "corrections": [],
+      "policyUsesPostActionData": false
+    },
+    {
+      "session": "3f604458-2044-418c-bec5-1c2ccad5064d",
+      "family": "recorded-controlled-form",
+      "image": "models\\recorded-candidate\\recorded-images\\3f604458-2044-418c-bec5-1c2ccad5064d-1.png",
+      "history": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.875,
+          1.0,
+          1.0
+        ]
+      ],
+      "candidates": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "teacher_choice": 0,
+      "predicate_labels": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "recovery": 0,
+      "success_cost": [
+        1.0,
+        0.25
+      ],
+      "outcome_mask": [
+        1.0,
+        1.0
+      ],
+      "source": "actual pre-action screenshot crop from controlled browser",
+      "sourceImage": "b1c0f3550e855105940f80ce12d3422d0268668c72f888da482f57354114daa6",
+      "crop": [
+        59,
+        605,
+        123,
+        669
+      ],
+      "corrections": [],
+      "policyUsesPostActionData": false
+    }
+  ]
+}

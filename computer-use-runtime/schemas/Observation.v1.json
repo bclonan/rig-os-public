@@ -1,0 +1,278 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:computer-use-runtime:Observation:1",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "host",
+    "session",
+    "target",
+    "at",
+    "revision",
+    "frame",
+    "focused",
+    "facts",
+    "features",
+    "backend"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1,
+      "type": "number"
+    },
+    "id": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "host": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "session": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "target": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "at": {
+      "type": "number"
+    },
+    "revision": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "frame": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "x",
+        "y",
+        "width",
+        "height",
+        "scale"
+      ],
+      "properties": {
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "width": {
+          "type": "number"
+        },
+        "height": {
+          "type": "number"
+        },
+        "scale": {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        }
+      }
+    },
+    "focused": {
+      "type": "boolean"
+    },
+    "facts": {
+      "type": "object",
+      "patternProperties": {
+        "^(.*)$": {
+          "anyOf": [
+            {
+              "maxLength": 8192,
+              "type": "string"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "boolean"
+            }
+          ]
+        }
+      }
+    },
+    "image": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "backend": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "desktop": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "platform",
+        "windows",
+        "apps"
+      ],
+      "properties": {
+        "platform": {
+          "minLength": 1,
+          "maxLength": 8192,
+          "type": "string"
+        },
+        "activeWindow": {
+          "minLength": 1,
+          "maxLength": 8192,
+          "type": "string"
+        },
+        "windows": {
+          "maxItems": 500,
+          "type": "array",
+          "items": {
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+              "id",
+              "handle",
+              "pid",
+              "title",
+              "executable"
+            ],
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "maxLength": 8192,
+                "type": "string"
+              },
+              "handle": {
+                "type": "integer"
+              },
+              "pid": {
+                "type": "integer"
+              },
+              "title": {
+                "minLength": 1,
+                "maxLength": 8192,
+                "type": "string"
+              },
+              "executable": {
+                "minLength": 1,
+                "maxLength": 8192,
+                "type": "string"
+              }
+            }
+          }
+        },
+        "apps": {
+          "maxItems": 32,
+          "type": "array",
+          "items": {
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "maxLength": 8192,
+                "type": "string"
+              },
+              "name": {
+                "minLength": 1,
+                "maxLength": 8192,
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "controls": {
+      "maxItems": 500,
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "index",
+          "id",
+          "name",
+          "value",
+          "controlType",
+          "focused",
+          "offscreen",
+          "bounds"
+        ],
+        "properties": {
+          "index": {
+            "type": "integer"
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          },
+          "controlType": {
+            "type": "integer"
+          },
+          "focused": {
+            "type": "boolean"
+          },
+          "offscreen": {
+            "type": "boolean"
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "selection": {
+            "type": "string"
+          },
+          "bounds": {
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+              "x",
+              "y",
+              "width",
+              "height"
+            ],
+            "properties": {
+              "x": {
+                "type": "number"
+              },
+              "y": {
+                "type": "number"
+              },
+              "width": {
+                "type": "number"
+              },
+              "height": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

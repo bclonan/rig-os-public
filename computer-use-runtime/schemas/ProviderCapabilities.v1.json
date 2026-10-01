@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:computer-use-runtime:ProviderCapabilities:1",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "modalities",
+    "structuredOutput",
+    "tools",
+    "cancellation",
+    "local",
+    "maxTokens",
+    "available"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1,
+      "type": "number"
+    },
+    "id": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "modalities": {
+      "type": "array",
+      "items": {
+        "minLength": 1,
+        "maxLength": 8192,
+        "type": "string"
+      }
+    },
+    "structuredOutput": {
+      "type": "boolean"
+    },
+    "tools": {
+      "type": "boolean"
+    },
+    "cancellation": {
+      "type": "boolean"
+    },
+    "local": {
+      "type": "boolean"
+    },
+    "maxTokens": {
+      "type": "integer"
+    },
+    "available": {
+      "type": "boolean"
+    }
+  }
+}

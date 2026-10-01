@@ -1,0 +1,987 @@
+{
+  "schemaVersion": 1,
+  "evidenceKind": "native-disposable-wayland",
+  "backend": "Mutter43.8 headless compositor + GNOME portal43.1",
+  "checks": {
+    "startup_no_global_grant": {
+      "passed": true,
+      "evidence": {
+        "host": "a0dcf150c1c4",
+        "session": "linux-0-cur-wayland",
+        "platform": "Linux",
+        "operations": [
+          "invoke",
+          "fill",
+          "type"
+        ],
+        "keys": [],
+        "screenshotStatus": "unavailable on Wayland; accessibility controls only",
+        "backend": "linux-atspi-wayland",
+        "notes": "Wayland supports accessible controls and editable text. Global input and capture require explicit XDG RemoteDesktop portal consent. No portal consent is bypassed.",
+        "consent": {
+          "required": true,
+          "granted": false,
+          "pending": false,
+          "devices": 0,
+          "streams": 0
+        }
+      }
+    },
+    "actual_consent": {
+      "passed": true,
+      "evidence": {
+        "granted": true,
+        "devices": 3,
+        "streams": 1
+      }
+    },
+    "bound_window_focus": {
+      "passed": true,
+      "evidence": {
+        "focus": {
+          "focused": true
+        },
+        "window": {
+          "handle": 4133917246824319,
+          "pid": 6357,
+          "title": "Computer runtime portal fixture",
+          "executable": "/usr/bin/python3.11",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 900,
+            "scale": 1
+          }
+        }
+      }
+    },
+    "authorized_pipewire_capture": {
+      "passed": true,
+      "evidence": {
+        "dimensions": [
+          1280,
+          900
+        ],
+        "sha256": "067a7e85aa2e9d7ae594e49c9870cc86a1da1e958cb048b0afc2460b2c42fea5",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 900,
+          "scale": 1
+        }
+      }
+    },
+    "native_pointer_click": {
+      "passed": true,
+      "evidence": {
+        "text": "Portal button verified",
+        "markerClicks": 3,
+        "pointerPresses": 3,
+        "pointerReleases": 3,
+        "pointerMoves": [
+          [
+            667,
+            381
+          ],
+          [
+            673,
+            385
+          ],
+          [
+            680,
+            388
+          ],
+          [
+            687,
+            391
+          ],
+          [
+            693,
+            395
+          ],
+          [
+            700,
+            398
+          ],
+          [
+            707,
+            401
+          ],
+          [
+            713,
+            405
+          ],
+          [
+            720,
+            408
+          ],
+          [
+            647,
+            371
+          ],
+          [
+            653,
+            375
+          ],
+          [
+            660,
+            378
+          ],
+          [
+            667,
+            381
+          ],
+          [
+            673,
+            385
+          ],
+          [
+            680,
+            388
+          ],
+          [
+            687,
+            391
+          ],
+          [
+            693,
+            395
+          ],
+          [
+            700,
+            398
+          ],
+          [
+            707,
+            401
+          ],
+          [
+            713,
+            405
+          ],
+          [
+            720,
+            408
+          ]
+        ],
+        "scrollEvents": 1,
+        "keyDown": [
+          "Control_L",
+          "a",
+          "BackSpace",
+          "Control_L",
+          "a",
+          "BackSpace",
+          "Right"
+        ],
+        "keyUp": [
+          "a",
+          "Control_L",
+          "BackSpace",
+          "a",
+          "Control_L",
+          "BackSpace",
+          "Right"
+        ],
+        "active": true
+      }
+    },
+    "native_keyboard_effect": {
+      "passed": true,
+      "evidence": {
+        "text": "",
+        "markerClicks": 3,
+        "pointerPresses": 3,
+        "pointerReleases": 3,
+        "pointerMoves": [
+          [
+            667,
+            381
+          ],
+          [
+            673,
+            385
+          ],
+          [
+            680,
+            388
+          ],
+          [
+            687,
+            391
+          ],
+          [
+            693,
+            395
+          ],
+          [
+            700,
+            398
+          ],
+          [
+            707,
+            401
+          ],
+          [
+            713,
+            405
+          ],
+          [
+            720,
+            408
+          ],
+          [
+            647,
+            371
+          ],
+          [
+            653,
+            375
+          ],
+          [
+            660,
+            378
+          ],
+          [
+            667,
+            381
+          ],
+          [
+            673,
+            385
+          ],
+          [
+            680,
+            388
+          ],
+          [
+            687,
+            391
+          ],
+          [
+            693,
+            395
+          ],
+          [
+            700,
+            398
+          ],
+          [
+            707,
+            401
+          ],
+          [
+            713,
+            405
+          ],
+          [
+            720,
+            408
+          ]
+        ],
+        "scrollEvents": 1,
+        "keyDown": [
+          "Control_L",
+          "a",
+          "BackSpace",
+          "Control_L",
+          "a",
+          "BackSpace",
+          "Right",
+          "Control_L",
+          "a",
+          "BackSpace"
+        ],
+        "keyUp": [
+          "a",
+          "Control_L",
+          "BackSpace",
+          "a",
+          "Control_L",
+          "BackSpace",
+          "Right",
+          "a",
+          "Control_L",
+          "BackSpace"
+        ],
+        "active": true
+      }
+    },
+    "native_drag": {
+      "passed": true,
+      "evidence": {
+        "text": "",
+        "markerClicks": 3,
+        "pointerPresses": 4,
+        "pointerReleases": 4,
+        "pointerMoves": [
+          [
+            667,
+            381
+          ],
+          [
+            673,
+            385
+          ],
+          [
+            680,
+            388
+          ],
+          [
+            687,
+            391
+          ],
+          [
+            693,
+            395
+          ],
+          [
+            700,
+            398
+          ],
+          [
+            707,
+            401
+          ],
+          [
+            713,
+            405
+          ],
+          [
+            720,
+            408
+          ],
+          [
+            647,
+            371
+          ],
+          [
+            653,
+            375
+          ],
+          [
+            660,
+            378
+          ],
+          [
+            667,
+            381
+          ],
+          [
+            673,
+            385
+          ],
+          [
+            680,
+            388
+          ],
+          [
+            687,
+            391
+          ],
+          [
+            693,
+            395
+          ],
+          [
+            700,
+            398
+          ],
+          [
+            707,
+            401
+          ],
+          [
+            713,
+            405
+          ],
+          [
+            720,
+            408
+          ],
+          [
+            647,
+            371
+          ],
+          [
+            653,
+            375
+          ],
+          [
+            660,
+            378
+          ],
+          [
+            667,
+            381
+          ],
+          [
+            673,
+            385
+          ],
+          [
+            680,
+            388
+          ],
+          [
+            687,
+            391
+          ],
+          [
+            693,
+            395
+          ],
+          [
+            700,
+            398
+          ],
+          [
+            707,
+            401
+          ],
+          [
+            713,
+            405
+          ],
+          [
+            720,
+            408
+          ]
+        ],
+        "scrollEvents": 1,
+        "keyDown": [
+          "Control_L",
+          "a",
+          "BackSpace",
+          "Control_L",
+          "a",
+          "BackSpace",
+          "Right",
+          "Control_L",
+          "a",
+          "BackSpace"
+        ],
+        "keyUp": [
+          "a",
+          "Control_L",
+          "BackSpace",
+          "a",
+          "Control_L",
+          "BackSpace",
+          "Right",
+          "a",
+          "Control_L",
+          "BackSpace"
+        ],
+        "active": true
+      }
+    },
+    "native_scroll": {
+      "passed": true,
+      "evidence": {
+        "text": "",
+        "markerClicks": 3,
+        "pointerPresses": 5,
+        "pointerReleases": 5,
+        "pointerMoves": [
+          [
+            667,
+            381
+          ],
+          [
+            673,
+            385
+          ],
+          [
+            680,
+            388
+          ],
+          [
+            687,
+            391
+          ],
+          [
+            693,
+            395
+          ],
+          [
+            700,
+            398
+          ],
+          [
+            707,
+            401
+          ],
+          [
+            713,
+            405
+          ],
+          [
+            720,
+            408
+          ],
+          [
+            647,
+            371
+          ],
+          [
+            653,
+            375
+          ],
+          [
+            660,
+            378
+          ],
+          [
+            667,
+            381
+          ],
+          [
+            673,
+            385
+          ],
+          [
+            680,
+            388
+          ],
+          [
+            687,
+            391
+          ],
+          [
+            693,
+            395
+          ],
+          [
+            700,
+            398
+          ],
+          [
+            707,
+            401
+          ],
+          [
+            713,
+            405
+          ],
+          [
+            720,
+            408
+          ],
+          [
+            647,
+            371
+          ],
+          [
+            653,
+            375
+          ],
+          [
+            660,
+            378
+          ],
+          [
+            667,
+            381
+          ],
+          [
+            673,
+            385
+          ],
+          [
+            680,
+            388
+          ],
+          [
+            687,
+            391
+          ],
+          [
+            693,
+            395
+          ],
+          [
+            700,
+            398
+          ],
+          [
+            707,
+            401
+          ],
+          [
+            713,
+            405
+          ],
+          [
+            720,
+            408
+          ]
+        ],
+        "scrollEvents": 2,
+        "keyDown": [
+          "Control_L",
+          "a",
+          "BackSpace",
+          "Control_L",
+          "a",
+          "BackSpace",
+          "Right",
+          "Control_L",
+          "a",
+          "BackSpace"
+        ],
+        "keyUp": [
+          "a",
+          "Control_L",
+          "BackSpace",
+          "a",
+          "Control_L",
+          "BackSpace",
+          "Right",
+          "a",
+          "Control_L",
+          "BackSpace"
+        ],
+        "active": true
+      }
+    },
+    "native_hold_cleanup": {
+      "passed": true,
+      "evidence": {
+        "text": "",
+        "markerClicks": 3,
+        "pointerPresses": 5,
+        "pointerReleases": 5,
+        "pointerMoves": [
+          [
+            667,
+            381
+          ],
+          [
+            673,
+            385
+          ],
+          [
+            680,
+            388
+          ],
+          [
+            687,
+            391
+          ],
+          [
+            693,
+            395
+          ],
+          [
+            700,
+            398
+          ],
+          [
+            707,
+            401
+          ],
+          [
+            713,
+            405
+          ],
+          [
+            720,
+            408
+          ],
+          [
+            647,
+            371
+          ],
+          [
+            653,
+            375
+          ],
+          [
+            660,
+            378
+          ],
+          [
+            667,
+            381
+          ],
+          [
+            673,
+            385
+          ],
+          [
+            680,
+            388
+          ],
+          [
+            687,
+            391
+          ],
+          [
+            693,
+            395
+          ],
+          [
+            700,
+            398
+          ],
+          [
+            707,
+            401
+          ],
+          [
+            713,
+            405
+          ],
+          [
+            720,
+            408
+          ],
+          [
+            647,
+            371
+          ],
+          [
+            653,
+            375
+          ],
+          [
+            660,
+            378
+          ],
+          [
+            667,
+            381
+          ],
+          [
+            673,
+            385
+          ],
+          [
+            680,
+            388
+          ],
+          [
+            687,
+            391
+          ],
+          [
+            693,
+            395
+          ],
+          [
+            700,
+            398
+          ],
+          [
+            707,
+            401
+          ],
+          [
+            713,
+            405
+          ],
+          [
+            720,
+            408
+          ]
+        ],
+        "scrollEvents": 2,
+        "keyDown": [
+          "Control_L",
+          "a",
+          "BackSpace",
+          "Control_L",
+          "a",
+          "BackSpace",
+          "Right",
+          "Control_L",
+          "a",
+          "BackSpace",
+          "Right"
+        ],
+        "keyUp": [
+          "a",
+          "Control_L",
+          "BackSpace",
+          "a",
+          "Control_L",
+          "BackSpace",
+          "Right",
+          "a",
+          "Control_L",
+          "BackSpace",
+          "Right"
+        ],
+        "active": true
+      }
+    },
+    "session_close_revokes_capabilities": {
+      "passed": true,
+      "evidence": {
+        "host": "a0dcf150c1c4",
+        "session": "linux-0-cur-wayland",
+        "platform": "Linux",
+        "operations": [
+          "invoke",
+          "fill",
+          "type"
+        ],
+        "keys": [],
+        "screenshotStatus": "Portal revoked: Portal session closed",
+        "backend": "linux-atspi-wayland",
+        "notes": "Explicit portal consent. Selected monitor only; stream/window mapping must verify. No XWayland input. Current verified pointer profile requires scale 1.",
+        "consent": {
+          "required": true,
+          "granted": false,
+          "pending": false,
+          "devices": 0,
+          "streams": 0
+        }
+      }
+    },
+    "actual_cancel_denies": {
+      "passed": true,
+      "evidence": "Portal permission denied or cancelled"
+    },
+    "cancel_preserves_no_grant": {
+      "passed": true,
+      "evidence": {
+        "host": "a0dcf150c1c4",
+        "session": "linux-0-cur-wayland",
+        "platform": "Linux",
+        "operations": [
+          "invoke",
+          "fill",
+          "type"
+        ],
+        "keys": [],
+        "screenshotStatus": "Portal revoked: Portal session closed",
+        "backend": "linux-atspi-wayland",
+        "notes": "Explicit portal consent. Selected monitor only; stream/window mapping must verify. No XWayland input. Current verified pointer profile requires scale 1.",
+        "consent": {
+          "required": true,
+          "granted": false,
+          "pending": false,
+          "devices": 0,
+          "streams": 0
+        }
+      }
+    },
+    "actual_partial_grant_capture_only": {
+      "passed": true,
+      "evidence": {
+        "grant": {
+          "granted": true,
+          "devices": 0,
+          "streams": 1
+        },
+        "caps": {
+          "host": "a0dcf150c1c4",
+          "session": "linux-0-cur-wayland",
+          "platform": "Linux",
+          "operations": [
+            "invoke",
+            "fill",
+            "type"
+          ],
+          "keys": [],
+          "screenshotStatus": "Consent-bound PipeWire stream; verified window mapping required",
+          "backend": "linux-atspi-wayland",
+          "notes": "Explicit portal consent. Selected monitor only; stream/window mapping must verify. No XWayland input. Current verified pointer profile requires scale 1.",
+          "consent": {
+            "required": true,
+            "granted": true,
+            "pending": false,
+            "devices": 0,
+            "streams": 1
+          }
+        }
+      }
+    },
+    "actual_backend_loss_revokes": {
+      "passed": true,
+      "evidence": {
+        "host": "a0dcf150c1c4",
+        "session": "linux-0-cur-wayland",
+        "platform": "Linux",
+        "operations": [
+          "invoke",
+          "fill",
+          "type"
+        ],
+        "keys": [],
+        "screenshotStatus": "Portal revoked: Portal D-Bus owner changed: org.freedesktop.impl.portal.desktop.gnome",
+        "backend": "linux-atspi-wayland",
+        "notes": "Explicit portal consent. Selected monitor only; stream/window mapping must verify. No XWayland input. Current verified pointer profile requires scale 1.",
+        "consent": {
+          "required": true,
+          "granted": false,
+          "pending": false,
+          "devices": 0,
+          "streams": 0
+        }
+      }
+    },
+    "actual_dbus_owner_loss_revokes": {
+      "passed": true,
+      "evidence": {
+        "host": "a0dcf150c1c4",
+        "session": "linux-0-cur-wayland",
+        "platform": "Linux",
+        "operations": [
+          "invoke",
+          "fill",
+          "type"
+        ],
+        "keys": [],
+        "screenshotStatus": "Portal revoked: Portal D-Bus owner changed: org.freedesktop.portal.Desktop",
+        "backend": "linux-atspi-wayland",
+        "notes": "Explicit portal consent. Selected monitor only; stream/window mapping must verify. No XWayland input. Current verified pointer profile requires scale 1.",
+        "consent": {
+          "required": true,
+          "granted": false,
+          "pending": false,
+          "devices": 0,
+          "streams": 0
+        }
+      }
+    },
+    "actual_session_closed_signal": {
+      "passed": false,
+      "evidence": {
+        "grant": {
+          "granted": true,
+          "devices": 3,
+          "streams": 1
+        },
+        "status": "Explicit portal consent granted"
+      }
+    }
+  },
+  "failures": [
+    {
+      "type": "AssertionError",
+      "message": "actual_session_closed_signal"
+    }
+  ],
+  "scope": "Owned single monitor, fullscreen GTK fixture, scale1; no fractional-scale or arbitrary-window mapping claim",
+  "seatSetup": {
+    "kind": "separate-actual-consent-portal",
+    "grant": {
+      "granted": true,
+      "devices": 3,
+      "streams": 1
+    },
+    "detail": "Separate setup sends Escape then the owned fixture presents itself to initialize headless Mutter's absent physical keyboard. Claimed worker effects use only the worker's own granted session."
+  },
+  "passed": false,
+  "sourceSha256": {
+    "native/unix/portal.py": "3ed828f80757666f43a402f8c72f8062ae63dda37214e6570c6da526b45cf59b",
+    "native/unix/common.py": "068661ea956d2852fa81b6f76dff0d8bc0f56966abd1ef92c8d161c15e9cb1ea",
+    "native/unix/linux.py": "76c0cf67e471b693f142b46fc6b48f734578ab8b02182cb4bc633d4680816219",
+    "native/unix/worker.py": "f1463fcb7d10881c4cb2b4a0b1c7fb1292fe74771f26c06093dce074e27be8d5"
+  }
+}

@@ -1,0 +1,8 @@
+* text=auto eol=lf
+# Maintained source and controlled evidence hashes bind exact bytes.
+computer-use-runtime/** -text
+*.png binary
+*.jpg binary
+*.onnx binary
+*.pt binary
+*.exe binary

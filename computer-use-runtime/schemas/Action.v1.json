@@ -1,0 +1,134 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:computer-use-runtime:Action:1",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "runId",
+    "requester",
+    "host",
+    "session",
+    "target",
+    "observationId",
+    "revision",
+    "frame",
+    "operation",
+    "args",
+    "deadline",
+    "scope",
+    "generation"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1,
+      "type": "number"
+    },
+    "id": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "runId": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "requester": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "host": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "session": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "target": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "observationId": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "revision": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "frame": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "x",
+        "y",
+        "width",
+        "height",
+        "scale"
+      ],
+      "properties": {
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "width": {
+          "type": "number"
+        },
+        "height": {
+          "type": "number"
+        },
+        "scale": {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        }
+      }
+    },
+    "operation": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "args": {
+      "type": "object",
+      "patternProperties": {
+        "^(.*)$": {
+          "anyOf": [
+            {
+              "maxLength": 8192,
+              "type": "string"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "boolean"
+            }
+          ]
+        }
+      }
+    },
+    "deadline": {
+      "type": "number"
+    },
+    "scope": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "generation": {
+      "minimum": 1,
+      "type": "integer"
+    }
+  }
+}

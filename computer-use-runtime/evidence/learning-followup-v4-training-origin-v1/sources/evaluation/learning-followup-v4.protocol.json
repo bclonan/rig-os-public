@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "learning-followup-v4",
+  "frozenAt": "2026-09-30T01:50:06Z",
+  "contextVersion": 4,
+  "originalProtocol": "acceptance.json",
+  "seeds": [17, 41, 73],
+  "methods": [
+    "trained",
+    "initialized",
+    "fixed",
+    "without_compilation",
+    "frozen_context",
+    "v1_selection",
+    "v2_public_facts"
+  ],
+  "episodesPerMethodPerSeed": 100,
+  "headEpisodesPerSeed": 100,
+  "trainingSessions": 600,
+  "validationSessions": 120,
+  "developmentComposition": {
+    "freshCrossedExecutableTrain": 480,
+    "freshCrossedExecutableValidation": 96,
+    "freshIncompleteTrain": 120,
+    "freshIncompleteValidation": 24,
+    "correction": "One actual complete correct form program after each group of initial attempts, same scoped requester history. Intermediate observations train state only; outcome/cost masks zero.",
+    "initialAttempts": "Both splits use two legal proposals in every form-goal cell, with second offset ceil(legalCount/2). A fresh real reset, new task ID and complete BEFORE precede each attempt. Local open/dismiss goal cells use one legal proposal. The same requester group carries actual earlier ACK history. All known training and validation legal state/layout/goal/program combinations are covered."
+  },
+  "training": {
+    "epochs": 55,
+    "learningRate": 0.008,
+    "cpuThreads": 2
+  },
+  "budgets": {
+    "steps": 8,
+    "episodeMs": 15000,
+    "generativeCalls": 0,
+    "parameters": 10000000
+  },
+  "uncertainty": {
+    "bootstrapSeed": 90210,
+    "bootstrapResamples": 2000,
+    "wilsonZ": 1.96
+  },
+  "selection": "Final epoch only. Every seed selection accuracy >=0.95, predicate accuracy >=0.95, recovery accuracy >=0.90, clarification recall >=0.90, known outcome Brier <=0.15, cost MAE <=0.15, reload error zero and ONNX parity <0.0001. No final-outcome tuning.",
+  "promotion": "Original strict paired benefit versus initialized and zero false success. Heldout normal head thresholds identical to selection. Paired image-ablation predicate accuracy decrease >=0.20 with bootstrap95 lower bound >0. Context-ablation predicate accuracy >=0.95. Frozen image/context/both ablations share each exact BEFORE capture and candidate bank.",
+  "visualInput": "Actual full BEFORE target PNG downsampled to32x32. Public ready/closed/dialog values and expected-output key hints are UNKNOWN to the model. State/recovery forward also clears goal-token vector and proposal descriptor. Goal remains in selection, actual selected proposal enters only outcome/cost forward. No evaluator labels enter any forward.",
+  "splitRule": "Entirely fresh600/120 requester groups in separate stores. State, layout and requested goal form24cells; legal proposal offset cycles independently with coprime multiplier5. Development goal phrases and names differ across train, validation and final. Only validation selects final epoch. One protected final after global source freeze. Each form-goal group has a second legal proposal offset ceil(legalCount/2) on a fresh reset and new BEFORE; this closes every validation program omission without changing600/120 group counts.",
+  "headLabels": {
+    "predicate": ["ready", "closed", "dialog"],
+    "recovery": ["observe", "probe", "repair", "clarify_or_escalate"],
+    "outcome": "Independent expected output after actually proposed macro from its complete task-start BEFORE. Intermediate selection/state examples mask outcome and cost.",
+    "cost": "Actual requested action count/8 for complete attempted macro. Lost acknowledgement, reconciliation and cleanup failure mask cost; independent observed outputs remain targets only."
+  },
+  "headAblations": ["normal", "image_zero", "context_zero", "both_zero"],
+  "protected": [
+    "acceptance.json",
+    "evidence/audit-sealed.json",
+    "evidence/results.json",
+    "evidence/episodes.jsonl",
+    "models/17/trained.onnx",
+    "models/41/trained.onnx",
+    "models/73/trained.onnx",
+    "evaluation/learning-followup-v3.protocol.json",
+    "evidence/learning-followup-v3/protocol.json",
+    "evidence/learning-followup-v3/browser/selection.json",
+    "evidence/learning-followup-v3/browser/results.json",
+    "evidence/learning-followup-v3/browser/audit-sealed.json",
+    "evidence/learning-followup-v3/browser/episodes.jsonl",
+    "evidence/learning-followup-v3/browser/heads.jsonl",
+    "evidence/learning-followup-v3/browser/models/17/trained.onnx",
+    "evidence/learning-followup-v3/browser/models/41/trained.onnx",
+    "evidence/learning-followup-v3/browser/models/73/trained.onnx",
+    "learner/model.py",
+    "learner/followup_v3_train.py",
+    "evaluation/learning-followup-v3.ts",
+    "evaluation/learning-followup-v3-audit.ts",
+    "evidence/learning-followup-v3/browser/train-manifest.json",
+    "evidence/learning-followup-v3/browser/validation-manifest.json",
+    "evidence/learning-followup-v3/browser/training.json",
+    "evidence/learning-followup-v3/browser/operational.json",
+    "evidence/learning-followup-v3/browser/conditional-parity.json",
+    "evidence/learning-followup-v3/browser/models/17/initialized.onnx",
+    "evidence/learning-followup-v3/browser/models/17/initialized.pt",
+    "evidence/learning-followup-v3/browser/models/17/trained.pt",
+    "evidence/learning-followup-v3/browser/models/17/report.json",
+    "evidence/learning-followup-v3/browser/models/41/initialized.onnx",
+    "evidence/learning-followup-v3/browser/models/41/initialized.pt",
+    "evidence/learning-followup-v3/browser/models/41/trained.pt",
+    "evidence/learning-followup-v3/browser/models/41/report.json",
+    "evidence/learning-followup-v3/browser/models/73/initialized.onnx",
+    "evidence/learning-followup-v3/browser/models/73/initialized.pt",
+    "evidence/learning-followup-v3/browser/models/73/trained.pt",
+    "evidence/learning-followup-v3/browser/models/73/report.json"
+  ],
+  "nonClaims": [
+    "General native full-head ability",
+    "Visual inference outside the controlled browser workbench",
+    "Model advice authorizes input or verifies success",
+    "Old protected final set used for tuning",
+    "Unseen program-bank forecast generalization",
+    "Observed effect implies verified Runtime success",
+    "Four-hash program descriptors prove collision resistance or universal program semantics"
+  ],
+  "scope": "Controlled browser crossed visual-state and task-start conditional forecasts",
+  "architecture": {
+    "module": "learner/model_v4.py",
+    "parameters": 11577,
+    "forecast": "48 to32ReLU to2sigmoid",
+    "otherHeads": "Unchanged V3 selection, state predicates and recovery architecture"
+  },
+  "diagnosis": {
+    "report": "evidence/learning-followup-v4-diagnosis/2026-09-30T01-05-04-359Z-7fc2b0c0-0ebc-406d-8bdf-ed6c568e794b/results.json",
+    "hypothesis": "Executable negative outcomes and crossed state/layout observations were missing from V3 development. Task-start forecasts need state/proposal interaction. No V3 private final cases become training data.",
+    "counterexample": "Fresh24episode crossed development with unchanged V3 bytes produced executable outcome Brier .8875/.8906/.8836 and predicate accuracy .9167/.9583/.9167."
+  },
+  "goals": {
+    "train": [
+      [
+        "Set the display name in the authorized form",
+        "Apply the display name in the authorized form"
+      ],
+      ["Open the authorized editor", "Reveal the authorized editor"],
+      ["Dismiss the authorized notice", "Close the authorized notice"]
+    ],
+    "validation": [
+      ["Update the display name in the authorized form"],
+      ["Open the authorized editor now"],
+      ["Dismiss the authorized notice now"]
+    ],
+    "final": [
+      ["Enter the display name in the authorized form"],
+      ["Please open the authorized editor"],
+      ["Please dismiss the authorized notice"]
+    ]
+  },
+  "candidateDescriptorVersion": 2,
+  "candidatePrograms": "Eight immutable local programs. Original form, standalone open/dismiss, three exact repair+form compositions, and two insufficient programs. Typed inputs, declared outputs/effects, capabilities and known preconditions filter executable forecasts before collection/evaluation. No public/private expected values or reached labels enter descriptors. Normalized program features distinguish composition from bare repair. Exact immutable capsule hashes bind every forecast to the tested bank; features are not unique program identities. Guards, verification, waits, alternatives, budgets, recovery and dependency programs enter the features. Declared parameter placeholders remain placeholders; immutable semantic literals remain in the program fingerprint. Random capsule/state/step IDs are normalized. Task parameter values are not descriptor inputs. Forecasts for untested capsule hashes remain unavailable.",
+  "forecastDomain": "Observed expected task effect after one complete legal proposed program from task start. This is separate from verified Runtime success. ACK/request cost is known only without reconciliation or cleanup failure. Non-dispatched/precondition-ineligible proposals are excluded; legal insufficient program failures remain real negative labels.",
+  "candidateDomain": "Production typed input/output, capabilities/effects, target and known precondition masks. Exclude illegal candidates before inference. Only fixed tested immutable capsule/program bank has qualified effect/cost advice. Unseen programs may receive low-trust selection scores but have no qualified forecast.",
+  "capabilities": ["fill", "click", "key", "scroll", "drag", "hold", "observe"],
+  "exportCandidateCounts": [1, 2, 3, 4, 8, 9]
+}

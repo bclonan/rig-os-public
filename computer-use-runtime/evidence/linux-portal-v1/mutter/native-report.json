@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "evidenceKind": "native-disposable-wayland",
+  "backend": "Mutter43.8 headless compositor + GNOME portal43.1",
+  "checks": {
+    "startup_no_global_grant": {
+      "passed": true,
+      "evidence": {
+        "host": "a0dcf150c1c4",
+        "session": "linux-0-cur-wayland",
+        "platform": "Linux",
+        "operations": [
+          "invoke",
+          "fill",
+          "type"
+        ],
+        "keys": [],
+        "screenshotStatus": "unavailable on Wayland; accessibility controls only",
+        "backend": "linux-atspi-wayland",
+        "notes": "Wayland supports accessible controls and editable text. Global input and capture require explicit XDG RemoteDesktop portal consent. No portal consent is bypassed.",
+        "consent": {
+          "required": true,
+          "granted": false,
+          "pending": false,
+          "devices": 0,
+          "streams": 0
+        }
+      }
+    },
+    "actual_consent": {
+      "passed": true,
+      "evidence": {
+        "granted": true,
+        "devices": 3,
+        "streams": 1
+      }
+    }
+  },
+  "failures": [
+    {
+      "type": "KeyError",
+      "message": "'screenshot'"
+    }
+  ],
+  "scope": "Owned single monitor, fullscreen GTK fixture, scale1; no fractional-scale or arbitrary-window mapping claim",
+  "passed": false,
+  "sourceSha256": {
+    "native/unix/portal.py": "6f82c480ef6684033ca55c5580798cffc08f68be5e18489dda0a6b7f8d998a5d",
+    "native/unix/common.py": "068661ea956d2852fa81b6f76dff0d8bc0f56966abd1ef92c8d161c15e9cb1ea",
+    "native/unix/linux.py": "151c0d8404f64a867bb4c767626d07395709642a5ffaf605cc78c2f31680237d",
+    "native/unix/worker.py": "f1463fcb7d10881c4cb2b4a0b1c7fb1292fe74771f26c06093dce074e27be8d5"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "learning-followup-v1",
+  "frozenAt": "2026-09-29T21:40:46Z",
+  "originalProtocol": "acceptance.json",
+  "seeds": [17, 41, 73],
+  "methods": [
+    "trained",
+    "initialized",
+    "fixed",
+    "without_compilation",
+    "frozen_context"
+  ],
+  "episodesPerMethodPerSeed": 100,
+  "nativeEpisodesPerMethodPerSeed": 12,
+  "nativeScope": "Owned Win32 disposable editor, parameterized replace and append macros; no general native claim",
+  "nativeAdjustment": "Native execution is a separate smaller smoke suite under acceptance section 12E. Browser acceptance retains 100 paired episodes per method per seed.",
+  "trainingSessions": { "browser": 600, "native": 60 },
+  "validationSessions": { "browser": 120, "native": 12 },
+  "splitRule": "Whole sessions with disjoint parameter strings. Final sessions generated only after candidate selection. Policy reads only BEFORE images, user request context and earlier delivered actions.",
+  "budgets": {
+    "steps": 8,
+    "episodeMs": 15000,
+    "generativeCalls": 0,
+    "parameters": 10000000
+  },
+  "training": { "epochs": 55, "learningRate": 0.008, "cpuThreads": 2 },
+  "benefitCriterion": "Better success than initialized, or fewer observations with success noninferiority margin 0.02. Fixed selector and original context ablation reported separately.",
+  "promotion": "zero false success; all seeds and exact counts; all reload errors zero; all ONNX errors <0.0001; lower bootstrap95 success delta >0 OR upper bootstrap95 observation delta <0 with lower success delta >=-0.02; scoped qualification only",
+  "uncertainty": {
+    "wilsonZ": 1.96,
+    "bootstrapSeed": 90210,
+    "bootstrapResamples": 2000
+  },
+  "protected": [
+    "acceptance.json",
+    "evidence/audit-sealed.json",
+    "evidence/results.json",
+    "evidence/episodes.jsonl",
+    "models/17/trained.onnx",
+    "models/41/trained.onnx",
+    "models/73/trained.onnx"
+  ],
+  "selection": "Use the final epoch only if every validation seed accuracy >=0.95 and parity/reload gates pass. Do not retune from final outcomes. Preserve failed campaigns under separate versions.",
+  "research": [
+    "https://proceedings.mlr.press/v15/ross11a.html",
+    "https://www.w3.org/TR/png-3/"
+  ],
+  "nonClaims": [
+    "General desktop learning",
+    "Pixel-only benchmark",
+    "Unbounded self-improvement",
+    "Native learner superiority over competent fixed selector",
+    "Compiled-library efficiency until separately measured"
+  ]
+}

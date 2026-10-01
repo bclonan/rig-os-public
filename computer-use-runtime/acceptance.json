@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "frozenAt": "2026-09-29T15:05:00Z",
+  "statuses": ["PASS", "FAIL", "BLOCKED", "NOT RUN", "UNVERIFIED"],
+  "seeds": [17, 41, 73],
+  "episodesPerMethodPerSeed": 100,
+  "methods": ["trained", "initialized", "fixed", "without_compilation"],
+  "trainingSessions": 600,
+  "validationSessions": 120,
+  "auditSessions": 100,
+  "splitRule": "Whole session IDs, disjoint parameter strings and layout seeds. Policy sees only pre-action observations. Audit evaluator is separate.",
+  "track": "resettable live browser fixture, structured controls plus scoped image features",
+  "budgets": {"steps": 8, "episodeMs": 15000, "generativeCalls": 0, "parameters": 10000000, "bootstrapDownloadMB": 3000},
+  "benefitCriterion": "Paired mean success improvement over initialized OR fewer observations with success noninferiority margin 0.02. Fixed selector reported independently. Do not require superiority over fixed selector.",
+  "uncertainty": "Wilson 95% success intervals and paired session bootstrap 95% delta intervals, seed 90210, 2000 resamples",
+  "promotion": "zero false success; schema/security regression suite passes; lower 95% bound of success delta > 0 OR upper 95% bound of observation delta < 0 and lower success bound >= -0.02",
+  "gates": {
+    "A": "clean install, SDK/API/console, persistence/restart, schema rejection, offline operation, repeated setup",
+    "B": "interactive host identity, real capture, disposable native input and independently checked effects, cleanup",
+    "C": "local language compiler and actual native editor/calculator/Paint tasks, browser sourced output",
+    "D": "adversarial reliability, multi-demonstration compilation, unseen inputs, transfer, discovery, rollback",
+    "E": "3-seed paired 100-episode resettable comparison, actual training and deployed inference",
+    "F": "client/bridge contracts, OSWorld/WindowsAgentArena adapters/smokes, moving target, remote/Telegram when available"
+  },
+  "nonClaims": ["General real-desktop learning", "Pixel-only benchmark score", "Actual Lense or Agent-OS integration", "Universal rollback", "Exactly-once GUI effects"]
+}

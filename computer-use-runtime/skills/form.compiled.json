@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "id": "form.compiled",
+  "version": "1.0.0",
+  "hash": "d7a26127978a98a340f397a75e482181f7c105ba93f3c4589427d3a6c072e3b5",
+  "description": "Parameterized form workflow extracted from aligned independent demonstrations",
+  "status": "published",
+  "inputs": {
+    "name": "string"
+  },
+  "outputs": [
+    "result"
+  ],
+  "capabilities": [
+    "fill",
+    "click"
+  ],
+  "preconditions": [],
+  "effects": [
+    "edit"
+  ],
+  "machine": {
+    "initial": "segment0",
+    "states": [
+      {
+        "id": "segment0",
+        "steps": [
+          {
+            "id": "op0",
+            "operation": "fill",
+            "args": {
+              "locator": "name",
+              "value": "$name"
+            },
+            "scope": "edit",
+            "alternatives": [
+              "name"
+            ]
+          }
+        ],
+        "next": "segment1",
+        "monitor": [
+          "focused"
+        ]
+      },
+      {
+        "id": "segment1",
+        "steps": [
+          {
+            "id": "op1",
+            "operation": "click",
+            "args": {
+              "locator": "apply"
+            },
+            "scope": "edit",
+            "alternatives": [
+              "apply"
+            ]
+          }
+        ],
+        "monitor": [
+          "focused"
+        ]
+      }
+    ]
+  },
+  "recovery": [
+    "fresh_observation",
+    "probe_ready",
+    "repair_local",
+    "escalate"
+  ],
+  "budgets": {
+    "retries": 1,
+    "steps": 6
+  },
+  "dependencies": [],
+  "compatibility": [
+    "browser-fixture-v1"
+  ],
+  "descriptor": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "provenance": {
+    "kind": "compiled",
+    "demonstrations": [
+      "5c82ca4a-9922-4300-9469-6582a1be9058",
+      "20fe7420-e10d-4424-a776-fd0c2d5b6513",
+      "d6ab302c-059a-4745-99cc-b1d92bc4a30e"
+    ],
+    "tests": [
+      "training-demonstrations",
+      "vertical-unseen-layout-test"
+    ],
+    "uncertain": []
+  }
+}

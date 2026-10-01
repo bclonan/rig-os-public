@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "evidenceKind": "native-disposable-wayland",
+  "backend": "Mutter43.8 headless compositor + GNOME portal43.1",
+  "checks": {
+    "startup_no_global_grant": {
+      "passed": true,
+      "evidence": {
+        "host": "a0dcf150c1c4",
+        "session": "linux-0-cur-wayland",
+        "platform": "Linux",
+        "operations": [
+          "invoke",
+          "fill",
+          "type"
+        ],
+        "keys": [],
+        "screenshotStatus": "unavailable on Wayland; accessibility controls only",
+        "backend": "linux-atspi-wayland",
+        "notes": "Wayland supports accessible controls and editable text. Global input and capture require explicit XDG RemoteDesktop portal consent. No portal consent is bypassed.",
+        "consent": {
+          "required": true,
+          "granted": false,
+          "pending": false,
+          "devices": 0,
+          "streams": 0
+        },
+        "inputCleanup": {
+          "settled": true,
+          "status": "No input is held"
+        }
+      }
+    },
+    "actual_consent": {
+      "passed": true,
+      "evidence": {
+        "granted": true,
+        "devices": 3,
+        "streams": 1
+      }
+    },
+    "bound_window_focus": {
+      "passed": true,
+      "evidence": {
+        "focus": {
+          "focused": true
+        },
+        "window": {
+          "handle": 4428566015912700,
+          "pid": 7264,
+          "title": "Computer runtime portal fixture",
+          "executable": "/usr/bin/python3.11",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 900,
+            "scale": 1
+          }
+        }
+      }
+    },
+    "authorized_pipewire_capture": {
+      "passed": true,
+      "evidence": {
+        "dimensions": [
+          1280,
+          900
+        ],
+        "sha256": "f172342a61025eee22c6f16d21e26093daaa51739c256b1db6276b60995ce8bc",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 900,
+          "scale": 1
+        }
+      }
+    }
+  },
+  "failures": [
+    {
+      "type": "RuntimeError",
+      "message": "Desktop content changed after observation"
+    }
+  ],
+  "scope": "Owned single monitor, fullscreen GTK fixture, scale1; no fractional-scale or arbitrary-window mapping claim",
+  "environment": {
+    "python": "3.11.2 (main, May 12 2026, 05:17:27) [GCC 12.2.0]",
+    "packages": [
+      "gstreamer1.0-pipewire:amd64\t0.3.65-3+deb12u1",
+      "libgtk-3-0:amd64\t3.24.38-2~deb12u3",
+      "libgtk-4-1:amd64\t4.8.3+ds-2+deb12u1",
+      "mutter\t43.8-0+deb12u1",
+      "pipewire:amd64\t0.3.65-3+deb12u1",
+      "xdg-desktop-portal\t1.16.0-2",
+      "xdg-desktop-portal-gnome\t43.1-2"
+    ]
+  },
+  "seatSetup": {
+    "kind": "separate-actual-consent-portal",
+    "grant": {
+      "granted": true,
+      "devices": 3,
+      "streams": 1
+    },
+    "detail": "Separate setup sends Escape then the owned fixture presents itself to initialize headless Mutter's absent physical keyboard. Claimed worker effects use only the worker's own granted session."
+  },
+  "passed": false,
+  "sourceSha256": {
+    "native/unix/portal.py": "5734933824cfa5c0565b8f677993e95eabac03780c704cdb01ac7aca3a029347",
+    "native/unix/common.py": "31a3f2db6621fe7890a1dd8c46726a7f2f9b0a6893dd4ed901a513ab7ad3eace",
+    "native/unix/linux.py": "76c0cf67e471b693f142b46fc6b48f734578ab8b02182cb4bc633d4680816219",
+    "native/unix/worker.py": "f1463fcb7d10881c4cb2b4a0b1c7fb1292fe74771f26c06093dce074e27be8d5",
+    "evaluation/linux-portal-native.py": "77bd296e6677e362823c57626e9a9e31c0b86e09d702dfe08868b6aff11f0005",
+    "evaluation/linux-portal-fixture.py": "96b8a1c677c898e9f938bb894b3daf53e0752803723cb02e5419103b2c457414",
+    "evaluation/linux-portal-session.sh": "b10bd12931bff23cf0703335b88a9db0e9e7538f3db1094544938a855ebe6041"
+  }
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="A source-linked map of the rig-os local desktop runtime, its user journeys, data, models and control boundaries.">
+  <title>Inside rig-os | System map</title>
+  <link rel="stylesheet" href="canvas.css">
+  <script defer src="architecture-data.js"></script>
+  <script defer src="canvas.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Skip to architecture map</a>
+  <header class="masthead">
+    <div class="identity"><span class="monogram" aria-hidden="true">R</span><div><h1>Inside rig-os</h1><p>A map of what the code actually does</p></div></div>
+    <div class="snapshot"><span class="snapshot-dot" aria-hidden="true"></span><span id="snapshot-label">Loading source snapshot</span><button type="button" id="about-button">About this map</button></div>
+  </header>
+  <div class="scope-note"><strong>Local desktop assistant</strong><span>This checkout has no Convex, accounts, billing, guest passes or chat/project records.</span><button type="button" id="requested-button">See the requested flows</button></div>
+  <div class="application">
+    <nav class="navigation" aria-label="Architecture views">
+      <label for="search">Find a component or file</label><input type="search" id="search" placeholder="Try model, recording, token..." autocomplete="off">
+      <div class="nav-scroll"><h2>Explore the system</h2><div id="view-list" class="view-list"></div><h2>Follow a user journey</h2><div id="journey-list" class="journey-list"></div><h2>Other ways to read</h2><button type="button" id="entities-button" class="nav-button">What the records mean</button><button type="button" id="files-button" class="nav-button">Source file index</button><a class="nav-link" href="README.md">Map instructions</a><a class="nav-link" id="operating-guide" href="../../computer-use-runtime/docs/RUNNING.md">Runtime operating guide</a></div>
+      <p class="nav-foot">Boxes describe responsibilities. They are not all separate servers.</p>
+    </nav>
+    <main id="workspace" class="workspace" tabindex="-1">
+      <header class="view-header"><div><p id="view-eyebrow" class="eyebrow">The whole system</p><h2 id="view-title">System overview</h2><p id="view-description">Loading the traced architecture.</p></div><div class="display-switch" aria-label="Display mode"><button type="button" id="map-mode" aria-pressed="true">Canvas</button><button type="button" id="list-mode" aria-pressed="false">List</button></div></header>
+      <section id="journey-panel" class="journey-panel" hidden aria-label="Journey steps"><div class="journey-controls"><span id="step-progress"></span><button type="button" id="previous-step">Previous</button><button type="button" id="next-step">Next</button><button type="button" id="whole-journey">Show whole journey</button></div><p id="step-description"></p><ol id="step-list"></ol></section>
+      <div class="map-area">
+        <div id="canvas-viewport" class="canvas-viewport" tabindex="0" role="region" aria-label="Interactive architecture canvas" aria-describedby="canvas-help">
+          <div id="world" class="world"><svg id="connections" class="connections" aria-hidden="true"></svg><div id="nodes"></div></div>
+          <div id="empty-state" class="empty-state" hidden><h3>No matching components</h3><p>Try a source filename or a shorter search.</p><button type="button" id="clear-search">Clear search</button></div>
+          <div class="canvas-controls"><button type="button" id="zoom-out" aria-label="Zoom out">−</button><output id="zoom-level" aria-label="Canvas zoom">100%</output><button type="button" id="zoom-in" aria-label="Zoom in">+</button><button type="button" id="fit-view">Fit view</button><button type="button" id="reset-view">100%</button></div>
+          <div id="minimap-wrap" class="minimap-wrap"><span>Overview</span><svg id="minimap" role="img" aria-label="Map overview and current viewport"></svg></div>
+        </div>
+        <div id="list-view" class="list-view" hidden></div>
+        <aside id="inspector" class="inspector" hidden aria-label="Selected component"><div class="inspector-top"><span id="component-group" class="eyebrow"></span><button type="button" id="close-inspector" aria-label="Close component details">Close</button></div><h2 id="component-title" tabindex="-1"></h2><span id="component-status" class="status-label"></span><p id="component-summary"></p><div id="component-details"></div><h3>Connected responsibilities</h3><div id="component-connections"></div><h3>Read the code</h3><div id="component-sources"></div></aside>
+      </div>
+      <footer class="canvas-footer"><p id="canvas-help">Drag empty space to pan. Scroll or pinch to zoom. Tab to a component and press Enter to inspect it. Arrow keys pan when the canvas has focus.</p><span id="visible-count"></span></footer>
+    </main>
+  </div>
+  <dialog id="source-dialog" aria-labelledby="source-title"><div class="dialog-header"><div><p class="eyebrow">Exact source snapshot</p><h2 id="source-title"></h2><p id="source-meta"></p></div><button type="button" data-close-dialog>Close</button></div><div id="source-code" class="source-code"></div></dialog>
+  <dialog id="about-dialog" aria-labelledby="about-title"><div class="dialog-header"><h2 id="about-title">How to read this map</h2><button type="button" data-close-dialog>Close</button></div><div class="dialog-body"><p>The map traces the current rig-os checkout. Click a box to read its responsibility, boundaries, relationships and exact source lines. Choose a journey to see its steps in order.</p><p>The two model systems are different. Ollama supplies outside local models for planning and artifact generation. The owned PyTorch/ONNX controller selects bounded skills after explicit qualification and activation. Neither can grant itself permission.</p><p>A task is work with a contract. A run is its durable execution record. An HTTP request is an API call. These are not chats or projects.</p><p>Implementation and test evidence are different. Native Mac execution and physical mixed-DPI qualification remain unresolved. General desktop learning is not established by the controlled browser experiments.</p><p>This documentation does not call the runtime, read its token or operate your desktop. Source excerpts are build-time snapshots. No external scripts, fonts or services are needed.</p><dl id="snapshot-details"></dl><p>Mouse wheel and touch pinch zoom the map. Drag its background to move around. Use the zoom buttons and List view if you prefer reading without dragging. Escape closes a code dialog.</p></div></dialog>
+  <dialog id="entities-dialog" aria-labelledby="entities-title"><div class="dialog-header"><div><p class="eyebrow">Persistence and identity</p><h2 id="entities-title">What the records mean</h2></div><button type="button" data-close-dialog>Close</button></div><div id="entity-content" class="dialog-body"></div></dialog>
+  <dialog id="files-dialog" aria-labelledby="files-title"><div class="dialog-header"><div><p class="eyebrow">Traceable source inventory</p><h2 id="files-title">Source file index</h2><p id="file-index-description"></p></div><button type="button" data-close-dialog>Close</button></div><div class="dialog-body"><label for="file-search">Filter paths</label><input type="search" id="file-search" autocomplete="off" placeholder="src/runtime, console, tests..."><p id="file-count"></p><div id="file-index"></div></div></dialog>
+  <p id="announcement" class="visually-hidden" aria-live="polite"></p>
+  <noscript><p>This interactive map needs JavaScript. Read <a href="TRACE.md">the written system trace</a> and <a href="research/core.md">the core source notes</a> instead.</p></noscript>
+</body>
+</html>
+
+

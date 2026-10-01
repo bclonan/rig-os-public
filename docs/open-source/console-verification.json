@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "at": "2026-10-01T13:38:03.631Z",
+  "level": "real Vue console, Fastify, SQLite, Chromium fixture and ONNX; no native desktop or model text generation",
+  "checks": [
+    "incorrect-token error and successful retry; Runs deep link",
+    "Take over revokes the lease; Return control restores acquisition",
+    "native required-field validation sends no task",
+    "three visible task submissions, independent completion, recordings and cross-view persistence",
+    "selected recording compilation; real variation tests; evidence-gated publication; downloaded capsule hash",
+    "skill rollback API restores the exact published version",
+    "audited model activation, rollback reflected in UI and read-only frozen audit verification",
+    "negative correction updates the recording and removes it from compilation selection",
+    "evaluation load and refresh restore the selected workspace",
+    "historical image replay and live refresh load decoded images and update labels",
+    "historical run evidence, terminal-state controls and 390px layout"
+  ],
+  "pageErrors": [],
+  "runs": [
+    {
+      "id": "e0b89f12-4230-4e83-adfa-142fe9646c71",
+      "status": "succeeded",
+      "skill": "form.seed"
+    },
+    {
+      "id": "b2f809c8-0510-4a7d-9457-43c308911a19",
+      "status": "succeeded",
+      "skill": "form.seed"
+    },
+    {
+      "id": "acb7f754-274a-4c87-8dba-af4cdca61135",
+      "status": "succeeded",
+      "skill": "form.seed"
+    },
+    {
+      "id": "7bee8bb2-ff80-4f4c-be57-dd5c5948b355",
+      "status": "succeeded",
+      "skill": "form.compiled"
+    },
+    {
+      "id": "3d1fe357-12d4-4c02-ae46-8e214d015327",
+      "status": "succeeded",
+      "skill": "form.compiled"
+    },
+    {
+      "id": "396beb30-2264-4155-b0e1-7f508edbbb25",
+      "status": "succeeded",
+      "skill": "form.compiled"
+    }
+  ]
+}

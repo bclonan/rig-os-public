@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Runtime disposable workbench</title>
+<style>body{font:18px system-ui;background:#eef2f4;margin:0;padding:32px;color:#182a34}main{background:white;padding:24px;max-width:640px;border:2px solid #638a99}label,input,button{display:block;margin:12px 0}input,button{font:inherit;padding:10px}output{display:block;padding:16px;background:#dff1e6}dialog{border:2px solid #935d32}canvas{border:1px solid #123;background:white}#indicator{width:64px;height:64px}</style>
+<main><h1>Disposable workbench</h1><p>Local test data. Applying a name affects this page only.</p>
+<button data-control="open" id="open">Open editor</button>
+<section id="editor"><label for="name">Display name</label><input id="name" data-control="name" autocomplete="off"><button data-control="apply" id="apply">Apply name</button></section>
+<output id="result" aria-live="polite">No change yet</output><canvas id="indicator" width="32" height="32" aria-label="Visual state indicator"></canvas>
+<canvas id="drawing" width="500" height="200" aria-label="Drawing canvas"></canvas><button id="target" data-control="target">Moving target</button>
+<details id="workbench-documentation"><summary data-control="documentation">Workbench documentation</summary><p>Open editor reveals the name field. Apply name copies the field into the result. A pending notice must be dismissed first.</p></details>
+<dialog id="notice"><p>Test notice</p><button data-control="dismiss" id="dismiss">Dismiss notice</button></dialog></main>
+<script>
+const p=new URLSearchParams(location.search),mode=p.get('mode')||'ready';let hits=0;
+const editor=document.querySelector('#editor'),notice=document.querySelector('#notice'),ctx=document.querySelector('#indicator').getContext('2d');
+function paint(){ctx.fillStyle=notice.open?'#de7530':editor.hidden?'#4160c6':'#35a866';ctx.fillRect(0,0,32,32)}
+editor.hidden=mode==='closed'||mode==='both';if(mode==='dialog'||mode==='both')notice.showModal();paint();
+document.querySelector('#open').onclick=()=>{editor.hidden=false;paint()};
+document.querySelector('#dismiss').onclick=()=>{notice.close();paint()};
+document.querySelector('#apply').onclick=()=>{document.querySelector('#result').textContent=document.querySelector('#name').value};
+if(p.get('layout')==='shift')document.querySelector('main').style.marginLeft='180px';
+const d=document.querySelector('#drawing'),dc=d.getContext('2d');let down=false;
+d.onpointerdown=e=>{down=true;d.setPointerCapture(e.pointerId);dc.beginPath();dc.moveTo(e.offsetX,e.offsetY)};
+d.onpointermove=e=>{if(down){dc.lineTo(e.offsetX,e.offsetY);dc.stroke()}};d.onpointerup=()=>down=false;
+const target=document.querySelector('#target');target.onclick=()=>{hits++;target.textContent='Hits '+hits};
+if(p.get('moving'))setInterval(()=>{target.style.marginLeft=(Math.round(performance.now()/10)%280)+'px'},60);
+</script></html>

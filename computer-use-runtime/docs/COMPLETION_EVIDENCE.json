@@ -1,0 +1,1811 @@
+{
+  "schemaVersion": 1,
+  "reports": [
+    {
+      "path": "evidence/completion/causal/20260930T064640778214Z-70e47729-68a9-486d-9e94-cba6a2bf99d7-built/wrapper.json",
+      "sha256": "434c4edc8a8c0ddfdaef2a6289d044c74158782655c6a41bdbfa826742e53226",
+      "status": "PASS",
+      "source": "870b4b48966b852f31ec1331f216d99ed62548f4:a067b4af949183bfc429b47a54bdfd11d4336aed80b6c379694b5175f26d651a",
+      "tasks": [
+        "SKILL-06"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/causal/20260930T101809360417Z-82bdf964-a031-4ed6-b069-552bd39d8c88-built/wrapper.json",
+      "sha256": "7f154bd05cbe71d4a14e3b548d6082e00bc1c58c3ce8ae8de3aff5000fb48dcb",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "CONTRACT-03",
+        "CONTRACT-05",
+        "INTENT-01",
+        "INTENT-02",
+        "INTENT-03",
+        "SAFETY-06",
+        "SKILL-04",
+        "SKILL-05",
+        "SKILL-06"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/clean-install/20260930T101305Z-114d1340-5519-4bfe-b30a-7cfc58196f14/results.json",
+      "sha256": "cbbbaa0561fcba48aa37c2811590b8f24113752f2f1af80719b797558ae81790",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "UX-01"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/example-contracts/2026-09-30T10-18-45-700Z-fcd84054-0d61-4114-ac7c-c85985ed9538/results.json",
+      "sha256": "4cc7a9680b22d9fa4b5916adfcd2c55914f10d403763d911364e2b69191db60c",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "CONTRACT-03",
+        "CONTRACT-05",
+        "INTENT-01",
+        "INTENT-02",
+        "INTENT-03",
+        "SAFETY-06",
+        "SKILL-04",
+        "SKILL-05"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/frozen-qualification/artifacts-7ae1918-20260930T172950Z-057be3b0-faac-4169-9ff7-98b5ec778e40/results.json",
+      "sha256": "8b7dd872ed56c00c0652e9c0207547ee31b9ab41e398a4913aa48daecfb4c31d",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "DATA-01",
+        "DATA-02",
+        "DATA-03",
+        "DATA-04",
+        "EVIDENCE-02",
+        "EVIDENCE-05",
+        "MODEL-01",
+        "MODEL-02",
+        "MODEL-04",
+        "PROVIDER-01",
+        "PROVIDER-02",
+        "PROVIDER-03",
+        "TRACK-03"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/frozen-qualification/artifacts-870b4b48-qwen36-20260930T065746Z-fee1214b-06d3-486b-bfc0-b02521a62fb7/results.json",
+      "sha256": "33f451e13ba3fed11d0f813bcc2732d176a8a5ee8320166591b22effccf5d2a2",
+      "status": "PASS",
+      "source": "870b4b48966b852f31ec1331f216d99ed62548f4:a067b4af949183bfc429b47a54bdfd11d4336aed80b6c379694b5175f26d651a",
+      "tasks": [
+        "DISCOVERY-01",
+        "EVIDENCE-02",
+        "EVIDENCE-05",
+        "TRACK-03"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/frozen-qualification/artifacts-c757d9d-20260930T110545Z-51ac8cef-cf2c-4453-8834-e532ae1d1c02/results.json",
+      "sha256": "15b74453d387728f901734d3c5a55142b02a21a0cd226719bed3f59551766cc5",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "DISCOVERY-01",
+        "EVIDENCE-02",
+        "EVIDENCE-05",
+        "TRACK-03"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/frozen-qualification/console-7ae1918-20260930T155120Z-a78d81cd-4d33-418c-9e67-3891852a88c2/results.json",
+      "sha256": "b5b7a27c8e46091fee24c8e5906f0f23799cda5d1e4d9a4d9023550619708567",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "DATA-01",
+        "DATA-02",
+        "DATA-03",
+        "DATA-04",
+        "MODEL-01",
+        "MODEL-02",
+        "MODEL-04",
+        "PROVIDER-01",
+        "PROVIDER-02",
+        "PROVIDER-03"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/frozen-qualification/console-c757d9d-20260930T101842Z-e8982b53-7461-4757-8798-4b43b86c1de8/results.json",
+      "sha256": "c389614f0ac81f9cc5aa583b4b9abefa5270e4da1f490b69b09aa3120bd9e394",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "CONTRACT-04",
+        "HOST-01",
+        "SAFETY-01",
+        "SAFETY-02",
+        "SAFETY-03",
+        "SAFETY-04",
+        "SKILL-07"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/frozen-qualification/discovery-7ae1918-20260930T173156Z-456a5ad8-4ff7-4780-af9e-886bdb465f7c/results.json",
+      "sha256": "591dffe8dc3f915c9ebce1e21dec8971aee939d1c7ff2de2f6c51230f3ca6a0e",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "DISCOVERY-01",
+        "DISCOVERY-02"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/frozen-qualification/discovery-c757d9d-20260930T110821Z-2d013139-7add-4e3e-aba0-bd11a005ef66/results.json",
+      "sha256": "82a6f013e86422e65e45cd7e49903abd4555e7e49f0606ce4bf80616d38e1f66",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "DISCOVERY-02"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/frozen-qualification/dog-7ae1918-20260930T173830Z-29b68abc-d011-4731-8d23-6d85dad2b04f/results.json",
+      "sha256": "676ede4477aff4c04b16b1f8367309ad9d216d2cd5b74827273fe0df7897121d",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "EVIDENCE-04",
+        "GATE-C"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/frozen-qualification/dog-870b4b48-20260930T070535Z-79ef8d1f-f6ad-43ec-8aa1-29a5ef9b0d80/results.json",
+      "sha256": "86b9ecab86dfd9bb98d821407558ca6878ad5f92d176096d6fc66d09bbf41329",
+      "status": "PASS",
+      "source": "870b4b48966b852f31ec1331f216d99ed62548f4:a067b4af949183bfc429b47a54bdfd11d4336aed80b6c379694b5175f26d651a",
+      "tasks": [
+        "EVIDENCE-04",
+        "GATE-C"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/frozen-qualification/moving-c757d9d-20260930T101843Z-e133bb26-b8b1-4e1c-a98a-eafab56c02fa/results.json",
+      "sha256": "ddf13c072181800771b9f4905348454fe7711a5e9b31aa10a03e6ebb821c00e0",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "GATE-F"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/frozen-qualification/native-effects-c757d9d-20260930T111928Z-ed5f83f6-4060-464e-9084-c8083544ea6a/results.json",
+      "sha256": "1c3f2d00ccc363675147351840a4a96d0f13b6a5fbe7c9e18ae8fa6f8297c18d",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "CONTRACT-04",
+        "HOST-01",
+        "SAFETY-01",
+        "SAFETY-02",
+        "SAFETY-03",
+        "SAFETY-04",
+        "SKILL-07"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/linux-portal/20260930T101348Z-8e85196e-7064-4686-a22a-e12a4c9e7c77/report.json",
+      "sha256": "0e8245c106c66569f57ff3bb07be3dbf64c5bf328a65d25e0377b843cde891df",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "CONTRACT-03",
+        "CONTRACT-04",
+        "CONTRACT-05",
+        "HOST-01",
+        "INTENT-01",
+        "INTENT-02",
+        "INTENT-03",
+        "SAFETY-01",
+        "SAFETY-02",
+        "SAFETY-03",
+        "SAFETY-04",
+        "SAFETY-06",
+        "SKILL-04",
+        "SKILL-05",
+        "SKILL-07"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/native-tasks/2026-09-30T07-00-16-747Z-a4efe5e3-bf11-4704-92b8-45505f9a3526/results.json",
+      "sha256": "946e9a3b5cf4f1fcb4fa3e474b3433d885db2a85b1f30685f9eb723af365262c",
+      "status": "PASS",
+      "source": "870b4b48966b852f31ec1331f216d99ed62548f4:a067b4af949183bfc429b47a54bdfd11d4336aed80b6c379694b5175f26d651a",
+      "tasks": [
+        "EVIDENCE-04",
+        "GATE-C"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/oculix-four-timing/2026-09-30T10-48-03-797Z-892d955b-3d7c-4756-93aa-3ab46c47dc00/raw/results.json",
+      "sha256": "63b4235ce2e77fdd39caff05a7c08927f337d4bb039afeba188269db0fc4bac8",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "HOST-02"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/quality/20260930T063958Z-44c9332d-5cfb-423f-bd14-76c650da05c2/results.json",
+      "sha256": "cdb496bd2c16691e058b7b94664a04e73f8e810422ad7b65c31f1c15fe6998c2",
+      "status": "PASS",
+      "source": "870b4b48966b852f31ec1331f216d99ed62548f4:a067b4af949183bfc429b47a54bdfd11d4336aed80b6c379694b5175f26d651a",
+      "tasks": [
+        "CONTRACT-01"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/quality/20260930T101459Z-51f63931-6b64-4040-b0e2-f5a0a81a2ebb/results.json",
+      "sha256": "efb6d1cac8e5b07734e689927bab6f3fdce37aff3a8cabb81075032bd545aba9",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "CONTRACT-03",
+        "CONTRACT-04",
+        "CONTRACT-05",
+        "GATE-F",
+        "HOST-01",
+        "INTENT-01",
+        "INTENT-02",
+        "INTENT-03",
+        "SAFETY-01",
+        "SAFETY-02",
+        "SAFETY-03",
+        "SAFETY-04",
+        "SAFETY-06",
+        "SKILL-04",
+        "SKILL-05",
+        "SKILL-07"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/quality/20260930T141039Z-f8e59cbf-11fa-4951-bff3-1988eae2490f/results.json",
+      "sha256": "1ad330608fff3fcac8900430d6d26d00d63ff86c5cf25099d3cd02599939bc20",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "ARCH-01",
+        "ARCH-02",
+        "CONTRACT-01",
+        "CONTRACT-02",
+        "CONTRACT-03",
+        "CONTRACT-04",
+        "CONTRACT-05",
+        "DATA-01",
+        "DATA-02",
+        "DATA-03",
+        "DATA-04",
+        "DISCOVERY-03",
+        "EVIDENCE-01",
+        "EVIDENCE-03",
+        "GATE-B",
+        "GATE-D",
+        "GATE-F",
+        "HOST-01",
+        "HOST-03",
+        "HOST-04",
+        "INTENT-01",
+        "INTENT-02",
+        "INTENT-03",
+        "MODEL-01",
+        "MODEL-02",
+        "MODEL-03",
+        "MODEL-04",
+        "PROVIDER-01",
+        "PROVIDER-02",
+        "PROVIDER-03",
+        "SAFETY-01",
+        "SAFETY-02",
+        "SAFETY-03",
+        "SAFETY-04",
+        "SAFETY-05",
+        "SAFETY-06",
+        "SKILL-01",
+        "SKILL-02",
+        "SKILL-03",
+        "SKILL-04",
+        "SKILL-05",
+        "SKILL-06",
+        "SKILL-07",
+        "TRACK-01",
+        "UX-03"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/requirements/public-migrations-20260930T065550834172Z-aa089d2e-6c74-433e-8442-a2492e838ca9/report.json",
+      "sha256": "4218d81a0b7f10ac9f810baa3f95ffff7ef0e9acb38a9cfb0ec143b59cd299e6",
+      "status": "PASS",
+      "source": "870b4b48966b852f31ec1331f216d99ed62548f4:a067b4af949183bfc429b47a54bdfd11d4336aed80b6c379694b5175f26d651a",
+      "tasks": [
+        "SKILL-07"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/requirements/public-migrations-20260930T102116679787Z-89fb3e76-6f19-4476-8425-d7acb3da3d2b/report.json",
+      "sha256": "a19224b307dba9ce4fd99a9e1ae89db9cf79d3bde3c4ab088100ffb45b8eae5d",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "CONTRACT-04",
+        "HOST-01",
+        "SAFETY-01",
+        "SAFETY-02",
+        "SAFETY-03",
+        "SAFETY-04",
+        "SKILL-07"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/requirements/public-migrations-20260930T141925717417Z-c575df85-e20f-42d2-aa5e-c71c750949da/report.json",
+      "sha256": "6fc8955d6ff752d6f306ad308160d5f9a6ea7e027eaed9a90321b9401f02f8e7",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "SKILL-07"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/review/architecture-two-current-20260930T175950921445Z/review.json",
+      "sha256": "81f92a4db4536a598f4ef05735dcdf9801c8b963d86db528aec62b80fa629958",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "ARCH-02"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/artifact-current-full-clauses-20260930T190942126745Z.json",
+      "sha256": "d4ce107bd0d2fd388cc9c5481d4485df4500b620e4a843f5124056a611fa7e5b",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "EVIDENCE-02",
+        "EVIDENCE-05",
+        "TRACK-03"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/artifact-workflow-clauses-20260930T071544388776Z.json",
+      "sha256": "a8bfe8957aef4ab0804c5591cfe2cf5f36ee746358137708d2bcb18423e10b15",
+      "status": "PASS",
+      "source": "870b4b48966b852f31ec1331f216d99ed62548f4:a067b4af949183bfc429b47a54bdfd11d4336aed80b6c379694b5175f26d651a",
+      "tasks": [
+        "DISCOVERY-01",
+        "EVIDENCE-02",
+        "EVIDENCE-05",
+        "TRACK-03"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/artifact-workflow-clauses-20260930T112113006609Z.json",
+      "sha256": "ead0867a9612bb661e7bca7886538d40b9b86e6bc97cb03da6335f9f9d3b6fb9",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "DISCOVERY-01",
+        "EVIDENCE-02",
+        "EVIDENCE-05",
+        "TRACK-03"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/candidate-public-exercise-20260930T1412Z-7ae1918f/execution-20260930T1420Z/results.json",
+      "sha256": "ce95b24dd5b291fe84cb031701cb00fae1e871f3a02af2472f3b90299b7726c5",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "DISCOVERY-03"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/review/causal-benchmark-full-clauses-current-20260930T183720505513Z.json",
+      "sha256": "8e8e65696da062587b032fdb6e790a554b78186bd66959b9cc905a1c67bd01e2",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "GATE-F",
+        "SKILL-06"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/causal-linux-review-20260930T070359264685Z.json",
+      "sha256": "059c9d354d6fcfe8ef4aa32a8a0327859fd2f60fdab5046e70eb84d9709e1e12",
+      "status": "PASS",
+      "source": "870b4b48966b852f31ec1331f216d99ed62548f4:a067b4af949183bfc429b47a54bdfd11d4336aed80b6c379694b5175f26d651a",
+      "tasks": [
+        "SKILL-06"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/causal-linux-review-20260930T112518085892Z.json",
+      "sha256": "304ce880c736c52ced76f69c2ef5842f050c162f871970dbf1fbe8a8ce8b671f",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "SKILL-06"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/compiled-recovery-2026-09-30T11-20-59-344Z-f3144a7a-4fc8-44b5-8de4-2213caf740ef/report.json",
+      "sha256": "8269d960d5f7ce59d94dc9a7d8b034d104b54704ef0f2e700da0e2fe443fd828",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "CONTRACT-03",
+        "CONTRACT-05",
+        "INTENT-01",
+        "INTENT-02",
+        "INTENT-03",
+        "SAFETY-06",
+        "SKILL-04",
+        "SKILL-05"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/review/console-all-controls-full-20260930T205204288180Z/execution.json",
+      "sha256": "26582ccf6b059f8e9e284743e4895cacbf4bbb888a75d55d25dd06c0cfb2d9a9",
+      "status": "PASS",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "UX-02"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/review/console-all-controls-full-20260930T205204288180Z/review.json",
+      "sha256": "f6f0134c80a7a5992c1cf8b00de473fbcc60e40435fcc0ec52512987894bac6d",
+      "status": "PASS",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "UX-02"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/discovery-current-7ae-20260930T180000580009Z.json",
+      "sha256": "f318eef7e1e091d6e006ebd137f1fecb9fca68a4211e8cfe74819126d5c68601",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "DISCOVERY-01",
+        "DISCOVERY-02"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/discovery-full-clause-envelope-20260930T123615841319Z.json",
+      "sha256": "0378fe21681d8c7a97e2e8508232047da9438cbf0d97d46d2c04ab83aba0a377",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "DISCOVERY-02"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/discovery-three-full-clause-20260930T160125512419Z.json",
+      "sha256": "adefc51f39a100e8030f3dafbe9111fb6490c4f9c31bbb8884a736a4ffc11ead",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "DISCOVERY-03"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/final-archive-install-v1/20260930T211733764294Z-700b1641-0375-4af9-9c52-ef7cb1521907/results.json",
+      "sha256": "6f05ccfa09400df5295b49b3c3a756ca556f3e71256f11781fc8f94b35229539",
+      "status": "PASS",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "GATE-A",
+        "PACKAGE-01"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/review/final-package-gatea-independent-20260930T2129Z-v3/review.json",
+      "sha256": "fd9155a580d950f6bc292e5f90dbb1671d8815cfc488a056daf4c848b4c67344",
+      "status": "PASS",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "GATE-A",
+        "PACKAGE-01"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/foundation-current-7ae-20260930T175106564956Z.json",
+      "sha256": "b07ad47a0bf10d2287885119b413a64f85a2f0e655282d70e46d6944881120b0",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "ARCH-01",
+        "CONTRACT-01",
+        "CONTRACT-02",
+        "CONTRACT-04",
+        "EVIDENCE-01",
+        "MODEL-03",
+        "SAFETY-01",
+        "SAFETY-04",
+        "SKILL-01",
+        "SKILL-02",
+        "SKILL-03",
+        "TRACK-01"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/gate-f-full-clause-current.json",
+      "sha256": "da7b55a75d567f6e4f921a56c5b791219d3534b98630a093f74951ba03bfd785",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "GATE-F"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/gates-de-full-current-20260930T190121933749Z.json",
+      "sha256": "bf18b86bae35cb2cd3f998f4f6ae76978bf25c47c69de92067394ae20f608d5e",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "GATE-D",
+        "GATE-E"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/head-only-revalidation-256-20260930T204757991439Z/execution.json",
+      "sha256": "33c44750a2ac243ade0600ba9924bf515d72f0244ae7eddd4efe03171528648d",
+      "status": "PASS",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "ARCH-01",
+        "ARCH-02",
+        "CONTRACT-01",
+        "CONTRACT-02",
+        "CONTRACT-03",
+        "CONTRACT-04",
+        "CONTRACT-05",
+        "DATA-01",
+        "DATA-02",
+        "DATA-03",
+        "DATA-04",
+        "DISCOVERY-01",
+        "DISCOVERY-02",
+        "DISCOVERY-03",
+        "EVIDENCE-01",
+        "EVIDENCE-02",
+        "EVIDENCE-03",
+        "EVIDENCE-04",
+        "EVIDENCE-05",
+        "GATE-B",
+        "GATE-C",
+        "GATE-D",
+        "GATE-E",
+        "GATE-F",
+        "HOST-01",
+        "HOST-03",
+        "HOST-04",
+        "INTENT-01",
+        "INTENT-02",
+        "INTENT-03",
+        "MODEL-01",
+        "MODEL-02",
+        "MODEL-03",
+        "MODEL-04",
+        "PROVIDER-01",
+        "PROVIDER-02",
+        "PROVIDER-03",
+        "SAFETY-01",
+        "SAFETY-02",
+        "SAFETY-03",
+        "SAFETY-04",
+        "SAFETY-05",
+        "SAFETY-06",
+        "SKILL-01",
+        "SKILL-02",
+        "SKILL-03",
+        "SKILL-04",
+        "SKILL-05",
+        "SKILL-06",
+        "SKILL-07",
+        "STANDALONE-01",
+        "STANDALONE-02",
+        "TRACK-01",
+        "TRACK-03",
+        "UX-01",
+        "UX-03"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/review/head-only-revalidation-256-20260930T204757991439Z/requirements-auditor-review.json",
+      "sha256": "665cc0db6eb5a83546ed9360401e2fff384a762695bcde12d7886e2b6715d7ae",
+      "status": "PASS",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "ARCH-01",
+        "CONTRACT-01",
+        "CONTRACT-02",
+        "CONTRACT-04",
+        "DISCOVERY-01",
+        "DISCOVERY-02",
+        "EVIDENCE-01",
+        "HOST-01",
+        "MODEL-03",
+        "SAFETY-01",
+        "SAFETY-02",
+        "SAFETY-03",
+        "SAFETY-04",
+        "SKILL-01",
+        "SKILL-02",
+        "SKILL-03",
+        "TRACK-01",
+        "UX-03"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/host-two-full-current-256-20260930T205049608031Z.json",
+      "sha256": "5c2f2d00b72fa7bbf6f8d6c6324a3a227648c494d81fbad54fe57b0d2022dbe8",
+      "status": "PASS",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "HOST-02"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/implementation-clauses-lineage-256-20260930T205438396750Z/review.json",
+      "sha256": "9e7ba9354328c9da2f4d268d87727487da7182a94ce0a5e2cea45fa0440b32cf",
+      "status": "PASS",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "ARCH-02",
+        "CONTRACT-03",
+        "CONTRACT-05",
+        "DATA-01",
+        "DATA-02",
+        "DATA-03",
+        "DATA-04",
+        "DISCOVERY-03",
+        "EVIDENCE-02",
+        "EVIDENCE-03",
+        "EVIDENCE-04",
+        "EVIDENCE-05",
+        "GATE-B",
+        "GATE-C",
+        "GATE-D",
+        "GATE-E",
+        "GATE-F",
+        "HOST-03",
+        "HOST-04",
+        "INTENT-01",
+        "INTENT-02",
+        "INTENT-03",
+        "MODEL-01",
+        "MODEL-02",
+        "MODEL-04",
+        "PROVIDER-01",
+        "PROVIDER-02",
+        "PROVIDER-03",
+        "SAFETY-05",
+        "SAFETY-06",
+        "SKILL-04",
+        "SKILL-05",
+        "SKILL-06",
+        "SKILL-07",
+        "TRACK-03"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/intent-seven-origins-2026-09-30T11-20-57-206Z-54dd9242-f6d7-4a7b-8c07-b406f85970c0.json",
+      "sha256": "f57cde5156ef496541235a7e7bd292f2eaaa7e03bd7ac32243ae53bf4250b731",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "CONTRACT-03",
+        "CONTRACT-05",
+        "INTENT-01",
+        "INTENT-02",
+        "INTENT-03",
+        "SAFETY-06",
+        "SKILL-04",
+        "SKILL-05"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/review/learning-eleven-full-clauses-current-20260930T173643877293Z.json",
+      "sha256": "7cbcc42dd6a6701de595022968329ba8f363715423e6d9bf1bce3fac0fd07dad",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "DATA-01",
+        "DATA-02",
+        "DATA-03",
+        "DATA-04",
+        "MODEL-01",
+        "MODEL-02",
+        "MODEL-04",
+        "PROVIDER-01",
+        "PROVIDER-02",
+        "PROVIDER-03"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/learning-execution-envelopes-7ae/audit.json",
+      "sha256": "f346df60e0927c7c9af7fdf4ecbcdc7d1dea01a702e4a401e3839faa4da42ae6",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "DATA-01",
+        "DATA-02",
+        "DATA-03",
+        "DATA-04",
+        "GATE-E",
+        "MODEL-01",
+        "MODEL-02",
+        "MODEL-04",
+        "PROVIDER-01",
+        "PROVIDER-02",
+        "PROVIDER-03"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/review/learning-execution-envelopes-7ae/install.json",
+      "sha256": "985bafade2a2b629a4948785f0d375f660955dfe93421901f6408907f35d0ddb",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "DATA-01",
+        "DATA-02",
+        "DATA-03",
+        "DATA-04",
+        "MODEL-01",
+        "MODEL-02",
+        "MODEL-04",
+        "PROVIDER-01",
+        "PROVIDER-02",
+        "PROVIDER-03"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/review/learning-execution-envelopes-7ae/library.json",
+      "sha256": "7007369522defc2305400001ae66b3dd93fa3704644c584db7e1a6035029afb3",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "DATA-01",
+        "DATA-02",
+        "DATA-03",
+        "DATA-04",
+        "GATE-E",
+        "MODEL-01",
+        "MODEL-02",
+        "MODEL-04",
+        "PROVIDER-01",
+        "PROVIDER-02",
+        "PROVIDER-03"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/review/migration-clause-review-20260930T070534719353Z.json",
+      "sha256": "c84178cab4a4ecb2c5407ba755ba541875ad3864fce3249f4718170c4fd2d1d4",
+      "status": "PASS",
+      "source": "870b4b48966b852f31ec1331f216d99ed62548f4:a067b4af949183bfc429b47a54bdfd11d4336aed80b6c379694b5175f26d651a",
+      "tasks": [
+        "SKILL-07"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/migration-current-full-clause-20260930T182156839636Z.json",
+      "sha256": "5f3fc7756aee57981d1f6a1f3458f3db369ba66b1c749814bc05ff835a588870",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "SKILL-07"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/native-current-25690943-oculix-repeat-v2/execution-oculix-20260930T201452594473Z-0712d18f-ac52-4b21-a883-f66f9f163112/results.json",
+      "sha256": "accd0af11d4c0a362814c719a73893d41cb6f3110dd4c626c677f513bb7cdcc7",
+      "status": "PASS",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "HOST-02"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/review/native-current-7ae1918f/execution-ordinary-20260930T170620179034Z-9b0670ae-07a2-4070-92b1-65b418ab6fba/results.json",
+      "sha256": "3097545e085788f4b840ef2b43d5e5a240773d2cb1f5f0827396d44ec9fccb25",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "EVIDENCE-03",
+        "GATE-B",
+        "HOST-03",
+        "HOST-04",
+        "SAFETY-05"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/review/native-dog-gate-c-review-20260930T073318238087Z.json",
+      "sha256": "87b05a3f95f0450b7fa2a8785e80be253d8581b59204a280fcc71c41a5efb9ca",
+      "status": "PASS",
+      "source": "870b4b48966b852f31ec1331f216d99ed62548f4:a067b4af949183bfc429b47a54bdfd11d4336aed80b6c379694b5175f26d651a",
+      "tasks": [
+        "EVIDENCE-04",
+        "GATE-C"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/native-five-full-clauses-current-20260930T190558552608Z.json",
+      "sha256": "844f2974665ef1a6a819b215a72652eba55243000f77266b02e6776f74ae5c27",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "EVIDENCE-03",
+        "GATE-B",
+        "HOST-03",
+        "HOST-04",
+        "SAFETY-05"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/native-four-actual-terminal-20260930T1805Z.json",
+      "sha256": "018eb8d262435d2a77f2b3e85120061627a325608fa6b6352a7044e9298242ca",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "EVIDENCE-04",
+        "GATE-C"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/review/native-gate-c-full-clauses-current-20260930T180233495808Z.json",
+      "sha256": "f4d0dfa6c1d33d5b965700435498e73c1f63cc44b6db0addd95ee097302b6223",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "EVIDENCE-04",
+        "GATE-C"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/oculix-current-independent-20260930T110109797074Z.json",
+      "sha256": "0f20fdc06558d104ef8b4d56572583642d8f8e68729341b5b2d0403fa4e9c70d",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "HOST-02"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/oculix-repeat-v2-actual-terminal-20260930T2020Z.json",
+      "sha256": "c33011629ffc833e6c9089a03a3dd1bd625ae501b381b4b7ce6a1dc98abb466e",
+      "status": "PASS",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "HOST-02"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/review/platform-safety-auth-current-20260930T193504836553Z.json",
+      "sha256": "fd01c6ad3061ce97d93702e60c7828d0cbac037256f7f0ca1971024b9f4b5488",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "HOST-01",
+        "SAFETY-02",
+        "SAFETY-03",
+        "UX-03"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/schemas-nine-870b4b48-review.json",
+      "sha256": "c0a2386e1f0bb1fbede1d184c938a16297b5e4738ba5bf03ba0d24a3ec5d8ff2",
+      "status": "PASS",
+      "source": "870b4b48966b852f31ec1331f216d99ed62548f4:a067b4af949183bfc429b47a54bdfd11d4336aed80b6c379694b5175f26d651a",
+      "tasks": [
+        "CONTRACT-01"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/schemas-nine-c757d9d-review.json",
+      "sha256": "516ba43267bb20a41f855780c1f279f533b60bfacd774a09fffccf109adc31b3",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "CONTRACT-04",
+        "HOST-01",
+        "SAFETY-01",
+        "SAFETY-02",
+        "SAFETY-03",
+        "SAFETY-04",
+        "SKILL-07"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/review/setup-lifecycle-clause-20260930T103301334006Z.json",
+      "sha256": "d020c9e06b4f9feed4340e0d2429973ab4d5f7ee25bd446b294ccc33b6e986c3",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "UX-01"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/specialist-full-clauses-20260930T121716194754Z.json",
+      "sha256": "db02125077c49e693902a174bf8340db5a43c4eb3bd97b7c4310f8116546a11d",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "CONTRACT-04",
+        "HOST-01",
+        "SAFETY-01",
+        "SAFETY-02",
+        "SAFETY-03",
+        "SAFETY-04",
+        "SKILL-07"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/standalone-setup-full-lineage-256-20260930T200003903808Z.json",
+      "sha256": "bc9195eb881c177f2f95fea830698e48d3682e72821973f8e2d90b90168f7ab3",
+      "status": "PASS",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "STANDALONE-01",
+        "STANDALONE-02",
+        "UX-01"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/track-two-full-20260930T211450994178Z/execution.json",
+      "sha256": "eb46fcb0bbd8cd72406cbb594a7956d8ec791f903c14930bc4ebe66bd0e10385",
+      "status": "PASS",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "TRACK-02"
+      ],
+      "kind": "execution"
+    },
+    {
+      "path": "evidence/completion/review/track-two-full-20260930T211450994178Z/review.json",
+      "sha256": "e3a47a27020b287566afcb56fbbdc528c1829ce5e2bfa21b094873c1f8fb73db",
+      "status": "PASS",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "TRACK-02"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/workflow-clauses-20260930T112623050263Z.json",
+      "sha256": "d6f3076c7b77805784cdb67612fd8eaf7caba5e64ad01b0539cc01ae21350d6b",
+      "status": "PASS",
+      "source": "c757d9d794592947822408995c512bb895a602df:ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "tasks": [
+        "CONTRACT-03",
+        "CONTRACT-05",
+        "INTENT-01",
+        "INTENT-02",
+        "INTENT-03",
+        "SAFETY-06",
+        "SKILL-04",
+        "SKILL-05"
+      ],
+      "kind": "review"
+    },
+    {
+      "path": "evidence/completion/review/workflow-current-full-clauses-20260930T183358423120Z.json",
+      "sha256": "03bd0a3ab50c1682e1ebcbccc8825431dc743573b973d6356c1dfdfb4ec8b57b",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "tasks": [
+        "CONTRACT-03",
+        "CONTRACT-05",
+        "INTENT-01",
+        "INTENT-02",
+        "INTENT-03",
+        "SAFETY-06",
+        "SKILL-04",
+        "SKILL-05"
+      ],
+      "kind": "review"
+    }
+  ],
+  "historicalEvidencePolicy": "Sealed execution and review reports keep their original source identities and statuses. Current qualification may use an explicit full unchanged-byte provenance review. A metadata review does not become a new behavioral execution.",
+  "activeDefects": [
+    "Mandatory Mac live qualification requires unavailable hardware.",
+    "Physical DPI qualification remains failed. Previous restore checks reported both displays at 100 percent and 96 DPI. The replacement physical procedure remains unrun."
+  ],
+  "developmentReports": [
+    {
+      "path": "evidence/completion/artifacts-1790721055624/results.json",
+      "sha256": "faf9f5f4870c0dc920822160a4060d0fb752fcb17b129b74cfea8a1450eaa1a3",
+      "qualifiesCurrentCompletion": false
+    },
+    {
+      "path": "evidence/completion/causal/attempt-2/report.json",
+      "sha256": "f9d9f7d36a230bfd4dfcf97b28a828f796a8324ff669695077c0e9ebf4d372e6",
+      "qualifiesCurrentCompletion": false
+    },
+    {
+      "path": "evidence/completion/native-drawing/1790724546747-7cce282b-e7bd-4e07-b8ef-6be3a29e2684/results.json",
+      "sha256": "b7d3bbdfa6499180a6142ae111de3003ccadd5312b91df7ebf566451e675ccee",
+      "qualifiesCurrentCompletion": false
+    },
+    {
+      "path": "evidence/linux-portal-v1/mutter16/native-report-attempt16.json",
+      "sha256": "cbe91bf7e58783ef438531a1e1dd71c62581140ba3d7aca872159ee258519656",
+      "qualifiesCurrentCompletion": false
+    },
+    {
+      "path": "evidence/learning-followup-v3/browser/selection.json",
+      "sha256": "6430318283ff671451e35c6be3bce6f4339596d5f85cbe2c1ecd6d375120894f",
+      "qualifiesCurrentCompletion": false
+    },
+    {
+      "path": "evidence/completion/quality/20260930T141039Z-f8e59cbf-11fa-4951-bff3-1988eae2490f/results.json",
+      "sha256": "1ad330608fff3fcac8900430d6d26d00d63ff86c5cf25099d3cd02599939bc20",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Actual current-source result. Raw status preserved. Full-clause review and dependencies required before task PASS."
+    },
+    {
+      "path": "evidence/review-clean-install.json",
+      "sha256": "eb3c2fb0edebe9393f078b84ef922d9437b49df16ab812787fa11a8ac7c477bf",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Actual current-source result. Raw status preserved. Full-clause review and dependencies required before task PASS."
+    },
+    {
+      "path": "evidence/completion/frozen-qualification/examples-7ae1918-20260930T141846Z-419bea24-1ab4-4b62-80fa-c43ebbe948cb/results.json",
+      "sha256": "21342341636a2024c1b2ecf03f18295876de30c9174cf473ad52b3b9ad47b640",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Actual current-source result. Raw status preserved. Full-clause review and dependencies required before task PASS."
+    },
+    {
+      "path": "evidence/completion/causal/20260930T141925319856Z-81764416-237f-4f19-ae49-5e209220723f-built/wrapper.json",
+      "sha256": "49c68e1386a590b505ccfe470327fff2e550f5bbb45c0aa0c637f0e1a1866c79",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Actual current-source result. Raw status preserved. Full-clause review and dependencies required before task PASS."
+    },
+    {
+      "path": "evidence/completion/requirements/public-migrations-20260930T141925717417Z-c575df85-e20f-42d2-aa5e-c71c750949da/report.json",
+      "sha256": "6fc8955d6ff752d6f306ad308160d5f9a6ea7e027eaed9a90321b9401f02f8e7",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Actual current-source result. Raw status preserved. Full-clause review and dependencies required before task PASS."
+    },
+    {
+      "path": "evidence/completion/requirements/benchmark-contract-20260930T141926222898Z-cfbca717-305c-4b22-b910-0d8dadd9d293/report.json",
+      "sha256": "1ef630f2c58c8f19fd70141b036dc3106044614c75e3eb15f1c21c9e774a2a0a",
+      "status": "PASS_NAMED_CONTRACT_CHECKS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Actual current-source result. Raw status preserved. Full-clause review and dependencies required before task PASS."
+    },
+    {
+      "path": "evidence/completion/review/candidate-public-exercise-20260930T1412Z-7ae1918f/execution-20260930T1420Z/results.json",
+      "sha256": "ce95b24dd5b291fe84cb031701cb00fae1e871f3a02af2472f3b90299b7726c5",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Actual current-source result. Raw status preserved. Full-clause review and dependencies required before task PASS."
+    },
+    {
+      "path": "evidence/completion/review/candidate-public-exercise-20260930T1412Z-7ae1918f/implementation-review-execution.json",
+      "sha256": "4b42ce5dd1921f1a489195c44c9a1232dbc1812f5e043e05a5ea143b3eff6325",
+      "status": "PASS_SAVED_DEVELOPMENT_EXECUTION_SCOPE",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Actual current-source result. Raw status preserved. Full-clause review and dependencies required before task PASS."
+    },
+    {
+      "path": "evidence/completion/review/fresh-paint-save-v3/2026-09-30T14-25-19-303Z-df9348e4-0ff5-4f47-ad1d-1ddf0268005d/results.json",
+      "sha256": "70c4cb294dce89c3941ff0464c8d7d0c094fd19a34f999b2dd1101ed0c62473d",
+      "status": "FAIL_DIAGNOSTIC",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Actual current-source result. Raw status preserved. Full-clause review and dependencies required before task PASS."
+    },
+    {
+      "path": "evidence/completion/review/http-dataset-7ae1918-v2/execution-20260930T1618Z",
+      "sha256": "72883fb690f402d40986b4c449c2efb544b863d0ce36e96415c9a3c5bae2b394",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Current source execution. Original raw status retained. A full separate clause review is still required for ledger acceptance."
+    },
+    {
+      "path": "evidence/completion/console-supplemental-7ae-v1/2026-09-30T16-18-11-244Z-acb701e1-34c5-4e76-8efd-a2a905b53d1a/results.json",
+      "sha256": "6da530f0d648308e24807564b1af4ec5413b843057b9e7e6a9775b6362b04be6",
+      "status": "PASS_SCOPED_REAL_UI_CONTROLS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Current source execution. Original raw status retained. A full separate clause review is still required for ledger acceptance."
+    },
+    {
+      "path": "evidence/completion/console-artifact-controls-7ae-v1/2026-09-30T16-22-17-511Z-4b4a7877-e997-49cd-9203-dfca3a6f8b1d/results.json",
+      "sha256": "b67b9991a6d3bb2fd63f15c06c785b01e10535faa68aaa8b97c602962a207902",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Current source execution. Original raw status retained. A full separate clause review is still required for ledger acceptance."
+    },
+    {
+      "path": "evidence/completion/console-portal-controls-v4/vue-portal-20260930T163844Z-40bee044-3310-41dd-a690-6a9cecbb244d/report.json",
+      "sha256": "de997a1823797583b290020bda481d8a9142aec6e8dc223e2672a391b4dcdc11",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Current source execution. Original raw status retained. A full separate clause review is still required for ledger acceptance."
+    },
+    {
+      "path": "evidence/completion/console-desktop-controls-v2/2026-09-30T16-03-04-653Z-9c954d7d-34de-4d3a-b5bc-3e4472775f4b/results.json",
+      "sha256": "da942570d5dc05b48c840ac127273ed64c6640a347f538472edf2bdc33338a10",
+      "status": "FAIL_DRIFT_OR_CLEANUP",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Current source execution. Original raw status retained. A full separate clause review is still required for ledger acceptance."
+    },
+    {
+      "path": "evidence/completion/console-desktop-controls-v2/2026-09-30T16-17-14-038Z-392a791c-ce35-4c98-9bd6-cae17c15c3bf/results.json",
+      "sha256": "e3826ef0f79eb05ed94e990b72560caa487d474d08f9ca50ae48f428316bad5a",
+      "status": "FAIL",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Current source execution. Original raw status retained. A full separate clause review is still required for ledger acceptance."
+    },
+    {
+      "path": "evidence/completion/review/v4-archive-independent-20260930T164938125681Z.json",
+      "sha256": "854d9c18a2d99af48d31e04d9b55ee85b866f2ef9ea057f5876e09a5b857973d",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Original status and evidence scope retained. A complete frozen-clause review and passing dependencies remain required."
+    },
+    {
+      "path": "evidence/completion/review/v4-7ae-provenance-20260930T165944203372Z.json",
+      "sha256": "bc88c43845cca58bfb81b830c6ef860ea71b025e2a357d499bd3d3950bb8831f",
+      "status": "PASS_TERMINAL_SOURCE_INPUT_AND_LOCAL_HMAC_PROVENANCE",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Original status and evidence scope retained. A complete frozen-clause review and passing dependencies remain required."
+    },
+    {
+      "path": "evidence/completion/review/library-archive-independent-20260930T161950896084Z.json",
+      "sha256": "6361c2c015b130735bd3d2dfa1cfe850899e24d767690bc97948e5045087967d",
+      "status": "PASS_SCOPED_EXPOSED_SOURCE_REPLAY",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Original status and evidence scope retained. A complete frozen-clause review and passing dependencies remain required."
+    },
+    {
+      "path": "evidence/completion/review/library-7ae-provenance-20260930T161525501057Z.json",
+      "sha256": "5dc51782e0820e7384b3ae9d99cde3e57225a4e09f97b98759f7c6219843a29a",
+      "status": "PASS_TERMINAL_SOURCE_INPUT_AND_CHECKSUM_PROVENANCE",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Original status and evidence scope retained. A complete frozen-clause review and passing dependencies remain required."
+    },
+    {
+      "path": "evidence/completion/review/installed-app-7ae-provenance-20260930T171739043250Z.json",
+      "sha256": "baf464be61549f69bf0898ebc69050b8592619e52ba6f27855c01aa5039e5f5f",
+      "status": "PASS_INSTALLED_AND_APP_TERMINAL_SOURCE_INPUT_PROVENANCE",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Original status and evidence scope retained. A complete frozen-clause review and passing dependencies remain required."
+    },
+    {
+      "path": "evidence/completion/review/installed-product-v2-current-independent-20260930T172241827549Z.json",
+      "sha256": "bd79c04c35e6b92df6114b4c9c10fd8e0edb8efbbeffeb405bb1da1f03df4e2d",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Original status and evidence scope retained. A complete frozen-clause review and passing dependencies remain required."
+    },
+    {
+      "path": "evidence/completion/review/app-current-independent-20260930T172604688483Z.json",
+      "sha256": "566e6774cc9e576f7970a5dd109df159a2873b77e746865ef80344fdf06866b4",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Original status and evidence scope retained. A complete frozen-clause review and passing dependencies remain required."
+    },
+    {
+      "path": "evidence/completion/review/generic-provider-positive-2026-09-30T16-55-30-936Z-4de050a6-2255-4c2c-8e2d-eba6541ef2c4/results.json",
+      "sha256": "86c04ed55070b921df58cda1da94db7363fde6f5912c35b8024a5b9ad1c83c7b",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Original status and evidence scope retained. A complete frozen-clause review and passing dependencies remain required."
+    },
+    {
+      "path": "evidence/completion/requirements/schema-public-7ae-2026-09-30T17-01-11-401Z-f06aa4d2-32a9-47da-9de0-3d37cd34e647/report.json",
+      "sha256": "770834103379c5d1eb866657f674af72827db48706503f53414279a23d307565",
+      "status": "PASS_NINE_GENERATED_PUBLIC_SCHEMA_STRUCTURAL_CASES",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Original status and evidence scope retained. A complete frozen-clause review and passing dependencies remain required."
+    },
+    {
+      "path": "evidence/completion/console-desktop-controls-v3/2026-09-30T16-39-07-243Z-ba6a9a6f-9d59-4105-91f6-0bc8a30e672f/results.json",
+      "sha256": "ecaebdae79d9d9f4cdcde9a3ac2209d4a3c5c96a040f415d93836474caf231ce",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Original status and evidence scope retained. A complete frozen-clause review and passing dependencies remain required."
+    },
+    {
+      "path": "evidence/completion/review/fresh-paint-save-warmed-v5/2026-09-30T16-46-49-024Z-b649fd00-f674-44b0-8124-ad3d5363bbdd/results.json",
+      "sha256": "6a83d65303b1da1341a354c0092565204122fc647f8fa006b39634ece1bd034f",
+      "status": "PASS_DIAGNOSTIC_ONLY",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Original status and evidence scope retained. A complete frozen-clause review and passing dependencies remain required."
+    },
+    {
+      "path": "evidence/completion/review/warmed-paint-v5-independent-20260930T171036901834Z.json",
+      "sha256": "8571dc3afbeb5a2bbd2c13afa099fa8e632334aaff98d7f5a7f3c114af493802",
+      "status": "PASS_SCOPED_PAINT_DIAGNOSTIC_REPLAY",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Original status and evidence scope retained. A complete frozen-clause review and passing dependencies remain required."
+    },
+    {
+      "path": "evidence/completion/native-effects-recovery-quiescence-v3-7ae1918f/2026-09-30T17-06-20-847Z-a61549fe-3723-4cc2-bccd-3cafe7413397/results.json",
+      "sha256": "6e9012528539ed4b3d9735abf4a2df2c07b693324852c7c27c06f4180418738f",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Original status and evidence scope retained. A complete frozen-clause review and passing dependencies remain required."
+    },
+    {
+      "path": "evidence/completion/moving/2026-09-30T17-10-27-905Z-77656b34-1d12-4374-bb16-c654829cc0cd/results.json",
+      "sha256": "969d3b9eec744b1c6318cd7d27e98e72b8eb11de32b352f02829455711fa8e8b",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Original status and evidence scope retained. A complete frozen-clause review and passing dependencies remain required."
+    },
+    {
+      "path": "evidence/completion/native-invalidation/1790789039908-b8e8a853-7908-4863-8798-a89876a96693/results.json",
+      "sha256": "c5b0165c2d597c4a39c1b290183d43c2db188a5b24810c4f47cc7d6ab20f4b1d",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Original status and evidence scope retained. A complete frozen-clause review and passing dependencies remain required."
+    },
+    {
+      "path": "evidence/completion/review/native-current-7ae1918f/execution-oculix-20260930T171128599504Z-bd635b19-3297-41fb-9cea-d5625282c507/results.json",
+      "sha256": "f3add5808f2a02689021365ece32ad886d0c5fbb55a808f79b57aa967a76fef3",
+      "status": "FAIL",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "note": "Original status and evidence scope retained. A complete frozen-clause review and passing dependencies remain required."
+    },
+    {
+      "path": "evidence/completion/native-tasks-warmed-v1/2026-09-30T17-33-06-879Z-7abd27ab-5e2b-4344-83a9-bb62d10cc532/results.json",
+      "sha256": "00f7661d82512d2c13dedd775428e0257e267126466482b02b21ce4ae490d6e1",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "lineage": "evidence/completion/review/head-only-lineage-25690943-20260930T1948Z.json",
+      "note": "Original status and executed revision retained. Exact full before/after maps checked independently. Equal bytes at the later head are provenance, not a new behavioral run. Complete frozen-clause review remains separate."
+    },
+    {
+      "path": "evidence/completion/native-drawing/1790789911512-eed45654-4053-4277-84be-973d390637b6/results.json",
+      "sha256": "745470979eb77afbffec3bf19364359ca76e52d54d7de92ac3d7a834a088fdbe",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "lineage": "evidence/completion/review/head-only-lineage-25690943-20260930T1948Z.json",
+      "note": "Original status and executed revision retained. Exact full before/after maps checked independently. Equal bytes at the later head are provenance, not a new behavioral run. Complete frozen-clause review remains separate."
+    },
+    {
+      "path": "evidence/completion/review/native-four-warmed-independent-20260930T175047717829Z.json",
+      "sha256": "8f6e0f0dfea8aa1d36b30fd471277e2ab6b255700d2f7111c40ced57ba286d29",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "lineage": "evidence/completion/review/head-only-lineage-25690943-20260930T1948Z.json",
+      "note": "Original status and executed revision retained. Exact full before/after maps checked independently. Equal bytes at the later head are provenance, not a new behavioral run. Complete frozen-clause review remains separate."
+    },
+    {
+      "path": "evidence/completion/review/native-dog-gate-c-current-review-20260930T175137152292Z.json",
+      "sha256": "2160e5fe6b5599bf1a613ccfab525007c5ff11ead2f6af3b21b9d090768d1e5c",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "lineage": "evidence/completion/review/head-only-lineage-25690943-20260930T1948Z.json",
+      "note": "Original status and executed revision retained. Exact full before/after maps checked independently. Equal bytes at the later head are provenance, not a new behavioral run. Complete frozen-clause review remains separate."
+    },
+    {
+      "path": "evidence/completion/review/desktop-v3-current-independent-20260930T180720229179Z.json",
+      "sha256": "e00fe9d73de17d1ad6dd0af143fd35b6c86407d6b99248ce27feeed03d07772a",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "lineage": "evidence/completion/review/head-only-lineage-25690943-20260930T1948Z.json",
+      "note": "Original status and executed revision retained. Exact full before/after maps checked independently. Equal bytes at the later head are provenance, not a new behavioral run. Complete frozen-clause review remains separate."
+    },
+    {
+      "path": "evidence/completion/review/portal-v4-current-independent-20260930T182650441210Z.json",
+      "sha256": "9cd16393288b843d5c72d2999299f03d5006a8137488d0af851cc85bc77163e0",
+      "status": "PASS_SAVED_PORTAL_UI_SCOPE",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "lineage": "evidence/completion/review/head-only-lineage-25690943-20260930T1948Z.json",
+      "note": "Original status and executed revision retained. Exact full before/after maps checked independently. Equal bytes at the later head are provenance, not a new behavioral run. Complete frozen-clause review remains separate."
+    },
+    {
+      "path": "evidence/completion/review/artifact-current-independent-20260930T183011393864Z.json",
+      "sha256": "2b0c319fc4f6529b1a815100b0dde8a1e6cac361e01cd5bb79a79997269dfce5",
+      "status": "PASS_SAVED_UI_ARTIFACT_SCOPE",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "lineage": "evidence/completion/review/head-only-lineage-25690943-20260930T1948Z.json",
+      "note": "Original status and executed revision retained. Exact full before/after maps checked independently. Equal bytes at the later head are provenance, not a new behavioral run. Complete frozen-clause review remains separate."
+    },
+    {
+      "path": "evidence/completion/review/console-7ae-recordings-persistent-independent-20260930T192637654255Z.json",
+      "sha256": "5a4e5dc58ffa14cfafe9864ec2cadac9e0dbd4396fb229bc8089c58339225cdd",
+      "status": "PASS_SAVED_EXECUTION_SCOPE",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "lineage": "evidence/completion/review/head-only-lineage-25690943-20260930T1948Z.json",
+      "note": "Original status and executed revision retained. Exact full before/after maps checked independently. Equal bytes at the later head are provenance, not a new behavioral run. Complete frozen-clause review remains separate."
+    },
+    {
+      "path": "evidence/completion/review/moving-invalidation-current-independent-20260930T185549420148Z.json",
+      "sha256": "b7dbbe7da102706e20a882aa4dbcc2bcf8db114650f473d9a58a813ca8de36da",
+      "status": "PASS_SAVED_NATIVE_MOVING_SCOPE",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "lineage": "evidence/completion/review/head-only-lineage-25690943-20260930T1948Z.json",
+      "note": "Original status and executed revision retained. Exact full before/after maps checked independently. Equal bytes at the later head are provenance, not a new behavioral run. Complete frozen-clause review remains separate."
+    },
+    {
+      "path": "evidence/completion/review/app-local-compiler-current-independent-20260930T191436029558Z.json",
+      "sha256": "8f4d2ac856dbdc2343562814e7e4cc3a8640beff3857678a171e0327bb1ea4ef",
+      "status": "PASS_SAVED_APP_LOCAL_COMPILER_SCOPE",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "lineage": "evidence/completion/review/head-only-lineage-25690943-20260930T1948Z.json",
+      "note": "Original status and executed revision retained. Exact full before/after maps checked independently. Equal bytes at the later head are provenance, not a new behavioral run. Complete frozen-clause review remains separate."
+    },
+    {
+      "path": "evidence/completion/review/owned-vue-controls-independent-20260930T195748217325Z.json",
+      "sha256": "aeaf81e39f26b0e38343d3ce1554f01fa48e238ecc8367e82b95740fb3bb7b1c",
+      "status": "PASS_SAVED_OWNED_VUE_CONTROL_SCOPE",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "lineage": "evidence/completion/review/head-only-lineage-25690943-20260930T1948Z.json",
+      "note": "Original status and executed revision retained. Exact full before/after maps checked independently. Equal bytes at the later head are provenance, not a new behavioral run. Complete frozen-clause review remains separate."
+    },
+    {
+      "path": "evidence/completion/console-owned-computer-controls-v1/20260930T193307022444Z-2d679791-16d3-45c9-9604-344f8bfe939b/results.json",
+      "sha256": "f7e79b75ae5779811c73600084edced4eac30a8e92252cfb0ebaa5136141db5c",
+      "status": "PASS",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "lineage": "evidence/completion/review/head-only-lineage-25690943-20260930T1948Z.json",
+      "note": "Original status and executed revision retained. Exact full before/after maps checked independently. Equal bytes at the later head are provenance, not a new behavioral run. Complete frozen-clause review remains separate."
+    },
+    {
+      "path": "evidence/completion/review/oculix-cold-stack-diagnostic-20260930T1740Z/execution-root-20260930T1800Z/results.json",
+      "sha256": "4cfa6b1eb7c45fd82125ccab67b52587c10bb504411b9938109236d7ffaa290e",
+      "status": "DIAGNOSTIC_INCOMPLETE",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "lineage": "evidence/completion/review/head-only-lineage-25690943-20260930T1948Z.json",
+      "note": "Original status and executed revision retained. Exact full before/after maps checked independently. Equal bytes at the later head are provenance, not a new behavioral run. Complete frozen-clause review remains separate."
+    },
+    {
+      "path": "evidence/completion/review/oculix-cold-foreground-v3-20260930T1805Z/execution-root-20260930T1828Z/results.json",
+      "sha256": "b5d2e1856394829ec02b54cfd5bfd35b0589e85d18f1213d69404f224c42fcd0",
+      "status": "DIAGNOSTIC_INCOMPLETE",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "lineage": "evidence/completion/review/head-only-lineage-25690943-20260930T1948Z.json",
+      "note": "Original status and executed revision retained. Exact full before/after maps checked independently. Equal bytes at the later head are provenance, not a new behavioral run. Complete frozen-clause review remains separate."
+    },
+    {
+      "path": "evidence/completion/review/oculix-cold-sky-v4-20260930T1850Z/execution-root-20260930T1900Z/results.json",
+      "sha256": "f49d13278e89c1182a8a9424d910b9c1d6e99b2acbb943f4093d2260fda3eab3",
+      "status": "DIAGNOSTIC_INCOMPLETE",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "lineage": "evidence/completion/review/head-only-lineage-25690943-20260930T1948Z.json",
+      "note": "Original status and executed revision retained. Exact full before/after maps checked independently. Equal bytes at the later head are provenance, not a new behavioral run. Complete frozen-clause review remains separate."
+    },
+    {
+      "path": "evidence/completion/review/oculix-cold-sky-v5-20260930T1910Z/execution-root-20260930T1928Z/results.json",
+      "sha256": "6adc10996595cb0865ca12efc71c89f2fd90507274757d61a7d6b4510ec80c0c",
+      "status": "DIAGNOSTIC_REQUEST_RETURNED",
+      "source": "7ae1918f5490a61442c88abf4b56dae2781b2e16:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "execution-or-scope-review",
+      "acceptanceCertified": false,
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "lineage": "evidence/completion/review/head-only-lineage-25690943-20260930T1948Z.json",
+      "note": "Original status and executed revision retained. Exact full before/after maps checked independently. Equal bytes at the later head are provenance, not a new behavioral run. Complete frozen-clause review remains separate."
+    },
+    {
+      "path": "evidence/completion/review/oculix-repeat-256-independent-read-20260930T2030Z/results.json",
+      "sha256": "9caf244fe7bca84aafe6ce2c17dee9a34287d1c03674630d570b2b11a8cd5d45",
+      "status": "PASS_SAVED_RAW_TIMING_CAPTURE_AND_CLEANUP_REVIEW",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "development",
+      "tasks": [
+        "HOST-02"
+      ],
+      "note": "Original status, source and instrument outcome retained. This entry is not an acceptance promotion.",
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a"
+    },
+    {
+      "path": "evidence/completion/review/console-training-256-independent-read-20260930T2046Z/results.json",
+      "sha256": "c53cabcce3d5802ee6121ec2555c220f2f5f12f9176f25fe603c4f2f7ecca2f4",
+      "status": "PASS_SAVED_TWO_UI_TRAINING_JOBS_AND_SIX_CANDIDATE_MODELS",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "development",
+      "tasks": [
+        "UX-02"
+      ],
+      "note": "Original status, source and instrument outcome retained. This entry is not an acceptance promotion.",
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a"
+    },
+    {
+      "path": "evidence/completion/review/console-training-controls-256-v2/execution-20260930T202954Z-62d4016e-cf4d-41d4-85d5-4fd161b317ec/results.json",
+      "sha256": "b9ab0327c9c845c3a397ad37da240f84812cf9e2ae6b4d98a39dfff64561fa6b",
+      "status": "FAIL",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "development",
+      "tasks": [
+        "UX-02"
+      ],
+      "note": "Original status, source and instrument outcome retained. This entry is not an acceptance promotion.",
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a"
+    },
+    {
+      "path": "evidence/completion/review/console-training-controls-256-v3/execution-20260930T203551Z-ba030aa9-c182-4b1c-8a98-f505756b03cc/results.json",
+      "sha256": "7cf21ed1f2488265b448fba6e4d56a77186d43756fb2f0d2b9ad8048dc3f2a22",
+      "status": "PASS",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "development",
+      "tasks": [
+        "UX-02"
+      ],
+      "note": "Original status, source and instrument outcome retained. This entry is not an acceptance promotion.",
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a"
+    },
+    {
+      "path": "evidence/completion/review/console-training-controls-256-v3/loader-admission.json",
+      "sha256": "908b03c6416dd0dee053228df453d91b9df0ec68a8514c8f7538e7b02aecf39d",
+      "status": "PASS_LOADER_ADMISSION_ONLY",
+      "source": null,
+      "kind": "development",
+      "tasks": [
+        "UX-02"
+      ],
+      "note": "Original status, source and instrument outcome retained. This entry is not an acceptance promotion."
+    },
+    {
+      "path": "evidence/completion/frozen-qualification/console-training-controls-256-20260930T202955Z-9a685b8e-a8d2-4d1f-89f6-2ca0d9bf8e56/results.json",
+      "sha256": "4d6ece66733044802ef19e23014a79f87c4f06808729db5003f0a462ee8c5845",
+      "status": "FAIL",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "development",
+      "tasks": [
+        "UX-02"
+      ],
+      "note": "Original status, source and instrument outcome retained. This entry is not an acceptance promotion.",
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a"
+    },
+    {
+      "path": "evidence/completion/frozen-qualification/console-training-controls-256-20260930T203552Z-00d7e375-699c-469f-863b-bac69d6c1309/results.json",
+      "sha256": "078ba51ad0a77201da37857abbe59117ee7c3ac3bd7bcf48d5d5e488dd3c7298",
+      "status": "PASS",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "development",
+      "tasks": [
+        "UX-02"
+      ],
+      "note": "Original status, source and instrument outcome retained. This entry is not an acceptance promotion.",
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a"
+    },
+    {
+      "path": "evidence/completion/review/console-training-256-independent-read-20260930T2042Z/results.json",
+      "sha256": "2dd6e083070d2af334c745823a77cbb0308b9b6aaa071c071dc50dd84cc931a9",
+      "status": "FAIL",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "development",
+      "tasks": [
+        "UX-02"
+      ],
+      "note": "Original status, source and instrument outcome retained. This entry is not an acceptance promotion.",
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a"
+    },
+    {
+      "path": "evidence/completion/review/console-training-256-independent-read-20260930T2045Z/results.json",
+      "sha256": "0ff65f6ea9528330d1647de3c334065ed5630630f72f5430561d38e915067a49",
+      "status": "FAIL",
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "kind": "development",
+      "tasks": [
+        "UX-02"
+      ],
+      "note": "Original status, source and instrument outcome retained. This entry is not an acceptance promotion.",
+      "sameImplementationAs": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a"
+    },
+    {
+      "path": "evidence/completion/review/physical-v6-readiness-mismatch-20260930T213047970042Z.json",
+      "sha256": "4fd48edb6ad998fef5f3c4ce43723b46d533e9333b57a512b2341c98bac59078",
+      "status": "FAIL_METHOD_PREPARATION",
+      "kind": "development",
+      "tasks": [
+        "PHYSICAL-DPI"
+      ],
+      "source": null,
+      "note": "Original instrument status retained. Preparation and rejected predecessor references are not acceptance promotion."
+    },
+    {
+      "path": "evidence/completion/review/physical-transfer-preloaded-256-v2/discovery-check-results.json",
+      "sha256": "c385ec663340ebf9290d641cd6b62bb6456c6d07ca5261547f43aace9cfd000b",
+      "status": "PASS_FILESYSTEM_DISCOVERY_PREPARATION_ONLY",
+      "kind": "development",
+      "tasks": [
+        "PHYSICAL-DPI"
+      ],
+      "source": null,
+      "note": "Original instrument status retained. Preparation and rejected predecessor references are not acceptance promotion."
+    },
+    {
+      "path": "evidence/completion/review/physical-preloaded-256-v2-independent-20260930T214035849370Z/whole-method-peer.json",
+      "sha256": "aefadd263e6c4c7ee2292f0b1a809da2ca5ed572d6feeda6404074820e787c02",
+      "status": "PASS_METHOD_SCOPE",
+      "kind": "development",
+      "tasks": [
+        "PHYSICAL-DPI"
+      ],
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "note": "Original instrument status retained. Preparation and rejected predecessor references are not acceptance promotion."
+    },
+    {
+      "path": "evidence/completion/review/final-package-gatea-independent-20260930T2129Z-v2/review.json",
+      "sha256": "72afd5cf88dea5bfc990813720add7c0dfddea18d18358c7625fbb137385be7f",
+      "status": "PASS",
+      "kind": "development",
+      "tasks": [
+        "PACKAGE-01",
+        "GATE-A"
+      ],
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "note": "Original instrument status retained. Preparation and rejected predecessor references are not acceptance promotion."
+    },
+    {
+      "path": "evidence/completion/review/final-merge-input-20260930T214441070951Z/results.json",
+      "sha256": "8a3880ea2daeeba597d67ab9dc6cc2a5016a7cf77de2ddd80afa716d7d673990",
+      "status": "PASS_ROOT_METADATA_VALIDATION",
+      "kind": "development",
+      "tasks": [
+        "PACKAGE-01",
+        "GATE-A"
+      ],
+      "source": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+      "note": "Original instrument status retained. Preparation and rejected predecessor references are not acceptance promotion."
+    }
+  ],
+  "currentSource": "25690943be8727fc13dd2354f7a2927d3ccbfae5:7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+  "candidateClosed": true,
+  "candidateState": "LOCAL_RELEASE_QUALIFIED_PLATFORM_GAPS_REMAIN",
+  "sourceFreeze": {
+    "at": "2026-09-30T14:09:28.727848+00:00",
+    "head": "7ae1918f5490a61442c88abf4b56dae2781b2e16",
+    "sha256": "7dc71f475353cd92f66d7c98feecfadf1c94665be11d93162872abdb2233af6a",
+    "maintainedFiles": 273
+  },
+  "reopenedAt": "2026-09-30T13:18:00Z",
+  "historicalSourceFreezes": [
+    {
+      "at": "2026-09-30T10:11:54.220729+00:00",
+      "head": "c757d9d794592947822408995c512bb895a602df",
+      "sha256": "ca9d74a9b949436b2fae73bf22426029299caa117b1ace7c40dcc70fd358bbad",
+      "maintainedFiles": 271
+    }
+  ],
+  "historicalMetadataSnapshots": [
+    {
+      "path": "evidence/completion/review/current-index-narrative-20260930T211210333886Z/before.json",
+      "sha256": "7e048dcfacc4abd2e60c67ba6c780e6b15c569d0e4a4f6e7b7d85f5599215876",
+      "note": "Prior narrative preserved at its original source identity. Its pending-control statements describe an earlier checkpoint."
+    }
+  ],
+  "pendingLocalVerification": [],
+  "currentQualificationSummary": {
+    "sourceProvenance": "The current head has exactly the same 273 maintained implementation, configuration and frozen requirement files as the original 7ae1918 source freeze. Original execution heads remain unchanged.",
+    "consoleControls": "All 101 unique control definitions have qualifying execution and independent review. This includes the two actual Vue training jobs at the current head. Repeated control instances and every optional model choice are not separate coverage claims.",
+    "nativeTasks": "The current qualified native task suite passed its frozen categories, including the owned Paint save. Earlier Paint failures remain in the evidence history.",
+    "portal": "The later owned Portal execution passed the frozen control checks for the qualified GNOME and Mutter profile. Original examiner failures remain preserved.",
+    "candidateTraining": "The actual candidate training and runtime exercises passed their frozen checks. This does not establish a general desktop learning benefit.",
+    "oculix": "The four unchanged original timing cases passed once at the current head. The original cold timeout and upstream stdout logging defect remain recorded. One passing repeat is not a reliability estimate."
+  },
+  "retainedLimitations": [
+    "The installed-production same-requester clarification miss remains recorded.",
+    "Controlled local tests, augmented model observations and learned candidate evaluation do not prove broad autonomous desktop transfer.",
+    "Independent agent review is not a human acceptance attestation."
+  ],
+  "currentSourceProvenance": {
+    "path": "evidence/completion/review/head-only-lineage-25690943-20260930T1948Z.json",
+    "sha256": "0508bd258c62d536bb9981f5cd82f786a72248dcf37214fd38669af82d9cd5eb",
+    "note": "The sourceFreeze field above deliberately retains the original behavioral freeze identity."
+  },
+  "currentTrackerCheckpoint": {
+    "at": "2026-09-30T21:46:35.811179+00:00",
+    "applicableTasks": 63,
+    "passedTasks": 61,
+    "remaining": [
+      {
+        "id": "MAC-LIVE",
+        "status": "BLOCKED_EXTERNAL"
+      },
+      {
+        "id": "PHYSICAL-DPI",
+        "status": "FAIL"
+      }
+    ],
+    "scope": "Generated ledger projection at this timestamp. Original execution reports and immutable earlier index snapshots keep their bytes."
+  },
+  "physicalPreparation": {
+    "status": "PREPARED_UNRUN",
+    "method": {
+      "path": "evidence/completion/review/physical-transfer-preloaded-256-v2/protocol.json",
+      "sha256": "c2ee8f80cbb53a4765c36835de5a70d3b984b1f1616c136933fb0c6d0c4c5b6c"
+    },
+    "wholeMethodPeer": {
+      "path": "evidence/completion/review/physical-preloaded-256-v2-independent-20260930T214035849370Z/whole-method-peer.json",
+      "sha256": "aefadd263e6c4c7ee2292f0b1a809da2ca5ed572d6feeda6404074820e787c02"
+    },
+    "filesystemCases": 12,
+    "physicalEffectsExecuted": false,
+    "remainingPrecondition": "Existing unowned SystemSettings PID 51892 and HWND 860772 must be absent before the declared owned Settings procedure."
+  }
+}

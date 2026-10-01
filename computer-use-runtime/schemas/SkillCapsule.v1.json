@@ -1,0 +1,386 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:computer-use-runtime:SkillCapsule:1",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "version",
+    "hash",
+    "description",
+    "status",
+    "inputs",
+    "outputs",
+    "capabilities",
+    "preconditions",
+    "effects",
+    "machine",
+    "recovery",
+    "budgets",
+    "dependencies",
+    "compatibility",
+    "descriptor",
+    "provenance"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1,
+      "type": "number"
+    },
+    "id": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "version": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "hash": {
+      "type": "string"
+    },
+    "description": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "status": {
+      "anyOf": [
+        {
+          "const": "seed",
+          "type": "string"
+        },
+        {
+          "const": "draft",
+          "type": "string"
+        },
+        {
+          "const": "published",
+          "type": "string"
+        },
+        {
+          "const": "quarantined",
+          "type": "string"
+        }
+      ]
+    },
+    "inputs": {
+      "type": "object",
+      "patternProperties": {
+        "^(.*)$": {
+          "anyOf": [
+            {
+              "const": "string",
+              "type": "string"
+            },
+            {
+              "const": "number",
+              "type": "string"
+            },
+            {
+              "const": "boolean",
+              "type": "string"
+            }
+          ]
+        }
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "minLength": 1,
+        "maxLength": 8192,
+        "type": "string"
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "minLength": 1,
+        "maxLength": 8192,
+        "type": "string"
+      }
+    },
+    "preconditions": {
+      "type": "array",
+      "items": {
+        "minLength": 1,
+        "maxLength": 8192,
+        "type": "string"
+      }
+    },
+    "effects": {
+      "type": "array",
+      "items": {
+        "minLength": 1,
+        "maxLength": 8192,
+        "type": "string"
+      }
+    },
+    "machine": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "initial",
+        "states"
+      ],
+      "properties": {
+        "initial": {
+          "minLength": 1,
+          "maxLength": 8192,
+          "type": "string"
+        },
+        "onVerificationError": {
+          "minLength": 1,
+          "maxLength": 8192,
+          "type": "string"
+        },
+        "states": {
+          "minItems": 1,
+          "maxItems": 100,
+          "type": "array",
+          "items": {
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+              "id",
+              "steps",
+              "monitor"
+            ],
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "maxLength": 8192,
+                "type": "string"
+              },
+              "steps": {
+                "type": "array",
+                "items": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "operation",
+                    "args",
+                    "scope"
+                  ],
+                  "properties": {
+                    "id": {
+                      "minLength": 1,
+                      "maxLength": 8192,
+                      "type": "string"
+                    },
+                    "operation": {
+                      "minLength": 1,
+                      "maxLength": 8192,
+                      "type": "string"
+                    },
+                    "args": {
+                      "type": "object",
+                      "patternProperties": {
+                        "^(.*)$": {
+                          "anyOf": [
+                            {
+                              "maxLength": 8192,
+                              "type": "string"
+                            },
+                            {
+                              "type": "number"
+                            },
+                            {
+                              "type": "boolean"
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "scope": {
+                      "minLength": 1,
+                      "maxLength": 8192,
+                      "type": "string"
+                    },
+                    "guard": {
+                      "minLength": 1,
+                      "maxLength": 8192,
+                      "type": "string"
+                    },
+                    "verify": {
+                      "minLength": 1,
+                      "maxLength": 8192,
+                      "type": "string"
+                    },
+                    "waitMs": {
+                      "minimum": 0,
+                      "maximum": 60000,
+                      "type": "integer"
+                    },
+                    "waitFor": {
+                      "minLength": 1,
+                      "maxLength": 8192,
+                      "type": "string"
+                    },
+                    "alternatives": {
+                      "type": "array",
+                      "items": {
+                        "minLength": 1,
+                        "maxLength": 8192,
+                        "type": "string"
+                      }
+                    },
+                    "subskill": {
+                      "minLength": 1,
+                      "maxLength": 8192,
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "next": {
+                "minLength": 1,
+                "maxLength": 8192,
+                "type": "string"
+              },
+              "transitions": {
+                "maxItems": 32,
+                "type": "array",
+                "items": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "required": [
+                    "guard",
+                    "target"
+                  ],
+                  "properties": {
+                    "guard": {
+                      "minLength": 1,
+                      "maxLength": 8192,
+                      "type": "string"
+                    },
+                    "target": {
+                      "minLength": 1,
+                      "maxLength": 8192,
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "onError": {
+                "minLength": 1,
+                "maxLength": 8192,
+                "type": "string"
+              },
+              "monitor": {
+                "type": "array",
+                "items": {
+                  "minLength": 1,
+                  "maxLength": 8192,
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "recovery": {
+      "type": "array",
+      "items": {
+        "minLength": 1,
+        "maxLength": 8192,
+        "type": "string"
+      }
+    },
+    "budgets": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "retries",
+        "steps"
+      ],
+      "properties": {
+        "retries": {
+          "minimum": 0,
+          "maximum": 5,
+          "type": "integer"
+        },
+        "steps": {
+          "minimum": 1,
+          "maximum": 1000,
+          "type": "integer"
+        }
+      }
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "minLength": 1,
+        "maxLength": 8192,
+        "type": "string"
+      }
+    },
+    "compatibility": {
+      "type": "array",
+      "items": {
+        "minLength": 1,
+        "maxLength": 8192,
+        "type": "string"
+      }
+    },
+    "descriptor": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "provenance": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "kind",
+        "demonstrations",
+        "tests",
+        "uncertain"
+      ],
+      "properties": {
+        "kind": {
+          "anyOf": [
+            {
+              "const": "hand_authored",
+              "type": "string"
+            },
+            {
+              "const": "compiled",
+              "type": "string"
+            }
+          ]
+        },
+        "demonstrations": {
+          "type": "array",
+          "items": {
+            "minLength": 1,
+            "maxLength": 8192,
+            "type": "string"
+          }
+        },
+        "tests": {
+          "type": "array",
+          "items": {
+            "minLength": 1,
+            "maxLength": 8192,
+            "type": "string"
+          }
+        },
+        "uncertain": {
+          "type": "array",
+          "items": {
+            "minLength": 1,
+            "maxLength": 8192,
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

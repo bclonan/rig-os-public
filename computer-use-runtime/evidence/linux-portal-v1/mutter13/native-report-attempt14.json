@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 1,
+  "evidenceKind": "native-disposable-wayland",
+  "backend": "Mutter43.8 headless compositor + GNOME portal43.1",
+  "checks": {
+    "startup_no_global_grant": {
+      "passed": true,
+      "evidence": {
+        "host": "a0dcf150c1c4",
+        "session": "linux-0-cur-wayland",
+        "platform": "Linux",
+        "operations": [
+          "invoke",
+          "fill",
+          "type"
+        ],
+        "keys": [],
+        "screenshotStatus": "unavailable on Wayland; accessibility controls only",
+        "backend": "linux-atspi-wayland",
+        "notes": "Wayland supports accessible controls and editable text. Global input and capture require explicit XDG RemoteDesktop portal consent. No portal consent is bypassed.",
+        "consent": {
+          "required": true,
+          "granted": false,
+          "pending": false,
+          "devices": 0,
+          "streams": 0
+        },
+        "inputCleanup": {
+          "settled": true,
+          "status": "No input is held"
+        }
+      }
+    },
+    "actual_consent": {
+      "passed": true,
+      "evidence": {
+        "granted": true,
+        "devices": 3,
+        "streams": 1
+      }
+    },
+    "bound_window_focus": {
+      "passed": true,
+      "evidence": {
+        "focus": {
+          "focused": true
+        },
+        "window": {
+          "handle": 2486082585418913,
+          "pid": 7433,
+          "title": "Computer runtime portal fixture",
+          "executable": "/usr/bin/python3.11",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 900,
+            "scale": 1
+          }
+        }
+      }
+    },
+    "authorized_pipewire_capture": {
+      "passed": true,
+      "evidence": {
+        "dimensions": [
+          1280,
+          900
+        ],
+        "sha256": "abe11b91cc889bd0be97698d0f798ebeb55c87394eb7d6f923b4bf5333f3c1ff",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 900,
+          "scale": 1
+        }
+      }
+    },
+    "static_cache_rejects_global_input_without_revoking_consent": {
+      "passed": true,
+      "evidence": {
+        "firstFacts": {
+          "windowHandle": 2486082585418913,
+          "windowTitle": "Computer runtime portal fixture",
+          "desktopPlatform": "Linux",
+          "supportedOperations": "[\"invoke\", \"fill\", \"type\", \"click\", \"drag\", \"scroll\", \"hold\", \"key\"]",
+          "supportedKeys": "[\"Enter\", \"Tab\", \"Shift+Tab\", \"Escape\", \"Space\", \"ArrowLeft\", \"ArrowRight\", \"ArrowUp\", \"ArrowDown\", \"Home\", \"End\", \"PageUp\", \"PageDown\", \"Backspace\", \"Delete\", \"F12\", \"Control+A\", \"Control+C\", \"Control+V\", \"Control+Z\", \"Control+F\", \"Control+L\", \"Control+O\", \"Control+Tab\", \"Control+Home\", \"Control+End\", \"Control+Shift+End\", \"Control+N\", \"Control+S\", \"Control+Shift+S\"]",
+          "semanticBackground": true,
+          "screenshotStatus": "Last-delivered authorized PipeWire frame; current pixels unverified",
+          "pixelFrameCached": true,
+          "pixelFrameSequence": 3,
+          "pixelReceivedAt": 1790722895540,
+          "pixelTimestampProvenance": "GStreamer source PTS mapped through pipeline clock",
+          "pixelSourcePtsNs": "227208487",
+          "pixelCapturedAt": 1790722894833,
+          "pipewireSessionGeneration": "68a8d69f323340fbb18e0a90a4746861"
+        },
+        "secondFacts": {
+          "windowHandle": 2486082585418913,
+          "windowTitle": "Computer runtime portal fixture",
+          "desktopPlatform": "Linux",
+          "supportedOperations": "[\"invoke\", \"fill\", \"type\", \"click\", \"drag\", \"scroll\", \"hold\", \"key\"]",
+          "supportedKeys": "[\"Enter\", \"Tab\", \"Shift+Tab\", \"Escape\", \"Space\", \"ArrowLeft\", \"ArrowRight\", \"ArrowUp\", \"ArrowDown\", \"Home\", \"End\", \"PageUp\", \"PageDown\", \"Backspace\", \"Delete\", \"F12\", \"Control+A\", \"Control+C\", \"Control+V\", \"Control+Z\", \"Control+F\", \"Control+L\", \"Control+O\", \"Control+Tab\", \"Control+Home\", \"Control+End\", \"Control+Shift+End\", \"Control+N\", \"Control+S\", \"Control+Shift+S\"]",
+          "semanticBackground": true,
+          "screenshotStatus": "Last-delivered authorized PipeWire frame; current pixels unverified",
+          "pixelFrameCached": true,
+          "pixelFrameSequence": 3,
+          "pixelReceivedAt": 1790722895540,
+          "pixelTimestampProvenance": "GStreamer source PTS mapped through pipeline clock",
+          "pixelSourcePtsNs": "227208487",
+          "pixelCapturedAt": 1790722894833,
+          "pipewireSessionGeneration": "68a8d69f323340fbb18e0a90a4746861"
+        },
+        "result": {
+          "actionId": "static-frame-negative",
+          "runId": "portal-native",
+          "backend": "linux-atspi-wayland",
+          "phase": "rejected",
+          "dispatched": false,
+          "delivered": false,
+          "reason": "Fresh portal pixels are unavailable; cached frames cannot authorize global input"
+        },
+        "consent": {
+          "required": true,
+          "granted": true,
+          "pending": false,
+          "devices": 3,
+          "streams": 1
+        }
+      }
+    },
+    "native_pointer_click": {
+      "passed": true,
+      "evidence": {
+        "text": "Portal button verified",
+        "markerClicks": 1,
+        "pointerPresses": 0,
+        "pointerReleases": 0,
+        "pointerMoves": [],
+        "scrollEvents": 0,
+        "keyDown": [],
+        "keyUp": [],
+        "active": true
+      }
+    }
+  },
+  "failures": [
+    {
+      "type": "RuntimeError",
+      "message": "Desktop content changed during observation; capture was not coherent"
+    }
+  ],
+  "scope": "Owned single monitor, fullscreen repainting GTK fixture, scale1. Static frames are display-only and global input is safely rejected. No fractional-scale or arbitrary-window mapping claim",
+  "environment": {
+    "python": "3.11.2 (main, May 12 2026, 05:17:27) [GCC 12.2.0]",
+    "packages": [
+      "gstreamer1.0-pipewire:amd64\t0.3.65-3+deb12u1",
+      "libgtk-3-0:amd64\t3.24.38-2~deb12u3",
+      "libgtk-4-1:amd64\t4.8.3+ds-2+deb12u1",
+      "mutter\t43.8-0+deb12u1",
+      "pipewire:amd64\t0.3.65-3+deb12u1",
+      "xdg-desktop-portal\t1.16.0-2",
+      "xdg-desktop-portal-gnome\t43.1-2"
+    ]
+  },
+  "seatSetup": {
+    "kind": "separate-actual-consent-portal",
+    "grant": {
+      "granted": true,
+      "devices": 3,
+      "streams": 1
+    },
+    "detail": "Separate setup sends Escape then the owned fixture presents itself to initialize headless Mutter's absent physical keyboard. Claimed worker effects use only the worker's own granted session."
+  },
+  "preflightRefusals": [
+    {
+      "operation": "click",
+      "attempt": 1,
+      "reason": "Fresh portal pixels are unavailable; cached frames cannot authorize global input",
+      "observationFacts": {
+        "windowHandle": 2486082585418913,
+        "windowTitle": "Computer runtime portal fixture",
+        "desktopPlatform": "Linux",
+        "supportedOperations": "[\"invoke\", \"fill\", \"type\", \"click\", \"drag\", \"scroll\", \"hold\", \"key\"]",
+        "supportedKeys": "[\"Enter\", \"Tab\", \"Shift+Tab\", \"Escape\", \"Space\", \"ArrowLeft\", \"ArrowRight\", \"ArrowUp\", \"ArrowDown\", \"Home\", \"End\", \"PageUp\", \"PageDown\", \"Backspace\", \"Delete\", \"F12\", \"Control+A\", \"Control+C\", \"Control+V\", \"Control+Z\", \"Control+F\", \"Control+L\", \"Control+O\", \"Control+Tab\", \"Control+Home\", \"Control+End\", \"Control+Shift+End\", \"Control+N\", \"Control+S\", \"Control+Shift+S\"]",
+        "semanticBackground": true,
+        "screenshotStatus": "New source-timestamped PipeWire delivery of selected fullscreen window",
+        "pixelFrameCached": false,
+        "pixelFrameSequence": 4,
+        "pixelReceivedAt": 1790722896678,
+        "pixelTimestampProvenance": "GStreamer source PTS mapped through pipeline clock",
+        "pixelSourcePtsNs": "2050587487",
+        "pixelCapturedAt": 1790722896656,
+        "pipewireSessionGeneration": "68a8d69f323340fbb18e0a90a4746861"
+      }
+    },
+    {
+      "operation": "click",
+      "attempt": 2,
+      "reason": "Fresh portal pixels are unavailable; cached frames cannot authorize global input",
+      "observationFacts": {
+        "windowHandle": 2486082585418913,
+        "windowTitle": "Computer runtime portal fixture",
+        "desktopPlatform": "Linux",
+        "supportedOperations": "[\"invoke\", \"fill\", \"type\", \"click\", \"drag\", \"scroll\", \"hold\", \"key\"]",
+        "supportedKeys": "[\"Enter\", \"Tab\", \"Shift+Tab\", \"Escape\", \"Space\", \"ArrowLeft\", \"ArrowRight\", \"ArrowUp\", \"ArrowDown\", \"Home\", \"End\", \"PageUp\", \"PageDown\", \"Backspace\", \"Delete\", \"F12\", \"Control+A\", \"Control+C\", \"Control+V\", \"Control+Z\", \"Control+F\", \"Control+L\", \"Control+O\", \"Control+Tab\", \"Control+Home\", \"Control+End\", \"Control+Shift+End\", \"Control+N\", \"Control+S\", \"Control+Shift+S\"]",
+        "semanticBackground": true,
+        "screenshotStatus": "New source-timestamped PipeWire delivery of selected fullscreen window",
+        "pixelFrameCached": false,
+        "pixelFrameSequence": 6,
+        "pixelReceivedAt": 1790722896963,
+        "pixelTimestampProvenance": "GStreamer source PTS mapped through pipeline clock",
+        "pixelSourcePtsNs": "2335579487",
+        "pixelCapturedAt": 1790722896941,
+        "pipewireSessionGeneration": "68a8d69f323340fbb18e0a90a4746861"
+      }
+    },
+    {
+      "operation": "click",
+      "attempt": 3,
+      "reason": "Fresh portal pixels are unavailable; cached frames cannot authorize global input",
+      "observationFacts": {
+        "windowHandle": 2486082585418913,
+        "windowTitle": "Computer runtime portal fixture",
+        "desktopPlatform": "Linux",
+        "supportedOperations": "[\"invoke\", \"fill\", \"type\", \"click\", \"drag\", \"scroll\", \"hold\", \"key\"]",
+        "supportedKeys": "[\"Enter\", \"Tab\", \"Shift+Tab\", \"Escape\", \"Space\", \"ArrowLeft\", \"ArrowRight\", \"ArrowUp\", \"ArrowDown\", \"Home\", \"End\", \"PageUp\", \"PageDown\", \"Backspace\", \"Delete\", \"F12\", \"Control+A\", \"Control+C\", \"Control+V\", \"Control+Z\", \"Control+F\", \"Control+L\", \"Control+O\", \"Control+Tab\", \"Control+Home\", \"Control+End\", \"Control+Shift+End\", \"Control+N\", \"Control+S\", \"Control+Shift+S\"]",
+        "semanticBackground": true,
+        "screenshotStatus": "New source-timestamped PipeWire delivery of selected fullscreen window",
+        "pixelFrameCached": false,
+        "pixelFrameSequence": 8,
+        "pixelReceivedAt": 1790722897236,
+        "pixelTimestampProvenance": "GStreamer source PTS mapped through pipeline clock",
+        "pixelSourcePtsNs": "2616514487",
+        "pixelCapturedAt": 1790722897222,
+        "pipewireSessionGeneration": "68a8d69f323340fbb18e0a90a4746861"
+      }
+    },
+    {
+      "operation": "click",
+      "attempt": 1,
+      "reason": "Desktop content changed after observation",
+      "observationFacts": {
+        "windowHandle": 2486082585418913,
+        "windowTitle": "Computer runtime portal fixture",
+        "desktopPlatform": "Linux",
+        "supportedOperations": "[\"invoke\", \"fill\", \"type\", \"click\", \"drag\", \"scroll\", \"hold\", \"key\"]",
+        "supportedKeys": "[\"Enter\", \"Tab\", \"Shift+Tab\", \"Escape\", \"Space\", \"ArrowLeft\", \"ArrowRight\", \"ArrowUp\", \"ArrowDown\", \"Home\", \"End\", \"PageUp\", \"PageDown\", \"Backspace\", \"Delete\", \"F12\", \"Control+A\", \"Control+C\", \"Control+V\", \"Control+Z\", \"Control+F\", \"Control+L\", \"Control+O\", \"Control+Tab\", \"Control+Home\", \"Control+End\", \"Control+Shift+End\", \"Control+N\", \"Control+S\", \"Control+Shift+S\"]",
+        "semanticBackground": true,
+        "screenshotStatus": "New source-timestamped PipeWire delivery of selected fullscreen window",
+        "pixelFrameCached": false,
+        "pixelFrameSequence": 12,
+        "pixelReceivedAt": 1790722897682,
+        "pixelTimestampProvenance": "GStreamer source PTS mapped through pipeline clock",
+        "pixelSourcePtsNs": "3050228487",
+        "pixelCapturedAt": 1790722897656,
+        "pipewireSessionGeneration": "68a8d69f323340fbb18e0a90a4746861"
+      }
+    },
+    {
+      "operation": "key",
+      "attempt": 1,
+      "reason": "Desktop content changed after observation",
+      "observationFacts": {
+        "windowHandle": 2486082585418913,
+        "windowTitle": "Computer runtime portal fixture",
+        "desktopPlatform": "Linux",
+        "supportedOperations": "[\"invoke\", \"fill\", \"type\", \"click\", \"drag\", \"scroll\", \"hold\", \"key\"]",
+        "supportedKeys": "[\"Enter\", \"Tab\", \"Shift+Tab\", \"Escape\", \"Space\", \"ArrowLeft\", \"ArrowRight\", \"ArrowUp\", \"ArrowDown\", \"Home\", \"End\", \"PageUp\", \"PageDown\", \"Backspace\", \"Delete\", \"F12\", \"Control+A\", \"Control+C\", \"Control+V\", \"Control+Z\", \"Control+F\", \"Control+L\", \"Control+O\", \"Control+Tab\", \"Control+Home\", \"Control+End\", \"Control+Shift+End\", \"Control+N\", \"Control+S\", \"Control+Shift+S\"]",
+        "semanticBackground": true,
+        "screenshotStatus": "New source-timestamped PipeWire delivery of selected fullscreen window",
+        "pixelFrameCached": false,
+        "pixelFrameSequence": 16,
+        "pixelReceivedAt": 1790722898081,
+        "pixelTimestampProvenance": "GStreamer source PTS mapped through pipeline clock",
+        "pixelSourcePtsNs": "3461348487",
+        "pixelCapturedAt": 1790722898067,
+        "pipewireSessionGeneration": "68a8d69f323340fbb18e0a90a4746861"
+      }
+    },
+    {
+      "operation": "key",
+      "attempt": 2,
+      "reason": "Fresh portal pixels are unavailable; cached frames cannot authorize global input",
+      "observationFacts": {
+        "windowHandle": 2486082585418913,
+        "windowTitle": "Computer runtime portal fixture",
+        "desktopPlatform": "Linux",
+        "supportedOperations": "[\"invoke\", \"fill\", \"type\", \"click\", \"drag\", \"scroll\", \"hold\", \"key\"]",
+        "supportedKeys": "[\"Enter\", \"Tab\", \"Shift+Tab\", \"Escape\", \"Space\", \"ArrowLeft\", \"ArrowRight\", \"ArrowUp\", \"ArrowDown\", \"Home\", \"End\", \"PageUp\", \"PageDown\", \"Backspace\", \"Delete\", \"F12\", \"Control+A\", \"Control+C\", \"Control+V\", \"Control+Z\", \"Control+F\", \"Control+L\", \"Control+O\", \"Control+Tab\", \"Control+Home\", \"Control+End\", \"Control+Shift+End\", \"Control+N\", \"Control+S\", \"Control+Shift+S\"]",
+        "semanticBackground": true,
+        "screenshotStatus": "New source-timestamped PipeWire delivery of selected fullscreen window",
+        "pixelFrameCached": false,
+        "pixelFrameSequence": 18,
+        "pixelReceivedAt": 1790722898369,
+        "pixelTimestampProvenance": "GStreamer source PTS mapped through pipeline clock",
+        "pixelSourcePtsNs": "3728019487",
+        "pixelCapturedAt": 1790722898333,
+        "pipewireSessionGeneration": "68a8d69f323340fbb18e0a90a4746861"
+      }
+    },
+    {
+      "operation": "key",
+      "attempt": 3,
+      "reason": "Fresh portal pixels are unavailable; cached frames cannot authorize global input",
+      "observationFacts": {
+        "windowHandle": 2486082585418913,
+        "windowTitle": "Computer runtime portal fixture",
+        "desktopPlatform": "Linux",
+        "supportedOperations": "[\"invoke\", \"fill\", \"type\", \"click\", \"drag\", \"scroll\", \"hold\", \"key\"]",
+        "supportedKeys": "[\"Enter\", \"Tab\", \"Shift+Tab\", \"Escape\", \"Space\", \"ArrowLeft\", \"ArrowRight\", \"ArrowUp\", \"ArrowDown\", \"Home\", \"End\", \"PageUp\", \"PageDown\", \"Backspace\", \"Delete\", \"F12\", \"Control+A\", \"Control+C\", \"Control+V\", \"Control+Z\", \"Control+F\", \"Control+L\", \"Control+O\", \"Control+Tab\", \"Control+Home\", \"Control+End\", \"Control+Shift+End\", \"Control+N\", \"Control+S\", \"Control+Shift+S\"]",
+        "semanticBackground": true,
+        "screenshotStatus": "New source-timestamped PipeWire delivery of selected fullscreen window",
+        "pixelFrameCached": false,
+        "pixelFrameSequence": 20,
+        "pixelReceivedAt": 1790722898654,
+        "pixelTimestampProvenance": "GStreamer source PTS mapped through pipeline clock",
+        "pixelSourcePtsNs": "4031847487",
+        "pixelCapturedAt": 1790722898638,
+        "pipewireSessionGeneration": "68a8d69f323340fbb18e0a90a4746861"
+      }
+    }
+  ],
+  "passed": false,
+  "sourceSha256": {
+    "native/unix/portal.py": "a0697347979db115a8237b7d58abe5a801f857bc9cc1b4164c935f805688f89c",
+    "native/unix/common.py": "6c0195c584cf3137a9107d47644edc5cdab85dbf59c01823445ae171fcd7d903",
+    "native/unix/linux.py": "32a675c5b28e3e6af740c2cf862d2e51408f1c6d297ff80bf001b717ffb2f0d6",
+    "native/unix/worker.py": "8f936a38698382b647440a664b01634103bcca2aa774ec838a10f4addce506d0",
+    "evaluation/linux-portal-native.py": "4dc839e3e13d2f3ed90eef671de86b0bb261631449c06a4095f7fcce6575b351",
+    "evaluation/linux-portal-fixture.py": "be7c578a15af283f07e8b1558050efc32c7a710a42a29b3d1e1a96f9d2499910",
+    "evaluation/linux-portal-session.sh": "b10bd12931bff23cf0703335b88a9db0e9e7538f3db1094544938a855ebe6041"
+  }
+}

@@ -1,0 +1,1511 @@
+{
+  "candidateDescriptorVersion": 2,
+  "programs": [
+    {
+      "schemaVersion": 1,
+      "id": "form.seed",
+      "version": "1.0.0",
+      "hash": "6525de3ebce7d9e6d9fc76776058e5eaf99ea002df3b9c29290dc8dfe572858b",
+      "description": "Enter a display name in a resettable local form",
+      "status": "seed",
+      "inputs": {
+        "name": "string"
+      },
+      "outputs": [
+        "result"
+      ],
+      "capabilities": [
+        "fill",
+        "click"
+      ],
+      "preconditions": [
+        "ready"
+      ],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "edit",
+        "states": [
+          {
+            "id": "edit",
+            "steps": [
+              {
+                "id": "name",
+                "operation": "fill",
+                "args": {
+                  "locator": "name",
+                  "value": "$name"
+                },
+                "scope": "edit"
+              }
+            ],
+            "next": "commit",
+            "monitor": [
+              "focused"
+            ]
+          },
+          {
+            "id": "commit",
+            "steps": [
+              {
+                "id": "commit",
+                "operation": "click",
+                "args": {
+                  "locator": "apply"
+                },
+                "scope": "edit"
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "observe",
+        "probe",
+        "repair",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 1,
+        "steps": 8
+      },
+      "dependencies": [],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "hand_authored",
+        "demonstrations": [],
+        "tests": [],
+        "uncertain": []
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "fixture.open",
+      "version": "1.0.0",
+      "hash": "718bd78c26125d52aef7520eba8227a5638dcc762f2f841853502425521cb905",
+      "description": "Local repair open",
+      "status": "seed",
+      "inputs": {},
+      "outputs": [
+        "ready"
+      ],
+      "capabilities": [
+        "click"
+      ],
+      "preconditions": [],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "repair",
+        "states": [
+          {
+            "id": "repair",
+            "steps": [
+              {
+                "id": "repair",
+                "operation": "click",
+                "args": {
+                  "locator": "open"
+                },
+                "scope": "edit"
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "observe",
+        "probe",
+        "repair",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 1,
+        "steps": 8
+      },
+      "dependencies": [],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "hand_authored",
+        "demonstrations": [],
+        "tests": [],
+        "uncertain": []
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "fixture.dismiss",
+      "version": "1.0.0",
+      "hash": "3db19191768df78cd351aaef722b934b195618db3b6b6deba3cbda5207084304",
+      "description": "Local repair dismiss",
+      "status": "seed",
+      "inputs": {},
+      "outputs": [
+        "dialog"
+      ],
+      "capabilities": [
+        "click"
+      ],
+      "preconditions": [],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "repair",
+        "states": [
+          {
+            "id": "repair",
+            "steps": [
+              {
+                "id": "repair",
+                "operation": "click",
+                "args": {
+                  "locator": "dismiss"
+                },
+                "scope": "edit"
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "observe",
+        "probe",
+        "repair",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 1,
+        "steps": 8
+      },
+      "dependencies": [],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "hand_authored",
+        "demonstrations": [],
+        "tests": [],
+        "uncertain": []
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "plan.cee4de8be1e5",
+      "version": "1.0.0",
+      "hash": "d650c7db14af65acaeaeb41710cd863aa70b78ec85c00ee52a3f5c705a324a2f",
+      "description": "Bounded compatible repair composition",
+      "status": "seed",
+      "inputs": {
+        "name": "string"
+      },
+      "outputs": [
+        "result"
+      ],
+      "capabilities": [
+        "click",
+        "fill"
+      ],
+      "preconditions": [],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "compose",
+        "states": [
+          {
+            "id": "compose",
+            "steps": [
+              {
+                "id": "child0",
+                "operation": "subskill",
+                "subskill": "repair.open",
+                "args": {},
+                "scope": "edit"
+              },
+              {
+                "id": "child1",
+                "operation": "subskill",
+                "subskill": "form.seed",
+                "args": {},
+                "scope": "edit"
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "observe",
+        "probe",
+        "repair",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 1,
+        "steps": 8
+      },
+      "dependencies": [
+        "repair.open",
+        "form.seed"
+      ],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "hand_authored",
+        "demonstrations": [],
+        "tests": [],
+        "uncertain": []
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "plan.a94e28b6d65a",
+      "version": "1.0.0",
+      "hash": "45617d89b3cf41dd59eddf5b92f1df3b42b0ae70b47c62b457d2d9e80c9e75a6",
+      "description": "Bounded compatible repair composition",
+      "status": "seed",
+      "inputs": {
+        "name": "string"
+      },
+      "outputs": [
+        "result"
+      ],
+      "capabilities": [
+        "click",
+        "fill"
+      ],
+      "preconditions": [],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "compose",
+        "states": [
+          {
+            "id": "compose",
+            "steps": [
+              {
+                "id": "child0",
+                "operation": "subskill",
+                "subskill": "repair.dismiss",
+                "args": {},
+                "scope": "edit"
+              },
+              {
+                "id": "child1",
+                "operation": "subskill",
+                "subskill": "form.seed",
+                "args": {},
+                "scope": "edit"
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "observe",
+        "probe",
+        "repair",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 1,
+        "steps": 8
+      },
+      "dependencies": [
+        "repair.dismiss",
+        "form.seed"
+      ],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "hand_authored",
+        "demonstrations": [],
+        "tests": [],
+        "uncertain": []
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "plan.0ec81b94a170",
+      "version": "1.0.0",
+      "hash": "ee97c07d2cdd0c25f17ebb6d9f723f52b5716e33ff63cb7804c4702822445c7f",
+      "description": "Bounded compatible repair composition",
+      "status": "seed",
+      "inputs": {
+        "name": "string"
+      },
+      "outputs": [
+        "result"
+      ],
+      "capabilities": [
+        "click",
+        "fill"
+      ],
+      "preconditions": [],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "compose",
+        "states": [
+          {
+            "id": "compose",
+            "steps": [
+              {
+                "id": "child0",
+                "operation": "subskill",
+                "subskill": "repair.dismiss",
+                "args": {},
+                "scope": "edit"
+              },
+              {
+                "id": "child1",
+                "operation": "subskill",
+                "subskill": "repair.open",
+                "args": {},
+                "scope": "edit"
+              },
+              {
+                "id": "child2",
+                "operation": "subskill",
+                "subskill": "form.seed",
+                "args": {},
+                "scope": "edit"
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "observe",
+        "probe",
+        "repair",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 1,
+        "steps": 8
+      },
+      "dependencies": [
+        "repair.dismiss",
+        "repair.open",
+        "form.seed"
+      ],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "hand_authored",
+        "demonstrations": [],
+        "tests": [],
+        "uncertain": []
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "fixture.insufficient.fill",
+      "version": "1.0.0",
+      "hash": "3efd136f83b5df789b16fc5d67ab1a1a148869d09682fa3c231c1c245cced4ec",
+      "description": "Enter a display name in a resettable local form",
+      "status": "seed",
+      "inputs": {
+        "name": "string"
+      },
+      "outputs": [
+        "result"
+      ],
+      "capabilities": [
+        "fill",
+        "click"
+      ],
+      "preconditions": [
+        "ready"
+      ],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "fill",
+        "states": [
+          {
+            "id": "fill",
+            "steps": [
+              {
+                "id": "fill",
+                "operation": "fill",
+                "args": {
+                  "locator": "name",
+                  "value": "$name"
+                },
+                "scope": "edit"
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "observe",
+        "probe",
+        "repair",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 1,
+        "steps": 8
+      },
+      "dependencies": [],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "hand_authored",
+        "demonstrations": [],
+        "tests": [],
+        "uncertain": []
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "fixture.insufficient.open",
+      "version": "1.0.0",
+      "hash": "88e6daa1aa306814f0489a22d1805f4f3d74ef4781152267b239b481fcb4badf",
+      "description": "Enter a display name in a resettable local form",
+      "status": "seed",
+      "inputs": {
+        "name": "string"
+      },
+      "outputs": [
+        "result"
+      ],
+      "capabilities": [
+        "click"
+      ],
+      "preconditions": [],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "open",
+        "states": [
+          {
+            "id": "open",
+            "steps": [
+              {
+                "id": "open",
+                "operation": "click",
+                "args": {
+                  "locator": "open"
+                },
+                "scope": "edit"
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "observe",
+        "probe",
+        "repair",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 1,
+        "steps": 8
+      },
+      "dependencies": [],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "hand_authored",
+        "demonstrations": [],
+        "tests": [],
+        "uncertain": []
+      }
+    }
+  ],
+  "all": [
+    {
+      "schemaVersion": 1,
+      "id": "repair.open",
+      "version": "1.0.0",
+      "hash": "e204454c092916e0e2c04691904f0a7743c5eb44dcc25fb1a9ab5455ec6fdfa0",
+      "description": "Local repair open",
+      "status": "seed",
+      "inputs": {},
+      "outputs": [],
+      "capabilities": [
+        "click"
+      ],
+      "preconditions": [],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "repair",
+        "states": [
+          {
+            "id": "repair",
+            "steps": [
+              {
+                "id": "repair",
+                "operation": "click",
+                "args": {
+                  "locator": "open"
+                },
+                "scope": "edit"
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "observe",
+        "probe",
+        "repair",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 1,
+        "steps": 8
+      },
+      "dependencies": [],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "hand_authored",
+        "demonstrations": [],
+        "tests": [],
+        "uncertain": []
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "repair.dismiss",
+      "version": "1.0.0",
+      "hash": "1c18dbdb85bf2de9685eff10669d87ff02df6758b2e2f3dcaf53ffd189e43401",
+      "description": "Local repair dismiss",
+      "status": "seed",
+      "inputs": {},
+      "outputs": [],
+      "capabilities": [
+        "click"
+      ],
+      "preconditions": [],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "repair",
+        "states": [
+          {
+            "id": "repair",
+            "steps": [
+              {
+                "id": "repair",
+                "operation": "click",
+                "args": {
+                  "locator": "dismiss"
+                },
+                "scope": "edit"
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "observe",
+        "probe",
+        "repair",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 1,
+        "steps": 8
+      },
+      "dependencies": [],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "hand_authored",
+        "demonstrations": [],
+        "tests": [],
+        "uncertain": []
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "form.seed",
+      "version": "1.0.0",
+      "hash": "6525de3ebce7d9e6d9fc76776058e5eaf99ea002df3b9c29290dc8dfe572858b",
+      "description": "Enter a display name in a resettable local form",
+      "status": "seed",
+      "inputs": {
+        "name": "string"
+      },
+      "outputs": [
+        "result"
+      ],
+      "capabilities": [
+        "fill",
+        "click"
+      ],
+      "preconditions": [
+        "ready"
+      ],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "edit",
+        "states": [
+          {
+            "id": "edit",
+            "steps": [
+              {
+                "id": "name",
+                "operation": "fill",
+                "args": {
+                  "locator": "name",
+                  "value": "$name"
+                },
+                "scope": "edit"
+              }
+            ],
+            "next": "commit",
+            "monitor": [
+              "focused"
+            ]
+          },
+          {
+            "id": "commit",
+            "steps": [
+              {
+                "id": "commit",
+                "operation": "click",
+                "args": {
+                  "locator": "apply"
+                },
+                "scope": "edit"
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "observe",
+        "probe",
+        "repair",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 1,
+        "steps": 8
+      },
+      "dependencies": [],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "hand_authored",
+        "demonstrations": [],
+        "tests": [],
+        "uncertain": []
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "fixture.open",
+      "version": "1.0.0",
+      "hash": "718bd78c26125d52aef7520eba8227a5638dcc762f2f841853502425521cb905",
+      "description": "Local repair open",
+      "status": "seed",
+      "inputs": {},
+      "outputs": [
+        "ready"
+      ],
+      "capabilities": [
+        "click"
+      ],
+      "preconditions": [],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "repair",
+        "states": [
+          {
+            "id": "repair",
+            "steps": [
+              {
+                "id": "repair",
+                "operation": "click",
+                "args": {
+                  "locator": "open"
+                },
+                "scope": "edit"
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "observe",
+        "probe",
+        "repair",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 1,
+        "steps": 8
+      },
+      "dependencies": [],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "hand_authored",
+        "demonstrations": [],
+        "tests": [],
+        "uncertain": []
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "fixture.dismiss",
+      "version": "1.0.0",
+      "hash": "3db19191768df78cd351aaef722b934b195618db3b6b6deba3cbda5207084304",
+      "description": "Local repair dismiss",
+      "status": "seed",
+      "inputs": {},
+      "outputs": [
+        "dialog"
+      ],
+      "capabilities": [
+        "click"
+      ],
+      "preconditions": [],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "repair",
+        "states": [
+          {
+            "id": "repair",
+            "steps": [
+              {
+                "id": "repair",
+                "operation": "click",
+                "args": {
+                  "locator": "dismiss"
+                },
+                "scope": "edit"
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "observe",
+        "probe",
+        "repair",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 1,
+        "steps": 8
+      },
+      "dependencies": [],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "hand_authored",
+        "demonstrations": [],
+        "tests": [],
+        "uncertain": []
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "plan.cee4de8be1e5",
+      "version": "1.0.0",
+      "hash": "d650c7db14af65acaeaeb41710cd863aa70b78ec85c00ee52a3f5c705a324a2f",
+      "description": "Bounded compatible repair composition",
+      "status": "seed",
+      "inputs": {
+        "name": "string"
+      },
+      "outputs": [
+        "result"
+      ],
+      "capabilities": [
+        "click",
+        "fill"
+      ],
+      "preconditions": [],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "compose",
+        "states": [
+          {
+            "id": "compose",
+            "steps": [
+              {
+                "id": "child0",
+                "operation": "subskill",
+                "subskill": "repair.open",
+                "args": {},
+                "scope": "edit"
+              },
+              {
+                "id": "child1",
+                "operation": "subskill",
+                "subskill": "form.seed",
+                "args": {},
+                "scope": "edit"
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "observe",
+        "probe",
+        "repair",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 1,
+        "steps": 8
+      },
+      "dependencies": [
+        "repair.open",
+        "form.seed"
+      ],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "hand_authored",
+        "demonstrations": [],
+        "tests": [],
+        "uncertain": []
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "plan.a94e28b6d65a",
+      "version": "1.0.0",
+      "hash": "45617d89b3cf41dd59eddf5b92f1df3b42b0ae70b47c62b457d2d9e80c9e75a6",
+      "description": "Bounded compatible repair composition",
+      "status": "seed",
+      "inputs": {
+        "name": "string"
+      },
+      "outputs": [
+        "result"
+      ],
+      "capabilities": [
+        "click",
+        "fill"
+      ],
+      "preconditions": [],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "compose",
+        "states": [
+          {
+            "id": "compose",
+            "steps": [
+              {
+                "id": "child0",
+                "operation": "subskill",
+                "subskill": "repair.dismiss",
+                "args": {},
+                "scope": "edit"
+              },
+              {
+                "id": "child1",
+                "operation": "subskill",
+                "subskill": "form.seed",
+                "args": {},
+                "scope": "edit"
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "observe",
+        "probe",
+        "repair",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 1,
+        "steps": 8
+      },
+      "dependencies": [
+        "repair.dismiss",
+        "form.seed"
+      ],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "hand_authored",
+        "demonstrations": [],
+        "tests": [],
+        "uncertain": []
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "plan.0ec81b94a170",
+      "version": "1.0.0",
+      "hash": "ee97c07d2cdd0c25f17ebb6d9f723f52b5716e33ff63cb7804c4702822445c7f",
+      "description": "Bounded compatible repair composition",
+      "status": "seed",
+      "inputs": {
+        "name": "string"
+      },
+      "outputs": [
+        "result"
+      ],
+      "capabilities": [
+        "click",
+        "fill"
+      ],
+      "preconditions": [],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "compose",
+        "states": [
+          {
+            "id": "compose",
+            "steps": [
+              {
+                "id": "child0",
+                "operation": "subskill",
+                "subskill": "repair.dismiss",
+                "args": {},
+                "scope": "edit"
+              },
+              {
+                "id": "child1",
+                "operation": "subskill",
+                "subskill": "repair.open",
+                "args": {},
+                "scope": "edit"
+              },
+              {
+                "id": "child2",
+                "operation": "subskill",
+                "subskill": "form.seed",
+                "args": {},
+                "scope": "edit"
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "observe",
+        "probe",
+        "repair",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 1,
+        "steps": 8
+      },
+      "dependencies": [
+        "repair.dismiss",
+        "repair.open",
+        "form.seed"
+      ],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "hand_authored",
+        "demonstrations": [],
+        "tests": [],
+        "uncertain": []
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "fixture.insufficient.fill",
+      "version": "1.0.0",
+      "hash": "3efd136f83b5df789b16fc5d67ab1a1a148869d09682fa3c231c1c245cced4ec",
+      "description": "Enter a display name in a resettable local form",
+      "status": "seed",
+      "inputs": {
+        "name": "string"
+      },
+      "outputs": [
+        "result"
+      ],
+      "capabilities": [
+        "fill",
+        "click"
+      ],
+      "preconditions": [
+        "ready"
+      ],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "fill",
+        "states": [
+          {
+            "id": "fill",
+            "steps": [
+              {
+                "id": "fill",
+                "operation": "fill",
+                "args": {
+                  "locator": "name",
+                  "value": "$name"
+                },
+                "scope": "edit"
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "observe",
+        "probe",
+        "repair",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 1,
+        "steps": 8
+      },
+      "dependencies": [],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "hand_authored",
+        "demonstrations": [],
+        "tests": [],
+        "uncertain": []
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "fixture.insufficient.open",
+      "version": "1.0.0",
+      "hash": "88e6daa1aa306814f0489a22d1805f4f3d74ef4781152267b239b481fcb4badf",
+      "description": "Enter a display name in a resettable local form",
+      "status": "seed",
+      "inputs": {
+        "name": "string"
+      },
+      "outputs": [
+        "result"
+      ],
+      "capabilities": [
+        "click"
+      ],
+      "preconditions": [],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "open",
+        "states": [
+          {
+            "id": "open",
+            "steps": [
+              {
+                "id": "open",
+                "operation": "click",
+                "args": {
+                  "locator": "open"
+                },
+                "scope": "edit"
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "observe",
+        "probe",
+        "repair",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 1,
+        "steps": 8
+      },
+      "dependencies": [],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "hand_authored",
+        "demonstrations": [],
+        "tests": [],
+        "uncertain": []
+      }
+    }
+  ],
+  "descriptors": [
+    {
+      "descriptor": [
+        1,
+        0,
+        0,
+        0,
+        -0.7144467625102138,
+        -0.02536155307324639,
+        -0.425814668514257,
+        -0.5139164085299514
+      ]
+    },
+    {
+      "descriptor": [
+        0,
+        1,
+        0,
+        0,
+        -0.8501034252927879,
+        0.3294872099835162,
+        -0.5875370119669328,
+        -0.9127053259668652
+      ]
+    },
+    {
+      "descriptor": [
+        0,
+        0,
+        1,
+        0,
+        -0.7365596391578577,
+        0.6373140554962013,
+        0.791100949466019,
+        0.4311907676586859
+      ]
+    },
+    {
+      "descriptor": [
+        0,
+        1,
+        0,
+        0,
+        0.019794789380346067,
+        0.8383444598499556,
+        0.8743394338233255,
+        0.9496878986129742
+      ]
+    },
+    {
+      "descriptor": [
+        0,
+        0,
+        1,
+        0,
+        0.6993885151341996,
+        -0.4905533724209651,
+        0.5322649952797835,
+        -0.005337800599014786
+      ]
+    },
+    {
+      "descriptor": [
+        0,
+        0,
+        1,
+        0,
+        0.8638512808512551,
+        0.2709066270084368,
+        -0.007576944075426306,
+        0.3093153869987735
+      ]
+    },
+    {
+      "descriptor": [
+        1,
+        0,
+        0,
+        0,
+        0.8327811536921144,
+        0.8673691078711694,
+        0.5728344208497633,
+        -0.15562193867648533
+      ]
+    },
+    {
+      "descriptor": [
+        0,
+        1,
+        0,
+        0,
+        0.2040599750364338,
+        -0.677141040488412,
+        -0.8589983754463024,
+        -0.2630812030432469
+      ]
+    }
+  ]
+}

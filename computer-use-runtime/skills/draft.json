@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "form.compiled",
+  "version": "1.0.0",
+  "hash": "75dc2d2837962edafee6cea76c2e35946fb648c4fa39d15101448284b8f7411e",
+  "description": "Parameterized form workflow extracted from aligned independent demonstrations",
+  "status": "draft",
+  "inputs": {
+    "name": "string"
+  },
+  "outputs": [
+    "result"
+  ],
+  "capabilities": [
+    "fill",
+    "click"
+  ],
+  "preconditions": [],
+  "effects": [
+    "edit"
+  ],
+  "machine": {
+    "initial": "segment0",
+    "states": [
+      {
+        "id": "segment0",
+        "steps": [
+          {
+            "id": "op0",
+            "operation": "fill",
+            "args": {
+              "locator": "name",
+              "value": "$name"
+            },
+            "scope": "edit",
+            "alternatives": [
+              "name"
+            ]
+          }
+        ],
+        "next": "segment1",
+        "monitor": [
+          "focused"
+        ]
+      },
+      {
+        "id": "segment1",
+        "steps": [
+          {
+            "id": "op1",
+            "operation": "click",
+            "args": {
+              "locator": "apply"
+            },
+            "scope": "edit",
+            "alternatives": [
+              "apply"
+            ]
+          }
+        ],
+        "monitor": [
+          "focused"
+        ]
+      }
+    ]
+  },
+  "recovery": [
+    "fresh_observation",
+    "probe_ready",
+    "repair_local",
+    "escalate"
+  ],
+  "budgets": {
+    "retries": 1,
+    "steps": 6
+  },
+  "dependencies": [],
+  "compatibility": [
+    "browser-fixture-v1"
+  ],
+  "descriptor": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "provenance": {
+    "kind": "compiled",
+    "demonstrations": [
+      "725f74d2-df6c-4798-b11a-cd5b2d84fa08",
+      "84a15447-a632-4b09-bc20-bda4b4770eba",
+      "c8789b15-48c5-4283-aecf-e1ed5d1a266e"
+    ],
+    "tests": [],
+    "uncertain": []
+  }
+}

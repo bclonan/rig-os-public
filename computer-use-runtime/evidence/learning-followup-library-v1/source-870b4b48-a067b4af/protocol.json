@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "learning-followup-library-v1",
+  "frozenAt": "2026-09-29T22:13:47Z",
+  "originalProtocol": "acceptance.json",
+  "seeds": [17, 41, 73],
+  "methods": ["compiled", "without_compilation", "hand_authored_macro"],
+  "episodesPerMethodPerSeed": 100,
+  "trainingSessions": 6,
+  "validationSessionsPerMethod": 6,
+  "families": ["fill_then_submit", "observe_then_fill_then_submit"],
+  "controller": "Fixed authorized primitive cursor shared by both arms. No model or provider call.",
+  "comparison": "Compiled arm executes learned parent and shared typed child. Without-compilation arm executes the exact same authorized operations as independent one-operation task capsules and observes before each decision. Competent hand-authored macro executes the same operations in one state and one task under the same fixed controller.",
+  "heldoutRule": "Final strings and layout schedule generated only after development validation. Whole paired sessions never enter demonstration compilation or validation.",
+  "budgets": {"steps": 8, "episodeMs": 15000, "generativeCalls": 0},
+  "metric": "Whole-session policy observations plus runtime observation, verification and experience capture events. Final success is a separate public result read.",
+  "gate": "Zero false success and strict lower paired success bootstrap95 >0 OR strict upper observation delta <0 with lower success delta >=-0.02; all exact counts and stable source.",
+  "uncertainty": {"bootstrapSeed": 90210, "bootstrapResamples": 2000, "wilsonZ": 1.96},
+  "protected": ["acceptance.json", "evidence/audit-sealed.json", "evidence/results.json", "evidence/episodes.jsonl", "models/17/trained.onnx", "models/41/trained.onnx", "models/73/trained.onnx"],
+  "nonClaims": ["Efficiency over a competent hand-authored macro", "Model selection improvement", "General desktop learning", "No-compilation baseline represents every possible controller"]
+}

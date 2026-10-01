@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "learning-followup-v2",
+  "frozenAt": "2026-09-29T22:31:44Z",
+  "contextVersion": 3,
+  "originalProtocol": "acceptance.json",
+  "seeds": [17,41,73],
+  "methods": ["trained","initialized","fixed","without_compilation","frozen_context","v1_selection"],
+  "episodesPerMethodPerSeed": 100,
+  "headEpisodesPerSeed": 100,
+  "trainingSessions": 600,
+  "validationSessions": 120,
+  "developmentComposition": {"existingPositiveTrain": 400,"existingPositiveValidation": 80,"reachedPolicyTrain": 100,"reachedPolicyValidation": 20,"incompleteContractTrain": 100,"incompleteContractValidation": 20},
+  "training": {"epochs":55,"learningRate":0.008,"cpuThreads":2},
+  "budgets": {"steps":8,"episodeMs":15000,"generativeCalls":0,"parameters":10000000},
+  "uncertainty": {"bootstrapSeed":90210,"bootstrapResamples":2000,"wilsonZ":1.96},
+  "selection": "Final epoch only. Every seed selection accuracy >=0.95, predicate accuracy >=0.95, recovery accuracy >=0.90, clarification recall >=0.90, known outcome Brier <=0.15, cost MAE <=0.15, reload error zero and ONNX parity <0.0001. Preserve all rejected candidates; do not tune from final outcomes.",
+  "promotion": "Original zero false-success and exact paired-count learning-benefit gate versus initialized, plus independently held-out head thresholds identical to development selection. Comparison with v1/fixed reported separately. Only browser scoped advisory heads.",
+  "splitRule": "Whole original positive sessions plus whole newly reached episodes, separate train/validation stores and parameter families. Final strings and head contexts generated only after selection. Corrections and AFTER effects are targets only. Selection proposal descriptor is always zero; auxiliary forecast receives only the candidate selected from BEFORE inputs.",
+  "headLabels": {"predicate":["ready","closed","dialog"],"recovery":["observe","probe","repair","clarify_or_escalate"],"outcome":"Independent achieved output for the actual proposed macro","cost":"Actual reached primitive actions divided by 8; unknown future outcome/cost labels are masked"},
+  "protected": ["acceptance.json","evidence/audit-sealed.json","evidence/results.json","evidence/episodes.jsonl","models/17/trained.onnx","models/41/trained.onnx","models/73/trained.onnx"],
+  "nonClaims": ["General native full-head ability","Model predictions authorize actions or verify success","Corrective learning on the old protected final set"]
+}

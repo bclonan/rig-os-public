@@ -1,0 +1,209 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:computer-use-runtime:TaskContract:1",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "correlationId",
+    "requester",
+    "goal",
+    "target",
+    "parameters",
+    "effects",
+    "requirements",
+    "unresolved",
+    "expected",
+    "budgets"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1,
+      "type": "number"
+    },
+    "id": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "correlationId": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "requester": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "goal": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "target": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "host",
+        "session",
+        "identity"
+      ],
+      "properties": {
+        "host": {
+          "minLength": 1,
+          "maxLength": 8192,
+          "type": "string"
+        },
+        "session": {
+          "minLength": 1,
+          "maxLength": 8192,
+          "type": "string"
+        },
+        "identity": {
+          "minLength": 1,
+          "maxLength": 8192,
+          "type": "string"
+        }
+      }
+    },
+    "parameters": {
+      "type": "object",
+      "patternProperties": {
+        "^(.*)$": {
+          "anyOf": [
+            {
+              "maxLength": 8192,
+              "type": "string"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "boolean"
+            }
+          ]
+        }
+      }
+    },
+    "effects": {
+      "maxItems": 32,
+      "type": "array",
+      "items": {
+        "minLength": 1,
+        "maxLength": 8192,
+        "type": "string"
+      }
+    },
+    "requirements": {
+      "maxItems": 64,
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "name",
+          "value",
+          "origin"
+        ],
+        "properties": {
+          "name": {
+            "minLength": 1,
+            "maxLength": 8192,
+            "type": "string"
+          },
+          "value": {
+            "minLength": 1,
+            "maxLength": 8192,
+            "type": "string"
+          },
+          "origin": {
+            "anyOf": [
+              {
+                "const": "user_explicit",
+                "type": "string"
+              },
+              {
+                "const": "user_preference",
+                "type": "string"
+              },
+              {
+                "const": "method_precondition",
+                "type": "string"
+              },
+              {
+                "const": "environment_observation",
+                "type": "string"
+              },
+              {
+                "const": "system_policy",
+                "type": "string"
+              },
+              {
+                "const": "chosen_default",
+                "type": "string"
+              },
+              {
+                "const": "unresolved",
+                "type": "string"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "unresolved": {
+      "type": "array",
+      "items": {
+        "minLength": 1,
+        "maxLength": 8192,
+        "type": "string"
+      }
+    },
+    "method": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "expected": {
+      "type": "object",
+      "patternProperties": {
+        "^(.*)$": {
+          "anyOf": [
+            {
+              "maxLength": 8192,
+              "type": "string"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "boolean"
+            }
+          ]
+        }
+      }
+    },
+    "budgets": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "steps",
+        "deadlineMs"
+      ],
+      "properties": {
+        "steps": {
+          "minimum": 1,
+          "maximum": 1000,
+          "type": "integer"
+        },
+        "deadlineMs": {
+          "minimum": 100,
+          "maximum": 3600000,
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,688 @@
+{
+  "schemaVersion": 1,
+  "taskFields": [
+    "id",
+    "source_requirement",
+    "acceptance_criterion",
+    "dependencies",
+    "expected_result",
+    "applicable"
+  ],
+  "tasks": [
+    {
+      "id": "STANDALONE-01",
+      "source_requirement": [
+        "REQUEST.md section 1"
+      ],
+      "acceptance_criterion": "Clean isolated installation runs library, service and console without host apps or cloud credentials",
+      "dependencies": [],
+      "expected_result": "Clean isolated installation runs library, service and console without host apps or cloud credentials",
+      "applicable": true
+    },
+    {
+      "id": "STANDALONE-02",
+      "source_requirement": [
+        "REQUEST.md section 1"
+      ],
+      "acceptance_criterion": "Install, start, execute, record, compile, train, evaluate and export run through the public product",
+      "dependencies": [],
+      "expected_result": "Install, start, execute, record, compile, train, evaluate and export run through the public product",
+      "applicable": true
+    },
+    {
+      "id": "ARCH-01",
+      "source_requirement": [
+        "REQUEST.md section 2"
+      ],
+      "acceptance_criterion": "One coordinator serializes foreground input through explicit registries and pinned components",
+      "dependencies": [],
+      "expected_result": "One coordinator serializes foreground input through explicit registries and pinned components",
+      "applicable": true
+    },
+    {
+      "id": "ARCH-02",
+      "source_requirement": [
+        "REQUEST.md section 2"
+      ],
+      "acceptance_criterion": "Six replaceable ports separate host control, providers, policy, verification, skills and experience",
+      "dependencies": [],
+      "expected_result": "Six replaceable ports separate host control, providers, policy, verification, skills and experience",
+      "applicable": true
+    },
+    {
+      "id": "CONTRACT-01",
+      "source_requirement": [
+        "REQUEST.md section 3"
+      ],
+      "acceptance_criterion": "All nine versioned contracts reject malformed values and SDKs use the same definitions",
+      "dependencies": [],
+      "expected_result": "All nine versioned contracts reject malformed values and SDKs use the same definitions",
+      "applicable": true
+    },
+    {
+      "id": "CONTRACT-02",
+      "source_requirement": [
+        "REQUEST.md section 3"
+      ],
+      "acceptance_criterion": "Authenticated HTTP, ordered replay events, TypeScript, Python and MCP clients work",
+      "dependencies": [],
+      "expected_result": "Authenticated HTTP, ordered replay events, TypeScript, Python and MCP clients work",
+      "applicable": true
+    },
+    {
+      "id": "CONTRACT-03",
+      "source_requirement": [
+        "REQUEST.md section 3"
+      ],
+      "acceptance_criterion": "Lifecycle, datasets, skills, models, capabilities and permissioned tools preserve correlation and idempotency",
+      "dependencies": [],
+      "expected_result": "Lifecycle, datasets, skills, models, capabilities and permissioned tools preserve correlation and idempotency",
+      "applicable": true
+    },
+    {
+      "id": "CONTRACT-04",
+      "source_requirement": [
+        "REQUEST.md section 3"
+      ],
+      "acceptance_criterion": "Transitions and receipts persist exact versions without database locks across await or blind restart replay",
+      "dependencies": [],
+      "expected_result": "Transitions and receipts persist exact versions without database locks across await or blind restart replay",
+      "applicable": true
+    },
+    {
+      "id": "CONTRACT-05",
+      "source_requirement": [
+        "REQUEST.md section 3"
+      ],
+      "acceptance_criterion": "Generic, Lense, Agent-OS and custom integration recipes are runnable with truthful host limits",
+      "dependencies": [],
+      "expected_result": "Generic, Lense, Agent-OS and custom integration recipes are runnable with truthful host limits",
+      "applicable": true
+    },
+    {
+      "id": "INTENT-01",
+      "source_requirement": [
+        "REQUEST.md section 4"
+      ],
+      "acceptance_criterion": "Two-pass intent compilation preserves seven origin labels and recursively expands method prerequisites",
+      "dependencies": [],
+      "expected_result": "Two-pass intent compilation preserves seven origin labels and recursively expands method prerequisites",
+      "applicable": true
+    },
+    {
+      "id": "INTENT-02",
+      "source_requirement": [
+        "REQUEST.md section 4"
+      ],
+      "acceptance_criterion": "Parameters and bindings remain immutable and consequential ambiguity awaits input",
+      "dependencies": [],
+      "expected_result": "Parameters and bindings remain immutable and consequential ambiguity awaits input",
+      "applicable": true
+    },
+    {
+      "id": "INTENT-03",
+      "source_requirement": [
+        "REQUEST.md section 4"
+      ],
+      "acceptance_criterion": "Dog and Paint requests do not imply file save, upload, import or destination",
+      "dependencies": [],
+      "expected_result": "Dog and Paint requests do not imply file save, upload, import or destination",
+      "applicable": true
+    },
+    {
+      "id": "SKILL-01",
+      "source_requirement": [
+        "REQUEST.md section 5"
+      ],
+      "acceptance_criterion": "Portable capsule has state guards, nested skills, waits, monitors, effects, recovery, budgets and hashes",
+      "dependencies": [],
+      "expected_result": "Portable capsule has state guards, nested skills, waits, monitors, effects, recovery, budgets and hashes",
+      "applicable": true
+    },
+    {
+      "id": "SKILL-02",
+      "source_requirement": [
+        "REQUEST.md section 5"
+      ],
+      "acceptance_criterion": "Capsules execute only registered bounded operations, with no eval or arbitrary shell",
+      "dependencies": [],
+      "expected_result": "Capsules execute only registered bounded operations, with no eval or arbitrary shell",
+      "applicable": true
+    },
+    {
+      "id": "SKILL-03",
+      "source_requirement": [
+        "REQUEST.md section 5"
+      ],
+      "acceptance_criterion": "Composition, cancellation, durable waits and pause/resume obey one input owner",
+      "dependencies": [],
+      "expected_result": "Composition, cancellation, durable waits and pause/resume obey one input owner",
+      "applicable": true
+    },
+    {
+      "id": "SKILL-04",
+      "source_requirement": [
+        "REQUEST.md section 5"
+      ],
+      "acceptance_criterion": "Compiler aligns and segments varied demonstrations and extracts reusable nested subflows and guarded recovery",
+      "dependencies": [],
+      "expected_result": "Compiler aligns and segments varied demonstrations and extracts reusable nested subflows and guarded recovery",
+      "applicable": true
+    },
+    {
+      "id": "SKILL-05",
+      "source_requirement": [
+        "REQUEST.md section 5"
+      ],
+      "acceptance_criterion": "New compiled skills run unseen parameters and layouts with declared evidence layers",
+      "dependencies": [],
+      "expected_result": "New compiled skills run unseen parameters and layouts with declared evidence layers",
+      "applicable": true
+    },
+    {
+      "id": "SKILL-06",
+      "source_requirement": [
+        "REQUEST.md section 5"
+      ],
+      "acceptance_criterion": "Controlled success/failure interventions establish causal guards and uncertain drafts cannot publish",
+      "dependencies": [],
+      "expected_result": "Controlled success/failure interventions establish causal guards and uncertain drafts cannot publish",
+      "applicable": true
+    },
+    {
+      "id": "SKILL-07",
+      "source_requirement": [
+        "REQUEST.md section 5"
+      ],
+      "acceptance_criterion": "Inspectable bundles validate migrations and dependencies and imported candidates remain quarantined",
+      "dependencies": [],
+      "expected_result": "Inspectable bundles validate migrations and dependencies and imported candidates remain quarantined",
+      "applicable": true
+    },
+    {
+      "id": "EVIDENCE-01",
+      "source_requirement": [
+        "REQUEST.md section 6"
+      ],
+      "acceptance_criterion": "TRUE, FALSE and UNKNOWN evidence binds scope, time, detector, observation and confidence where applicable",
+      "dependencies": [],
+      "expected_result": "TRUE, FALSE and UNKNOWN evidence binds scope, time, detector, observation and confidence where applicable",
+      "applicable": true
+    },
+    {
+      "id": "EVIDENCE-02",
+      "source_requirement": [
+        "REQUEST.md section 6"
+      ],
+      "acceptance_criterion": "Operational, independent completion, knowledge, research and semantic evidence stay distinct",
+      "dependencies": [],
+      "expected_result": "Operational, independent completion, knowledge, research and semantic evidence stay distinct",
+      "applicable": true
+    },
+    {
+      "id": "EVIDENCE-03",
+      "source_requirement": [
+        "REQUEST.md section 6"
+      ],
+      "acceptance_criterion": "Native events and changed regions invalidate dependent cached evidence and drive selective observation",
+      "dependencies": [],
+      "expected_result": "Native events and changed regions invalidate dependent cached evidence and drive selective observation",
+      "applicable": true
+    },
+    {
+      "id": "EVIDENCE-04",
+      "source_requirement": [
+        "REQUEST.md section 6"
+      ],
+      "acceptance_criterion": "Dog semantic gate rejects six prescribed hard negatives and independently accepts a recognizable dog",
+      "dependencies": [],
+      "expected_result": "Dog semantic gate rejects six prescribed hard negatives and independently accepts a recognizable dog",
+      "applicable": true
+    },
+    {
+      "id": "EVIDENCE-05",
+      "source_requirement": [
+        "REQUEST.md section 6"
+      ],
+      "acceptance_criterion": "Runtime observes, probes, repairs and escalates under persisted budgets and gives actionable failure details",
+      "dependencies": [],
+      "expected_result": "Runtime observes, probes, repairs and escalates under persisted budgets and gives actionable failure details",
+      "applicable": true
+    },
+    {
+      "id": "HOST-01",
+      "source_requirement": [
+        "REQUEST.md section 7"
+      ],
+      "acceptance_criterion": "Browser, Windows and available Linux sessions have real capture/control and truthful capabilities",
+      "dependencies": [],
+      "expected_result": "Browser, Windows and available Linux sessions have real capture/control and truthful capabilities",
+      "applicable": true
+    },
+    {
+      "id": "HOST-02",
+      "source_requirement": [
+        "REQUEST.md section 7"
+      ],
+      "acceptance_criterion": "Oculix interface, version and license are pinned and its supported operations use the preferred backend",
+      "dependencies": [],
+      "expected_result": "Oculix interface, version and license are pinned and its supported operations use the preferred backend",
+      "applicable": true
+    },
+    {
+      "id": "HOST-03",
+      "source_requirement": [
+        "REQUEST.md section 7"
+      ],
+      "acceptance_criterion": "Interactive desktop checks include real independent effects, readiness, timeout, cancellation and held-input cleanup",
+      "dependencies": [],
+      "expected_result": "Interactive desktop checks include real independent effects, readiness, timeout, cancellation and held-input cleanup",
+      "applicable": true
+    },
+    {
+      "id": "HOST-04",
+      "source_requirement": [
+        "REQUEST.md section 7"
+      ],
+      "acceptance_criterion": "Structured controls take priority and upstream reuse and performance decisions have sources and measurements",
+      "dependencies": [],
+      "expected_result": "Structured controls take priority and upstream reuse and performance decisions have sources and measurements",
+      "applicable": true
+    },
+    {
+      "id": "SAFETY-01",
+      "source_requirement": [
+        "REQUEST.md section 8"
+      ],
+      "acceptance_criterion": "Every action and receipt binds host, session, target, requester, run, observation, frame and lease",
+      "dependencies": [],
+      "expected_result": "Every action and receipt binds host, session, target, requester, run, observation, frame and lease",
+      "applicable": true
+    },
+    {
+      "id": "SAFETY-02",
+      "source_requirement": [
+        "REQUEST.md section 8"
+      ],
+      "acceptance_criterion": "Stale handles, focus, content, crop, movement, scaling and reconnect reject unsafe input",
+      "dependencies": [],
+      "expected_result": "Stale handles, focus, content, crop, movement, scaling and reconnect reject unsafe input",
+      "applicable": true
+    },
+    {
+      "id": "SAFETY-03",
+      "source_requirement": [
+        "REQUEST.md section 8"
+      ],
+      "acceptance_criterion": "Ownership, leases, takeover, return, pause, cancel and emergency stop release held input",
+      "dependencies": [],
+      "expected_result": "Ownership, leases, takeover, return, pause, cancel and emergency stop release held input",
+      "applicable": true
+    },
+    {
+      "id": "SAFETY-04",
+      "source_requirement": [
+        "REQUEST.md section 8"
+      ],
+      "acceptance_criterion": "Requested, authorized, dispatched, acknowledged and verified phases persist and uncertain effects never replay",
+      "dependencies": [],
+      "expected_result": "Requested, authorized, dispatched, acknowledged and verified phases persist and uncertain effects never replay",
+      "applicable": true
+    },
+    {
+      "id": "SAFETY-05",
+      "source_requirement": [
+        "REQUEST.md section 8"
+      ],
+      "acceptance_criterion": "Bounded segments, event waits, selective capture, resident inference and timing metrics work",
+      "dependencies": [],
+      "expected_result": "Bounded segments, event waits, selective capture, resident inference and timing metrics work",
+      "applicable": true
+    },
+    {
+      "id": "SAFETY-06",
+      "source_requirement": [
+        "REQUEST.md section 8"
+      ],
+      "acceptance_criterion": "Authentication, OS consent, untrusted input and separate network/workspace grants hold at execution",
+      "dependencies": [],
+      "expected_result": "Authentication, OS consent, untrusted input and separate network/workspace grants hold at execution",
+      "applicable": true
+    },
+    {
+      "id": "MODEL-01",
+      "source_requirement": [
+        "REQUEST.md section 9"
+      ],
+      "acceptance_criterion": "Owned CPU model trains real parameters, reloads and deploys below ten million parameters",
+      "dependencies": [],
+      "expected_result": "Owned CPU model trains real parameters, reloads and deploys below ten million parameters",
+      "applicable": true
+    },
+    {
+      "id": "MODEL-02",
+      "source_requirement": [
+        "REQUEST.md section 9"
+      ],
+      "acceptance_criterion": "Production model consumes actual goals, state, facts, candidates, image, history and budgets and emits bounded decisions",
+      "dependencies": [],
+      "expected_result": "Production model consumes actual goals, state, facts, candidates, image, history and budgets and emits bounded decisions",
+      "applicable": true
+    },
+    {
+      "id": "MODEL-03",
+      "source_requirement": [
+        "REQUEST.md section 9"
+      ],
+      "acceptance_criterion": "Applicable compiled candidates and typed permission/capability masks apply before ranking",
+      "dependencies": [],
+      "expected_result": "Applicable compiled candidates and typed permission/capability masks apply before ranking",
+      "applicable": true
+    },
+    {
+      "id": "MODEL-04",
+      "source_requirement": [
+        "REQUEST.md section 9"
+      ],
+      "acceptance_criterion": "Training masks uncertain outcomes and uses actual reached-state corrections with controlled experiments",
+      "dependencies": [],
+      "expected_result": "Training masks uncertain outcomes and uses actual reached-state corrections with controlled experiments",
+      "applicable": true
+    },
+    {
+      "id": "DATA-01",
+      "source_requirement": [
+        "REQUEST.md section 9"
+      ],
+      "acceptance_criterion": "Recordings synchronize before image, action, receipt, after image, labels, versions, transforms and timing",
+      "dependencies": [],
+      "expected_result": "Recordings synchronize before image, action, receipt, after image, labels, versions, transforms and timing",
+      "applicable": true
+    },
+    {
+      "id": "DATA-02",
+      "source_requirement": [
+        "REQUEST.md section 9"
+      ],
+      "acceptance_criterion": "Whole-family splits prevent future/evaluation leaks and include failures, abstentions, corrections, redaction and retention",
+      "dependencies": [],
+      "expected_result": "Whole-family splits prevent future/evaluation leaks and include failures, abstentions, corrections, redaction and retention",
+      "applicable": true
+    },
+    {
+      "id": "DATA-03",
+      "source_requirement": [
+        "REQUEST.md section 9"
+      ],
+      "acceptance_criterion": "Product records, corrects, imports, exports, trains, evaluates, qualifies, activates and rolls back new candidates",
+      "dependencies": [],
+      "expected_result": "Product records, corrects, imports, exports, trains, evaluates, qualifies, activates and rolls back new candidates",
+      "applicable": true
+    },
+    {
+      "id": "DATA-04",
+      "source_requirement": [
+        "REQUEST.md section 9"
+      ],
+      "acceptance_criterion": "Training settings, seeds, loss, parameters, checkpoints, RAM, latency, raw episodes and parity are measured",
+      "dependencies": [],
+      "expected_result": "Training settings, seeds, loss, parameters, checkpoints, RAM, latency, raw episodes and parity are measured",
+      "applicable": true
+    },
+    {
+      "id": "PROVIDER-01",
+      "source_requirement": [
+        "REQUEST.md section 10"
+      ],
+      "acceptance_criterion": "Ollama and generic local providers work keylessly and optional official integrations never scrape credentials",
+      "dependencies": [],
+      "expected_result": "Ollama and generic local providers work keylessly and optional official integrations never scrape credentials",
+      "applicable": true
+    },
+    {
+      "id": "PROVIDER-02",
+      "source_requirement": [
+        "REQUEST.md section 10"
+      ],
+      "acceptance_criterion": "Actual modality, structure, cancellation, locality, privacy and resource readiness match advertisements",
+      "dependencies": [],
+      "expected_result": "Actual modality, structure, cancellation, locality, privacy and resource readiness match advertisements",
+      "applicable": true
+    },
+    {
+      "id": "PROVIDER-03",
+      "source_requirement": [
+        "REQUEST.md section 10"
+      ],
+      "acceptance_criterion": "Installed models, compute/download budgets and licenses are recorded and owned/augmented claims stay separate",
+      "dependencies": [],
+      "expected_result": "Installed models, compute/download budgets and licenses are recorded and owned/augmented claims stay separate",
+      "applicable": true
+    },
+    {
+      "id": "DISCOVERY-01",
+      "source_requirement": [
+        "REQUEST.md section 10"
+      ],
+      "acceptance_criterion": "Uncertainty leads to targeted research, candidate construction, controlled test, independent verification and promotion/rejection",
+      "dependencies": [],
+      "expected_result": "Uncertainty leads to targeted research, candidate construction, controlled test, independent verification and promotion/rejection",
+      "applicable": true
+    },
+    {
+      "id": "DISCOVERY-02",
+      "source_requirement": [
+        "REQUEST.md section 10"
+      ],
+      "acceptance_criterion": "Unfamiliar resettable documentation plus observation produces a new verified predicate and workflow",
+      "dependencies": [],
+      "expected_result": "Unfamiliar resettable documentation plus observation produces a new verified predicate and workflow",
+      "applicable": true
+    },
+    {
+      "id": "DISCOVERY-03",
+      "source_requirement": [
+        "REQUEST.md section 10"
+      ],
+      "acceptance_criterion": "Skill, weight and process changes use isolated candidates and protected examiners with explicit promotion and rollback",
+      "dependencies": [],
+      "expected_result": "Skill, weight and process changes use isolated candidates and protected examiners with explicit promotion and rollback",
+      "applicable": true
+    },
+    {
+      "id": "UX-01",
+      "source_requirement": [
+        "REQUEST.md section 11"
+      ],
+      "acceptance_criterion": "Repeated PowerShell and shell setup, start, stop, restart and doctor work with isolated state",
+      "dependencies": [],
+      "expected_result": "Repeated PowerShell and shell setup, start, stop, restart and doctor work with isolated state",
+      "applicable": true
+    },
+    {
+      "id": "UX-02",
+      "source_requirement": [
+        "REQUEST.md section 11"
+      ],
+      "acceptance_criterion": "All console controls, previews, downloads, tools, construction, verification errors and recovery use real state",
+      "dependencies": [],
+      "expected_result": "All console controls, previews, downloads, tools, construction, verification errors and recovery use real state",
+      "applicable": true
+    },
+    {
+      "id": "UX-03",
+      "source_requirement": [
+        "REQUEST.md section 11"
+      ],
+      "acceptance_criterion": "Local console and CLI are authorized and optional remote/Telegram limits are explicit",
+      "dependencies": [],
+      "expected_result": "Local console and CLI are authorized and optional remote/Telegram limits are explicit",
+      "applicable": true
+    },
+    {
+      "id": "PACKAGE-01",
+      "source_requirement": [
+        "REQUEST.md section 11,13"
+      ],
+      "acceptance_criterion": "Portable package has components, manifests, recipes and setup without secrets or host modifications",
+      "dependencies": [],
+      "expected_result": "Portable package has components, manifests, recipes and setup without secrets or host modifications",
+      "applicable": true
+    },
+    {
+      "id": "TRACK-01",
+      "source_requirement": [
+        "REQUEST.md section 12,13;brief 1,2,8,10"
+      ],
+      "acceptance_criterion": "Frozen requirements map to one complete ledger and generated checklist and aggregate rejects missing or stale evidence",
+      "dependencies": [],
+      "expected_result": "Frozen requirements map to one complete ledger and generated checklist and aggregate rejects missing or stale evidence",
+      "applicable": true
+    },
+    {
+      "id": "TRACK-02",
+      "source_requirement": [
+        "USER_COMPLETION_REQUEST.md brief 3,9"
+      ],
+      "acceptance_criterion": "Actual specialists and separate reviewers cover in-scope source, configuration and interactive workflows",
+      "dependencies": [],
+      "expected_result": "Actual specialists and separate reviewers cover in-scope source, configuration and interactive workflows",
+      "applicable": true
+    },
+    {
+      "id": "TRACK-03",
+      "source_requirement": [
+        "USER_COMPLETION_REQUEST.md brief 5,7,8"
+      ],
+      "acceptance_criterion": "Real task input to permissioned research, construction, execution, independent verify, bounded repair and durable artifact works",
+      "dependencies": [
+        "SAFETY-06",
+        "EVIDENCE-05",
+        "CONTRACT-03"
+      ],
+      "expected_result": "Real task input to permissioned research, construction, execution, independent verify, bounded repair and durable artifact works",
+      "applicable": true
+    },
+    {
+      "id": "GATE-A",
+      "source_requirement": [
+        "REQUEST.md section 12 A"
+      ],
+      "acceptance_criterion": "Clean isolated install, API, SDK, console, persistence, restart, reconciliation, offline and repeated setup pass",
+      "dependencies": [
+        "STANDALONE-01",
+        "UX-01",
+        "CONTRACT-02",
+        "CONTRACT-04",
+        "UX-02"
+      ],
+      "expected_result": "Clean isolated install, API, SDK, console, persistence, restart, reconciliation, offline and repeated setup pass",
+      "applicable": true
+    },
+    {
+      "id": "GATE-B",
+      "source_requirement": [
+        "REQUEST.md section 12 B"
+      ],
+      "acceptance_criterion": "Real native shot, text, pointer, drag, scroll, shortcut and hold have independent effects and stop cleanup",
+      "dependencies": [
+        "HOST-03",
+        "SAFETY-01",
+        "SAFETY-02",
+        "SAFETY-03"
+      ],
+      "expected_result": "Real native shot, text, pointer, drag, scroll, shortcut and hold have independent effects and stop cleanup",
+      "applicable": true
+    },
+    {
+      "id": "GATE-C",
+      "source_requirement": [
+        "REQUEST.md section 12 C"
+      ],
+      "acceptance_criterion": "All five required native/browser complete-task categories run with independent outcome checks",
+      "dependencies": [
+        "EVIDENCE-02",
+        "EVIDENCE-04",
+        "TRACK-03"
+      ],
+      "expected_result": "All five required native/browser complete-task categories run with independent outcome checks",
+      "applicable": true
+    },
+    {
+      "id": "GATE-D",
+      "source_requirement": [
+        "REQUEST.md section 12 D"
+      ],
+      "acceptance_criterion": "All safety failures, malicious imports, composition, causal discovery, rollback and false completion regressions pass",
+      "dependencies": [
+        "SAFETY-04",
+        "SKILL-04",
+        "SKILL-06",
+        "SKILL-07",
+        "DISCOVERY-02"
+      ],
+      "expected_result": "All safety failures, malicious imports, composition, causal discovery, rollback and false completion regressions pass",
+      "applicable": true
+    },
+    {
+      "id": "GATE-E",
+      "source_requirement": [
+        "REQUEST.md section 12 E"
+      ],
+      "acceptance_criterion": "Protected owned learning criterion and separate compiled-library efficiency criterion pass matched protocols",
+      "dependencies": [
+        "MODEL-01",
+        "MODEL-02",
+        "MODEL-03",
+        "MODEL-04",
+        "DATA-04",
+        "SKILL-05"
+      ],
+      "expected_result": "Protected owned learning criterion and separate compiled-library efficiency criterion pass matched protocols",
+      "applicable": true
+    },
+    {
+      "id": "GATE-F",
+      "source_requirement": [
+        "REQUEST.md section 12 F"
+      ],
+      "acceptance_criterion": "SDK/host contracts and pinned available benchmark sessions pass without evaluator leakage",
+      "dependencies": [
+        "CONTRACT-05",
+        "HOST-01"
+      ],
+      "expected_result": "SDK/host contracts and pinned available benchmark sessions pass without evaluator leakage",
+      "applicable": true
+    },
+    {
+      "id": "MAC-LIVE",
+      "source_requirement": [
+        "REQUEST.md section platform request"
+      ],
+      "acceptance_criterion": "Real macOS permission, capture, structured control and input effects pass on an available Mac",
+      "dependencies": [],
+      "expected_result": "Real macOS permission, capture, structured control and input effects pass on an available Mac",
+      "applicable": true
+    },
+    {
+      "id": "PHYSICAL-DPI",
+      "source_requirement": [
+        "REQUEST.md section 12 D"
+      ],
+      "acceptance_criterion": "Live physical monitor and DPI transfer have independently checked coordinate effects",
+      "dependencies": [],
+      "expected_result": "Live physical monitor and DPI transfer have independently checked coordinate effects",
+      "applicable": true
+    },
+    {
+      "id": "EXTERNAL-HOSTS",
+      "source_requirement": [
+        "REQUEST.md section 12 F conditional"
+      ],
+      "acceptance_criterion": "Configured Lense, Agent-OS, remote hosts, Telegram and benchmark VMs run when available",
+      "dependencies": [],
+      "expected_result": "Configured Lense, Agent-OS, remote hosts, Telegram and benchmark VMs run when available",
+      "applicable": false
+    }
+  ]
+}

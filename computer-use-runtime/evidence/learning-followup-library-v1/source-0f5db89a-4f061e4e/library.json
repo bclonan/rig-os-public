@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "roots": [
+    {
+      "schemaVersion": 1,
+      "id": "followup.library.method0",
+      "version": "1.0.0",
+      "hash": "7a888f15799f40c4ed4507c0ac619213b4774de5fe5167cbf27d4e131750ffa8",
+      "description": "Parameterized form workflow extracted from aligned independent demonstrations",
+      "status": "draft",
+      "inputs": {
+        "name": "string"
+      },
+      "outputs": [
+        "result"
+      ],
+      "capabilities": [
+        "fill",
+        "click"
+      ],
+      "preconditions": [],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "workflow",
+        "states": [
+          {
+            "id": "workflow",
+            "steps": [
+              {
+                "id": "shared-call",
+                "operation": "subskill",
+                "subskill": "followup.library.shared.c965a144db66",
+                "args": {
+                  "name": "$name"
+                },
+                "scope": "edit"
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "fresh_observation",
+        "probe_ready",
+        "repair_local",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 1,
+        "steps": 6
+      },
+      "dependencies": [
+        "followup.library.shared.c965a144db66"
+      ],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "compiled",
+        "demonstrations": [
+          "d6e49539-58b8-45d8-9fa5-a19177524b44",
+          "0dae1c97-dfa9-4502-934f-6f7124ce1a5c",
+          "dab2dace-26f4-4e34-8b58-a01444c6a313"
+        ],
+        "tests": [],
+        "uncertain": []
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "followup.library.method1",
+      "version": "1.0.0",
+      "hash": "0205ef2b4ea5bfdc965c44bbf469e6461783e82b17f1ce4f19e0e59990097a9d",
+      "description": "Parameterized form workflow extracted from aligned independent demonstrations",
+      "status": "draft",
+      "inputs": {
+        "name": "string"
+      },
+      "outputs": [
+        "result"
+      ],
+      "capabilities": [
+        "observe",
+        "fill",
+        "click"
+      ],
+      "preconditions": [],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "workflow",
+        "states": [
+          {
+            "id": "workflow",
+            "steps": [
+              {
+                "id": "op0",
+                "operation": "observe",
+                "args": {},
+                "scope": "edit",
+                "alternatives": []
+              },
+              {
+                "id": "shared-call",
+                "operation": "subskill",
+                "subskill": "followup.library.shared.c965a144db66",
+                "args": {
+                  "name": "$name"
+                },
+                "scope": "edit"
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "fresh_observation",
+        "probe_ready",
+        "repair_local",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 1,
+        "steps": 7
+      },
+      "dependencies": [
+        "followup.library.shared.c965a144db66"
+      ],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "compiled",
+        "demonstrations": [
+          "9404b5e7-f180-44e6-8dda-b007ee7c6ed6",
+          "c16df0fa-0c4c-49ac-a5e8-2771ea489911",
+          "4ec9a541-8a75-4140-b957-54498e89348e"
+        ],
+        "tests": [],
+        "uncertain": []
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "schemaVersion": 1,
+      "id": "followup.library.shared.c965a144db66",
+      "version": "1.0.0",
+      "hash": "c758b8df5b43f4058d64e12fc8c023f30eed2030c857ac7278a44eb927ac6daa",
+      "description": "Contiguous parameterized subflow shared by independently demonstrated methods",
+      "status": "draft",
+      "inputs": {
+        "name": "string"
+      },
+      "outputs": [
+        "result"
+      ],
+      "capabilities": [
+        "fill",
+        "click"
+      ],
+      "preconditions": [],
+      "effects": [
+        "edit"
+      ],
+      "machine": {
+        "initial": "shared",
+        "states": [
+          {
+            "id": "shared",
+            "steps": [
+              {
+                "id": "shared0",
+                "operation": "fill",
+                "args": {
+                  "locator": "name",
+                  "value": "$name"
+                },
+                "scope": "edit",
+                "alternatives": [
+                  "name"
+                ]
+              },
+              {
+                "id": "shared1",
+                "operation": "click",
+                "args": {
+                  "locator": "apply"
+                },
+                "scope": "edit",
+                "alternatives": [
+                  "apply"
+                ]
+              }
+            ],
+            "monitor": [
+              "focused"
+            ]
+          }
+        ]
+      },
+      "recovery": [
+        "fresh_observation",
+        "probe_ready",
+        "repair_local",
+        "escalate"
+      ],
+      "budgets": {
+        "retries": 0,
+        "steps": 4
+      },
+      "dependencies": [],
+      "compatibility": [
+        "browser-fixture-v1"
+      ],
+      "descriptor": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "kind": "compiled",
+        "demonstrations": [
+          "d6e49539-58b8-45d8-9fa5-a19177524b44",
+          "0dae1c97-dfa9-4502-934f-6f7124ce1a5c",
+          "dab2dace-26f4-4e34-8b58-a01444c6a313",
+          "9404b5e7-f180-44e6-8dda-b007ee7c6ed6",
+          "c16df0fa-0c4c-49ac-a5e8-2771ea489911",
+          "4ec9a541-8a75-4140-b957-54498e89348e"
+        ],
+        "tests": [],
+        "uncertain": []
+      }
+    }
+  ],
+  "extractions": [
+    {
+      "dependency": "followup.library.shared.c965a144db66",
+      "methods": [
+        "followup.library.method0",
+        "followup.library.method1"
+      ],
+      "operations": 2,
+      "evidence": [
+        "d6e49539-58b8-45d8-9fa5-a19177524b44",
+        "0dae1c97-dfa9-4502-934f-6f7124ce1a5c",
+        "dab2dace-26f4-4e34-8b58-a01444c6a313",
+        "9404b5e7-f180-44e6-8dda-b007ee7c6ed6",
+        "c16df0fa-0c4c-49ac-a5e8-2771ea489911",
+        "4ec9a541-8a75-4140-b957-54498e89348e"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "frozenAt": "2026-09-29T21:25:18.217793+00:00",
+  "head": "04d80c43c0ca36531a04daaa37446ac00c7bba25",
+  "sources": [
+    {
+      "source": "REQUEST.md",
+      "sha256": "1b7e54a2704adfc6c381764d5c9f005db374f987e2444080b162110f0aa66a75",
+      "snapshot": "docs/completion-contract-v1/REQUEST.md",
+      "headings": [
+        "MISSION",
+        "1. STANDALONE MEANS STANDALONE",
+        "2. ARCHITECTURE AND IMPLEMENTATION DEFAULTS",
+        "3. PUBLIC CONTRACTS AND FUTURE INTEGRATION",
+        "4. INTENT COMPILATION: EXPLICIT VERSUS IMPLICIT",
+        "5. PORTABLE SKILLS AND EXPERIENCE COMPILATION",
+        "6. EVIDENCE-BACKED STATE AND RECOVERY",
+        "7. REAL HOST BRIDGES, OCULIX, AND UPSTREAM REUSE",
+        "8. INPUT OWNERSHIP, SAFETY, AND FAST EXECUTION",
+        "9. OWNED MODEL AND TRAINABLE EXPERIENCE",
+        "10. OPTIONAL MODELS, KEYLESS OPERATION, AND DISCOVERY",
+        "11. STANDALONE USE, SETUP, AND PLUG-IN PACKAGING",
+        "12. FREEZE THE EVALUATION BEFORE CLAIMING SUCCESS",
+        "Test these gates:",
+        "13. AUTONOMOUS DELIVERY AND STOP CONDITIONS",
+        "Deliver:"
+      ]
+    },
+    {
+      "source": "acceptance.json",
+      "sha256": "ea17bc13bdf8eb616058d971c30348c18e927ebf3fec415a5ba4abbc1dae58d0",
+      "snapshot": "docs/completion-contract-v1/acceptance.json",
+      "headings": []
+    },
+    {
+      "source": "PLATFORMS.md",
+      "sha256": "7e33a05e387225032faeb04b75460102947ca80934a18e675081162e4161977d",
+      "snapshot": "docs/completion-contract-v1/PLATFORMS.md",
+      "headings": [
+        "# Desktop setup on Windows, macOS and Linux",
+        "## Common installation",
+        "## Windows",
+        "## macOS",
+        "1. Open System Settings, Privacy & Security, Accessibility. Grant access to the terminal or Python application identified by macOS when it runs this service.",
+        "2. For screenshots, also grant Screen Recording access to that application. macOS may call this Screen & System Audio Recording. Accessibility-only tasks can run without screenshots.",
+        "3. Quit and reopen that terminal after changing permissions, then run the desktop doctor and restart the service.",
+        "## Linux",
+        "## Repeat the controlled Linux checks"
+      ]
+    },
+    {
+      "source": "docs/DEFINITION_OF_DONE.md",
+      "sha256": "efde7f7d45ffaf4815c3c84bc0629d575b3228205bf593cf9000734afa845e6e",
+      "snapshot": "docs/completion-contract-v1/docs__DEFINITION_OF_DONE.md",
+      "headings": [
+        "# Definition of done"
+      ]
+    }
+  ],
+  "userCompletionRequestSha256": "98340221695f00c243ea8abf99511ded91d62d8e1f5cc18bf14b72db1c8ad0f4",
+  "unresolvedForeignReferences": [
+    "APS",
+    "historical 0/12",
+    "f7a2162",
+    "V0/V1.3",
+    "scripts/check.ps1",
+    "scripts/release-gate.ps1",
+    "scripts/check-ci.ps1",
+    "scripts/test-prompt-docs.ps1"
+  ],
+  "decision": "Apply execution and independent-review rules to current computer-use-runtime. Foreign acceptance identifiers need repository clarification; never invent their thresholds or prior results.",
+  "taskSnapshot": {
+    "path": "docs/completion-contract-v1/tasks.json",
+    "sha256": "ef8dda825b73397e45ac7cf9d58905b3d3c3c818ae5e1145b2a65cc2af9e9365",
+    "count": 64
+  }
+}

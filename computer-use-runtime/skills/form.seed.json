@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "id": "form.seed",
+  "version": "1.0.0",
+  "hash": "6525de3ebce7d9e6d9fc76776058e5eaf99ea002df3b9c29290dc8dfe572858b",
+  "description": "Enter a display name in a resettable local form",
+  "status": "seed",
+  "inputs": {
+    "name": "string"
+  },
+  "outputs": [
+    "result"
+  ],
+  "capabilities": [
+    "fill",
+    "click"
+  ],
+  "preconditions": [
+    "ready"
+  ],
+  "effects": [
+    "edit"
+  ],
+  "machine": {
+    "initial": "edit",
+    "states": [
+      {
+        "id": "edit",
+        "steps": [
+          {
+            "id": "name",
+            "operation": "fill",
+            "args": {
+              "locator": "name",
+              "value": "$name"
+            },
+            "scope": "edit"
+          }
+        ],
+        "next": "commit",
+        "monitor": [
+          "focused"
+        ]
+      },
+      {
+        "id": "commit",
+        "steps": [
+          {
+            "id": "commit",
+            "operation": "click",
+            "args": {
+              "locator": "apply"
+            },
+            "scope": "edit"
+          }
+        ],
+        "monitor": [
+          "focused"
+        ]
+      }
+    ]
+  },
+  "recovery": [
+    "observe",
+    "probe",
+    "repair",
+    "escalate"
+  ],
+  "budgets": {
+    "retries": 1,
+    "steps": 8
+  },
+  "dependencies": [],
+  "compatibility": [
+    "browser-fixture-v1"
+  ],
+  "descriptor": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "provenance": {
+    "kind": "hand_authored",
+    "demonstrations": [],
+    "tests": [],
+    "uncertain": []
+  }
+}

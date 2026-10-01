@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "sourceStamp": {
+    "head": "2ccad54f0aa5d39c494185a7fb7ffeb48e2d6c5f",
+    "sha256": "bcf97b61f75a5edf64fd2350ccc64cc63cab52f63e6ed2c1471079220bb137ca"
+  },
+  "command": "npx tsx evaluation/learning-followup-v3.ts audit",
+  "sessionId": 65833,
+  "chunks": [
+    {
+      "chunk_id": "aaed41",
+      "wall_time_seconds": 10.0056719,
+      "session_id": 65833,
+      "original_token_count": 27,
+      "output": "npm notice run computer-use-runtime@0.1.0 npx\nnpm notice run tsx evaluation/learning-followup-v3.ts audit\n"
+    },
+    {
+      "chunk_id": "fb5a27",
+      "wall_time_seconds": 30.0048838,
+      "session_id": 65833,
+      "original_token_count": 0,
+      "output": ""
+    },
+    {
+      "chunk_id": "1161d2",
+      "wall_time_seconds": 30.0030012,
+      "session_id": 65833,
+      "original_token_count": 33,
+      "output": "{\"seed\":17,\"method\":\"trained\",\"completed\":100,\"successes\":100}\n{\"seed\":17,\"method\":\"initialized\",\"completed\":100,\"successes\":25}\n"
+    },
+    {
+      "chunk_id": "cc7517",
+      "wall_time_seconds": 40.0012009,
+      "session_id": 65833,
+      "original_token_count": 16,
+      "output": "{\"seed\":17,\"method\":\"fixed\",\"completed\":100,\"successes\":100}\n"
+    },
+    {
+      "chunk_id": "20e97a",
+      "wall_time_seconds": 40.007216,
+      "session_id": 65833,
+      "original_token_count": 19,
+      "output": "{\"seed\":17,\"method\":\"without_compilation\",\"completed\":100,\"successes\":100}\n"
+    },
+    {
+      "chunk_id": "285738",
+      "wall_time_seconds": 40.005006,
+      "session_id": 65833,
+      "original_token_count": 18,
+      "output": "{\"seed\":17,\"method\":\"frozen_context\",\"completed\":100,\"successes\":84}\n"
+    },
+    {
+      "chunk_id": "24fe2e",
+      "wall_time_seconds": 40.0058226,
+      "session_id": 65833,
+      "original_token_count": 17,
+      "output": "{\"seed\":17,\"method\":\"v1_selection\",\"completed\":100,\"successes\":50}\n"
+    },
+    {
+      "chunk_id": "c26921",
+      "wall_time_seconds": 40.0038916,
+      "session_id": 65833,
+      "original_token_count": 18,
+      "output": "{\"seed\":17,\"method\":\"v2_public_facts\",\"completed\":100,\"successes\":100}\n"
+    },
+    {
+      "chunk_id": "ed3c86",
+      "wall_time_seconds": 40.0046907,
+      "session_id": 65833,
+      "original_token_count": 32,
+      "output": "{\"seed\":41,\"method\":\"trained\",\"completed\":100,\"successes\":100}\n{\"seed\":41,\"method\":\"initialized\",\"completed\":100,\"successes\":0}\n"
+    },
+    {
+      "chunk_id": "b9cd45",
+      "wall_time_seconds": 40.0030166,
+      "session_id": 65833,
+      "original_token_count": 16,
+      "output": "{\"seed\":41,\"method\":\"fixed\",\"completed\":100,\"successes\":100}\n"
+    },
+    {
+      "chunk_id": "73914e",
+      "wall_time_seconds": 40.0083683,
+      "session_id": 65833,
+      "original_token_count": 19,
+      "output": "{\"seed\":41,\"method\":\"without_compilation\",\"completed\":100,\"successes\":100}\n"
+    },
+    {
+      "chunk_id": "e800e5",
+      "wall_time_seconds": 40.0003345,
+      "session_id": 65833,
+      "original_token_count": 18,
+      "output": "{\"seed\":41,\"method\":\"frozen_context\",\"completed\":100,\"successes\":100}\n"
+    },
+    {
+      "chunk_id": "7fba54",
+      "wall_time_seconds": 40.0093016,
+      "session_id": 65833,
+      "original_token_count": 35,
+      "output": "{\"seed\":41,\"method\":\"v1_selection\",\"completed\":100,\"successes\":50}\n{\"seed\":41,\"method\":\"v2_public_facts\",\"completed\":100,\"successes\":100}\n"
+    },
+    {
+      "chunk_id": "d4eacd",
+      "wall_time_seconds": 40.0098865,
+      "session_id": 65833,
+      "original_token_count": 0,
+      "output": ""
+    },
+    {
+      "chunk_id": "6e5d70",
+      "wall_time_seconds": 40.0041622,
+      "session_id": 65833,
+      "original_token_count": 16,
+      "output": "{\"seed\":73,\"method\":\"trained\",\"completed\":100,\"successes\":100}\n"
+    },
+    {
+      "chunk_id": "d26060",
+      "wall_time_seconds": 40.0025247,
+      "session_id": 65833,
+      "original_token_count": 17,
+      "output": "{\"seed\":73,\"method\":\"initialized\",\"completed\":100,\"successes\":0}\n"
+    },
+    {
+      "chunk_id": "c50500",
+      "wall_time_seconds": 40.0117667,
+      "session_id": 65833,
+      "original_token_count": 34,
+      "output": "{\"seed\":73,\"method\":\"fixed\",\"completed\":100,\"successes\":100}\n{\"seed\":73,\"method\":\"without_compilation\",\"completed\":100,\"successes\":100}\n"
+    },
+    {
+      "chunk_id": "473aac",
+      "wall_time_seconds": 40.0067312,
+      "session_id": 65833,
+      "original_token_count": 18,
+      "output": "{\"seed\":73,\"method\":\"frozen_context\",\"completed\":100,\"successes\":84}\n"
+    },
+    {
+      "chunk_id": "7991cc",
+      "wall_time_seconds": 40.0039826,
+      "session_id": 65833,
+      "original_token_count": 35,
+      "output": "{\"seed\":73,\"method\":\"v1_selection\",\"completed\":100,\"successes\":50}\n{\"seed\":73,\"method\":\"v2_public_facts\",\"completed\":100,\"successes\":100}\n"
+    },
+    {
+      "chunk_id": "aa4c76",
+      "wall_time_seconds": 0.0000094,
+      "exit_code": 1,
+      "original_token_count": 264,
+      "output": "{\"learningBenefit\":\"PASS\",\"fullHeads\":\"FAIL\",\"paired\":{\"success95\":[0.8866666666666667,0.9466666666666667],\"observations95\":[2.8933333333333335,5.693333333333333]},\"headMetrics\":[{\"seed\":17,\"model\":\"trained\",\"episodes\":100,\"predicateAccuracy\":0.9333333333333333,\"recoveryAccuracy\":1,\"clarificationRecall\":1,\"outcomeBrier\":0.3878765047356244,\"costMae\":0.10174858120252502,\"predicateLabels\":300,\"clarificationLabels\":20,\"knownOutcomeLabels\":80,\"knownCostLabels\":53},{\"seed\":41,\"model\":\"trained\",\"episodes\":100,\"predicateAccuracy\":0.9666666666666667,\"recoveryAccuracy\":1,\"clarificationRecall\":1,\"outcomeBrier\":0.395274117454793,\"costMae\":0.1077297605433554,\"predicateLabels\":300,\"clarificationLabels\":20,\"knownOutcomeLabels\":80,\"knownCostLabels\":53},{\"seed\":73,\"model\":\"trained\",\"episodes\":100,\"predicateAccuracy\":0.9333333333333333,\"recoveryAccuracy\":0.9,\"clarificationRecall\":1,\"outcomeBrier\":0.38451320147163015,\"costMae\":0.0966030016260327,\"predicateLabels\":300,\"clarificationLabels\":20,\"knownOutcomeLabels\":80,\"knownCostLabels\":53}],\"sourceStable\":true}\n"
+    }
+  ],
+  "completed": true,
+  "exitCode": 1
+}

@@ -1,0 +1,80 @@
+{
+  "models": [
+    {
+      "seed": 17,
+      "sha256": "91486b9edfc31fdb9f1d736b84fa64e07e4be759c345e54074dee72898d99614",
+      "contexts": 16,
+      "candidateCounts": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "outputs": [
+        "scores",
+        "predicates",
+        "recovery",
+        "outcome"
+      ],
+      "forwards": [
+        "selection",
+        "state",
+        "forecast"
+      ],
+      "maximumError": 1.621246337890625e-05
+    },
+    {
+      "seed": 41,
+      "sha256": "0cdc9c75ae7df6e3d59f01f77bc15125d49aeebc8f510e54a9cc9938c05a2ae0",
+      "contexts": 16,
+      "candidateCounts": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "outputs": [
+        "scores",
+        "predicates",
+        "recovery",
+        "outcome"
+      ],
+      "forwards": [
+        "selection",
+        "state",
+        "forecast"
+      ],
+      "maximumError": 2.288818359375e-05
+    },
+    {
+      "seed": 73,
+      "sha256": "5776bafae0045e8a73b12bbc72f0092715d7b1a40f99f17e0532d5c44e9d97fe",
+      "contexts": 16,
+      "candidateCounts": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "outputs": [
+        "scores",
+        "predicates",
+        "recovery",
+        "outcome"
+      ],
+      "forwards": [
+        "selection",
+        "state",
+        "forecast"
+      ],
+      "maximumError": 3.814697265625e-05
+    }
+  ],
+  "selectionSha256": "0c64f3206cde16b4425ed64205b0f4418b88442526c13952417daef0d2cd035d"
+}

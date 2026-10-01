@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:computer-use-runtime:ModelVersion:1",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "hash",
+    "parameters",
+    "format",
+    "seed",
+    "status",
+    "metrics"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1,
+      "type": "number"
+    },
+    "id": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "hash": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "parameters": {
+      "type": "integer"
+    },
+    "format": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "seed": {
+      "type": "integer"
+    },
+    "status": {
+      "anyOf": [
+        {
+          "const": "candidate",
+          "type": "string"
+        },
+        {
+          "const": "active",
+          "type": "string"
+        },
+        {
+          "const": "retired",
+          "type": "string"
+        }
+      ]
+    },
+    "metrics": {
+      "type": "object",
+      "patternProperties": {
+        "^(.*)$": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

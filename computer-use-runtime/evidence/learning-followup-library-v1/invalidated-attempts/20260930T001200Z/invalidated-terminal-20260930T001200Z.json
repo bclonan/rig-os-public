@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "status": "INVALIDATED",
+  "reason": "Maintained test and quality logger required repairs during evaluation; no final score was used to change the model, protocol or candidate.",
+  "sourceStamp": "2ccad54f0aa5d39c494185a7fb7ffeb48e2d6c5f:426dea3589551ebaa4bb7929fa25dc66b53ea14e389b1d3af04d12d47688aa16",
+  "command": "npx tsx evaluation/learning-followup-library.ts audit",
+  "sessionId": 8036,
+  "chunks": [
+    {
+      "exit_code": null,
+      "output": "npm notice run computer-use-runtime@0.1.0 npx\nnpm notice run tsx evaluation/learning-followup-library.ts audit\n"
+    },
+    {
+      "chunk_id": "e98ef8",
+      "wall_time_seconds": 30.0015687,
+      "session_id": 8036,
+      "original_token_count": 27,
+      "output": "{\"seed\":17,\"method\":\"compiled\",\"completed\":100}\n{\"seed\":17,\"method\":\"without_compilation\",\"completed\":100}\n"
+    },
+    {
+      "chunk_id": "7568ec",
+      "wall_time_seconds": 0.0000093,
+      "exit_code": 1,
+      "original_token_count": 15,
+      "output": "{\"seed\":17,\"method\":\"hand_authored_macro\",\"completed\":100}\n"
+    }
+  ],
+  "exitCode": 1,
+  "completed": true
+}

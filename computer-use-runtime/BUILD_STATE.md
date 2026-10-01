@@ -1,0 +1,21 @@
+# Build state
+
+This document retains pre-publication execution results. The public edition changes portable training-origin admission and two regression tests. Bundled models need a fresh local qualification against the published source. Read [portable evidence](../docs/open-source/PORTABLE_EVIDENCE.md) for the exact derivative scope.
+
+Updated October 1 after review repairs. The pre-publication runtime had 300 maintained files, SHA256 `31667d67fa52f874bc6cdcbdafc88b33a10865ef741217513a495bbfd4248700`, over commit `25690943be8727fc13dd2354f7a2927d3ccbfae5`.
+
+The [earlier eight-command quality check](../docs/open-source/EVIDENCE.md) passed, including 327 TypeScript tests and 87 Python cases with 18 Windows platform skips. Fresh source installation remains the earlier 299-file execution. It passed all seven original commands, including two setup runs. It reuses the installed Python and Chromium cache. Every new archive needs exact-byte inspection and a separate seven-command installation outside Git, including setup twice. CRC and package checks alone do not prove installation. The checkout repair checklist records each actual release receipt. Raw completion and root-review records are excluded from the portable ZIP.
+
+All 20 original Linux portal checks passed at the earlier 299-file checkpoint in the private single-monitor scale 1 profile. Its forced container settlement returned 137. The separately observed parent-EOF worker returned 0. Those are different cleanup outcomes.
+
+The 299-file V4 replay completed all 2,100 tasks and 300 head cases. Its browser metrics passed, but activation rejected the selected trainer's original source hash. That failed qualification remains unchanged. The earlier 300-file V4 qualification and explicit seed-17 activation passed. [The primary receipt](../docs/open-source/EVIDENCE.md) records all three command exits as zero and settled cleanup. [Independent metric review](../docs/open-source/EVIDENCE.md) and [whole-current review](../docs/open-source/EVIDENCE.md) verify all 2,100 tasks, 300 head cases, exact selected weights, current source and signed finalization. [A separate public-operation supplement](../docs/open-source/EVIDENCE.md) completed one browser task with two bound acknowledgments and an independently read result, then rolled back to `fixed`. These are exposed-case source requalification and disposable-Store checks. They do not train new weights, activate the user's Store or establish unseen-task or native learning.
+
+The 900-episode study finished. Trained weights produced 185 correct effects out of 300, initialized weights 75 and the authored controller 300. The frozen learned-transfer gate failed. Independent saved-record review confirms the measurements and failed learned-transfer gate. Neither measurement retrains or activates models in the user's Store. [REPAIR_STATUS.md](docs/REPAIR_STATUS.md) records the exact reports and preserved failed attempts.
+
+Core repairs cover nested scope and budgets, fresh child guard/return verification, exact delivery receipts, artifact integrity and capture settlement. Service repairs cover IDs, per-store tokens, attempt-all cleanup, stale UI responses, trusted workspace ownership and bounded provider responses. Learning/setup repairs cover terminal finalization, process settlement and checked installer exits.
+
+The old ZIP `release/computer-use-runtime-0.1.0.zip` remains SHA256 `481e25e5b16214a945f3d4dda55eaa384534edbf4e2e261b8fe8461c3ffc985b`. Its 273-file source and 61/63 acceptance result remain historical. [The previous build page](../docs/open-source/EVIDENCE.md) retains its complete evidence references.
+
+The full platform request remains incomplete. No Mac is available. Physical mixed-DPI is unqualified. Its earlier pre-publication 300-file preparation has independent whole-method review and remains UNRUN. Twelve filesystem checks do not qualify physical effects. The last saved preflight still found an unowned Settings window. Actual external host integrations and general native learning are unverified.
+
+Use [RUNNING.md](docs/RUNNING.md) for installation, models, startup, token, stop/restart, recovery and backup. An already running process does not load these source changes automatically.

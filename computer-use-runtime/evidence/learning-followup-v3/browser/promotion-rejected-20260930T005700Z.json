@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "command": "npx tsx -e actual verifyFollowupAudit failed-candidate rejection check",
+  "chunk_id": "78f1cd",
+  "wall_time_seconds": 1.8218206000000001,
+  "exit_code": 0,
+  "original_token_count": 245,
+  "output": "npm notice run computer-use-runtime@0.1.0 npx\nnpm notice run tsx -e import { verifyFollowupAudit } from \"./src/learner/qualification.ts\"; try { const q = verifyFollowupAudit(\"evidence/learning-followup-v3/browser\"); console.log(JSON.stringify({status:\"FAIL\",unexpectedAccepted:q.contextVersion})); process.exitCode=1; } catch (error) { const message=error instanceof Error ? error.message : String(error); console.log(JSON.stringify({status:message === \"Full advisory head evidence is missing or changed\" ? \"PASS\" : \"FAIL\",scope:\"Frozen failed candidate must not qualify\",rejected:true,error:message,sourceStamp:\"2ccad54f:bcf97b61\",createdAt:new Date().toISOString()})); if(message !== \"Full advisory head evidence is missing or changed\")process.exitCode=1; }\n{\"status\":\"PASS\",\"scope\":\"Frozen failed candidate must not qualify\",\"rejected\":true,\"error\":\"Full advisory head evidence is missing or changed\",\"sourceStamp\":\"2ccad54f:bcf97b61\",\"createdAt\":\"2026-09-30T01:00:38.530Z\"}\n"
+}

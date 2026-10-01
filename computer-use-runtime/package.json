@@ -1,0 +1,61 @@
+{
+  "name": "computer-use-runtime",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.17 <25"
+  },
+  "exports": {
+    ".": "./dist/src/index.js",
+    "./sdk": "./dist/src/sdk/index.js"
+  },
+  "scripts": {
+    "setup:desktop": "tsx scripts/desktop.ts setup",
+    "doctor:desktop": "tsx scripts/desktop.ts doctor",
+    "build": "tsc && vite build",
+    "start": "node --import tsx src/cli.ts start",
+    "doctor": "tsx src/cli.ts doctor",
+    "test": "tsx --test --test-concurrency=4 tests/*.test.ts",
+    "record": "tsx src/cli.ts record",
+    "compile": "tsx src/cli.ts compile",
+    "train": "tsx src/cli.ts train",
+    "evaluate": "tsx evaluation/audit.ts",
+    "verify:native": "tsx evaluation/native.ts",
+    "benchmark:smoke": "tsx evaluation/benchmarks.ts",
+    "package": "tsx scripts/package.ts",
+    "cli": "tsx src/cli.ts",
+    "dev": "vite --host 127.0.0.1",
+    "stop": "node --import tsx src/cli.ts stop",
+    "restart": "node --import tsx src/cli.ts restart",
+    "status": "node --import tsx src/cli.ts status",
+    "token": "node --import tsx src/cli.ts token",
+    "open": "node --import tsx src/cli.ts open",
+    "typecheck": "tsc --noEmit && vue-tsc --noEmit -p tsconfig.console.json",
+    "lint": "npm run typecheck && npm run format:check",
+    "format:check": "prettier --check src console tests scripts/*.ts evaluation/*.ts examples/*.ts *.json",
+    "format": "prettier --write src console tests scripts/*.ts evaluation/*.ts examples/*.ts *.json",
+    "check": "npm run lint && npm test && npm run build",
+    "verify:audit": "tsx evaluation/verify-audit.ts"
+  },
+  "dependencies": {
+    "@fastify/static": "10.1.5",
+    "@modelcontextprotocol/sdk": "1.31.0",
+    "@sinclair/typebox": "0.34.52",
+    "ajv": "8.20.0",
+    "fastify": "5.12.5",
+    "onnxruntime-node": "1.30.0",
+    "playwright": "1.63.0",
+    "vue": "3.5.43",
+    "xstate": "5.33.2"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.3",
+    "@vitejs/plugin-vue": "6.0.9",
+    "prettier": "3.9.9",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3",
+    "vite": "8.3.1",
+    "vue-tsc": "3.3.11"
+  }
+}

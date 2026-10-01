@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:computer-use-runtime:RunEvent:1",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "seq",
+    "runId",
+    "correlationId",
+    "at",
+    "type",
+    "data"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1,
+      "type": "number"
+    },
+    "seq": {
+      "type": "integer"
+    },
+    "runId": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "correlationId": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "at": {
+      "type": "number"
+    },
+    "type": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "data": {}
+  }
+}

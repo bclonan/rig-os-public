@@ -1,0 +1,2 @@
+# POSIX shells need LF even when this package is checked out on Windows.
+*.sh text eol=lf

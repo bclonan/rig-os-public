@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "controlled-preconditions-v1",
+  "scope": "Resettable local publication form, active fill/click controls, Boolean details.open permission condition",
+  "fact": "docsOpen",
+  "trainingNames": ["Training Cedar 17", "Training Hazel 29", "Training Maple 43"],
+  "heldoutNames": ["Heldout Sequoia 9831", "Heldout Juniper 829", "Heldout Spruce 413"],
+  "issuedSequence": ["fill name with authorized name parameter", "click apply"],
+  "minimumIndependentPairs": 3,
+  "candidateStatusBeforeHeldout": "draft",
+  "requirements": [
+    "Same authorized contract and literal issued action sequence within each pair",
+    "Only the controlled Boolean fact differs in pre-action facts; controls stay enabled and visible",
+    "Positive independently completes; negative delivers every action and independently measures FALSE completion",
+    "Unknown, uncertain, missing receipt, modified source or journal evidence never qualifies",
+    "Heldout positive and negative baseline pairs use parameters absent from training",
+    "Three exact candidate positives and false-precondition zero-action negatives gate publication",
+    "Rollback restores the exact draft hash; a later good publication can restore the published hash"
+  ],
+  "protected": ["REQUEST.md", "acceptance.json", "docs/completion-contract-v1/REQUEST.md", "fixtures/workbench.html"],
+  "claimLimit": "Controlled prediction of completion for this tested action and condition profile. No general causal discovery or broader application claim."
+}

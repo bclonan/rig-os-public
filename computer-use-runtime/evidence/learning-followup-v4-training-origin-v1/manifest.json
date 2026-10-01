@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "learning-followup-v4-training-origin-v1",
+  "scope": "Portable publication derivative of reviewed training metadata. Model and controlled image bytes are unchanged. This derivative is training provenance only, never successful terminal evidence or a new qualification.",
+  "protocolHash": "55229c2fbeb5b0c218e875ef74228f8c7849cc3b99e3e01967491feb1dc7ce3c",
+  "files": {
+    "results.json": "19c4ba510328b3aeaa958235107c8fe342e99fb74723d9cd778a6cf01baf6610",
+    "audit-sealed.json": "93e36a6dae077e20ec5975d9c9b92ad18e2ea4760827e3fba5f9c3b1c22652e9",
+    "selection.json": "0c64f3206cde16b4425ed64205b0f4418b88442526c13952417daef0d2cd035d",
+    "sources/learner/model.py": "9ba1798232328a64d4549f1b574a8c3a7a4466ca5bb53962f5bb7140653fe810",
+    "sources/learner/model_v4.py": "6e474777dc7a2323896fd0d4a368d10b6496528e9f2654bf1450a67fbae99a06",
+    "sources/learner/followup_v4_train.py": "861a7ecfe1d2a9f9b108acb11cf425e42af1c43ad390cb3f77953d6e80846cf8",
+    "sources/learner/recorded.py": "c2c2cd5bae5f529900fb8e1fa7438a559ba9c81ed5328f92f3f8fb026f97aadd",
+    "sources/src/learner/descriptor.ts": "42c373de41ab62329c27b4a2472860429236c77e506d2adfba8f7ed511e6b3b5",
+    "sources/evaluation/learning-followup-v4.protocol.json": "55229c2fbeb5b0c218e875ef74228f8c7849cc3b99e3e01967491feb1dc7ce3c"
+  },
+  "archiveSha256": "481e25e5b16214a945f3d4dda55eaa384534edbf4e2e261b8fe8461c3ffc985b"
+}

@@ -1,0 +1,28 @@
+# Only exact independently verified source-digest fields are suppressed.
+# All default secret detectors stay enabled.
+[extend]
+useDefault = true
+
+[[rules]]
+id = "generic-api-key"
+
+[[rules.allowlists]]
+description = "Verified SHA-256 values for evaluation/macos-api-check.py in controlled source maps"
+condition = "AND"
+regexTarget = "line"
+paths = ['''(?:^|/)(?:computer-use-runtime/evidence/learning-followup-(?:v[234]/browser|library-v1|v4-training-origin-v1)(?:/[^/]+)*/(?:results|selection|train-manifest|validation-manifest|reaching-policy)\.json|docs/system-map/PUBLICATION_BINDING\.json)$''']
+regexes = ['''^\s*"(?:computer-use-runtime/)?evaluation/macos-api-check\.py"\s*:\s*"(?:3628d5b20df66a9e056557965e1cd3eb5f6f1254fdf0570c81915c49a9a94245)",?\s*$''']
+
+[[rules.allowlists]]
+description = "The verified public Mac API checker digest in the map's path and digest records"
+condition = "AND"
+regexTarget = "secret"
+paths = ['''(?:^|/)docs/system-map/PUBLICATION_BINDING\.json$''']
+regexes = ['''^3628d5b20df66a9e056557965e1cd3eb5f6f1254fdf0570c81915c49a9a94245$''']
+
+[[rules.allowlists]]
+description = "Exact independently verified API correlation test source digest in the publication binding"
+condition = "AND"
+regexTarget = "line"
+paths = ['''(?:^|/)docs/system-map/PUBLICATION_BINDING\.json$''']
+regexes = ['''^\s*"computer-use-runtime/tests/api-correlation\.test\.ts"\s*:\s*"00d98bf48edfe8788eff5ec3159b95e638f1e95201110e2f368a6e247deafe68",?\s*$''']

@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:computer-use-runtime:PredicateEvidence:1",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "predicate",
+    "truth",
+    "kind",
+    "scope",
+    "observationId",
+    "references",
+    "at",
+    "expiresAt",
+    "invalidatedBy",
+    "detector"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1,
+      "type": "number"
+    },
+    "id": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "predicate": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "truth": {
+      "anyOf": [
+        {
+          "const": "TRUE",
+          "type": "string"
+        },
+        {
+          "const": "FALSE",
+          "type": "string"
+        },
+        {
+          "const": "UNKNOWN",
+          "type": "string"
+        }
+      ]
+    },
+    "kind": {
+      "anyOf": [
+        {
+          "const": "operational",
+          "type": "string"
+        },
+        {
+          "const": "completion",
+          "type": "string"
+        },
+        {
+          "const": "knowledge",
+          "type": "string"
+        },
+        {
+          "const": "semantic",
+          "type": "string"
+        }
+      ]
+    },
+    "scope": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "observationId": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "minLength": 1,
+        "maxLength": 8192,
+        "type": "string"
+      }
+    },
+    "at": {
+      "type": "number"
+    },
+    "expiresAt": {
+      "type": "number"
+    },
+    "invalidatedBy": {
+      "type": "array",
+      "items": {
+        "minLength": 1,
+        "maxLength": 8192,
+        "type": "string"
+      }
+    },
+    "detector": {
+      "minLength": 1,
+      "maxLength": 8192,
+      "type": "string"
+    },
+    "confidence": {
+      "minimum": 0,
+      "maximum": 1,
+      "type": "number"
+    }
+  }
+}

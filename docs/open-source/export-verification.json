@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "at": "2026-10-01T13:59:03.665645+00:00",
+  "tests": 19,
+  "passed": 17,
+  "skipped": [
+    {
+      "test": "test_source_directory_symlink_is_refused (test_export_public.ExportPublicTests.test_source_directory_symlink_is_refused)",
+      "reason": "Host does not permit disposable symlink creation: 22"
+    },
+    {
+      "test": "test_source_file_symlink_is_refused (test_export_public.ExportPublicTests.test_source_file_symlink_is_refused)",
+      "reason": "Host does not permit disposable symlink creation: 22"
+    }
+  ],
+  "failures": 0,
+  "errors": 0,
+  "scope": "Disposable exporter and normalization sentinel tests. Linked paths, hardlinks, destination protection, private metadata and normalized hash bindings. Real symlink creation was attempted separately. Original frozen evidence was not modified."
+}

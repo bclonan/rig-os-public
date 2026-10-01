@@ -1,0 +1,336 @@
+[
+  {
+    "name": "main",
+    "role": "desktop frame",
+    "actions": []
+  },
+  {
+    "name": "xdg-desktop-portal-gtk",
+    "role": "application",
+    "actions": []
+  },
+  {
+    "name": "linux-portal-fixture.py",
+    "role": "application",
+    "actions": []
+  },
+  {
+    "name": "Computer runtime portal fixture",
+    "role": "frame",
+    "actions": []
+  },
+  {
+    "name": "",
+    "role": "panel",
+    "actions": []
+  },
+  {
+    "name": "",
+    "role": "filler",
+    "actions": []
+  },
+  {
+    "name": "",
+    "role": "separator",
+    "actions": []
+  },
+  {
+    "name": "Close",
+    "role": "push button",
+    "actions": [
+      "click"
+    ]
+  },
+  {
+    "name": "",
+    "role": "filler",
+    "actions": []
+  },
+  {
+    "name": "Computer runtime portal fixture",
+    "role": "label",
+    "actions": []
+  },
+  {
+    "name": "",
+    "role": "label",
+    "actions": []
+  },
+  {
+    "name": "",
+    "role": "filler",
+    "actions": []
+  },
+  {
+    "name": "Portal text",
+    "role": "text",
+    "actions": [
+      "activate"
+    ]
+  },
+  {
+    "name": "Portal marker",
+    "role": "push button",
+    "actions": [
+      "click"
+    ]
+  },
+  {
+    "name": "Portal canvas",
+    "role": "drawing area",
+    "actions": []
+  },
+  {
+    "name": "xdg-desktop-portal-gnome",
+    "role": "application",
+    "actions": []
+  },
+  {
+    "name": "Remote desktop",
+    "role": "frame",
+    "actions": [
+      "window.close",
+      "default.activate"
+    ]
+  },
+  {
+    "name": "",
+    "role": "scroll pane",
+    "actions": []
+  },
+  {
+    "name": "",
+    "role": "panel",
+    "actions": []
+  },
+  {
+    "name": "",
+    "role": "panel",
+    "actions": []
+  },
+  {
+    "name": "",
+    "role": "panel",
+    "actions": []
+  },
+  {
+    "name": "",
+    "role": "panel",
+    "actions": []
+  },
+  {
+    "name": "Entire Screen",
+    "role": "panel",
+    "actions": []
+  },
+  {
+    "name": "",
+    "role": "panel",
+    "actions": []
+  },
+  {
+    "name": "Select monitor to share with the requesting application",
+    "role": "label",
+    "actions": [
+      "clipboard.copy",
+      "selection.delete",
+      "clipboard.paste",
+      "link.open",
+      "clipboard.cut",
+      "link.copy",
+      "menu.popup",
+      "selection.select-all"
+    ]
+  },
+  {
+    "name": "GtkListBox",
+    "role": "list",
+    "actions": []
+  },
+  {
+    "name": "MetaVendor",
+    "role": "list item",
+    "actions": []
+  },
+  {
+    "name": "",
+    "role": "panel",
+    "actions": []
+  },
+  {
+    "name": "",
+    "role": "panel",
+    "actions": []
+  },
+  {
+    "name": "MetaVendor",
+    "role": "label",
+    "actions": [
+      "clipboard.copy",
+      "selection.delete",
+      "clipboard.paste",
+      "link.open",
+      "clipboard.cut",
+      "link.copy",
+      "menu.popup",
+      "selection.select-all"
+    ]
+  },
+  {
+    "name": "",
+    "role": "panel",
+    "actions": []
+  },
+  {
+    "name": "GtkImage",
+    "role": "image",
+    "actions": []
+  },
+  {
+    "name": "GtkListBox",
+    "role": "list",
+    "actions": []
+  },
+  {
+    "name": "Allow remote interaction",
+    "role": "list item",
+    "actions": []
+  },
+  {
+    "name": "",
+    "role": "panel",
+    "actions": []
+  },
+  {
+    "name": "",
+    "role": "panel",
+    "actions": []
+  },
+  {
+    "name": "Allow remote interaction",
+    "role": "label",
+    "actions": [
+      "clipboard.copy",
+      "selection.delete",
+      "clipboard.paste",
+      "link.open",
+      "clipboard.cut",
+      "link.copy",
+      "menu.popup",
+      "selection.select-all"
+    ]
+  },
+  {
+    "name": "",
+    "role": "panel",
+    "actions": []
+  },
+  {
+    "name": "Allow remote interaction",
+    "role": "check box",
+    "actions": [
+      "toggle"
+    ]
+  },
+  {
+    "name": "GtkScrollbar",
+    "role": "scroll bar",
+    "actions": []
+  },
+  {
+    "name": "GtkRange",
+    "role": "filler",
+    "actions": []
+  },
+  {
+    "name": "GtkScrollbar",
+    "role": "scroll bar",
+    "actions": []
+  },
+  {
+    "name": "GtkRange",
+    "role": "filler",
+    "actions": []
+  },
+  {
+    "name": "",
+    "role": "panel",
+    "actions": []
+  },
+  {
+    "name": "",
+    "role": "panel",
+    "actions": []
+  },
+  {
+    "name": "",
+    "role": "panel",
+    "actions": []
+  },
+  {
+    "name": "",
+    "role": "panel",
+    "actions": []
+  },
+  {
+    "name": "_Cancel Cancel",
+    "role": "push button",
+    "actions": [
+      "click"
+    ]
+  },
+  {
+    "name": "Cancel",
+    "role": "label",
+    "actions": [
+      "clipboard.copy",
+      "selection.delete",
+      "clipboard.paste",
+      "link.open",
+      "clipboard.cut",
+      "link.copy",
+      "menu.popup",
+      "selection.select-all"
+    ]
+  },
+  {
+    "name": "Remote desktop",
+    "role": "label",
+    "actions": [
+      "clipboard.copy",
+      "selection.delete",
+      "clipboard.paste",
+      "link.open",
+      "clipboard.cut",
+      "link.copy",
+      "menu.popup",
+      "selection.select-all"
+    ]
+  },
+  {
+    "name": "",
+    "role": "panel",
+    "actions": []
+  },
+  {
+    "name": "_Share Share",
+    "role": "push button",
+    "actions": [
+      "click"
+    ]
+  },
+  {
+    "name": "Share",
+    "role": "label",
+    "actions": [
+      "clipboard.copy",
+      "selection.delete",
+      "clipboard.paste",
+      "link.open",
+      "clipboard.cut",
+      "link.copy",
+      "menu.popup",
+      "selection.select-all"
+    ]
+  }
+]

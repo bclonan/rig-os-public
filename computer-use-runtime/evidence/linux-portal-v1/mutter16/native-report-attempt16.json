@@ -1,0 +1,701 @@
+{
+  "schemaVersion": 1,
+  "evidenceKind": "native-disposable-wayland",
+  "backend": "Mutter43.8 headless compositor + GNOME portal43.1",
+  "checks": {
+    "startup_no_global_grant": {
+      "passed": true,
+      "evidence": {
+        "host": "a0dcf150c1c4",
+        "session": "linux-0-cur-wayland",
+        "platform": "Linux",
+        "operations": [
+          "invoke",
+          "fill",
+          "type"
+        ],
+        "keys": [],
+        "screenshotStatus": "unavailable on Wayland; accessibility controls only",
+        "backend": "linux-atspi-wayland",
+        "notes": "Wayland supports accessible controls and editable text. Global input and capture require explicit XDG RemoteDesktop portal consent. No portal consent is bypassed.",
+        "consent": {
+          "required": true,
+          "granted": false,
+          "pending": false,
+          "devices": 0,
+          "streams": 0
+        },
+        "inputCleanup": {
+          "settled": true,
+          "status": "No input is held"
+        }
+      }
+    },
+    "actual_consent": {
+      "passed": true,
+      "evidence": {
+        "granted": true,
+        "devices": 3,
+        "streams": 1
+      }
+    },
+    "bound_window_focus": {
+      "passed": true,
+      "evidence": {
+        "focus": {
+          "focused": true
+        },
+        "window": {
+          "handle": 4231324885265236,
+          "pid": 7794,
+          "title": "Computer runtime portal fixture",
+          "executable": "/usr/bin/python3.11",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 900,
+            "scale": 1
+          }
+        }
+      }
+    },
+    "authorized_pipewire_capture": {
+      "passed": true,
+      "evidence": {
+        "dimensions": [
+          1280,
+          900
+        ],
+        "sha256": "804cc97e3d371b65dde08341e33e69214d0c4213c5e8f1914953889a86daa903",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 900,
+          "scale": 1
+        }
+      }
+    },
+    "static_cache_rejects_global_input_without_revoking_consent": {
+      "passed": true,
+      "evidence": {
+        "firstFacts": {
+          "windowHandle": 4231324885265236,
+          "windowTitle": "Computer runtime portal fixture",
+          "desktopPlatform": "Linux",
+          "supportedOperations": "[\"invoke\", \"fill\", \"type\", \"click\", \"drag\", \"scroll\", \"hold\", \"key\"]",
+          "supportedKeys": "[\"Enter\", \"Tab\", \"Shift+Tab\", \"Escape\", \"Space\", \"ArrowLeft\", \"ArrowRight\", \"ArrowUp\", \"ArrowDown\", \"Home\", \"End\", \"PageUp\", \"PageDown\", \"Backspace\", \"Delete\", \"F12\", \"Control+A\", \"Control+C\", \"Control+V\", \"Control+Z\", \"Control+F\", \"Control+L\", \"Control+O\", \"Control+Tab\", \"Control+Home\", \"Control+End\", \"Control+Shift+End\", \"Control+N\", \"Control+S\", \"Control+Shift+S\"]",
+          "semanticBackground": true,
+          "screenshotStatus": "Last-delivered authorized PipeWire frame; current pixels unverified",
+          "pixelFrameCached": true,
+          "pixelFrameSequence": 3,
+          "pixelReceivedAt": 1790723145414,
+          "pixelTimestampProvenance": "GStreamer source PTS mapped through pipeline clock",
+          "pixelSourcePtsNs": "191765716",
+          "pixelCapturedAt": 1790723144678,
+          "pipewireSessionGeneration": "a2ac2dffb319451aac70507f1f3ad934"
+        },
+        "secondFacts": {
+          "windowHandle": 4231324885265236,
+          "windowTitle": "Computer runtime portal fixture",
+          "desktopPlatform": "Linux",
+          "supportedOperations": "[\"invoke\", \"fill\", \"type\", \"click\", \"drag\", \"scroll\", \"hold\", \"key\"]",
+          "supportedKeys": "[\"Enter\", \"Tab\", \"Shift+Tab\", \"Escape\", \"Space\", \"ArrowLeft\", \"ArrowRight\", \"ArrowUp\", \"ArrowDown\", \"Home\", \"End\", \"PageUp\", \"PageDown\", \"Backspace\", \"Delete\", \"F12\", \"Control+A\", \"Control+C\", \"Control+V\", \"Control+Z\", \"Control+F\", \"Control+L\", \"Control+O\", \"Control+Tab\", \"Control+Home\", \"Control+End\", \"Control+Shift+End\", \"Control+N\", \"Control+S\", \"Control+Shift+S\"]",
+          "semanticBackground": true,
+          "screenshotStatus": "Last-delivered authorized PipeWire frame; current pixels unverified",
+          "pixelFrameCached": true,
+          "pixelFrameSequence": 3,
+          "pixelReceivedAt": 1790723145414,
+          "pixelTimestampProvenance": "GStreamer source PTS mapped through pipeline clock",
+          "pixelSourcePtsNs": "191765716",
+          "pixelCapturedAt": 1790723144678,
+          "pipewireSessionGeneration": "a2ac2dffb319451aac70507f1f3ad934"
+        },
+        "result": {
+          "actionId": "static-frame-negative",
+          "runId": "portal-native",
+          "backend": "linux-atspi-wayland",
+          "phase": "rejected",
+          "dispatched": false,
+          "delivered": false,
+          "reason": "Fresh portal pixels are unavailable; cached frames cannot authorize global input"
+        },
+        "consent": {
+          "required": true,
+          "granted": true,
+          "pending": false,
+          "devices": 3,
+          "streams": 1
+        }
+      }
+    },
+    "native_pointer_click": {
+      "passed": true,
+      "evidence": {
+        "text": "Portal button verified",
+        "markerClicks": 1,
+        "pointerPresses": 0,
+        "pointerReleases": 0,
+        "pointerMoves": [],
+        "scrollEvents": 0,
+        "keyDown": [],
+        "keyUp": [],
+        "active": true
+      }
+    },
+    "native_keyboard_effect": {
+      "passed": true,
+      "evidence": {
+        "text": "",
+        "markerClicks": 1,
+        "pointerPresses": 0,
+        "pointerReleases": 0,
+        "pointerMoves": [],
+        "scrollEvents": 0,
+        "keyDown": [
+          "Control_L",
+          "a",
+          "BackSpace"
+        ],
+        "keyUp": [
+          "a",
+          "Control_L",
+          "BackSpace"
+        ],
+        "active": true
+      }
+    },
+    "native_drag": {
+      "passed": true,
+      "evidence": {
+        "text": "",
+        "markerClicks": 1,
+        "pointerPresses": 1,
+        "pointerReleases": 1,
+        "pointerMoves": [
+          [
+            647,
+            371
+          ],
+          [
+            653,
+            375
+          ],
+          [
+            660,
+            378
+          ],
+          [
+            667,
+            381
+          ],
+          [
+            673,
+            385
+          ],
+          [
+            680,
+            388
+          ],
+          [
+            687,
+            391
+          ],
+          [
+            693,
+            395
+          ],
+          [
+            700,
+            398
+          ],
+          [
+            707,
+            401
+          ],
+          [
+            713,
+            405
+          ],
+          [
+            720,
+            408
+          ]
+        ],
+        "scrollEvents": 0,
+        "keyDown": [
+          "Control_L",
+          "a",
+          "BackSpace"
+        ],
+        "keyUp": [
+          "a",
+          "Control_L",
+          "BackSpace"
+        ],
+        "active": true
+      }
+    },
+    "native_scroll": {
+      "passed": true,
+      "evidence": {
+        "text": "",
+        "markerClicks": 1,
+        "pointerPresses": 2,
+        "pointerReleases": 2,
+        "pointerMoves": [
+          [
+            647,
+            371
+          ],
+          [
+            653,
+            375
+          ],
+          [
+            660,
+            378
+          ],
+          [
+            667,
+            381
+          ],
+          [
+            673,
+            385
+          ],
+          [
+            680,
+            388
+          ],
+          [
+            687,
+            391
+          ],
+          [
+            693,
+            395
+          ],
+          [
+            700,
+            398
+          ],
+          [
+            707,
+            401
+          ],
+          [
+            713,
+            405
+          ],
+          [
+            720,
+            408
+          ]
+        ],
+        "scrollEvents": 1,
+        "keyDown": [
+          "Control_L",
+          "a",
+          "BackSpace"
+        ],
+        "keyUp": [
+          "a",
+          "Control_L",
+          "BackSpace"
+        ],
+        "active": true
+      }
+    },
+    "native_hold_cleanup": {
+      "passed": true,
+      "evidence": {
+        "text": "",
+        "markerClicks": 1,
+        "pointerPresses": 2,
+        "pointerReleases": 2,
+        "pointerMoves": [
+          [
+            647,
+            371
+          ],
+          [
+            653,
+            375
+          ],
+          [
+            660,
+            378
+          ],
+          [
+            667,
+            381
+          ],
+          [
+            673,
+            385
+          ],
+          [
+            680,
+            388
+          ],
+          [
+            687,
+            391
+          ],
+          [
+            693,
+            395
+          ],
+          [
+            700,
+            398
+          ],
+          [
+            707,
+            401
+          ],
+          [
+            713,
+            405
+          ],
+          [
+            720,
+            408
+          ]
+        ],
+        "scrollEvents": 1,
+        "keyDown": [
+          "Control_L",
+          "a",
+          "BackSpace",
+          "Right"
+        ],
+        "keyUp": [
+          "a",
+          "Control_L",
+          "BackSpace",
+          "Right"
+        ],
+        "active": true
+      }
+    },
+    "session_close_revokes_capabilities": {
+      "passed": true,
+      "evidence": {
+        "host": "a0dcf150c1c4",
+        "session": "linux-0-cur-wayland",
+        "platform": "Linux",
+        "operations": [
+          "invoke",
+          "fill",
+          "type"
+        ],
+        "keys": [],
+        "screenshotStatus": "Portal revoked: Portal session closed",
+        "backend": "linux-atspi-wayland",
+        "notes": "Explicit portal consent. Selected monitor only; stream/window mapping must verify. No XWayland input. Current verified pointer profile requires scale 1.",
+        "consent": {
+          "required": true,
+          "granted": false,
+          "pending": false,
+          "devices": 0,
+          "streams": 0
+        },
+        "inputCleanup": {
+          "settled": true,
+          "status": "Session withdrawn; no input release acknowledgement claimed"
+        }
+      }
+    },
+    "actual_cancel_denies": {
+      "passed": true,
+      "evidence": "Portal permission denied or cancelled"
+    },
+    "cancel_preserves_no_grant": {
+      "passed": true,
+      "evidence": {
+        "host": "a0dcf150c1c4",
+        "session": "linux-0-cur-wayland",
+        "platform": "Linux",
+        "operations": [
+          "invoke",
+          "fill",
+          "type"
+        ],
+        "keys": [],
+        "screenshotStatus": "Portal revoked: Portal session closed",
+        "backend": "linux-atspi-wayland",
+        "notes": "Explicit portal consent. Selected monitor only; stream/window mapping must verify. No XWayland input. Current verified pointer profile requires scale 1.",
+        "consent": {
+          "required": true,
+          "granted": false,
+          "pending": false,
+          "devices": 0,
+          "streams": 0
+        },
+        "inputCleanup": {
+          "settled": true,
+          "status": "Session withdrawn; no input release acknowledgement claimed"
+        }
+      }
+    },
+    "actual_partial_grant_capture_only": {
+      "passed": true,
+      "evidence": {
+        "grant": {
+          "granted": true,
+          "devices": 0,
+          "streams": 1
+        },
+        "caps": {
+          "host": "a0dcf150c1c4",
+          "session": "linux-0-cur-wayland",
+          "platform": "Linux",
+          "operations": [
+            "invoke",
+            "fill",
+            "type"
+          ],
+          "keys": [],
+          "screenshotStatus": "Consent-bound PipeWire stream; verified window mapping required",
+          "backend": "linux-atspi-wayland",
+          "notes": "Explicit portal consent. Selected monitor only; stream/window mapping must verify. No XWayland input. Current verified pointer profile requires scale 1.",
+          "consent": {
+            "required": true,
+            "granted": true,
+            "pending": false,
+            "devices": 0,
+            "streams": 1
+          },
+          "inputCleanup": {
+            "settled": true,
+            "status": "Session withdrawn; no input release acknowledgement claimed"
+          }
+        }
+      }
+    },
+    "actual_backend_loss_revokes": {
+      "passed": true,
+      "evidence": {
+        "host": "a0dcf150c1c4",
+        "session": "linux-0-cur-wayland",
+        "platform": "Linux",
+        "operations": [
+          "invoke",
+          "fill",
+          "type"
+        ],
+        "keys": [],
+        "screenshotStatus": "Portal revoked: Portal D-Bus owner changed: org.freedesktop.impl.portal.desktop.gnome",
+        "backend": "linux-atspi-wayland",
+        "notes": "Explicit portal consent. Selected monitor only; stream/window mapping must verify. No XWayland input. Current verified pointer profile requires scale 1.",
+        "consent": {
+          "required": true,
+          "granted": false,
+          "pending": false,
+          "devices": 0,
+          "streams": 0
+        },
+        "inputCleanup": {
+          "settled": true,
+          "status": "Session withdrawn; no input release acknowledgement claimed"
+        }
+      }
+    },
+    "actual_dbus_owner_loss_revokes": {
+      "passed": true,
+      "evidence": {
+        "host": "a0dcf150c1c4",
+        "session": "linux-0-cur-wayland",
+        "platform": "Linux",
+        "operations": [
+          "invoke",
+          "fill",
+          "type"
+        ],
+        "keys": [],
+        "screenshotStatus": "Portal revoked: Portal D-Bus owner changed: org.freedesktop.portal.Desktop",
+        "backend": "linux-atspi-wayland",
+        "notes": "Explicit portal consent. Selected monitor only; stream/window mapping must verify. No XWayland input. Current verified pointer profile requires scale 1.",
+        "consent": {
+          "required": true,
+          "granted": false,
+          "pending": false,
+          "devices": 0,
+          "streams": 0
+        },
+        "inputCleanup": {
+          "settled": true,
+          "status": "Session withdrawn; no input release acknowledgement claimed"
+        }
+      }
+    },
+    "actual_request_close_settles_without_response": {
+      "passed": true,
+      "evidence": {
+        "elapsedMs": 13,
+        "request": {
+          "id": 63,
+          "error": "Portal consent cancelled or timed out"
+        },
+        "cancellation": {
+          "cancelled": true
+        }
+      }
+    },
+    "actual_takeover_cancels_pending_consent": {
+      "passed": true,
+      "evidence": {
+        "elapsedMs": 11,
+        "request": {
+          "id": 65,
+          "error": "Portal consent cancelled or timed out"
+        },
+        "cancellation": {}
+      }
+    },
+    "actual_parent_eof_cancels_pending_consent": {
+      "passed": true,
+      "evidence": {
+        "elapsedMs": 32,
+        "exitCode": 0
+      }
+    },
+    "actual_session_closed_signal": {
+      "passed": true,
+      "evidence": {
+        "grant": {
+          "granted": true,
+          "devices": 3,
+          "streams": 1
+        },
+        "status": "Portal Session.Closed signal",
+        "trigger": "Task-owned PipeWire core shutdown"
+      }
+    }
+  },
+  "failures": [],
+  "scope": "Owned single monitor, fullscreen repainting GTK fixture, scale1. Static frames are display-only and global input is safely rejected. No fractional-scale or arbitrary-window mapping claim",
+  "environment": {
+    "python": "3.11.2 (main, May 12 2026, 05:17:27) [GCC 12.2.0]",
+    "packages": [
+      "gstreamer1.0-pipewire:amd64\t0.3.65-3+deb12u1",
+      "libgtk-3-0:amd64\t3.24.38-2~deb12u3",
+      "libgtk-4-1:amd64\t4.8.3+ds-2+deb12u1",
+      "mutter\t43.8-0+deb12u1",
+      "pipewire:amd64\t0.3.65-3+deb12u1",
+      "xdg-desktop-portal\t1.16.0-2",
+      "xdg-desktop-portal-gnome\t43.1-2"
+    ]
+  },
+  "seatSetup": {
+    "kind": "separate-actual-consent-portal",
+    "grant": {
+      "granted": true,
+      "devices": 3,
+      "streams": 1
+    },
+    "detail": "Separate setup sends Escape then the owned fixture presents itself to initialize headless Mutter's absent physical keyboard. Claimed worker effects use only the worker's own granted session."
+  },
+  "preflightRefusals": [
+    {
+      "operation": "click",
+      "attempt": 1,
+      "receipt": {
+        "actionId": "native-075d5d24-19a6-475b-8568-c6119a3c8ef6",
+        "runId": "portal-native",
+        "backend": "linux-atspi-wayland",
+        "phase": "rejected",
+        "dispatched": false,
+        "delivered": false,
+        "reason": "Desktop content changed after observation"
+      },
+      "observationFacts": {
+        "windowHandle": 4231324885265236,
+        "windowTitle": "Computer runtime portal fixture",
+        "desktopPlatform": "Linux",
+        "supportedOperations": "[\"invoke\", \"fill\", \"type\", \"click\", \"drag\", \"scroll\", \"hold\", \"key\"]",
+        "supportedKeys": "[\"Enter\", \"Tab\", \"Shift+Tab\", \"Escape\", \"Space\", \"ArrowLeft\", \"ArrowRight\", \"ArrowUp\", \"ArrowDown\", \"Home\", \"End\", \"PageUp\", \"PageDown\", \"Backspace\", \"Delete\", \"F12\", \"Control+A\", \"Control+C\", \"Control+V\", \"Control+Z\", \"Control+F\", \"Control+L\", \"Control+O\", \"Control+Tab\", \"Control+Home\", \"Control+End\", \"Control+Shift+End\", \"Control+N\", \"Control+S\", \"Control+Shift+S\"]",
+        "semanticBackground": true,
+        "screenshotStatus": "New source-timestamped PipeWire delivery of selected fullscreen window",
+        "pixelFrameCached": false,
+        "pixelFrameSequence": 7,
+        "pixelReceivedAt": 1790723146711,
+        "pixelTimestampProvenance": "GStreamer source PTS mapped through pipeline clock",
+        "pixelSourcePtsNs": "2194849716",
+        "pixelCapturedAt": 1790723146681,
+        "pipewireSessionGeneration": "a2ac2dffb319451aac70507f1f3ad934"
+      }
+    },
+    {
+      "operation": "key",
+      "attempt": 1,
+      "receipt": {
+        "actionId": "native-d1a53494-0cc9-45ea-8266-5deaeddeef42",
+        "runId": "portal-native",
+        "backend": "linux-atspi-wayland",
+        "phase": "rejected",
+        "dispatched": false,
+        "delivered": false,
+        "reason": "Desktop content changed after observation"
+      },
+      "observationFacts": {
+        "windowHandle": 4231324885265236,
+        "windowTitle": "Computer runtime portal fixture",
+        "desktopPlatform": "Linux",
+        "supportedOperations": "[\"invoke\", \"fill\", \"type\", \"click\", \"drag\", \"scroll\", \"hold\", \"key\"]",
+        "supportedKeys": "[\"Enter\", \"Tab\", \"Shift+Tab\", \"Escape\", \"Space\", \"ArrowLeft\", \"ArrowRight\", \"ArrowUp\", \"ArrowDown\", \"Home\", \"End\", \"PageUp\", \"PageDown\", \"Backspace\", \"Delete\", \"F12\", \"Control+A\", \"Control+C\", \"Control+V\", \"Control+Z\", \"Control+F\", \"Control+L\", \"Control+O\", \"Control+Tab\", \"Control+Home\", \"Control+End\", \"Control+Shift+End\", \"Control+N\", \"Control+S\", \"Control+Shift+S\"]",
+        "semanticBackground": true,
+        "screenshotStatus": "New source-timestamped PipeWire delivery of selected fullscreen window",
+        "pixelFrameCached": false,
+        "pixelFrameSequence": 12,
+        "pixelReceivedAt": 1790723147164,
+        "pixelTimestampProvenance": "GStreamer source PTS mapped through pipeline clock",
+        "pixelSourcePtsNs": "2656556716",
+        "pixelCapturedAt": 1790723147142,
+        "pipewireSessionGeneration": "a2ac2dffb319451aac70507f1f3ad934"
+      }
+    },
+    {
+      "operation": "drag",
+      "attempt": 1,
+      "receipt": {
+        "actionId": "native-c443ea04-baaa-409d-8974-e3ac8fe7a872",
+        "runId": "portal-native",
+        "backend": "linux-atspi-wayland",
+        "phase": "rejected",
+        "dispatched": false,
+        "delivered": false,
+        "reason": "Fresh portal pixels are unavailable; cached frames cannot authorize global input"
+      },
+      "observationFacts": {
+        "windowHandle": 4231324885265236,
+        "windowTitle": "Computer runtime portal fixture",
+        "desktopPlatform": "Linux",
+        "supportedOperations": "[\"invoke\", \"fill\", \"type\", \"click\", \"drag\", \"scroll\", \"hold\", \"key\"]",
+        "supportedKeys": "[\"Enter\", \"Tab\", \"Shift+Tab\", \"Escape\", \"Space\", \"ArrowLeft\", \"ArrowRight\", \"ArrowUp\", \"ArrowDown\", \"Home\", \"End\", \"PageUp\", \"PageDown\", \"Backspace\", \"Delete\", \"F12\", \"Control+A\", \"Control+C\", \"Control+V\", \"Control+Z\", \"Control+F\", \"Control+L\", \"Control+O\", \"Control+Tab\", \"Control+Home\", \"Control+End\", \"Control+Shift+End\", \"Control+N\", \"Control+S\", \"Control+Shift+S\"]",
+        "semanticBackground": true,
+        "screenshotStatus": "New source-timestamped PipeWire delivery of selected fullscreen window",
+        "pixelFrameCached": false,
+        "pixelFrameSequence": 19,
+        "pixelReceivedAt": 1790723147841,
+        "pixelTimestampProvenance": "GStreamer source PTS mapped through pipeline clock",
+        "pixelSourcePtsNs": "3200250716",
+        "pixelCapturedAt": 1790723147683,
+        "pipewireSessionGeneration": "a2ac2dffb319451aac70507f1f3ad934"
+      }
+    }
+  ],
+  "passed": true,
+  "sourceSha256": {
+    "native/unix/portal.py": "244647d2a1cb9bbb21d500b988bd3229715e564b9fddc3247ee5901e0e4fcfdb",
+    "native/unix/common.py": "4bdd8f523d2c933309528eaf4930ca6266ba36ac7fb947585ce6484d6366645f",
+    "native/unix/linux.py": "7f782ed2bbcb28b0595604f22a9cc3760fc8de4310de41a9343daa512ad76e7f",
+    "native/unix/worker.py": "8f936a38698382b647440a664b01634103bcca2aa774ec838a10f4addce506d0",
+    "evaluation/linux-portal-native.py": "efb8436491ff81a8f6f1f39cd6f719c4fd6df15c51f3df07ead075a233ed5f95",
+    "evaluation/linux-portal-fixture.py": "be7c578a15af283f07e8b1558050efc32c7a710a42a29b3d1e1a96f9d2499910",
+    "evaluation/linux-portal-session.sh": "b10bd12931bff23cf0703335b88a9db0e9e7538f3db1094544938a855ebe6041"
+  }
+}

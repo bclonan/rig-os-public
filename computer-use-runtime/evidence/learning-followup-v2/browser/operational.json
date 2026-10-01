@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "models": [
+    {
+      "seed": 17,
+      "sha256": "de5a2b7e6a5c9e01a9ba374e2f79ece5ac983bedb6b9af295f7368d964a4846a",
+      "inferenceMsMedian": 0.09065004996955395,
+      "inferenceMsP95": 0.1409150252584368,
+      "samples": 100
+    },
+    {
+      "seed": 41,
+      "sha256": "103808c7f88a94cf3fd09cf5b420b4e7b7109a582f073cf1f97dd76ff5a6787b",
+      "inferenceMsMedian": 0.09600003249943256,
+      "inferenceMsP95": 0.10373497498221695,
+      "samples": 100
+    },
+    {
+      "seed": 73,
+      "sha256": "c9af2356e5ccbb3449238bfbdb0eb22b9fa3e23a84589ac82389a0fdfc80c39d",
+      "inferenceMsMedian": 0.09925005724653602,
+      "inferenceMsP95": 0.14692506520077583,
+      "samples": 100
+    }
+  ],
+  "device": "CPUExecutionProvider",
+  "threads": 2,
+  "peakProcessRamBytes": 71393280,
+  "ramScope": "Separate candidate inference process, including Python and ORT",
+  "learnedCapabilities": [
+    "selection",
+    "predicates",
+    "recovery",
+    "clarification",
+    "outcome_cost"
+  ],
+  "untrainedHeads": [],
+  "inferencePasses": 2,
+  "selectionSha256": "8e0c2c8b5f4842b4baf57e483cf616562728c9ea61735c44699f025961a92504",
+  "policyUsesPostActionData": false
+}

@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "level": "Selected-checkpoint validation ablation; not final qualification",
+  "selectionSha256": "0c64f3206cde16b4425ed64205b0f4418b88442526c13952417daef0d2cd035d",
+  "validationManifestSha256": "53e4790589b40c5de93b5cd9ea719f1b62761e5c0473fca1f27700a3417b200b",
+  "models": [
+    {
+      "seed": 17,
+      "sha256": "91486b9edfc31fdb9f1d736b84fa64e07e4be759c345e54074dee72898d99614",
+      "conditions": {
+        "normal": {
+          "predicateAccuracy": 1.0,
+          "knownLabels": 1344
+        },
+        "image_zero": {
+          "predicateAccuracy": 0.39657738095238093,
+          "knownLabels": 1344
+        },
+        "context_zero": {
+          "predicateAccuracy": 1.0,
+          "knownLabels": 1344
+        },
+        "both_zero": {
+          "predicateAccuracy": 0.2931547619047619,
+          "knownLabels": 1344
+        }
+      },
+      "imageBenefit": 0.6034226190476191
+    },
+    {
+      "seed": 41,
+      "sha256": "0cdc9c75ae7df6e3d59f01f77bc15125d49aeebc8f510e54a9cc9938c05a2ae0",
+      "conditions": {
+        "normal": {
+          "predicateAccuracy": 1.0,
+          "knownLabels": 1344
+        },
+        "image_zero": {
+          "predicateAccuracy": 0.49032738095238093,
+          "knownLabels": 1344
+        },
+        "context_zero": {
+          "predicateAccuracy": 1.0,
+          "knownLabels": 1344
+        },
+        "both_zero": {
+          "predicateAccuracy": 0.2931547619047619,
+          "knownLabels": 1344
+        }
+      },
+      "imageBenefit": 0.5096726190476191
+    },
+    {
+      "seed": 73,
+      "sha256": "5776bafae0045e8a73b12bbc72f0092715d7b1a40f99f17e0532d5c44e9d97fe",
+      "conditions": {
+        "normal": {
+          "predicateAccuracy": 1.0,
+          "knownLabels": 1344
+        },
+        "image_zero": {
+          "predicateAccuracy": 0.36904761904761907,
+          "knownLabels": 1344
+        },
+        "context_zero": {
+          "predicateAccuracy": 1.0,
+          "knownLabels": 1344
+        },
+        "both_zero": {
+          "predicateAccuracy": 0.2931547619047619,
+          "knownLabels": 1344
+        }
+      },
+      "imageBenefit": 0.6309523809523809
+    }
+  ]
+}

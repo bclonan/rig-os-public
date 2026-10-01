@@ -1,0 +1,18 @@
+{
+  "copiedAt": "2026-09-30T02:58:44.293301+00:00",
+  "preparedSourceNamespace": "/PUBLIC_WORKSPACE/computer-use-runtime\\evidence\\learning-followup-library-v1\\source-0f5db89a-4f061e4e",
+  "currentSourceNamespace": "/PUBLIC_WORKSPACE/computer-use-runtime\\evidence\\learning-followup-library-v1\\source-dfed450c-3cfae63a",
+  "currentHead": "dfed450c56453569dffc00e3f3651442c363dff8",
+  "currentMaintainedSha256": "3cfae63a30364f2dcf8585daaeceaf34c3f97b32514f04ab5006c3d724906f94",
+  "selectedByteCopyHashes": {
+    "protocol.json": "009b0c6e8815a88b587608ed25235f144c4028b28cf12e7d75259a2ef45c4a69",
+    "selection.json": "a2adcb8d14c21776c33c3052dceea77ab5de0cc3a6ea8162e79080bf386b67a6",
+    "library.json": "f374ee0c28a108b3b56def23609d84ce5f20034d7c0e16aadfe644827857f657",
+    "demonstrations.json": "ac51d344df99f185f5ad4e58cda4baae021de1c3308dc6ea33d748ba013ea098"
+  },
+  "change": "Exact immutable development inputs copied for current-source final revalidation. No reselection, regeneration, model tuning or protocol change.",
+  "rawPreparationEvidence": "/PUBLIC_WORKSPACE/computer-use-runtime\\evidence\\learning-followup-library-v1\\source-0f5db89a-4f061e4e\\collect-store",
+  "preparationTerminal": "/PUBLIC_WORKSPACE/computer-use-runtime\\evidence\\learning-followup-library-v1\\source-0f5db89a-4f061e4e\\collection-terminal.json",
+  "finalStatus": "NOT RUN. Awaiting empirical repair checks and explicit global freeze.",
+  "selectionSourceProvenance": "Copied selection retains original preparation source-before/after maps; final report will bind the actual new source."
+}

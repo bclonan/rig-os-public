@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #edf0ed;
+  color: #183129;
+  font-family:
+    Inter,
+    Segoe UI,
+    system-ui,
+    sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+}
+header {
+  background: #112f27;
+  color: #f4f4e8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 4vw;
+  border-bottom: 4px solid #c2d896;
+}
+.brand {
+  font-size: 22px;
+  font-weight: 750;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.brand span {
+  font-size: 14px;
+  font-weight: 500;
+}
+.pill {
+  border: 1px solid #678e78;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+}
+main {
+  max-width: 1500px;
+  margin: auto;
+  padding: 32px 4vw;
+}
+h1 {
+  font-size: 38px;
+  line-height: 1.14;
+  letter-spacing: -1.2px;
+  margin: 8px 0 16px;
+}
+h2 {
+  font-size: 18px;
+  margin: 16px 0;
+}
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #50705e;
+  font-weight: 700;
+}
+.workspace-head,
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #bfcac2;
+  gap: 8px;
+  margin: 20px 0;
+}
+nav button {
+  background: none;
+  color: #244837;
+  border-radius: 0;
+  border-bottom: 3px solid transparent;
+}
+nav button.active {
+  border-bottom-color: #2a6947;
+  font-weight: 700;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 340px minmax(0, 1fr);
+  gap: 24px;
+}
+.panel {
+  background: #fffef7;
+  border: 1px solid #d1d8cc;
+  border-radius: 10px;
+  padding: 24px;
+  min-width: 0;
+}
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 13px;
+  margin: 14px 0 6px;
+}
+input,
+textarea,
+select {
+  display: block;
+  width: 100%;
+  border: 1px solid #a3b3a5;
+  border-radius: 5px;
+  background: #fff;
+  color: #162f25;
+  padding: 11px;
+  font: inherit;
+}
+button {
+  border: 0;
+  border-radius: 5px;
+  background: #275b40;
+  color: white;
+  padding: 10px 16px;
+  font: inherit;
+  cursor: pointer;
+}
+button:hover {
+  filter: brightness(0.92);
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+form > button {
+  margin-top: 16px;
+}
+button.secondary {
+  background: #e9eee5;
+  color: #244735;
+  border: 1px solid #c6d1bf;
+}
+.danger {
+  background: #853c35;
+}
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.hint,
+small {
+  font-size: 12px;
+  color: #5b6d62;
+}
+.run {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  margin: 8px 0;
+  background: #f0f3ec;
+  color: #21372b;
+}
+.succeeded {
+  color: #27763b;
+}
+.blocked,
+.reconciliation_required {
+  color: #9d4426;
+}
+img {
+  display: block;
+  width: 100%;
+  max-height: 430px;
+  object-fit: contain;
+  background: #e5eae4;
+  border: 1px solid #d8dfd3;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+details {
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e6da;
+}
+summary {
+  cursor: pointer;
+  font-size: 13px;
+}
+summary time {
+  color: #6a7c6e;
+  margin-right: 12px;
+}
+.timeline {
+  max-height: 380px;
+  overflow: auto;
+}
+pre {
+  font:
+    12px/1.6 Consolas,
+    monospace;
+  background: #edf1e8;
+  padding: 14px;
+  border-radius: 4px;
+  overflow: auto;
+  max-height: 450px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.error {
+  background: #f9ddd3;
+  color: #722f21;
+  padding: 16px;
+  border-left: 4px solid #a45438;
+}
+.login {
+  max-width: 690px;
+  margin: 70px auto 100px;
+}
+.login form {
+  max-width: 450px;
+  margin-top: 24px;
+}
+footer {
+  padding: 24px 4vw;
+  border-top: 1px solid #cdd5c8;
+  color: #5b715f;
+  font-size: 12px;
+}
+:focus-visible {
+  outline: 3px solid #a47a24;
+  outline-offset: 3px;
+}
+input:user-invalid,
+textarea:user-invalid {
+  border-color: #9e422f;
+}
+@media (max-width: 850px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .workspace-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .login {
+    margin: 25px 0;
+  }
+  h1 {
+    font-size: 31px;
+  }
+  .brand span {
+    font-size: 12px;
+  }
+}
+
+.demo-choice {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+.demo-choice input {
+  width: auto;
+}
+input:user-invalid,
+textarea:user-invalid {
+  border-color: #b91c1c;
+}

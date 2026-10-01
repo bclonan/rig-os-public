@@ -1,0 +1,17 @@
+node_modules/
+dist/
+native/target/
+.data/
+.research/
+.tools/
+.candidates/
+.venv/
+.venv-desktop/
+release/
+models/
+datasets/
+evidence/
+schemas/
+skills/
+acceptance.json
+package-lock.json

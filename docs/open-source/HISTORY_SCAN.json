@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "scope": "All reachable commits on the fresh public main branch, using default detectors and narrow reviewed source-digest exceptions. The original private history is absent.",
+  "gitleaksVersion": "8.30.1",
+  "gitleaksExitCode": 0,
+  "commits": 1,
+  "scannedHead": "cd2897e3026962c4db1c2e4b987b036bbd405990",
+  "findings": [],
+  "redaction": "100 percent",
+  "maxFileMegabytes": 100
+}

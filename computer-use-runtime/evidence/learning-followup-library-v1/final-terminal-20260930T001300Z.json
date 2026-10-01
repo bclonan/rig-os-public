@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "sourceStamp": "2ccad54f0aa5d39c494185a7fb7ffeb48e2d6c5f:bcf97b61f75a5edf64fd2350ccc64cc63cab52f63e6ed2c1471079220bb137ca",
+  "command": "npx tsx evaluation/learning-followup-library.ts audit",
+  "sessionId": 71017,
+  "chunks": [
+    {
+      "chunk_id": "0ce953",
+      "wall_time_seconds": 10.0058659,
+      "session_id": 71017,
+      "original_token_count": 28,
+      "output": "npm notice run computer-use-runtime@0.1.0 npx\nnpm notice run tsx evaluation/learning-followup-library.ts audit\n"
+    },
+    {
+      "chunk_id": "c34dbb",
+      "wall_time_seconds": 30.0047927,
+      "session_id": 71017,
+      "original_token_count": 12,
+      "output": "{\"seed\":17,\"method\":\"compiled\",\"completed\":100}\n"
+    },
+    {
+      "chunk_id": "fbe526",
+      "wall_time_seconds": 30.0029803,
+      "session_id": 71017,
+      "original_token_count": 15,
+      "output": "{\"seed\":17,\"method\":\"without_compilation\",\"completed\":100}\n"
+    },
+    {
+      "chunk_id": "81ec84",
+      "wall_time_seconds": 40.0010822,
+      "session_id": 71017,
+      "original_token_count": 27,
+      "output": "{\"seed\":17,\"method\":\"hand_authored_macro\",\"completed\":100}\n{\"seed\":41,\"method\":\"compiled\",\"completed\":100}\n"
+    },
+    {
+      "chunk_id": "724e10",
+      "wall_time_seconds": 40.0068812,
+      "session_id": 71017,
+      "original_token_count": 30,
+      "output": "{\"seed\":41,\"method\":\"without_compilation\",\"completed\":100}\n{\"seed\":41,\"method\":\"hand_authored_macro\",\"completed\":100}\n"
+    },
+    {
+      "chunk_id": "d3ee7e",
+      "wall_time_seconds": 40.0049988,
+      "session_id": 71017,
+      "original_token_count": 12,
+      "output": "{\"seed\":73,\"method\":\"compiled\",\"completed\":100}\n"
+    },
+    {
+      "chunk_id": "191185",
+      "wall_time_seconds": 24.8287336,
+      "exit_code": 0,
+      "original_token_count": 83,
+      "output": "{\"seed\":73,\"method\":\"without_compilation\",\"completed\":100}\n{\"seed\":73,\"method\":\"hand_authored_macro\",\"completed\":100}\n{\"scopedLibraryBenefit\":\"PASS\",\"primitiveComparison\":{\"success95\":[0,0],\"observations95\":[-5.213333333333333,-4.773333333333333]},\"macroComparison\":{\"success95\":[0,0],\"observations95\":[1,1]},\"sourceStable\":true}\n"
+    }
+  ],
+  "completed": true,
+  "exitCode": 0
+}

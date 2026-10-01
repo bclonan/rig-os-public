@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" />
+  <title>Controlled publication form</title>
+  <style>
+    body {
+      font: 18px system-ui;
+      padding: 32px;
+      background: #eef2f4;
+      color: #182a34;
+    }
+    main {
+      max-width: 620px;
+      padding: 24px;
+      background: white;
+      border: 2px solid #638a99;
+    }
+    details {
+      height: 30px;
+    }
+    label,
+    input,
+    button,
+    output {
+      display: block;
+      margin: 12px 0;
+    }
+    input,
+    button {
+      font: inherit;
+      padding: 10px;
+    }
+    output {
+      padding: 16px;
+      background: #dff1e6;
+    }
+  </style>
+  <main>
+    <h1>Controlled publication form</h1>
+    <p>This disposable form has active input controls in both conditions.</p>
+    <details id="publication">
+      <summary>Publication permission</summary>
+    </details>
+    <section id="editor">
+      <label for="name">Display name</label>
+      <input id="name" data-control="name" autocomplete="off" />
+      <button id="apply" data-control="apply">Publish name</button>
+    </section>
+    <output id="result" aria-live="polite">No change yet</output>
+  </main>
+  <script>
+    const options = new URLSearchParams(location.search);
+    const condition = document.querySelector("#publication");
+    condition.open = options.get("condition") === "true";
+    document.querySelector("#apply").onclick = () => {
+      document.querySelector("#result").textContent = condition.open
+        ? document.querySelector("#name").value
+        : "Publication denied";
+    };
+  </script>
+</html>
