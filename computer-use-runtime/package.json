@@ -39,7 +39,7 @@
     "verify:audit": "tsx evaluation/verify-audit.ts"
   },
   "dependencies": {
-    "@fastify/static": "10.1.5",
+    "@fastify/static": "10.1.10",
     "@modelcontextprotocol/sdk": "1.31.0",
     "@sinclair/typebox": "0.34.52",
     "ajv": "8.20.0",
